@@ -1,0 +1,10 @@
+.square {
+  margin: 100px 0 0 50px;
+  width: 300px;
+  height: 300px;
+}
+
+.square--red {
+  border: 1px solid #444;
+  background-color: #FF7F50;
+}
