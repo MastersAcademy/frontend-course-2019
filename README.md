@@ -38,7 +38,7 @@ Project structure
   проект pull request. Ім'я папки має бути створене за шаблоном типу <b>name.surname_githubUsername</b>.
 
 
-# [Hometasks](https://github.com/MastersAcademy/js-course-2018/issues/)
+# [Hometasks](https://github.com/MastersAcademy/frontend-course-2019/issues/)
 
 
 # Useful links
