@@ -8,55 +8,98 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
-    <div class="site-wrapper">
-        <header class="header">
-            <img class="header__logo" src="./images/logo.png" alt="Rongila logo">
-            <nav>
-                <ul class="header__navigation-list">
-                    <li class="header__navigation-item chosen-item">
-                        <a class="header__navigation-link" href="">Home</a>
-                    </li>
-                    <li class="header__navigation-item">
-                        <a class="header__navigation-link" href="">About</a>
-                    </li>
-                    <li class="header__navigation-item">
-                        <a class="header__navigation-link" href="">Service</a>
-                    </li>
-                    <li class="header__navigation-item">
-                        <a class="header__navigation-link" href="">Resume</a>
-                    </li>
-                    <li class="header__navigation-item">
-                        <a class="header__navigation-link" href="">Portfolio</a>
-                    </li>
-                    <li class="header__navigation-item">
-                        <a class="header__navigation-link" href="">Blog</a>
-                    </li>
-                    <li class="header__navigation-item">
-                        <a class="header__navigation-link" href="">Contact us</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <header class="header section-wrapper">
+        <img class="header__logo" src="./images/logo.png" alt="Rongila logo">
+        <nav>
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item chosen-item">
+                    <a class="header__navigation-link" href="">Home</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">About</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">Service</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">Resume</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">Portfolio</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">Blog</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="greeting">
-            <div class="greeting__text-wrapper">
-                <span class="greeting__hello">Hello,</span>
-                <span class="greeting__name">I am Alex Kuskov</span>
-                <span class="greeting__profession">Future Front-End Developer <br>@ Not Designer</span>
-                <button class="greeting__hire-button">Hire</button>
-            </div>
-            
-            <img class="greeting__image" src="./images/image-1.png" alt="Image #1">
+    <div class="greeting section-wrapper">
+        <div class="greeting__text-wrapper">
+            <span class="greeting__hello">Hello,</span>
+            <span class="greeting__name">I am Alex Kuskov</span>
+            <span class="greeting__profession">Future Front-End Developer <br>@ Not Designer</span>
+            <button class="greeting__hire-button primary-button">Hire</button>
         </div>
-
-        <div class="about-me"></div>
-
-        <div class="contact-me"></div>
-
-        <footer class="footer">
-            <div class="footer-text"></div>
-            <div class="social-media-links"></div>
-        </footer>
+        
+        <img class="greeting__image" src="./images/image-1.png" alt="Image #1">
     </div>
+
+    <div class="about-me section-wrapper">
+        <h1 class="about-me__header">About Me</h1>
+        <div class="about-me__lines">
+            <div class="about-me__top-line"></div>
+            <div class="about-me__bottom-line"></div>
+        </div>
+        <div class="about-me__content">
+            <img class="about-me__image" src="./images/image-2.png" alt="Image #2">
+
+            <div class="about-me__text-wrapper">
+                <div class="about-me__greeting">
+                    Hello I am Alex Kuskov, I don't have much to say about myself, 
+                    so I just copy-paste text from PSD template :)
+                </div>
+
+                <div class="about-me__description">
+                    loream isam Mauris scelerisque ut ipsum id vulputate. Nulla laoreet, ligula vel 
+                    congue ultricies, nibh ipsum egestas nunc, id porta nibh nunc non felis. Vestibulum 
+                    nibh urna, lobortis ut euismod., 
+                </div>
+
+                <ul class="about-me__list">
+                    <li class="about-me__list-item">Name:</li>
+                    <li class="about-me__list-item">Email:</li>
+                    <li class="about-me__list-item">Phone:</li>
+                    <li class="about-me__list-item">Date of Birth:</li>
+                    <li class="about-me__list-item">Nationality:</li>
+                    <li class="about-me__list-item">Address:</li>
+                </ul>
+
+                <ul class="about-me__list about-me__list--values">
+                    <li class="about-me__list-item">Jhon Smith</li>
+                    <li class="about-me__list-item">jhonamith@gmail.com</li>
+                    <li class="about-me__list-item">0586321470</li>
+                    <li class="about-me__list-item">21-Oct-1990</li>
+                    <li class="about-me__list-item">Bangladesh</li>
+                    <li class="about-me__list-item">1212 Dhaka, Rampura, Btv  Brobon.</li>
+                </ul>
+
+                <div class="about-me__buttons">
+                    <button class="about-me__hire-me-btn primary-button">Hire me</button>
+                    <button class="about-me__download-cv-btn">Download cv</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-me section-wrapper"></div>
+
+    <footer class="footer section-wrapper">
+        <div class="footer-text"></div>
+        <div class="social-media-links"></div>
+    </footer>
 </body>
 </html>
