@@ -44,6 +44,57 @@
   text-decoration: none;
 }
 
+/* Greeting section */
+
+.greeting {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 90px;
+  padding-right: 15px;
+}
+
+.greeting__text-wrapper {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 125px;
+}
+
+.greeting__hello {
+  font-size: 20px;
+}
+
+.greeting__name {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 50px;
+  color: var(--global--color--secondary);
+  padding: 30px 0;
+}
+
+.greeting__profession {
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+.greeting__hire-button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  background-color: var(--global--color--secondary);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.greeting__image {
+  height: 715px;
+}
+
+/* Utility class. Used for chosen menu items, icons etc. */
+
 .chosen-item {
   color: var(--global--color--secondary);
 }
