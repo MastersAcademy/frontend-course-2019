@@ -49,10 +49,10 @@
     </div>
 
     <div class="about-me section-wrapper">
-        <h1 class="about-me__header">About Me</h1>
-        <div class="about-me__lines">
-            <div class="about-me__top-line"></div>
-            <div class="about-me__bottom-line"></div>
+        <h2 class="section-header">About Me</h2>
+        <div class="header-underlines">
+            <div class="header-underlines__top-line"></div>
+            <div class="header-underlines__bottom-line"></div>
         </div>
         <div class="about-me__content">
             <img class="about-me__image" src="./images/image-2.png" alt="Image #2">
@@ -95,7 +95,61 @@
         </div>
     </div>
 
-    <div class="contact-me section-wrapper"></div>
+    <div class="contact-me section-wrapper">
+        <h2 class="section-header">Contact Me</h2>
+        <div class="header-underlines">
+            <div class="header-underlines__top-line"></div>
+            <div class="header-underlines__bottom-line"></div>
+        </div>
+
+        <div class="contact-me__content">
+            <address class="contact-details">
+                <div class="contact-details__item">
+                    <div class="contact-details__icon-wrapper">
+                        <img class="contact-details__icon" src="./images/house-icon.svg" alt="House icon">
+                    </div>
+                    <span class="contact-details__text">
+                        Rapthame@gmail.com <br>
+                        Your email name@gmail.com
+                    </span>
+                </div>
+                
+                <div class="contact-details__item">
+                    <div class="contact-details__icon-wrapper">
+                        <img class="contact-details__icon" src="./images/phone-cell.svg" alt="Phone icon">
+                    </div>
+                    <span class="contact-details__text">
+                        0088017123456 <br>
+                        0088019315388
+                    </span>
+                </div>
+
+                <div class="contact-details__item">
+                    <div class="contact-details__icon-wrapper">
+                        <img class="contact-details__icon" src="./images/placeholder.svg" alt="Placeholder icon">
+                    </div>
+                    <span class="contact-details__text">
+                        Dhaka 1200, Rampura <br>
+                        Hatirzil, Bangladesh
+                    </span>
+                </div>
+            </address>
+
+            <form class="form">
+                <div class="form__inputs">
+                    <input class="form__input active-input" placeholder="Your Name....." type="text">
+                    <input class="form__input active-input" placeholder="Your Address....." type="text">
+                </div>
+                
+                <textarea 
+                    class="form__messages-textarea active-input" 
+                    name="messages" 
+                    placeholder="Your Messages....."
+                    id="messages"></textarea>
+                <button class="form__send-messages-btn primary-button" type="submit">Send message</button>
+            </form>
+        </div>
+    </div>
 
     <footer class="footer section-wrapper">
         <div class="footer-text"></div>

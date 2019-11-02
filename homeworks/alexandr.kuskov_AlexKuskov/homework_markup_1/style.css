@@ -2,6 +2,7 @@
 
 :root {
   --global--color--primary: rgb(102, 102, 102);
+  --global--color--primary-light: rgb(129, 129, 129);
   --global--color--primary-dark: rgb(85, 85, 85);
   --global--color--secondary: rgb(254, 126, 17);
 }
@@ -37,6 +38,14 @@
   font-weight: 900;
   border-radius: 30px;
   cursor: pointer;
+}
+
+.section-header {
+  margin: 0;
+  padding-top: 105px;
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 38px;
 }
 
 /* Header section */
@@ -117,7 +126,6 @@
 
 .about-me {
   height: 835px;
-  padding-top: 110px;
   background-color: rgb(240, 240, 240);
 }
 
@@ -128,7 +136,7 @@
   line-height: 38px;
 }
 
-.about-me__lines {
+.header-underlines {
   position: relative;
   width: 150px;
   height: 30px;
@@ -136,7 +144,7 @@
   text-align: center;
 }
 
-.about-me__top-line {
+.header-underlines__top-line {
   display: inline-block;
   position: relative;
   width: 130px;
@@ -144,7 +152,7 @@
   background-color: var(--global--color--secondary);
 }
 
-.about-me__top-line:before {
+.header-underlines__top-line:before {
   content: "";
   box-sizing: border-box;
   display: block;
@@ -157,7 +165,7 @@
   border: 2px solid var(--global--color--primary);
 }
 
-.about-me__top-line:after {
+.header-underlines__top-line:after {
   content: "";
   box-sizing: border-box;
   display: block;
@@ -170,7 +178,7 @@
   border: 2px solid var(--global--color--primary);
 }
 
-.about-me__bottom-line {
+.header-underlines__bottom-line {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -244,4 +252,124 @@
   font-weight: 900;
   border-radius: 30px;
   cursor: pointer;
+}
+
+/* Contact me section */
+
+.contact-me {
+  height: 805px;
+}
+
+.contact-me__content {
+  display: flex;
+  margin-top: 100px;
+  height: 330px;
+}
+
+.contact-details {
+  margin-left: 16px;
+  margin-right: 50px;
+}
+
+.contact-details__item {
+  position: relative;
+  width: 385px;
+  height: 70px;
+  margin-bottom: 50px;
+}
+
+.contact-details__icon-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.contact-details__icon-wrapper:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 70px;
+  width: 70px;
+  background-color: var(--global--color--secondary);
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.contact-details__icon-wrapper:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  height: 60px;
+  width: 60px;
+  background-color: var(--global--color--primary-light);
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.contact-details__icon {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 24px;
+}
+
+.contact-details__text {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 270px;
+  height: 50px;
+  font-style: normal;
+  font-size: 1.15em;
+  margin: auto;
+  margin-left: 30px;
+}
+
+/* Contact Me -> Form */
+
+.form {
+  width: 770px;
+}
+
+.form * {
+  box-sizing: border-box;
+}
+
+.form__inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.form__input {
+  width: 370px;
+  height: 50px;
+  padding: 20px;
+}
+
+.form__messages-textarea {
+  width: 770px;
+  height: 250px;
+  margin-bottom: 45px;
+  padding: 20px;
+  resize: none;
+}
+
+.form__send-messages-btn {
+  width: 220px;
+  height: 50px;
+}
+
+.active-input:focus {
+  border: 1px solid var(--global--color--secondary);
+  outline: none;
 }
