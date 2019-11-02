@@ -2,7 +2,6 @@
 
 :root {
   --global--color--primary: rgb(102, 102, 102);
-  --global--color--primary-light: rgb(129, 129, 129);
   --global--color--primary-dark: rgb(85, 85, 85);
   --global--color--secondary: rgb(254, 126, 17);
 }
@@ -306,7 +305,7 @@
   top: 5px;
   height: 60px;
   width: 60px;
-  background-color: var(--global--color--primary-light);
+  background-color: rgb(129, 129, 129);
   border-radius: 100%;
   z-index: -1;
 }
@@ -372,4 +371,35 @@
 .active-input:focus {
   border: 1px solid var(--global--color--secondary);
   outline: none;
+}
+
+/* Footer section */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(240, 240, 240);
+}
+
+.footer__text {
+  color: var(--global--color--primary-dark);
+  font-size: .8em;
+}
+
+.footer__social-media-links {
+  user-select: none;
+}
+
+.footer__media-link {
+  height: 20px;
+  width: 20px;
+  margin: 0 20px;
+  fill: var(--global--color--primary-dark);
+  cursor: pointer;
+}
+
+.footer__media-link:hover {
+  fill: var(--global--color--secondary);
 }
