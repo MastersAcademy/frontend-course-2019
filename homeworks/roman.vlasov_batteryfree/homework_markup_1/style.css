@@ -300,11 +300,11 @@
   .text {
     font-size: 15px;
   }
-  
+
   .text-large {
     font-size: 20px;
   }
-  
+
   .text-bold {
     font-weight: 500;
   }
@@ -330,22 +330,22 @@
   .about__title {
     font-size: 30px;
   }
-  
+
   .about__table {
     font-size: 15px;
   }
-  
+
   .about__table__lcol {
     width: 45%;
   }
-  
+
   .about__link__button {
     display: block;
     text-align: center;
     padding-top: 25px;
     margin-bottom: 30px;
   }
-  
+
   .about__link__hierme {
     font-size: 20px;
     margin: 25px;
@@ -355,17 +355,17 @@
     font-size: 20px;
     margin: 25px;
   }
-  
+
   .about__link__dowonload:hover {
     background-color: #ff4800;
   }
-  
+
   .about__img {
     padding-top: 15px;
     height: 300px;
   }
   /*Section CONTACT size 767.98px*/
-  
+
   .contact__title {
     font-size: 30px;
   }
@@ -552,6 +552,7 @@
     width: 76%;
     margin-left: 15px;
   }
+
   .about__img {
     background-size: cover;
     width: 56%;
@@ -576,6 +577,7 @@
   .contact__contactblok {
     display: block;
   }
+
   .contact__svg {
     border: 3px solid #fe7e11;
     fill: #FFF;
@@ -604,9 +606,9 @@
   .contact__btn:hover {
     background-color: #ff4800;
   }
-  
+
   /*Section footer size 1023.98px*/
-  
+
   .section__footer {
     flex-direction: unset;
     align-items: baseline;
@@ -621,6 +623,7 @@
     fill: #fe7e11;
   }
 }
+
 /****************************size 1199.98px*****************************/
 
 @media (min-width: 1199.98px) {
