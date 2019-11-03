@@ -319,10 +319,6 @@ template {
   display: none !important;
 }
 
-/* IMPORT */
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap");
-
 /* FONTS */
 
 @font-face {
@@ -385,7 +381,8 @@ body {
   min-width: 320px;
   background-color: #fff;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   color: #555;
   line-height: 1.6;
   overflow-x: hidden;
@@ -393,10 +390,12 @@ body {
 
 h1 {
   font-size: 68px;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 36px;
+  font-weight: 700;
   text-transform: capitalize;
 }
 
@@ -411,6 +410,7 @@ h2::after {
 
 h3 {
   font-size: 20px;
+  font-weight: 600;
 }
 
 a, .btn {
