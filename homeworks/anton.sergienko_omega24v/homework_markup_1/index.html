@@ -114,12 +114,12 @@
                     </ul>
                 </div>
                 <div class="right-side">
-                    <form class="contact-form">
+                    <form name="contact_form" class="contact-form">
                         <div class="row d-flex">
-                            <label for=""><input type="text" name="text" required placeholder="Your Name........"></label>
-                            <label for=""><input type="email" name="email" required placeholder="Email Address....."></label>
+                            <label for="name"><input type="text" name="name" id="name" placeholder="Your Name........"></label>
+                            <label for="email"><input type="email" name="email" id="email" placeholder="Email Address....."></label>
                         </div>
-                        <textarea name="textarea" placeholder="Your Messages....."></textarea>
+                        <textarea name="message" class="message" placeholder="Your Messages....."></textarea>
                         <button type="submit" class="btn btn-accent">send messages</button>
                     </form>
                 </div>

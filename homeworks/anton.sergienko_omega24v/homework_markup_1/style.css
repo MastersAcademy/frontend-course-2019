@@ -195,11 +195,6 @@ button {
   border-radius: 0;
 }
 
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
 input,
 button,
 select,
@@ -332,11 +327,7 @@ template {
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?bwp93k');
-  src:  url('fonts/icomoon.eot?bwp93k#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?bwp93k') format('truetype'),
-    url('fonts/icomoon.woff?bwp93k') format('woff'),
-    url('fonts/icomoon.svg?bwp93k#icomoon') format('svg');
+  src:  url('fonts/icomoon.woff?bwp93k') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
