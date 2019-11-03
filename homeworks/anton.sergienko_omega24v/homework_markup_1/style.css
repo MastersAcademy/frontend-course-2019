@@ -397,8 +397,16 @@ h1 {
 
 h2 {
   font-size: 36px;
-  /* border-bottom: 1px solid #666; */
   text-transform: capitalize;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  margin: 5px auto 0;
+  width: 110px;
+  height: 2px;
+  background-color: #666;
 }
 
 h3 {
@@ -448,24 +456,36 @@ a:hover, .btn:hover {
   justify-content: space-between;
 }
 
-.contact-me .contact-form input::placeholder {
-  transition: .3s ease-out;
-  opacity: 1;
+.title-line {
+  position: relative;
+  margin: 0 auto;
+  width: 130px;
+  height: 2px;
+  background-color: #fe7e11;
 }
 
-.contact-me .contact-form input:focus::placeholder {
-  transition: .3s ease-out;
-  opacity: 0;
+.title-line::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -8px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #666;
+  border-radius: 100%;
 }
 
-.contact-me .contact-form textarea::placeholder {
-  transition: .3s ease-out;
-  opacity: 1;
-}
-
-.contact-me .contact-form textarea:focus::placeholder {
-  transition: .3s ease-out;
-  opacity: 0;
+.title-line::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #666;
+  border-radius: 100%;
 }
 
 /* HEADER */
@@ -550,8 +570,12 @@ header .nav li:last-child {
   margin-top: 100px;
 }
 
-.about-me .left-side, .about-me .right-side {
-  flex: 33.3%;
+.about-me .d-flex .left-side {
+  flex: 2;
+} 
+
+.about-me .d-flex .right-side {
+  flex: 3;
 }
 
 .about-me h3 {
@@ -665,6 +689,26 @@ header .nav li:last-child {
 .contact-me .contact-form input:focus, 
 .contact-me .contact-form textarea:focus {
   border-color: #fe7e11;
+}
+
+.contact-me .contact-form input::placeholder {
+  transition: .3s ease-out;
+  opacity: 1;
+}
+
+.contact-me .contact-form input:focus::placeholder {
+  transition: .3s ease-out;
+  opacity: 0;
+}
+
+.contact-me .contact-form textarea::placeholder {
+  transition: .3s ease-out;
+  opacity: 1;
+}
+
+.contact-me .contact-form textarea:focus::placeholder {
+  transition: .3s ease-out;
+  opacity: 0;
 }
 
 .contact-me .contact-form textarea {
