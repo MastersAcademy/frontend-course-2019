@@ -1,11 +1,11 @@
 .grid {
     display: grid;
-    grid-template-columns: 4em 1fr 4em;
+    grid-template-columns: 20vw 1fr 20vw;
     grid-template-rows: 100vh;
 }
 
 .grid--header {
-    grid-template-rows: 20vh;
+    grid-template-rows: 15vh;
     grid-template-areas: ". container-header .";
 }
 
@@ -45,4 +45,52 @@
 
 .container__footer {
     grid-area: container-footer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container__header {
+    justify-content: space-between;
+}
+
+.container__footer {
+    justify-content: space-between;
+}
+
+.container__header_menu {
+    height: auto;
+    margin: auto 0;
+    padding: 0;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 40vw;
+    align-content: center;
+    font-size: 14px;
+}
+
+.list-item {
+    padding: 2% 3%;
+}
+
+.list-item:hover {
+    color: red;
+}
+
+.list__contact-me {
+    display: flex;
+}
+
+.list__menu {}
+
+.footer__menu {
+    display: flex;
+    align-items: center;
 }
