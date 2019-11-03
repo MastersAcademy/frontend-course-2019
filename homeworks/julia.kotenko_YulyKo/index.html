@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <title>Hello World</title>
 </head>
 
 <body class="grid-skeleton">
-    <!-- c - container -->
-    <header class="grid">
+    <header class="grid grid--header">
         <div class="container container__header">
             <div class="logo">logo svg</div>
             <menu type="toolbar" class="container__header_menu">
@@ -27,7 +27,7 @@
             </menu>
         </div>
     </header>
-    <main class="grid">
+    <main class="grid grid--hello">
         <div class="container container__hello">
             <article class="article article__hello">
                 <p class="text">Hello,</p>
@@ -38,7 +38,7 @@
             <img src="" alt="profile photo" class="image-profile0">
         </div>
     </main>
-    <main class="grid">
+    <main class="grid grid--about-me">
         <div class="container container__about-me">
             <img src="" alt="" class="image-profile1">
             <article class="article article__about-me">
@@ -79,7 +79,7 @@
             </article>
         </div>
     </main>
-    <main class="grid">
+    <main class="grid grid--contact-me">
         <div class="container container__contact-me">
             <ul class="list list__contact-me">
                 <li class="list__contact-me_item">
@@ -103,7 +103,7 @@
             </form>
         </div>
     </main>
-    <footer class="grid">
+    <footer class="grid grid--footer">
         <div class="container container__footer">
             <p class="text">One Page Personal Protfolio Template By RapThame @ 2018</p>
             <menu class="footer__menu">

@@ -1,0 +1,48 @@
+.grid {
+    display: grid;
+    grid-template-columns: 4em 1fr 4em;
+    grid-template-rows: 100vh;
+}
+
+.grid--header {
+    grid-template-rows: 20vh;
+    grid-template-areas: ". container-header .";
+}
+
+.container__header {
+    grid-area: container-header;
+}
+
+.grid--hello {
+    grid-template-areas: ". container-hello .";
+}
+
+.container__hello {
+    grid-area: container-hello;
+}
+
+.grid--about-me {
+    grid-template-areas: ". container-about-me .";
+}
+
+.container__about-me {
+    grid-area: container-about-me;
+}
+
+.grid--contact-me {
+    grid-template-areas: ". container-contact-me .";
+}
+
+і .container__contact-me {
+    grid-area: container-contact-me;
+}
+
+.grid--footer {
+    grid-template-rows: 15vh;
+    grid-template-areas: ". container-footer .";
+    background-color: #d7d7d7;
+}
+
+.container__footer {
+    grid-area: container-footer;
+}
