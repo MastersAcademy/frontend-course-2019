@@ -688,3 +688,36 @@ header .nav li:last-child {
   margin-top: 50px;
 }
 
+/* FOOTER */
+
+footer {
+  padding: 30px 0;
+  background-color: #f0f0f0;
+}
+
+footer .d-flex {
+  align-items: center;
+}
+
+footer .social-list {
+  display: flex;
+  list-style: none;
+}
+
+footer .social-list li {
+  margin-right: 40px;
+}
+
+footer .social-list li:last-child {
+  margin-right: 0;
+}
+
+footer .social-list li a {
+  display: block;
+  font-size: 24px;
+}
+
+footer .social-list li a:hover {
+  color: #fe7e11;
+  transform: translate(0, -10%);
+}
