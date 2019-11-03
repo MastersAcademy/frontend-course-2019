@@ -102,18 +102,21 @@
                             <p class="contacts-single__text">Dhaka 1200, Rampura <br>Hatirzil, Bangladesh</p>
                         </div>
                     </div>
-                    <div class="contacts__form">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name...">
+                    <form class="contacts__form">
+                        <div id="form-group__name" class="form-group">
+                            <input id="your-name" type="text" class="form-control" placeholder="Your Name...">
+                            <span class="form-group__error">Name can only contain letters</span>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Email Address...">
+                        <div id="form-group__email" class="form-group">
+                            <input id="your-email" type="text" class="form-control" placeholder="Email Address...">
+                            <span class="form-group__error">Invalid email</span>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Your Messages..."></textarea>
+                        <div id="form-group__message" class="form-group">
+                            <textarea id="your-message" class="form-control" placeholder="Your Messages..."></textarea>
+                            <span class="form-group__error">Required field</span>
                         </div>
                         <button class="btn orange-btn" type="submit">Send messages</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -131,5 +134,6 @@
                 </div>
             </div>
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>

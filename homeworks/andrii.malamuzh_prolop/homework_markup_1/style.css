@@ -164,6 +164,19 @@ textarea.form-control {
 .form-control:focus {
   border-color: #fe7e11;
 }
+
+.form-group__error {
+  display: none;
+}
+
+.form-group.error .form-group__error {
+  display: block;
+  color: #f00000;
+}
+
+.form-group.error .form-control {
+  border-color: #f00000;
+}
 /*HEADER START*/
 .header {
   padding: 35px 0;
