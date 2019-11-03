@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: open-sans, sans-serif;
+    margin: 0 auto;
+    min-width: 1200px;
+}
+
+.header-wrapper {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.logo {
+    margin-top: 20px;
+    height: 50px;
+}
+
+.main-navigation {
+    flex-basis: 70%;
+    padding-bottom: 10px;
+    padding-left: 10%;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+a {
+    color: #000000;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #fe7e11;
+}
+
+.main-wrapper {
+    display: flex;
+    height: 100%;
+    max-width: 80%;
+    padding-top: 5%;
+    margin: 0 auto;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 55%;
+}
+
+.greeting:first-child {
+    padding-top: 15%;
+}
+
+.greeting p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.greeting h1 {
+    color: #fe7e11;
+    font-size: 3em;
+    font-weight: 600;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.my-foto {
+    flex-basis: 45%;
+    width: 100%;
+    height: auto;
+}
+
+.basic-button_style {
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+.button-hire {
+    background-color: #fe7e11;
+    margin-top: 50px;
+    width: 100px;
+}
+
+.basic-button_style:hover {
+    background-color: #118bfe;
+    transition: ease 0.5s;
+}
+
+.about-me {
+    background-color: #f0f0f0;
+    height: 100%;
+}
+
+.about-me-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.caption {
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 60px 0 20px;
+    min-width: 100%;
+}
+
+.underline-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    margin-bottom: 80px;
+    width: 150px;
+    height: 10px;
+}
+
+.circle {
+    height: 10px;
+    width: 10px;
+    border: 2px solid #666666;
+    border-radius: 50%;
+}
+
+.color-line {
+    width: 130px;
+    border-bottom: 2px solid #fe7e11;
+    margin-bottom: 3px;
+
+}
+
+.color-line::after {
+    content: '___________';
+    width: 105px;
+    margin: 10px 12px 0 17px;
+    border-bottom: 1px solid #000000;
+}
+
+.second-foto {
+    margin: 0 50px 0 0;
+    width: 40%;
+    height: auto;
+}
+
+.full-information {
+    display: grid;
+    grid-template-areas: "my-greeting my-greeting"
+                         "basic-text-style basic-text-style";
+    flex-basis: 42%;
+    margin: 0 30px;
+}
+
+.my-greeting {
+    font-size: 1.2em;
+    grid-area: my-greeting;
+}
+
+.basic-text-style {
+    grid-area: basic-text-style;
+    margin: 30px 0;
+}
+
+.full-information > button {
+    margin: 0 auto -50px;
+    text-align: center;
+    width: 80%;
+}
+
+.button-download_cv {
+    background-color: #f0f0f0;
+    border: 2px solid #666666;
+    color: #666666;
+}
+
+.button-download_cv:hover {
+    color: #ffffff;
+}
+
+.my-information {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 40%;
+    height: 200px;
+}
+
+.home,
+.mobile-phone,
+.location {
+    background-color: #666666;
+    border-radius: 50%;
+    border: 2px solid #fe7e11;
+    width: 50px;
+    height: 50px;
+    margin: 20px 20px 20px 0;
+}
+
+.img-wrapper {
+    height: 20px;
+}
+
+.my-information > p {
+    line-height: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.post-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+}
+
+#contact-name,
+#contact-email {
+    width: 93%;
+    height: 40px;
+}
+
+.field {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.textarea-field {
+    width: 97%;
+}
+
+#contact-message {
+    width: 100%;
+    padding: 2px;
+}
+
+#contact-name:hover,
+#contact-email:hover,
+#contact-message:hover {
+    border: 2px solid #fe7e11;
+}
+
+#contact-message:hover {
+    padding: 1px;
+}
+
+.button-send_message {
+    background-color: #fe7e11;
+    margin-top: 50px;
+    width: 200px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #f0f0f0;
+    padding: 0 10%;
+}
+
+.footer-text {
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.footer-svg {
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+}
+
+.footer-svg:hover {
+    fill: #fe7e11;
+}
