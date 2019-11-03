@@ -33,7 +33,7 @@
 
     <!-- HELLO -->
     <section class="hello">
-        <div class="container">
+        <div class="container d-flex">
             <div class="left-side">
                 <h1><span>Hello,</span> I am Jhon Smith</h1>
                 <h3>Freelance web Designer<br>@ Developer</h3>
@@ -90,7 +90,43 @@
     </section>
 
     <!-- CONTACT ME -->
-    <section class="contact-me"></section>
+    <section class="contact-me">
+        <div class="container">
+            <h2>contact me</h2>
+            <div class="d-flex">
+                <div class="left-side">
+                    <ul>
+                        <li class="email">
+                            <div class="icon"><span class="icon-home"></span></div>
+                            <div>
+                                <a href="mailto:rapthame@gmail.com">Rapthame@gmail.com</a><br>
+                                Your email <a href="mailto:name@gmail.com">name@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="phone">
+                            <div class="icon"><span class="icon-phone"></span></div>
+                            <div>0088017123456<br><a href="tel:0088019315388">0088019315388</a></div>    
+                        </li>
+                        <li class="address">
+                            <div class="icon"><span class="icon-location"></span></div>
+                            <div>Dhaka 1200, Rampura<br>Hatirzil, Bangladesh</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-side">
+                    <form class="contact-form">
+                        <div class="row d-flex">
+                            <label for=""><input type="text" name="text" required placeholder="Your Name........"></label>
+                            <label for=""><input type="email" name="email" required placeholder="Email Address....."></label>
+                        </div>
+                        <textarea name="textarea" placeholder="Your Messages....."></textarea>
+                        <button type="submit" class="btn btn-accent">send messages</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer></footer>
 
 </body>
