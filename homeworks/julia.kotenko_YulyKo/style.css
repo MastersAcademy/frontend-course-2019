@@ -27,6 +27,7 @@ body {}
 
 .grid--about-me {
     grid-template-areas: ". container-about-me .";
+    background-color: #f0f0f0;
 }
 
 .container__about-me {
@@ -37,7 +38,7 @@ body {}
     grid-template-areas: ". container-contact-me .";
 }
 
-і .container__contact-me {
+.container__contact-me {
     grid-area: container-contact-me;
 }
 
@@ -109,12 +110,47 @@ body {}
 }
 
 .button {
+    margin-top: 9%;
+    margin-right: 2vw;
+    padding: 3% 2vw;
     border: none;
     border-radius: 25px;
-    padding: 3% 10%;
+    background: none;
+    border: 2px solid #666666;
+    ;
 }
 
 .button--orange {
-    margin-top: 6%;
+    border: none;
     background-color: #fe7e11;
+}
+
+.container__about-me {
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-profile1 {
+    height: 73%;
+    width: auto;
+}
+
+.article__about-me {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.container__btns {
+    height: auto;
+    justify-content: flex-start;
+}
+
+.table-column2 {
+    padding-left: 13vh;
+}
+
+.container-title {
+    text-align: center;
+    margin: 0 0 4rem 0;
 }

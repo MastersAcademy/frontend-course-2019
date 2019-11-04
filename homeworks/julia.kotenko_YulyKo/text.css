@@ -5,11 +5,27 @@
     color: #555555;
 }
 
-.text--less {}
+.text--xl {
+    margin-top: 0;
+    margin-bottom: 4.8%;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text--l {
+    width: 87%;
+    font-size: 15px;
+}
+
+.text--s {
+    font-size: 14px;
+    height: 3vh;
+}
 
 .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    color: #666666;
 }
 
 .title--xxl {
@@ -24,7 +40,17 @@
     color: #555555;
 }
 
-.button {
+
+/* .title__container {
+    color: #666666;
+} */
+
+
+/* .button {
+  color:
+} */
+
+.button--orange {
     color: #FFF;
     font-size: 20px;
 }
