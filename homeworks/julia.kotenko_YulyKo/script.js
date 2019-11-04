@@ -56,4 +56,3 @@ function showResultMessage() {
     let message = getMessageValue()
     alert('User ' + name + '(' + email + ')\nYour message: ' + message + ' was sended to Jhon Smith')
 }
-let
