@@ -1,3 +1,5 @@
+body {}
+
 .grid {
     display: grid;
     grid-template-columns: 20vw 1fr 20vw;
@@ -14,11 +16,13 @@
 }
 
 .grid--hello {
+    margin-top: 2rem;
     grid-template-areas: ". container-hello .";
 }
 
 .container__hello {
     grid-area: container-hello;
+    justify-content: space-between;
 }
 
 .grid--about-me {
@@ -93,4 +97,24 @@
 .footer__menu {
     display: flex;
     align-items: center;
+}
+
+.image-profile0 {
+    height: 100%;
+    width: auto;
+}
+
+.article {
+    margin: 11rem 2rem;
+}
+
+.button {
+    border: none;
+    border-radius: 25px;
+    padding: 3% 10%;
+}
+
+.button--orange {
+    margin-top: 6%;
+    background-color: #fe7e11;
 }

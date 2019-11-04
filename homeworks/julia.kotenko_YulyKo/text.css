@@ -1,0 +1,30 @@
+.text {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: #555555;
+}
+
+.text--less {}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.title--xxl {
+    color: #fe7e11;
+    font-size: 60px;
+}
+
+.title--xl {
+    font-weight: 400;
+    font-size: 24px;
+    width: 19rem;
+    color: #555555;
+}
+
+.button {
+    color: #FFF;
+    font-size: 20px;
+}
