@@ -20,9 +20,9 @@ function getMessageValue() {
 }
 
 function checkEmptyInputs() {
-    email = getMessageValue()
-    name = getNameValue()
-    message = getMessageValue()
+    let email = getMessageValue()
+    let name = getNameValue()
+    let message = getMessageValue()
     if (email != '' && name != '' && message != '') {
         validationOfEmail()
     } else {
@@ -31,19 +31,29 @@ function checkEmptyInputs() {
 }
 
 function validationOfEmail() {
-    var mailformat = /\S+@\S+\.\S+/
-    if (getEmailValue.match(mailformat)) {
+    let mailformat = /\S+@\S+\.\S+/
+    let email = getEmailValue()
+    if (email.match(mailformat)) {
         return validationName(name)
     } else {
         alert("Your e-mail is not correct")
     }
 }
 
-
 function validationName() {
-    if (/^[A-Za-z\s]+$/.test(getNameValue)) {
-        return true
+    let name = getNameValue()
+    if (/^[A-Za-z\s]+$/.test(name)) {
+        return showResultMessage()
     } else {
         alert("Your name is not correct written.\nRemove numbers and special symbols from input")
     }
 }
+
+
+function showResultMessage() {
+    let email = getEmailValue()
+    let name = getNameValue()
+    let message = getMessageValue()
+    alert('User ' + name + '(' + email + ')\nYour message: ' + message + ' was sended to Jhon Smith')
+}
+let
