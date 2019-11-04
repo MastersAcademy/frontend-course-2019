@@ -4,116 +4,117 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans: 400, 800" rel="stylesheet">
         <title>Rongila.</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section class="baner container" id="homeLink">
-            <header class="baner__header">
+<!--title section-->
+        <section class="container banner">
+            <header class="banner__header">
                 <a href="#homeLink">
-                    <img class="baner__logo" src="images/rongila.png" alt="logotype rongila">
+                    <img class="banner__logo" src="images/rongila.png" alt="logotype rongila">
                 </a>
-                <div class="baner__menu__tog__nav">
-                    <input class="baner__toggle" id="toggle" type="checkbox">
-                    <label class="baner__menu" for="toggle">
-                        <svg class="baner-menu__icon">
-                            <use xlink:href="#menu-icon"></use>
-                        </svg>
-                    </label>
-                    <nav class="baner__navigation">
-                        <a class="baner__link" href="#homeLink">Home</a>
-                        <a class="baner__link" href="#aboutLink">About</a>
-                        <a class="baner__link" href="#">Service</a>
-                        <a class="baner__link" href="#">Resume</a>
-                        <a class="baner__link" href="#">Portfolio</a>
-                        <a class="baner__link" href="#">Blog</a>
-                        <a class="baner__link" href="#contactLink">Contact us</a>
-                    </nav>
-                </div>
+                <label class="banner__menu" for="banner__mobile__menu">Menu</label>
+                <input class="banner__checkbox" id="banner__mobile__menu" type="checkbox">
+                <nav class="banner__nav">
+                    <a class="banner__nav__link" href="#homeLink">Home</a>
+                    <a class="banner__nav__link" href="#aboutLink">About</a>
+                    <a class="banner__nav__link" href="#">Service</a>
+                    <a class="banner__nav__link" href="#">Resume</a>
+                    <a class="banner__nav__link" href="#">Portfolio</a>
+                    <a class="banner__nav__link" href="#">Blog</a>
+                    <a class="banner__nav__link" href="#contactLink">Contact us</a>
+                </nav>
             </header>
-            <div class="banner__wraper">
-                <div class="baner__description">
-                    <p class="text">Hello,</p>
-                    <p class="baner__text">I am Jhon Smith</p>
-                    <p class="text text-large">Freelance web Designer @ Developer</p>
-                    <div class="baner__link__button">
-                        <a class="baner__link__hire" href="#" title="Click to hire">Hire</a>
-                    </div>
+            <div class="banner__wrap">
+                <div class="banner__text__wrap">
+                    <p class="banner__text">Hello,</p>
+                    <p class="banner__text banner__text--color-large-bold">I am Jhon Smith</p>
+                    <h1 class="banner__title">Freelance web Designer @ Developer</h1>
+                    <a class="banner__link" href="#" title="Click to hire">Hire</a>
                 </div>
-                <div class="buner__img"></div>
+                <div class="bunner__img"></div>
             </div>
         </section>
-<!--Section ABOUT ME-->
+<!--about me section-->
         <section class="container about" id="aboutLink">
             <h2 class="about__title">About Me</h2>
-                <div class="about__container">
-                    <div>
-                        <div class="about__text">
-                            <p class="text text-large">Hello I am Jhon Smith, I am a freelance web designer or developer from Nowakhali, Bangladesh.</p>
-                            <p class="text">loream isam Mauris scelerisque ut ipsum id vulputate. Nulla laoreet, ligula vel congue ultricies, 
-                                nibh ipsum egestas nunc, id porta nibh nunc non felis. Vestibulum nibh urna, lobortis ut euismod.,</p>
-                        </div>
-                        <table class="about__table">
-                            <tbody>
-                                <tr><td class="about__table__lcol">Name:</td><td>Jhon Smith</td></tr>
-                                <tr><td class="about__table__lcol">Email:</td><td>jhonamith@gmail.com</td></tr>
-                                <tr><td class="about__table__lcol">Phone:</td><td>0586321470</td></tr>
-                                <tr><td class="about__table__lcol">Date of Birth:</td><td>21-Oct-1990</td></tr>
-                                <tr><td class="about__table__lcol">Name:</td><td>Jhon Smith</td></tr>
-                                <tr><td class="about__table__lcol">Address:</td><td>1212 Dhaka, Rampura, Btv  Brobon.</td></tr>
-                            </tbody>
-                        </table>
-                    <div class="about__link__button">
-                        <a class="about__link__hierme" href="#" title="Click to hire me">Hire me</a>
-                        <a class="about__link__dowonload"href="#" title="Click to Dowonload CV">Dowonload CV</a>
+            <span class="line">
+                <span class="line__circle__left"></span>
+                <span class="line__circle__right"></span>
+            </span>
+            <div class="about__wrap">
+                <div>
+                    <div class="about__text__wrap">
+                        <p class="about__text about__text--large">Hello I am Jhon Smith, I am a freelance web designer or developer from Nowakhali, Bangladesh.</p>
+                        <p class="about__text">loream isam Mauris scelerisque ut ipsum id vulputate. Nulla laoreet, ligula vel congue ultricies, 
+                            nibh ipsum egestas nunc, id porta nibh nunc non felis. Vestibulum nibh urna, lobortis ut euismod.,</p>
+                    </div>
+                    <table class="about__table">
+                        <tbody>
+                            <tr><td class="about__table__lcol">Name:</td><td class="about__table__rcol">Jhon Smith</td></tr>
+                            <tr><td class="about__table__lcol">Email:</td><td class="about__table__rcol">jhonamith@gmail.com</td></tr>
+                            <tr><td class="about__table__lcol">Phone:</td><td class="about__table__rcol">0586321470</td></tr>
+                            <tr><td class="about__table__lcol">Date of Birth:</td><td class="about__table__rcol">21-Oct-1990</td></tr>
+                            <tr><td class="about__table__lcol">Name:</td><td class="about__table__rcol">Jhon Smith</td></tr>
+                            <tr><td class="about__table__lcol">Address:</td><td class="about__table__rcol">1212 Dhaka, Rampura, Btv  Brobon.</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="about__link__wrap">
+                        <a class="about__link" href="#" title="Click to hire me">Hire me</a>
+                        <a class="about__link"href="#" title="Click to Dowonload CV">Dowonload CV</a>
                     </div>
                 </div>
-            <div class="about__img"></div>
+                <div class="about__img"></div>
             </div>
         </section>
-<!--Section CONTACT-->
-        <section class="container" id="contactLink">
+<!--contact section-->
+        <section class="container contact">
             <h2 class="contact__title">Contact Me</h2>
-            <div class="contact__description">
-                <div class="contact__contactblok">
-                    <div class="contact__container">
+            <span class="line">
+                <span class="line__circle__left"></span>
+                <span class="line__circle__right"></span>
+            </span>
+            <div class="contact__wrap">
+                <div class="contact__lists">
+                    <div class="contact__list">
                         <svg class="contact__svg"><use xlink:href="#home-icon"></svg>
-                        <div>
-                            <p class="text">Rapthame@gmail.com</p>
-                            <p class="text">Your email name@gmail.com</p>
+                        <div class="contact__list__wrap">
+                            <p class="contact__text">Rapthame@gmail.com</p>
+                            <p class="contact__text">Your email name@gmail.com</p>
                         </div>
                     </div>
-                    <div class="contact__container">
-                    <svg class="contact__svg"><use xlink:href="#phone-icon"></svg>
-                        <div>
-                            <p class="text">0088017123456</p>
-                            <p class="text">0088019315388</p>
+                    <div class="contact__list">
+                        <svg class="contact__svg"><use xlink:href="#phone-icon"></svg>
+                        <div class="contact__list__wrap">
+                            <p class="contact__text">0088017123456</p>
+                            <p class="contact__text">0088019315388</p>
                         </div>
                     </div>
-                    <div class="contact__container">
+                    <div class="contact__list">
                         <svg class="contact__svg"><use xlink:href="#location-icon"></svg>
-                        <div>
-                            <p class="text">Dhaka 1200, Rampura</p>
-                            <p class="text">Hatirzil, Bangladesh</p>
+                        <div class="contact__list__wrap">
+                            <p class="contact__text">Dhaka 1200, Rampura</p>
+                            <p class="contact__text">Hatirzil, Bangladesh</p>
                         </div>
                     </div>
                 </div>
-                <div class="contact__mesageblok">
-                    <div class="contact__editblok">
-                        <input class="contact__edit text" type="text" value="Your Name........">
-                        <input class="contact__edit text" type="email" value="Email Address.....">
+                <div class="contact__message">
+                    <div class="contact__edit__wrap">
+                        <input class="contact__edit" type="text" value="Your Name........">
+                        <input class="contact__edit" type="email" value="Email Address.....">
                     </div>
-                    <textarea class="contact__textarea text" >Your Messages.....</textarea><br>
-                    <input class="contact__btn" type="submit" value="Send messages">
+                    <textarea class="contact__txtarea">Your Messages.....</textarea><br>
+                    <input class="contact__btn" type="button" value="Send messages">
                 </div>
             </div>
         </section>
-<!--Section footer-->
-        <section class="container">
-            <footer class="section__footer">
-                    <p class="text">One Page Personal Protfolio Template By RapThame @ 2018</p>
-                <div class="footer-links">
+<!--footer section-->
+        <section class="container footer__wrap">
+            <footer class="footer">
+                <p class="footer__text">One Page Personal Protfolio Template By RapThame @ 2018</p>
+                <div class="footer__links__wrap">
                     <a class="footer__link" href="#">
                         <svg class="footer__svg"><use xlink:href="#facebook-icon"></svg>
                     </a>
