@@ -35,11 +35,13 @@ body {}
 }
 
 .grid--contact-me {
-    grid-template-areas: ". container-contact-me .";
+  grid-template-areas: ". container-contact-me .";
 }
 
 .container__contact-me {
     grid-area: container-contact-me;
+  flex-direction: column;
+
 }
 
 .grid--footer {
@@ -63,6 +65,7 @@ body {}
 
 .container__footer {
     justify-content: space-between;
+  align-items: center;
 }
 
 .container__header_menu {
@@ -97,6 +100,7 @@ body {}
 
 .footer__menu {
     display: flex;
+  width: 20rem;
     align-items: center;
 }
 
@@ -117,12 +121,17 @@ body {}
     border-radius: 25px;
     background: none;
     border: 2px solid #666666;
-    ;
+  text-transform: uppercase;
 }
 
 .button--orange {
     border: none;
     background-color: #fe7e11;
+}
+
+.button--submit {
+  margin-top: 3rem;
+  padding: 2% 5%;
 }
 
 .container__about-me {
@@ -153,4 +162,93 @@ body {}
 .container-title {
     text-align: center;
     margin: 0 0 4rem 0;
+}
+
+.icon {
+  height: 64%;
+  width: 20%;
+}
+
+.list__contact-me {
+  flex-direction: column;
+  width: 19vw;
+}
+
+.list__contact-me_item {
+  display: flex;
+  align-items: center;
+  height: 7rem;
+}
+
+.item__container {
+  margin-left: 2rem;
+}
+
+.container__form {
+  justify-content: space-between;
+}
+
+.form {
+  width: 38vw;
+}
+
+.form_input, .form_textarea {
+  width: 47%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #413f3f;
+  -webkit-transition: 0.5s;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+input[type=text]:focus, .form_textarea:focus {
+  border: 1px solid #fe7e11;
+}
+
+.form_textarea {
+  width: 100%;
+  margin-top: 2rem;
+  height: 68%;
+}
+
+.form__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button--submit:hover {
+  background-color: #FF7F50;
+}
+
+/*.menu__item {*/
+/*  background: url(img/facebook-logo.svg);*/
+/*}*/
+
+.link-social {
+
+  display: block;
+  width: 2rem;
+}
+
+.link-social--fb {
+   background: url(img/facebook-logo.png) no-repeat;
+ }
+
+.link-social--tw {
+  background: url(img/twitter-black-shape.png) no-repeat;
+}
+
+.link-social--inst {
+  background: url(img/instagram.png) no-repeat;
+}
+
+.link-social--dribble {
+  background: url(img/dribbble-logo.png) no-repeat;
+}
+
+.link-social--pint {
+  background: url(img/pinterest.png) no-repeat;
 }
