@@ -120,13 +120,13 @@
                         </div>
                     </li>
                 </ul>
-                <form class="form">
+                <form class="form" onsubmit="onSubmit();return false">
                     <div class="form__container">
-                        <input class="form_input" type="text" name="" id="" placeholder="Your Name........">
-                        <input class="form_input" type="text" name="" id="" placeholder="Email Address.....">
+                        <input class="form_input" type="text" name="" id="name" placeholder="Your Name........">
+                        <input class="form_input" type="email" name="" id="email" placeholder="Email Address.....">
                     </div>
-                    <textarea class="form_textarea" name="" id="" cols="30" rows="10" placeholder="Your Messages....."></textarea>
-                    <input class="title button button--orange button--submit" type="submit" value="send messages">
+                    <textarea class="form_textarea" name="" id="message" cols="30" rows="10" placeholder="Your Messages....."></textarea>
+                    <input id="submit" class="title button button--orange button--submit" type="submit" value="send messages">
                 </form>
             </div>
         </div>
@@ -156,6 +156,7 @@
             </menu>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
