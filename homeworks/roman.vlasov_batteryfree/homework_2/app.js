@@ -33,7 +33,6 @@ class SendMessage {
                     element.type.toLowerCase() === 'text'?element.value = 'Your Name........':0;
                     element.type.toLowerCase() === 'email'?element.value = 'Email Address.....':0;
                 };
-
             });
         });
 
@@ -50,7 +49,7 @@ class SendMessage {
 
     validationData() {
         const VALID_MAIL = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/;
-        const VALID_NAME = /^([a-zA-Z-])+\ [a-zA-Z-]/;
+        const VALID_NAME = /^([a-zA-Z])+\s{1}([a-zA-Z])+$/;
 
         this.elements.editsText.forEach(element => {
             if (element.value === 'Your Name........' || element.value === 'Email Address.....') {
@@ -99,7 +98,6 @@ class SendMessage {
             alert(this.alertMessageError);
         }
     }
-
 }
 document.addEventListener('DOMContentLoaded', () => {
     const sendMessage = new SendMessage(document.querySelector('.contact__message'));
