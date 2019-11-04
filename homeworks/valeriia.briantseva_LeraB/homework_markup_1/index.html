@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Work 1</title>
+</head>
+<body>
+
+<section class="block-contact">
+    <h3 class="block-title">Contact Me</h3>
+    <img class="block-title-img" src="images/lines.svg">
+    <div class="block-content-wrapper">
+        <div class="block-contact-data">
+            <ul>
+                <li class="content-item"><img src="images/home.svg" class=""><div class="contact-info"><p>Rapthame@gmail.com</p><p>Your email name@gmail.com</p></div></li>
+                <li class="content-item"><img src="images/home.svg" class=""><div class="contact-info"><p>0088017123456</p><p>0088019315388</p></div></li>
+                <li class="content-item"><img src="images/home.svg" class=""><div class="contact-info"><p>Dhaka 1200, Rampura</p><p>Hatirzil, Bangladesh</p></div></li>
+            </ul>
+        </div>
+        <div class="block-contact-form">
+            <form method="POST" onsubmit="return validateForm()">
+                <div class="user-name-wrapper">
+                    <input placeholder="Your Name........" type="text" id="field-user-name" class="user-name" required>
+                </div>
+                <div class="user-email-wrapper">
+                    <input placeholder="Email Address....." type="text" id="field-user-email" class="user-email" required>
+                </div>
+                <div class="message-wrapper">
+                    <textarea placeholder="Your Messages....." id="filed-message" class="message" required></textarea>
+                </div>
+                <button name="submit-data" type="button" id="btn-submit-messages" class="btn-submit">send messages</button>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+
+<script src="index.js"></script>

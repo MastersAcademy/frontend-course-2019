@@ -1,0 +1,115 @@
+.block-contact {
+  background-color: #fafafa;
+  padding: 5% 15%;
+}
+.block-contact .block-title {
+  color: #666;
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.block-contact .block-title-img {
+  margin: 0 auto;
+  display: block;
+}
+.block-content-wrapper {
+  overflow: hidden;
+  margin-top: 100px;
+}
+.block-contact-data {
+  width: 35%;
+  display: inline-block;
+  float: left;
+}
+.block-contact-form {
+  width: 65%;
+  display: inline-block;
+  float: right;
+}
+.block-contact-data ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.block-contact-data p {
+  max-width: 70%;
+  margin: 0;
+}
+.block-contact-form .user-name,
+.block-contact-form .user-email,
+.block-contact-form .message {
+  border: 1px solid #413f3f;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px;
+}
+.block-contact-form .user-name,
+.block-contact-form .user-email {
+  width: calc(100% - 32px);
+}
+.block-contact-form .user-name-wrapper {
+  float: left;
+  width: 48%;
+}
+.block-contact-form .user-email-wrapper {
+  float: right;
+  width: 48%;
+}
+.block-contact-form .message {
+  width: calc(100% - 32px);
+  margin-top: 25px;
+  min-height: 250px;
+}
+.block-contact-form .user-name:active,
+.block-contact-form .user-email:active,
+.block-contact-form .message:active,
+.block-contact-form .user-name:focus,
+.block-contact-form .user-email:focus,
+.block-contact-form .message:focus {
+  border: 1px solid #fe7e11;
+  outline: none;
+}
+.btn-submit {
+  background-color: #fe7e11;
+  color: #fffefe;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.btn-submit:hover,
+.btn-submit:focus,
+.btn-submit:active {
+  cursor: pointer;
+  opacity: 0.9;
+  outline: none;
+}
+.content-item {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.content-item img {
+  float: left;
+}
+.contact-info {
+  color: #555;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  display: inline-block;
+  width: 80%;
+  float: right;
+}
+.block-contact-form .error {
+  border-color: red;
+}
+
+.block-contact-form .error + p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.75rem;
+  color: red;
+  padding-left: 15px;
+}
