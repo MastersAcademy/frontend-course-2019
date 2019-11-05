@@ -1,0 +1,9 @@
+{
+  "name": "homework_1",
+  "version": "1.0.0",
+  "description": "node v13.0.1 npm 6.12.0",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
