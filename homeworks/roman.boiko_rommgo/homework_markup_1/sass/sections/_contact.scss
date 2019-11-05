@@ -1,0 +1,65 @@
+.contact {
+  padding: 110px 0;
+  .title-h2 {
+    margin-bottom: 130px;
+  }
+  .list-info {
+    color: $color-text;
+    li {
+      position: relative;
+      left: 60px;
+      padding-left: 30px;
+    }
+    li:nth-child(2) {
+      margin: 75px 0;
+    }
+    li:before {
+      content: "";
+      position: absolute;
+      left: -60px;
+      display: block;
+      width: 60px;
+      height: 60px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $color-gray;
+      border-radius: 50px;
+      border: 5px solid $color-accent;
+      padding: 10px;
+    }
+    li:nth-child(1):before{
+      content:url(../img/svg/point.svg);
+    }
+    li:nth-child(2):before{
+      content:url(../img/svg/phone.svg);
+    }
+    li:nth-child(3):before{
+      content:url(../img/svg/point.svg);
+    }
+  }
+  input {
+    width: 100%;
+    margin-bottom: 30px ;
+  }
+  .textarea-text {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 50px;
+    resize: none;
+  }
+  .btn {
+    width: 220px;
+  }
+
+  @media screen and (max-width: 767.98px) { //sm
+    .info-user {
+      margin-bottom: 50px;
+    }
+    .contact .list-info li:nth-child(2) {
+      margin: 30px 0;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+}

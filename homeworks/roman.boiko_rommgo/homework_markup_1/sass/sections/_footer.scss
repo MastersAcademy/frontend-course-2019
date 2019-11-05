@@ -1,0 +1,29 @@
+.footer {
+  color: $color-text;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-bg;
+  ul {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  li {
+    display: inline;
+  }
+  .svg-icon {
+    height: 20px;
+    width: 50px;
+    path:hover {
+      fill: $color-accent;
+    }
+  }
+  @media screen and (max-width: 767.98px) { //sm
+    .social-list {
+      //margin-left: -50%;
+      //transform: translateX(73%);
+    }
+  }
+}
