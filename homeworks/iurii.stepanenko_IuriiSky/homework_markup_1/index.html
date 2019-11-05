@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rongila.</title>
     <link rel="stylesheet" href="style.css">
+    <script src="contactForm.js" defer></script>
 </head>
 <body>
     <header class="header-wrapper">
@@ -42,7 +43,7 @@
             <img src="./images/Layer3.png" alt="Cat" class="second-foto">
             <div class="full-information">
                 <p class="my-greeting">Hello I am Iurii Stepanenko, I am a freelance web desinger or developer from Cherkassy, Ukraine.</p>
-                <p class="basic-text-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi et omnis reiciendis sunt adipisci dicta ducimus, 
+                <p class="basic-text-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi et omnis reiciendis sunt adipisci dicta ducimus,
                 placeat hic iste, facere at reprehenderit ex magnam fuga. Illum rem debitis ipsa aspernatur?</p>
                     <p class="basic-name">Name</p> <span class="name">Iurii Stepanenko</span>
                     <p class="basic-email">Email</p> <span class="email">uzik.fk11@gmail.com</span>
@@ -76,23 +77,22 @@
                 </button>
                 <p>18021, Cherkassy, Ukraine</p>
             </div>
-            <form method="post" action="/" class="post-form">
+            <form class="post-form">
                 <div class="field">
                     <label for="contact-name"></label>
-                    <input type="text" id="contact-name" placeholder="   Your Name:" />
+                    <input type="text" id="contact-name" placeholder="   Your Name:" required/>
                 </div>
                 <div class="field">
                     <label for="contact-email"></label>
-                    <input type="email" id="contact-email" placeholder="   Email adress:" />
+                    <input type="email" id="contact-email" placeholder="   Email adress:" required />
                 </div>
                 <div class="field textarea-field">
                     <label for="contact-message"></label>
-                    <textarea id="contact-message" rows="12" placeholder="  Your message..."></textarea>
+                    <textarea id="contact-message" rows="12" placeholder="  Your message..." maxlength="1000" required></textarea>
                 </div>
-                <button type="submit" class=" basic-button_style button-send_message">Send message</button>
+                <button type="submit" id="send-data_form" class="basic-button_style button-send_message">Send message</button>
             </form>
     </section>
-   
     <footer>
         <p class="footer-text">One page Personal Portfolio template by rap thame &#64; 2018</p>
         <div>
