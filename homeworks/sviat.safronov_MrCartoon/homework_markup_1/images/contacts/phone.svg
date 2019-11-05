@@ -1,0 +1,25 @@
+<svg width="71" height="71" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewbox="375 2227 295 71">
+  <svg width="71" height="71" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+    <svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="1 1.999 70 70" fill="#fe7e11">
+      <path fill="#FE7E11" paint-order="stroke fill markers" fill-rule="evenodd" d="M36 2c19.33 0 35 15.67 35 35S55.33 72 36 72 1 56.33 1 37 16.67 2 36 2z"/>
+    </svg>
+  </svg>
+
+  <svg x="5" y="5" width="61" height="61" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+    <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="2 1.999 60 60" fill="#818181">
+      <path paint-order="stroke fill markers" fill-rule="evenodd" d="M32 1.999c16.568 0 30 13.431 30 30 0 16.569-13.432 30-30 30C15.43 62 2 48.568 2 32 2 15.43 15.43 2 32 2z"/>
+    </svg>
+  </svg>
+
+  <!-- phone ico -->
+
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     x="21" y="21" width="28" height="28" fill="#fff"
+     viewBox="0 0 448 448" style="enable-background:new 0 0 448 448;" xml:space="preserve">
+    <path d="M418.688,318.72c-34.624-3.168-68.384-11.968-100.288-26.176c-15.68-7.072-34.016-0.672-41.728,14.56l-21.76,43.2
+      c-65.984-36.576-120.704-91.328-157.216-157.248l43.168-21.728c15.232-7.648,21.664-25.984,14.624-41.728
+      C141.248,97.728,132.416,64,129.28,29.312C127.744,12.608,114.144,0,97.6,0H16C7.168,0,0,7.168,0,16
+      c0,65.152,14.208,127.968,42.208,186.784c42.528,88.384,114.624,160.48,203.072,203.04C304.064,433.824,366.88,448,432,448
+      c8.832,0,16-7.168,16-16v-81.6C448,333.856,435.392,320.224,418.688,318.72z"/>
+  </svg>
+</svg>

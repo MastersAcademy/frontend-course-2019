@@ -1,0 +1,6 @@
+<svg width="221" height="51" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.387 221 50.227">
+  <svg xmlns="http://www.w3.org/2000/svg" width="221" height="51" viewBox="2 2 220 50" fill="#fe7e11">
+    <path fill="#FE7E11" paint-order="stroke fill markers" fill-rule="evenodd" d="M27 2h170c13.807 0 25 11.192 25 25 0 13.807-11.193 25-25 25H27C13.193 52 2 40.806 2 27 2 13.191 13.193 2 27 2z"/>
+  </svg>
+  <text x="29" y="32" font-size="20" fill="#fff">SEND MESSAGES</text>
+</svg>
