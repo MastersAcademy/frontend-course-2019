@@ -26,7 +26,7 @@
         }
     }
 
-    let showAlert = document.querySelector('form button');
-    showAlert.addEventListener('click', validateForm, true);
+    let showAlert = document.querySelector('form');
+    showAlert.addEventListener('submit', validateForm, false);
 
 }())
