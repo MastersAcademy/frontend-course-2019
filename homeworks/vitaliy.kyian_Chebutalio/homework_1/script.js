@@ -43,6 +43,8 @@ window.onload = function () {
       message.value = '';
       message.placeholder = "Це схоже на спам, видаліть спеціальні символи";
       event.preventDefault();
+    } else if (name.value === '' || mail.value === '' || message.value === '') {
+      event.preventDefault();
     } else {
       alert(`Ім'я: ${name.value}. \nЕмеіл: ${mail.value}. \nТекст повідомлення: ${message.value}.`);
     }
