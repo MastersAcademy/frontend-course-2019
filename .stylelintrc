@@ -6,14 +6,14 @@
 
     "block-closing-brace-newline-after": "always",
 
-    "selector-pseudo-element-colon-notation": "single",
+    "selector-pseudo-element-colon-notation": "double",
     "selector-pseudo-element-case": "lower",
     "selector-max-specificity": "0,7,2",
     "selector-type-case": "lower",
 
     "number-leading-zero": "never",
     "number-no-trailing-zeros": true,
-    "unit-whitelist": ["em", "rem", "px", "%", "s", "vh", "vw", "deg", "ms"],
+    "unit-whitelist": ["em", "rem", "px", "%", "s", "vh", "vw", "deg", "ms", "fr"],
 
     "color-hex-case": "upper",
     "color-named": "never",
