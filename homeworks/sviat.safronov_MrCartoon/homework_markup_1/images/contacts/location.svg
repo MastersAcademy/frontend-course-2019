@@ -1,0 +1,23 @@
+<svg width="71" height="71" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewbox="375 2227 295 71">
+  <svg width="71" height="71" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+    <svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="1 1.999 70 70" fill="#fe7e11">
+      <path fill="#FE7E11" paint-order="stroke fill markers" fill-rule="evenodd" d="M36 2c19.33 0 35 15.67 35 35S55.33 72 36 72 1 56.33 1 37 16.67 2 36 2z"/>
+    </svg>
+  </svg>
+
+  <svg x="5" y="5" width="61" height="61" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+    <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="2 1.999 60 60" fill="#818181">
+      <path paint-order="stroke fill markers" fill-rule="evenodd" d="M32 1.999c16.568 0 30 13.431 30 30 0 16.569-13.432 30-30 30C15.43 62 2 48.568 2 32 2 15.43 15.43 2 32 2z"/>
+    </svg>
+  </svg>
+
+  <!-- location ico -->
+
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="21" y="21" width="28" height="28" fill="#fff"
+    viewBox="0 0 54.757 54.757" style="enable-background:new 0 0 54.757 54.757;" xml:space="preserve">
+    <path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+      L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M27.557,26c-3.859,0-7-3.141-7-7s3.141-7,7-7s7,3.141,7,7
+      S31.416,26,27.557,26z"/>
+  </svg>
+</svg>
