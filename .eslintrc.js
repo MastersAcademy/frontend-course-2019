@@ -29,6 +29,8 @@ module.exports = {
 
         // disable rules from base configurations
         "no-console": "off",
+        "no-alert": "off",
+        "func-names": "off",
         "block-scoped-var": "error",
         "guard-for-in": "error",
         "no-loop-func": "error",
