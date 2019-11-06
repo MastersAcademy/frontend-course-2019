@@ -25,6 +25,66 @@
   padding: 0 calc((100% - 1200px) / 2);
 }
 
+.section__header {
+  height: 175px;
+  position: relative;
+  text-align: center;
+}
+
+.section__header-title {
+  margin: 0;
+  padding-top: 105px;
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 38px;
+}
+
+.section__top-divider {
+  display: inline-block;
+  position: relative;
+  width: 130px;
+  height: 2px;
+  background-color: var(--global--color--secondary);
+}
+
+.section__top-divider:before {
+  content: "";
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: -5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 2px solid var(--global--color--primary);
+}
+
+.section__top-divider:after {
+  content: "";
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 2px solid var(--global--color--primary);
+}
+
+.section__bottom-divider {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  display: inline-block;
+  width: 110px;
+  height: 2px;
+  background-color: var(--global--color--primary);
+}
+
 /* Button styling */
 
 .button {
@@ -46,14 +106,6 @@
   border: 2px solid var(--global--color--primary);
   background-color: transparent;
   color: var(--global--color--primary);
-}
-
-.section-header {
-  margin: 0;
-  padding-top: 105px;
-  font-size: 2.5em;
-  text-align: center;
-  line-height: 38px;
 }
 
 /* Header section */
@@ -142,60 +194,6 @@
   text-align: center;
   margin: 0;
   line-height: 38px;
-}
-
-.header-underlines {
-  position: relative;
-  width: 150px;
-  height: 30px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.header-underlines__top-line {
-  display: inline-block;
-  position: relative;
-  width: 130px;
-  height: 2px;
-  background-color: var(--global--color--secondary);
-}
-
-.header-underlines__top-line:before {
-  content: "";
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  left: -10px;
-  top: -5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  border: 2px solid var(--global--color--primary);
-}
-
-.header-underlines__top-line:after {
-  content: "";
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  right: -10px;
-  top: -5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  border: 2px solid var(--global--color--primary);
-}
-
-.header-underlines__bottom-line {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  display: inline-block;
-  width: 110px;
-  height: 2px;
-  background-color: var(--global--color--primary);
 }
 
 .about-me__content {
