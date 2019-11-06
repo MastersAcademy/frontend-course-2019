@@ -9,7 +9,7 @@
     <script defer src="index.js"></script>
 </head>
 <body class="body">
-    <header class="header section-wrapper">
+    <header class="header section">
         <img class="header__logo" src="./images/logo.png" alt="Rongila logo">
         <nav>
             <ul class="header__navigation-list">
@@ -38,18 +38,18 @@
         </nav>
     </header>
 
-    <div class="greeting section-wrapper">
-        <div class="greeting__text-wrapper">
-            <span class="greeting__hello">Hello,</span>
-            <span class="greeting__name">I am Alex Kuskov</span>
-            <span class="greeting__profession">Future Front-End Developer <br>@ Not Designer</span>
-            <button class="greeting__hire-button primary-button">Hire</button>
+    <div class="greeting section">
+        <div class="greeting-text">
+            <span class="greeting-text__hello">Hello,</span>
+            <span class="greeting-text__name">I am Alex Kuskov</span>
+            <span class="greeting-text__profession">Future Front-End Developer <br>@ Not Designer</span>
+            <button class="greeting-text__hire-button primary-button">Hire</button>
         </div>
         
         <img class="greeting__image" src="./images/image-1.png" alt="Image #1">
     </div>
 
-    <div class="about-me section-wrapper">
+    <section class="about-me section">
         <h2 class="section-header">About Me</h2>
         <div class="header-underlines">
             <div class="header-underlines__top-line"></div>
@@ -58,45 +58,45 @@
         <div class="about-me__content">
             <img class="about-me__image" src="./images/image-2.png" alt="Image #2">
 
-            <div class="about-me__text-wrapper">
-                <div class="about-me__greeting">
+            <div class="about-me-text">
+                <div class="about-me-text__greeting">
                     Hello I am Alex Kuskov, I don't have much to say about myself, 
                     so I just copy-paste text from PSD template :)
                 </div>
 
-                <div class="about-me__description">
+                <div class="about-me-text__description">
                     loream isam Mauris scelerisque ut ipsum id vulputate. Nulla laoreet, ligula vel 
                     congue ultricies, nibh ipsum egestas nunc, id porta nibh nunc non felis. Vestibulum 
                     nibh urna, lobortis ut euismod., 
                 </div>
 
-                <ul class="about-me__list">
-                    <li class="about-me__list-item">Name:</li>
-                    <li class="about-me__list-item">Email:</li>
-                    <li class="about-me__list-item">Phone:</li>
-                    <li class="about-me__list-item">Date of Birth:</li>
-                    <li class="about-me__list-item">Nationality:</li>
-                    <li class="about-me__list-item">Address:</li>
+                <ul class="about-me-text__list">
+                    <li class="about-me-text__list-item">Name:</li>
+                    <li class="about-me-text__list-item">Email:</li>
+                    <li class="about-me-text__list-item">Phone:</li>
+                    <li class="about-me-text__list-item">Date of Birth:</li>
+                    <li class="about-me-text__list-item">Nationality:</li>
+                    <li class="about-me-text__list-item">Address:</li>
                 </ul>
 
-                <ul class="about-me__list about-me__list--values">
-                    <li class="about-me__list-item">Jhon Smith</li>
-                    <li class="about-me__list-item">jhonamith@gmail.com</li>
-                    <li class="about-me__list-item">0586321470</li>
-                    <li class="about-me__list-item">21-Oct-1990</li>
-                    <li class="about-me__list-item">Bangladesh</li>
-                    <li class="about-me__list-item">1212 Dhaka, Rampura, Btv  Brobon.</li>
+                <ul class="about-me-text__list about-me-text__list--values">
+                    <li class="about-me-text__list-item">Jhon Smith</li>
+                    <li class="about-me-text__list-item">jhonamith@gmail.com</li>
+                    <li class="about-me-text__list-item">0586321470</li>
+                    <li class="about-me-text__list-item">21-Oct-1990</li>
+                    <li class="about-me-text__list-item">Bangladesh</li>
+                    <li class="about-me-text__list-item">1212 Dhaka, Rampura, Btv  Brobon.</li>
                 </ul>
 
-                <div class="about-me__buttons">
-                    <button class="about-me__hire-me-btn primary-button">Hire me</button>
-                    <button class="about-me__download-cv-btn">Download cv</button>
+                <div class="about-me-buttons">
+                    <button class="about-me-buttons__hire-me-btn primary-button">Hire me</button>
+                    <button class="about-me-buttons__download-cv-btn">Download cv</button>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="contact-me section-wrapper">
+    <section class="contact-me section">
         <h2 class="section-header">Contact Me</h2>
         <div class="header-underlines">
             <div class="header-underlines__top-line"></div>
@@ -106,8 +106,8 @@
         <div class="contact-me__content">
             <address class="contact-details">
                 <div class="contact-details__item">
-                    <div class="contact-details__icon-wrapper">
-                        <img class="contact-details__icon" src="./images/house-icon.svg" alt="House icon">
+                    <div class="icon-background">
+                        <img class="icon-background__icon" src="./images/house-icon.svg" alt="House icon">
                     </div>
                     <span class="contact-details__text">
                         Rapthame@gmail.com <br>
@@ -116,8 +116,8 @@
                 </div>
                 
                 <div class="contact-details__item">
-                    <div class="contact-details__icon-wrapper">
-                        <img class="contact-details__icon" src="./images/phone-cell.svg" alt="Phone icon">
+                    <div class="icon-background">
+                        <img class="icon-background__icon" src="./images/phone-cell.svg" alt="Phone icon">
                     </div>
                     <span class="contact-details__text">
                         0088017123456 <br>
@@ -126,8 +126,8 @@
                 </div>
 
                 <div class="contact-details__item">
-                    <div class="contact-details__icon-wrapper">
-                        <img class="contact-details__icon" src="./images/placeholder.svg" alt="Placeholder icon">
+                    <div class="icon-background">
+                        <img class="icon-background__icon" src="./images/placeholder.svg" alt="Placeholder icon">
                     </div>
                     <span class="contact-details__text">
                         Dhaka 1200, Rampura <br>
@@ -150,9 +150,9 @@
                 <button class="form__send-messages-btn primary-button" type="submit">Send message</button>
             </form>
         </div>
-    </div>
+    </section>
 
-    <footer class="footer section-wrapper">
+    <footer class="footer section">
         <span class="footer__text">One Page Personal Protfolio Template By RapThame @ 2018</span>
         <div class="footer__social-media-links">
             <!-- Facebook link -->

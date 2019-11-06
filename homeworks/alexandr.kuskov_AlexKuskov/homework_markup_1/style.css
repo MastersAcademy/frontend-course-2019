@@ -21,7 +21,7 @@
 
 /* Sets paddings to make content width equals 1200px */
 
-.section-wrapper {
+.section {
   padding: 0 calc((100% - 1200px) / 2);
 }
 
@@ -87,18 +87,18 @@
   padding-top: 90px;
 }
 
-.greeting__text-wrapper {
+.greeting-text {
   width: 600px;
   display: flex;
   flex-direction: column;
   padding-top: 125px;
 }
 
-.greeting__hello {
+.greeting-text__hello {
   font-size: 1.25em;
 }
 
-.greeting__name {
+.greeting-text__name {
   font-size: 3.75em;
   font-weight: 900;
   line-height: 50px;
@@ -106,12 +106,12 @@
   padding: 30px 0;
 }
 
-.greeting__profession {
+.greeting-text__profession {
   font-size: 1.5em;
   margin-bottom: 60px;
 }
 
-.greeting__hire-button {
+.greeting-text__hire-button {
   height: 50px;
   width: 150px;
 }
@@ -199,23 +199,23 @@
   margin: 0 130px 0 30px;
 }
 
-.about-me__text-wrapper {
+.about-me-text {
   color: var(--global--color--primary-dark);
   padding-right: 115px;
 }
 
-.about-me__greeting {
+.about-me-text__greeting {
   font-size: 1.25em;
   margin-bottom: 20px;
 }
 
-.about-me__description {
+.about-me-text__description {
   font-size: .938em;
   line-height: 1.7em;
   margin-bottom: 30px;
 }
 
-.about-me__list {
+.about-me-text__list {
   list-style-type: none;
   display: inline-block;
   font-size: .875em;
@@ -223,22 +223,22 @@
   margin: 0;
 }
 
-.about-me__list-item {
+.about-me-text__list-item {
   margin-bottom: 18px;
 }
 
-.about-me__list--values {
+.about-me-text__list--values {
   margin-left: 120px;
   margin-bottom: 17px;
 }
 
-.about-me__hire-me-btn {
+.about-me-buttons__hire-me-btn {
   width: 160px;
   height: 50px;
   margin-right: 30px;
 }
 
-.about-me__download-cv-btn {
+.about-me-buttons__download-cv-btn {
   width: 220px;
   height: 50px;
   box-sizing: border-box;
@@ -277,14 +277,14 @@
   margin-bottom: 50px;
 }
 
-.contact-details__icon-wrapper {
+.icon-background {
   display: inline-block;
   position: relative;
   width: 70px;
   height: 70px;
 }
 
-.contact-details__icon-wrapper:before {
+.icon-background:before {
   content: "";
   display: block;
   position: absolute;
@@ -297,7 +297,7 @@
   z-index: -1;
 }
 
-.contact-details__icon-wrapper:after {
+.icon-background:after {
   content: "";
   display: block;
   position: absolute;
@@ -310,7 +310,7 @@
   z-index: -1;
 }
 
-.contact-details__icon {
+.icon-background__icon {
   position: absolute;
   right: 0;
   left: 0;
