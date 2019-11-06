@@ -22,13 +22,13 @@
     </picture>
     <nav class="header_nav">
       <ol class='list'>
-        <li class='list-item'>link 1</li>
-        <li class='list-item'>link 2</li>
-        <li class='list-item'>link 3</li>
-        <li class='list-item'>link 4</li>
-        <li class='list-item'>link 5</li>
-        <li class='list-item'>link 6</li>
-        <li class='list-item'>link 7</li>
+        <li class='list-item'><a href="#" class="header-link link">link</a></li>
+        <li class='list-item'><a href="#" class="header-link link">link</a></li>
+        <li class='list-item'><a href="#" class="header-link link">link</a></li>
+        <li class='list-item'><a href="#" class="header-link link">link</a></li>
+        <li class='list-item'><a href="#" class="header-link link">link</a></li>
+        <li class='list-item'><a href="#" class="header-link link">link</a></li>
+        <li class='list-item'><a href="#" class="header-link link">link</a></li>
       </ol>
     </nav>
   </header>
@@ -93,28 +93,61 @@
       </div>
     </section>
     <section class="contact main-section">
-      <h2 calss="contact-title">Contact Me</h2>
-      <ul class="contact-list">
-        <li>
-          <svg></svg>
-          <p>cont 1</p>
-          <p>cont 2</p>
+      <h2 class="contact-title section-title">Contact Me</h2>
+      <ul class="contact_list">
+        <li class="contact_list-item">
+          <div class="svg-wrapper">
+            <svg class="contact_svg" height="512pt" viewBox="0 0 512 512" width="512pt">
+              <path
+                d="m503.871094 231.433594-236.800782-226.984375c-6.183593-5.933594-15.957031-5.933594-22.140624 0l-237.035157 227.21875c-5.015625 5.015625-7.894531 11.925781-7.894531 18.988281 0 14.699219 11.96875 26.667969 26.667969 26.667969h37.332031v202.664062c0 17.664063 14.335938 32 32 32h90.667969c8.832031 0 16-7.167969 16-16v-138.664062c0-2.925781 2.386719-5.335938 5.332031-5.335938h96c2.921875 0 5.332031 2.410157 5.332031 5.335938v138.664062c0 8.832031 7.167969 16 16 16h90.667969c17.664062 0 32-14.335937 32-32v-202.664062h37.332031c14.699219 0 26.667969-11.96875 26.667969-26.667969 0-7.0625-2.878906-13.972656-8.128906-19.222656zm0 0" />
+              </svg>
+          </div>
+          <p class="contact_email contact_info">
+            <span>
+              Rapthame@gmail.com
+            </span>
+            <span>Your email name@gmail.com</span>
+          </p>
         </li>
-        <li>
-          <svg></svg>
-          <p>cont 1</p>
-          <p>cont 2</p>
+        <li class="contact_list-item">
+          <div class="svg-wrapper">
+            <svg class="contact_svg" x="0px" y="0px" viewBox="0 0 448 448">
+              <path
+                d="M418.688,318.72c-34.624-3.168-68.384-11.968-100.288-26.176c-15.68-7.072-34.016-0.672-41.728,14.56l-21.76,43.2c-65.984-36.576-120.704-91.328-157.216-157.248l43.168-21.728c15.232-7.648,21.664-25.984,14.624-41.728C141.248,97.728,132.416,64,129.28,29.312C127.744,12.608,114.144,0,97.6,0H16C7.168,0,0,7.168,0,16c0,65.152,14.208,127.968,42.208,186.784c42.528,88.384,114.624,160.48,203.072,203.04C304.064,433.824,366.88,448,432,448c8.832,0,16-7.168,16-16v-81.6C448,333.856,435.392,320.224,418.688,318.72z" />
+              </svg>
+          </div>
+
+
+          <p class="contact_phone contact_info">
+            <span>
+              0088017123456
+
+            </span>
+            <span>
+              0088019315388
+            </span>
+          </p>
         </li>
-        <li>
-          <svg></svg>
-          <p>cont 1</p>
-          <p>cont 2</p>
+        <li class="contact_list-item">
+          <div class="svg-wrapper">
+            <svg x="0px" y="0px" class="contact_svg" viewBox="0 0 512 512">
+              <path
+                d="M256,0C150.112,0,64,86.112,64,192c0,133.088,173.312,307.936,180.672,315.328C247.808,510.432,251.904,512,256,512s8.192-1.568,11.328-4.672C274.688,499.936,448,325.088,448,192C448,86.112,361.888,0,256,0z M256,288c-52.928,0-96-43.072-96-96s43.072-96,96-96c52.928,0,96,43.072,96,96C352,244.928,308.928,288,256,288z" />
+              </svg>
+          </div>
+
+          <p class="contact_address contact_info">
+            <span>
+              Dhaka 1200, Rampura
+
+            </span><span>Hatirzil, Bangladesh</span>
+          </p>
         </li>
       </ul>
 
       <form class="contact-form" action="">
-        <input type="text">
-        <input type="text">
+        <input type="text" placeholder="First Name ...." class="form_input">
+        <input type="text" placeholder="Second Name ...." class="contact-form_input form_input">
         <textarea name="" class="contact-form_textarea"></textarea>
 
         <button class="contact-form_btn primary-btn" type="submit">Send Message</button>
@@ -123,7 +156,7 @@
     </section>
   </main>
   <footer class="footer">
-    <p>
+    <p class="footer_copyright">
       <!--   copyright     -->
       One Page Personal Protfolio Template By RapThame @ 2018
     </p>
