@@ -1,17 +1,164 @@
-.block-contact {
-  background-color: #fafafa;
-  padding: 5% 15%;
+/*Common styles*/
+.container {
+  padding-left: 15%;
+  padding-right: 15%;
 }
-.block-contact .block-title {
+body {
+  margin: 0;
+}
+h1 {
+  color: #fe7e11;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 2.5rem 0;
+}
+.block-title {
   color: #666;
   font-size: 2.25rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 0.5rem;
 }
-.block-contact .block-title-img {
+.block-title-img {
   margin: 0 auto;
   display: block;
+}
+input, textarea {
+  border: 1px solid #413f3f;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px;
+}
+.btn-orange {
+  background-color: #fe7e11;
+  color: #fffefe;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 1.25rem;
+  border: none;
+  border-radius: 2rem;
+  margin-top: 50px;
+  min-width: 9.25rem;
+}
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active {
+  cursor: pointer;
+  opacity: 0.9;
+  outline: none;
+}
+.block-left {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+.block-right {
+  width: 50%;
+  display: inline-block;
+  float: right;
+}
+h4 {
+  color: #666;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 0;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+/*Header*/
+
+header {
+  background-color: #fafafa;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  overflow: hidden;
+}
+.logo {
+  display: inline-block;
+  width: 24%;
+  float: left;
+}
+nav {
+  display: inline-block;
+  width: 75%;
+  float: right;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+nav li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 6px;
+  text-transform: uppercase;
+}
+nav li a:active,
+nav li a:focus,
+nav li a:hover {
+  color: #fe7e11;
+}
+/* User info section*/
+
+.block-user-info {
+  overflow: hidden;
+  background-color: #fafafa;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.block-info p {
+  color: #555;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 6px;
+  margin: 0;
+}
+/*About user block*/
+.block-about {
+  overflow: hidden;
+  background-color: #f0f0f0;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+.block-about p {
+  color: #555;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.block-about li {
+  color: #555;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.item-label {
+  display: inline-block;
+  width: 25%;
+}
+.item-value {
+  display: inline-block;
+  width: 70%;
+}
+.user-picture-left,
+.about-user {
+  margin-top: 6rem;
+}
+/* Contact block */
+.block-contact {
+  background-color: #fafafa;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .block-content-wrapper {
   overflow: hidden;
@@ -28,20 +175,11 @@
   float: right;
 }
 .block-contact-data ul {
-  list-style-type: none;
   padding-left: 0;
 }
 .block-contact-data p {
   max-width: 70%;
   margin: 0;
-}
-.block-contact-form .user-name,
-.block-contact-form .user-email,
-.block-contact-form .message {
-  border: 1px solid #413f3f;
-  font-size: 14px;
-  font-weight: 400;
-  padding: 15px;
 }
 .block-contact-form .user-name,
 .block-contact-form .user-email {
@@ -69,24 +207,6 @@
   border: 1px solid #fe7e11;
   outline: none;
 }
-.btn-submit {
-  background-color: #fe7e11;
-  color: #fffefe;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 20px;
-  margin-top: 50px;
-}
-.btn-submit:hover,
-.btn-submit:focus,
-.btn-submit:active {
-  cursor: pointer;
-  opacity: 0.9;
-  outline: none;
-}
 .content-item {
   overflow: hidden;
   margin-bottom: 50px;
@@ -106,10 +226,41 @@
 .block-contact-form .error {
   border-color: red;
 }
-
 .block-contact-form .error + p {
   margin: 0.25rem 0 0 0;
   font-size: 0.75rem;
   color: red;
   padding-left: 15px;
+}
+/*Footer */
+footer {
+  background-color: #f0f0f0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.social-buttons {
+  display: inline-block;
+  width: 50%;
+}
+.social-buttons ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.social-buttons li:not(:last-child) {
+  margin-right: 10%;
+}
+.social-buttons img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.block-copyright {
+  display: inline-block;
+  width: 49%;
+}
+.block-copyright p {
+  color: #555;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
 }
