@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 * {
   margin: 0;
   padding: 0;
@@ -360,7 +362,7 @@
   align-items: center;
 }
 
-.footer__text { 
+.footer__text {
   color: #555555;
   font-size: 14px;
   font-weight: 400;

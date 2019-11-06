@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 /* STYLE REBOOT */
 
 *,
@@ -572,7 +574,7 @@ header .nav li:last-child {
 
 .about-me .d-flex .left-side {
   flex: 2;
-} 
+}
 
 .about-me .d-flex .right-side {
   flex: 3;
@@ -608,12 +610,12 @@ header .nav li:last-child {
   margin-top: 30px;
 }
 
-.about-me .btn-accent { 
+.about-me .btn-accent {
   max-width: 200px;
   margin-right: 30px;
 }
 
-.about-me .btn-download { 
+.about-me .btn-download {
   max-width: 220px;
 }
 
@@ -630,7 +632,7 @@ header .nav li:last-child {
 
 .contact-me .left-side {
   flex-grow: 1;
-} 
+}
 
 .contact-me .right-side {
   flex-grow: 6;
@@ -686,7 +688,7 @@ header .nav li:last-child {
   transition: .3s ease-out;
 }
 
-.contact-me .contact-form input:focus, 
+.contact-me .contact-form input:focus,
 .contact-me .contact-form textarea:focus {
   border-color: #fe7e11;
 }
