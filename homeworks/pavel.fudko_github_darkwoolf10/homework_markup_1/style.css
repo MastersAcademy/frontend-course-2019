@@ -1,0 +1,213 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-height: 100%;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: floralwhite;
+}
+
+header .logo {
+  height: 60px;
+  width: 60px;
+}
+
+header ul {
+  margin: 1em 0 .5em;
+  text-align: center;
+}
+
+header li {
+  display: inline;
+}
+header a {
+  display: inline-block;
+  padding: .5em 1.5em;
+}
+
+.welcome {
+  height: 600px;
+  padding-top: 100px;
+  display: flex;
+  background-color: floralwhite;
+}
+
+.welcome-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.full-width {
+  text-align: left;
+}
+
+.big-text {
+  font-size: 40px;
+  color: orangered;
+}
+
+.welcome-btn {
+  background-color: darkorange;
+  margin: 30px;
+  height: 50px;
+  padding: 0 25px;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  border-radius: 80px;
+}
+
+.welcome aside {
+  flex: 50%;
+}
+
+.about {
+  height: 700px;
+  background-color: whitesmoke;
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-content section{
+  flex: 50%;
+}
+
+.about-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about h2 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-info h3, h4 {
+  margin-bottom: 20px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: floralwhite;
+
+}
+
+.contact-us h2 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container{
+  display: flex;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  list-style: none;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact-item img {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 100px;
+  background-color: whitesmoke;
+  margin-right: 5px;
+}
+
+.about-input {
+  width: 400px;
+  height: 40px;
+}
+
+.about-input:active {
+  border: 1px solid orangered;
+}
+
+.about-textarea {
+  margin-top: 30px;
+  width: 810px;
+  border: 1px solid orangered;
+}
+
+.about-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkorange;
+  margin: 30px;
+  height: 50px;
+  padding: 0 25px;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  border-radius: 80px;
+}
+
+footer {
+  display: flex;
+  background-color: whitesmoke;
+}
+
+footer aside {
+  display: flex;
+  flex: 50%;
+}
+
+footer aside p {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer aside li {
+  display: inline;
+}
+
+footer aside nav, ul {
+  display: flex;
+}
+
+footer aside nav ul li {
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon img {
+  height: 30px;
+  width: 30px;
+  margin: 40px;
+}
