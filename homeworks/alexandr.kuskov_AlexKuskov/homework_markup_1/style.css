@@ -25,18 +25,27 @@
   padding: 0 calc((100% - 1200px) / 2);
 }
 
-/* Primary button styling */
+/* Button styling */
 
-.primary-button {
+.button {
   font-size: 1em;
   padding: 0;
-  border: none;
-  background-color: var(--global--color--secondary);
-  color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-weight: 900;
   border-radius: 30px;
   cursor: pointer;
+}
+
+.button--primary {
+  border: none;
+  background-color: var(--global--color--secondary);
+  color: rgb(255, 255, 255);
+}
+
+.button--secondary {
+  border: 2px solid var(--global--color--primary);
+  background-color: transparent;
+  color: var(--global--color--primary);
 }
 
 .section-header {
@@ -111,7 +120,7 @@
   margin-bottom: 60px;
 }
 
-.greeting-text__hire-button {
+.greeting-text__hire-btn {
   height: 50px;
   width: 150px;
 }
@@ -242,15 +251,6 @@
   width: 220px;
   height: 50px;
   box-sizing: border-box;
-  font-size: 1em;
-  padding: 0;
-  border: 2px solid var(--global--color--primary);
-  background-color: transparent;
-  color: var(--global--color--primary);
-  text-transform: uppercase;
-  font-weight: 900;
-  border-radius: 30px;
-  cursor: pointer;
 }
 
 /* Contact me section */
