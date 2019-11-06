@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
+
 .container {
   width: 1024px;
   margin: auto;
@@ -14,15 +15,15 @@
   font-size: 32px;
   font-weight: 700;
   padding-top: 15px;
-  margin: 0px auto;
+  margin: auto;
   text-align: center;
 }
 
-.contact__line{
+.contact__line {
   display: block;
   width: 200px;
   height: 1px;
-  background-color: #f57d0f;
+  background-color: #F57D0F;
   margin: auto;
 }
 
@@ -57,7 +58,7 @@
   left: -5px;
 }
 
-.contact__wrap{
+.contact__wrap {
   display: flex;
   justify-content: center;
   padding-top: 50px;
@@ -88,7 +89,7 @@
   font-size: 20px;
   font-weight: 400;
   padding-top: 6px;
-  margin: 0 10px 0;
+  margin: 0 10px;
 }
 
 .contact__message {
@@ -108,7 +109,7 @@
   padding-left: 5px;
 }
 
-.contact__txtarea{
+.contact__txtarea {
   color: #666;
   font-size: 15px;
   width: 92%;
@@ -124,7 +125,7 @@
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
-  padding: 10px 10px;
+  padding: 10px;
   border-radius: 50px;
   border: solid;
 }
