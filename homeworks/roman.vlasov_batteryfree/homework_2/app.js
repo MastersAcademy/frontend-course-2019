@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 class SendMessage {
     constructor(el) {
         this.el = el;
@@ -24,9 +23,10 @@ class SendMessage {
         });
 
         this.elements.editsText.forEach((element) => {
+            const elem = element;
             element.addEventListener('focus', () => {
                 if (element.value === 'Your Name........' || element.value === 'Email Address.....') {
-                    element.value = '';
+                    elem.value = '';
                 }
                 this.validation = true;
                 this.changeStyleInput(element);
@@ -34,10 +34,10 @@ class SendMessage {
             element.addEventListener('blur', () => {
                 if (!element.value.replace(/\s+/g, '').length) {
                     if (element.type.toLowerCase() === 'text') {
-                        element.value = 'Your Name........';
+                        elem.value = 'Your Name........';
                     }
                     if (element.type.toLowerCase() === 'email') {
-                        element.value = 'Email Address.....';
+                        elem.value = 'Email Address.....';
                     }
                 }
             });
@@ -106,10 +106,11 @@ class SendMessage {
     }
 
     changeStyleInput(element) {
+        const elem = element;
         if (!this.validation) {
-            element.style.border = '3px solid #F00';
+            elem.style.border = '3px solid #F00';
         } else {
-            element.style.border = '1px solid #a9a9a9';
+            elem.style.border = '1px solid #a9a9a9';
         }
     }
 
