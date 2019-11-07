@@ -195,7 +195,7 @@ p {
   position: relative;
 }
 
-.c-title__underline:after {
+.c-title__underline::after {
   content: "";
   position: absolute;
   display: inline-block;
