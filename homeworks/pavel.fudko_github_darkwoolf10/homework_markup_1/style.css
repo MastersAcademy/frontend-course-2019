@@ -1,7 +1,7 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 img {
@@ -14,7 +14,7 @@ header {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: floralwhite;
+  background-color: #FFFAF0;
 }
 
 header .logo {
@@ -30,6 +30,7 @@ header ul {
 header li {
   display: inline;
 }
+
 header a {
   display: inline-block;
   padding: .5em 1.5em;
@@ -39,7 +40,7 @@ header a {
   height: 600px;
   padding-top: 100px;
   display: flex;
-  background-color: floralwhite;
+  background-color: #FFFAF0;
 }
 
 .welcome-intro {
@@ -55,17 +56,17 @@ header a {
 
 .big-text {
   font-size: 40px;
-  color: orangered;
+  color: #FF5349;
 }
 
 .welcome-btn {
-  background-color: darkorange;
+  background-color: #FF8C00;
   margin: 30px;
   height: 50px;
   padding: 0 25px;
   border: none;
   text-transform: uppercase;
-  color: white;
+  color: #FFF;
   font-size: 20px;
   border-radius: 80px;
 }
@@ -76,14 +77,14 @@ header a {
 
 .about {
   height: 700px;
-  background-color: whitesmoke;
+  background-color: #F0F0F0;
 }
 
 .about-content {
   display: flex;
 }
 
-.about-content section{
+.about-content section {
   flex: 50%;
 }
 
@@ -108,8 +109,7 @@ header a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: floralwhite;
-
+  background-color: #FFFAF0;
 }
 
 .contact-us h2 {
@@ -119,7 +119,7 @@ header a {
   justify-content: center;
 }
 
-.contact-container{
+.contact-container {
   display: flex;
 }
 
@@ -140,9 +140,9 @@ header a {
   width: 30px;
   height: 30px;
   padding: 5px;
-  border: 1px solid black;
+  border: 1px solid #000;
   border-radius: 100px;
-  background-color: whitesmoke;
+  background-color: #F5F5F5;
   margin-right: 5px;
 }
 
@@ -152,56 +152,56 @@ header a {
 }
 
 .about-input:active {
-  border: 1px solid orangered;
+  border: 1px solid #FFA500;
 }
 
 .about-textarea {
   margin-top: 30px;
   width: 810px;
-  border: 1px solid orangered;
+  border: 1px solid #FFA500;
 }
 
 .about-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: darkorange;
+  background-color: #FF8C00;
   margin: 30px;
   height: 50px;
   padding: 0 25px;
   border: none;
   text-transform: uppercase;
-  color: white;
+  color: #FFF;
   font-size: 20px;
   border-radius: 80px;
 }
 
 footer {
   display: flex;
-  background-color: whitesmoke;
+  background-color: #F5F5F5;
 }
 
-footer aside {
+footer .footer-side {
   display: flex;
   flex: 50%;
 }
 
-footer aside p {
+footer .footer-side p {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
 
-footer aside li {
+footer .footer-side li {
   display: inline;
 }
 
-footer aside nav, ul {
+footer .footer-side nav ul {
   display: flex;
 }
 
-footer aside nav ul li {
+footer .footer-side nav ul li {
   align-items: center;
   justify-content: center;
 }
