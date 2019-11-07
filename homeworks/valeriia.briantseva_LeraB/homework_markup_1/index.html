@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Work 1</title>
+</head>
+<body>
+<header class="container">
+    <div class="logo">
+        <a href="/">
+            <img src="images/logo.png">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="block-user-info container">
+    <div class="block-info block-left">
+        <p>
+            Hello,
+        </p>
+        <h1>I am Jhon Smith</h1>
+        <p>
+            Freelance web Designer
+            @ Developer
+        </p>
+        <input type="button" value="HIRE" class="btn-orange">
+    </div>
+    <div class="user-picture-right block-right">
+        <img src="images/user-picture.png">
+    </div>
+</section>
+<section class="block-about container">
+    <h3 class="block-title">About Me</h3>
+    <img class="block-title-img" src="images/lines.svg" alt="lines img">
+
+    <div class="user-picture-left block-left">
+        <img src="images/user-picture-2.png">
+    </div>
+    <div class="about-user block-right">
+        <h4>Hello I am Jhon Smith, I am a freelance web designer or
+            developer from Nowakhali, Bangladesh.</h4>
+        <p>loream isam Mauris scelerisque ut ipsum id vulputate. Nulla laoreet, ligula vel congue ultricies, nibh ipsum
+            egestas nunc, id porta nibh nunc non felis. Vestibulum nibh urna, lobortis ut euismod., </p>
+
+        <ul>
+            <li><span class="item-label">Name:</span> <span class="item-value">Jhon Smith</span></li>
+            <li><span class="item-label">Email:</span> <span class="item-value">jhonamith@gmail.com</span></li>
+            <li><span class="item-label">Phone:</span><span class="item-value"> 0586321470 </span></li>
+            <li><span class="item-label">Date of Birth:</span> <span class="item-value">21-Oct-1990</span></li>
+            <li><span class="item-label">Nationality:</span><span class="item-value"> Bangladesh</span></li>
+            <li><span class="item-label">Address:</span><span class="item-value"> 1212 Dhaka, Rampura, Btv  Brobon.</span></li>
+        </ul>
+
+        <input type="button" class="btn-orange" value="HIRE ME">
+        <input type="button" class="btn-orange" value="DOWNLOAD CV">
+    </div>
+</section>
+<section class="block-contact container">
+    <h3 class="block-title">Contact Me</h3>
+    <img class="block-title-img" src="images/lines.svg" alt="lines img">
+    <div class="block-content-wrapper">
+        <div class="block-contact-data">
+            <ul>
+                <li class="content-item"><img src="images/home.svg" alt="home icon">
+                    <div class="contact-info"><p>Rapthame@gmail.com</p>
+                        <p>Your email name@gmail.com</p></div>
+                </li>
+                <li class="content-item"><img src="images/home.svg" alt="phone icon">
+                    <div class="contact-info"><p>0088017123456</p>
+                        <p>0088019315388</p></div>
+                </li>
+                <li class="content-item"><img src="images/home.svg" alt="location icon">
+                    <div class="contact-info"><p>Dhaka 1200, Rampura</p>
+                        <p>Hatirzil, Bangladesh</p></div>
+                </li>
+            </ul>
+        </div>
+        <div class="block-contact-form">
+            <form method="POST" onsubmit="return validateForm()">
+                <div class="user-name-wrapper">
+                    <input placeholder="Your Name........" type="text" id="field-user-name" class="user-name" required>
+                </div>
+                <div class="user-email-wrapper">
+                    <input placeholder="Email Address....." type="text" id="field-user-email" class="user-email"
+                           required>
+                </div>
+                <div class="message-wrapper">
+                    <textarea placeholder="Your Messages....." id="filed-message" class="message" required></textarea>
+                </div>
+                <button name="submit-data" type="button" id="btn-submit-messages" class="btn-orange">send messages
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="container">
+    <div class="block-copyright">
+        <p>One Page Personal Protfolio Template By RapThame @ 2018</p>
+    </div>
+    <div class="social-buttons">
+        <ul>
+            <li><a href="#"><img src="images/facebook-f-brands.svg" alt="facebook icon"></a></li>
+            <li><a href="#"><img src="images/twitter-brands.svg" alt="twitter icon"></a></li>
+            <li><a href="#"><img src="images/instagram-brands.svg" alt="instagram icon"></a></li>
+            <li><a href="#"><img src="images/dribbble-brands.svg" alt="dribbble icon"></a></li>
+            <li><a href="#"><img src="images/pinterest-p-brands.svg" alt="pinterest icon"></a></li>
+        </ul>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+
+</html>
