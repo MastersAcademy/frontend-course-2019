@@ -150,7 +150,7 @@
 .greeting {
   display: flex;
   justify-content: flex-end;
-  padding-top: 6%;
+  padding-top: 5%;
 }
 
 .greeting-text {
@@ -237,12 +237,12 @@
 }
 
 .about-me-text__list-item {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .about-me-text__list--values {
   margin-left: 120px;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .about-me-buttons__hire-me-btn {
