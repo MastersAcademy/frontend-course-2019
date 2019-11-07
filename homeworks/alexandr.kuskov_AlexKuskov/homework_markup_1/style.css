@@ -53,11 +53,11 @@
   background-color: var(--global--color--secondary);
 }
 
-.section__top-divider:before {
+.section__top-divider:before,
+.section__top-divider:after {
   content: "";
   display: block;
   position: absolute;
-  left: -10px;
   top: -5px;
   width: 12px;
   height: 12px;
@@ -65,16 +65,12 @@
   border: 2px solid var(--global--color--primary);
 }
 
+.section__top-divider:before {
+  left: -10px;
+}
+
 .section__top-divider:after {
-  content: "";
-  display: block;
-  position: absolute;
   right: -10px;
-  top: -5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  border: 2px solid var(--global--color--primary);
 }
 
 .section__bottom-divider {
