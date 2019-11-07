@@ -32,9 +32,9 @@
 .section__header-title {
   margin: 0;
   padding-top: 105px;
-  font-size: 2.5em;
+  font-size: 40px;
   text-align: center;
-  line-height: 38px;
+  line-height: .95em;
 }
 
 .section__top-divider {
@@ -84,7 +84,7 @@
 /* Button styling */
 
 .button {
-  font-size: 1em;
+  font-size: 16px;
   padding: 0;
   text-transform: uppercase;
   font-weight: 900;
@@ -127,7 +127,7 @@
   display: inline;
   padding: 20px;
   font-weight: 900;
-  font-size: .9em;
+  font-size: 14.5px;
   text-transform: uppercase;
 }
 
@@ -156,19 +156,19 @@
 }
 
 .greeting-text__hello {
-  font-size: 1.25em;
+  font-size: 20px;
 }
 
 .greeting-text__name {
-  font-size: 3.75em;
+  font-size: 60px;
   font-weight: 900;
-  line-height: 50px;
+  line-height: .83em;
   color: var(--global--color--secondary);
   padding: 30px 0;
 }
 
 .greeting-text__profession {
-  font-size: 1.5em;
+  font-size: 24px;
   margin-bottom: 60px;
 }
 
@@ -190,10 +190,10 @@
 }
 
 .about-me__header {
-  font-size: 2.5em;
+  font-size: 40px;
   text-align: center;
   margin: 0;
-  line-height: 38px;
+  line-height: .95em;
 }
 
 .about-me__content {
@@ -212,12 +212,12 @@
 }
 
 .about-me-text__greeting {
-  font-size: 1.25em;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
 .about-me-text__description {
-  font-size: .938em;
+  font-size: 15px;
   line-height: 1.7em;
   margin-bottom: 30px;
 }
@@ -225,7 +225,7 @@
 .about-me-text__list {
   list-style-type: none;
   display: inline-block;
-  font-size: .875em;
+  font-size: 14px;
   padding: 0;
   margin: 0;
 }
@@ -325,7 +325,7 @@
   width: 270px;
   height: 50px;
   font-style: normal;
-  font-size: 1.15em;
+  font-size: 18.5px;
   margin: auto;
   margin-left: 30px;
 }
@@ -378,7 +378,7 @@
 
 .footer__text {
   color: var(--global--color--primary-dark);
-  font-size: .8em;
+  font-size: 13px;
 }
 
 .footer__social-media-links {
