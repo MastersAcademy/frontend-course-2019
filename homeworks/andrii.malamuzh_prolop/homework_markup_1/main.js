@@ -21,16 +21,17 @@
             alert('Name: ' + yourName.value + '; \r\n' + 'Email: ' + yourEmail.value + '; \r\n' + 'Message: ' + yourMessage.value + ';');
         } else {
 
+            document.querySelector('#form-group__name').classList.remove('error');
+            document.querySelector('#form-group__email').classList.remove('error');
+            document.querySelector('#form-group__message').classList.remove('error');
+
             if (yourName.value === '') {
                 document.querySelector('#form-group__name .form-group__error').innerHTML = 'Required field';
                 document.querySelector('#form-group__name').classList.add('error');
-            } else {
-                document.querySelector('#form-group__name').classList.remove('error');
+            } else {                
                 if (nameValidation(yourName.value) === false) {
                     document.querySelector('#form-group__name .form-group__error').innerHTML = 'Name can only contain letters';
                     document.querySelector('#form-group__name').classList.add('error');
-                } else {
-                    document.querySelector('#form-group__name').classList.remove('error');
                 }
             }
 
@@ -38,19 +39,14 @@
                 document.querySelector('#form-group__email .form-group__error').innerHTML = 'Required field';
                 document.querySelector('#form-group__email').classList.add('error');
             } else {
-                document.querySelector('#form-group__email').classList.remove('error');
                 if (emailValidation(yourEmail.value) === false) {
                     document.querySelector('#form-group__email .form-group__error').innerHTML = 'Invalid email';
                     document.querySelector('#form-group__email').classList.add('error');
-                } else {
-                    document.querySelector('#form-group__email').classList.remove('error');
                 }
             }
 
             if (yourMessage.value === '') {
                 document.querySelector('#form-group__message').classList.add('error');
-            } else {
-                document.querySelector('#form-group__message').classList.remove('error');
             }
         }
     });
