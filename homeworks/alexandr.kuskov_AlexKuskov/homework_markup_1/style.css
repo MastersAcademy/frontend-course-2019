@@ -129,13 +129,13 @@
 
 .header__navigation-item {
   display: inline;
-  padding: 20px;
+  margin: 20px;
   font-weight: var(--global--font-weight--bold);
   font-size: var(--global--font-size--sm);
   text-transform: uppercase;
 }
 
-.header__navigation-item--active {
+.header__navigation-item:hover {
   color: var(--global--color--secondary);
 }
 
