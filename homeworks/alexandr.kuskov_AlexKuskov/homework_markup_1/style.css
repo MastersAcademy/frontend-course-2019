@@ -6,6 +6,10 @@
   --global--color--secondary: rgb(254, 126, 17);
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 .body {
   font-family: "Open Sans", sans-serif;
   color: var(--global--color--primary);
@@ -49,7 +53,6 @@
 
 .section__top-divider:before {
   content: "";
-  box-sizing: border-box;
   display: block;
   position: absolute;
   left: -10px;
@@ -62,7 +65,6 @@
 
 .section__top-divider:after {
   content: "";
-  box-sizing: border-box;
   display: block;
   position: absolute;
   right: -10px;
@@ -248,7 +250,6 @@
 .about-me-buttons__download-cv-btn {
   width: 220px;
   height: 50px;
-  box-sizing: border-box;
 }
 
 /* Contact me section */
@@ -335,10 +336,6 @@
 
 .form {
   width: 770px;
-}
-
-.form * {
-  box-sizing: border-box;
 }
 
 .form__inputs {
