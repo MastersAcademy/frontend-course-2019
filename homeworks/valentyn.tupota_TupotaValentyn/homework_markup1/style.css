@@ -1,10 +1,12 @@
 :root {
   --primary-color: #FE7E11;
   --secondary-color: #777;
+  --white: #FFF;
+  --gray-white: #F0F0F0;
 }
 
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html, body, .wrapper {
@@ -20,7 +22,6 @@ html, body, .wrapper {
 .header {
   display: flex;
   justify-content: space-around;
-
 }
 
 .header-link {
@@ -44,12 +45,11 @@ html, body, .wrapper {
 }
 
 .main-section:nth-of-type(even), .footer {
-  background: #f0f0f0;
+  background: var(--gray-white);
 }
 
-/* INTRO SECTION */
 .intro {
-  padding: 80px 0 0 0;
+  padding: 80px 0 0;
   display: grid;
   grid: 1fr/ auto auto;
   place-content: center;
@@ -61,11 +61,11 @@ html, body, .wrapper {
 }
 
 .intro-subtitle {
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
 }
 
 .intro-content {
-  padding: 70px 0 0 0;
+  padding: 70px 0 0;
 }
 
 .about-action {
@@ -79,7 +79,6 @@ html, body, .wrapper {
   padding: 82px 0;
   display: grid;
   grid: 1fr/ auto fit-content(400px);
-/*   place-content: center; */
   justify-content: center;
   grid-gap: 0 100px;
 }
@@ -101,17 +100,17 @@ html, body, .wrapper {
 }
 
 .about_subtitle {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
 
 .about-text {
-  margin: 0 0 30px 0;
+  margin: 0 0 30px;
 }
 
 .about_list-item {
   column-count: 2;
   column-gap: 0;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
 }
 
 .about_primary-btn {
@@ -147,7 +146,6 @@ html, body, .wrapper {
   grid-gap: 0 50px;
   margin: 0;
   align-items: start;
-
 }
 
 .contact_list-item {
@@ -166,10 +164,8 @@ html, body, .wrapper {
 .contact-form {
   grid-row: 2;
   grid-column: 2;
-
   display: grid;
   grid: auto 1fr auto/ 1fr 1fr;
-
   grid-gap: 16px;
 }
 
@@ -196,7 +192,6 @@ html, body, .wrapper {
 .footer-link_list {
   display: grid;
   list-style: none;
-
   grid: auto/ repeat(5, auto);
   grid-gap: 0 32px;
 }
@@ -206,12 +201,9 @@ html, body, .wrapper {
   font-size: 14px;
 }
 
-
-/*  */
-
 /* components */
 
-[class$='btn']{
+[class$="btn"] {
   cursor: pointer;
   outline: none;
   padding: 0 25px;
@@ -224,7 +216,7 @@ html, body, .wrapper {
 .primary-btn {
   background: var(--primary-color);
   border: none;
-  color: #fff;
+  color: var(--white);
 }
 
 .secondary-btn {
@@ -248,14 +240,13 @@ html, body, .wrapper {
   font-size: 36px;
   color: #666;
   position: relative;
-  margin: 0 0 160px 0;
+  margin: 0 0 160px;
 }
 
 .section-title::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
-
   left: 50%;
   transform: translateX(-50%);
   bottom: -6px;
@@ -265,10 +256,9 @@ html, body, .wrapper {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
-
   left: 50%;
   transform: translateX(-50%);
   bottom: -12px;
@@ -281,7 +271,7 @@ html, body, .wrapper {
   max-width: 370px;
   min-width: 320px;
   height: 50px;
-  border: 1px solid var(secondary-color);
+  border: 1px solid var(--secondary-color);
   font-size: 1rem;
 }
 
@@ -298,7 +288,7 @@ html, body, .wrapper {
 .contact_svg {
   width: 16px;
   height: 16px;
-  fill: #fff;
+  fill: var(--white);
 }
 
 .subtitle {
@@ -330,9 +320,3 @@ svg {
   width: 16px;
   height: 16px;
 }
-
-/* *::before, *::after {
-  content: '';
-  display: inherit;
-
-} */
