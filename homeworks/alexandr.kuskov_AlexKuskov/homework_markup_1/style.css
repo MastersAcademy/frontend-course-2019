@@ -17,12 +17,6 @@
 }
 
 /* Utility classes. */
-/* Used for chosen menu items, icons etc. */
-
-.chosen-item {
-  color: var(--global--color--secondary);
-}
-
 /* Sets paddings to make content width equals 1200px */
 
 .section {
@@ -135,6 +129,10 @@
   font-weight: 900;
   font-size: .9em;
   text-transform: uppercase;
+}
+
+.header__navigation-item--active {
+  color: var(--global--color--secondary);
 }
 
 .header__navigation-link {
