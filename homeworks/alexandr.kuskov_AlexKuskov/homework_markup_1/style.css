@@ -4,6 +4,14 @@
   --global--color--primary: rgb(102, 102, 102);
   --global--color--primary-dark: rgb(85, 85, 85);
   --global--color--secondary: rgb(254, 126, 17);
+  
+  --global--font-weight--bold: 900;
+
+  --global--font-size--xs: 14px;
+  --global--font-size--sm: 15px;
+  --global--font-size--md: 20px;
+  --global--font-size--lg: 40px;
+  --global--font-size--xlg: 60px;
 }
 
 *, *:before, *:after {
@@ -32,7 +40,7 @@
 .section__header-title {
   margin: 0;
   padding-top: 105px;
-  font-size: 40px;
+  font-size: var(--global--font-size--lg);
   text-align: center;
   line-height: .95em;
 }
@@ -87,7 +95,7 @@
   font-size: 16px;
   padding: 0;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: var(--global--font-weight--bold);
   border-radius: 30px;
   cursor: pointer;
 }
@@ -126,8 +134,8 @@
 .header__navigation-item {
   display: inline;
   padding: 20px;
-  font-weight: 900;
-  font-size: 14.5px;
+  font-weight: var(--global--font-weight--bold);
+  font-size: var(--global--font-size--sm);
   text-transform: uppercase;
 }
 
@@ -156,12 +164,12 @@
 }
 
 .greeting-text__hello {
-  font-size: 20px;
+  font-size: var(--global--font-size--md);
 }
 
 .greeting-text__name {
-  font-size: 60px;
-  font-weight: 900;
+  font-size: var(--global--font-size--xlg);
+  font-weight: var(--global--font-weight--bold);
   line-height: .83em;
   color: var(--global--color--secondary);
   padding: 30px 0;
@@ -190,7 +198,7 @@
 }
 
 .about-me__header {
-  font-size: 40px;
+  font-size: var(--global--font-size--lg);
   text-align: center;
   margin: 0;
   line-height: .95em;
@@ -212,12 +220,12 @@
 }
 
 .about-me-text__greeting {
-  font-size: 20px;
+  font-size: var(--global--font-size--md);
   margin-bottom: 20px;
 }
 
 .about-me-text__description {
-  font-size: 15px;
+  font-size: var(--global--font-size--sm);
   line-height: 1.7em;
   margin-bottom: 30px;
 }
@@ -225,7 +233,7 @@
 .about-me-text__list {
   list-style-type: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: var(--global--font-size--xs);
   padding: 0;
   margin: 0;
 }
@@ -322,10 +330,9 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 270px;
   height: 50px;
   font-style: normal;
-  font-size: 18.5px;
+  font-size: var(--global--font-size--md);
   margin: auto;
   margin-left: 30px;
 }
@@ -378,7 +385,7 @@
 
 .footer__text {
   color: var(--global--color--primary-dark);
-  font-size: 13px;
+  font-size: var(--global--font-size--xs);
 }
 
 .footer__social-media-links {
