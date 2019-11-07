@@ -32,8 +32,8 @@
 }
 
 .section__header {
-  height: 175px;
   position: relative;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -88,6 +88,7 @@
 /* Button styling */
 
 .button {
+  height: 50px;
   font-size: 16px;
   padding: 0;
   text-transform: uppercase;
@@ -177,19 +178,18 @@
 }
 
 .greeting-text__hire-btn {
-  height: 50px;
   width: 150px;
 }
 
 .greeting__image {
-  height: 715px;
+  height: auto;
+  width: 40%;
   margin-right: 15px
 }
 
 /* About me section */
 
 .about-me {
-  height: 835px;
   background-color: rgb(240, 240, 240);
 }
 
@@ -203,10 +203,12 @@
 .about-me__content {
   display: flex;
   margin-top: 100px;
+  padding-bottom: 90px;
 }
 
 .about-me__image {
-  height: 406px;
+  height: auto;
+  width: 40%;
   margin: 0 130px 0 30px;
 }
 
@@ -245,25 +247,20 @@
 
 .about-me-buttons__hire-me-btn {
   width: 160px;
-  height: 50px;
   margin-right: 30px;
 }
 
 .about-me-buttons__download-cv-btn {
   width: 220px;
-  height: 50px;
 }
 
 /* Contact me section */
-
-.contact-me {
-  height: 805px;
-}
 
 .contact-me__content {
   display: flex;
   margin-top: 100px;
   height: 330px;
+  margin-bottom: 200px;
 }
 
 .contact-details {
@@ -274,7 +271,6 @@
 .contact-details__item {
   position: relative;
   width: 385px;
-  height: 70px;
   margin-bottom: 50px;
 }
 
@@ -325,7 +321,7 @@
   display: inline-block;
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 8px;
   height: 50px;
   font-style: normal;
   font-size: var(--global--font-size--md);
@@ -366,7 +362,6 @@
 
 .form__send-messages-btn {
   width: 220px;
-  height: 50px;
 }
 
 /* Footer section */
@@ -375,13 +370,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
   background-color: rgb(240, 240, 240);
 }
 
 .footer__text {
   color: var(--global--color--primary-dark);
   font-size: var(--global--font-size--xs);
+  padding-top: 35px;
+  padding-bottom: 30px;
 }
 
 .footer__social-media-links {
