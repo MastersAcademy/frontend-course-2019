@@ -10,7 +10,7 @@
       .progress-bar {
         height: 10px;
         background-color: #f0f0f0;
-        --progress: 0;
+        --progress: 0;cd
       }
 
       .progress-bar:before {
@@ -28,29 +28,28 @@
 
     <script defer>
       (() => {
-        class HTTPClient {
-          get(URL, {responseType, onprogress}) {
-            let promise = new Promise((resolve) => {
-              let xhr = new XMLHttpRequest();
-              xhr.open('GET', URL, true);
-              xhr.responseType = responseType;
-              xhr.onprogress = onprogress;
-              xhr.onload = () => {
-                if (xhr.status !== 200) {
-                  alert(`Error ${xhr.status}: ${xhr.statusText}`); 
-                } else {
-                  resolve({body:xhr.response});
-                }
-              }
-              xhr.onerror = () => {
-                alert('Request failed');
-              }
-              xhr.send();
-            });
-            return promise;
-          };
+          class HTTPClient {
+            get(URL, { responseType, onprogress }) {
+                const promise = new Promise((resolve) => {
+                    const xhr = new XMLHttpRequest();
+                    xhr.open('GET', URL, true);
+                    xhr.responseType = responseType;
+                    xhr.onprogress = onprogress;
+                    xhr.onload = () => {
+                        if (xhr.status !== 200) {
+                            alert(`Error ${xhr.status}: ${xhr.statusText}`);
+                        } else {
+                            resolve({ body: xhr.response });
+                        }
+                    };
+                    xhr.onerror = () => {
+                        alert('Request failed');
+                    };
+                    xhr.send();
+                });
+                return promise;
+            }
         }
-
         const CAT_URL = 'https://media4.s-nbcnews.com/j/newscms/2019_10/1415012/cat-food-eat-today-main-190305_ec2dc58bbd275269fe5b1c233cd24f6a.fit-2000w.jpg';
         const progressBarEl = document.querySelector('[data-progress]');
 
