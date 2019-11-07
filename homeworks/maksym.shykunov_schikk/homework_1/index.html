@@ -162,11 +162,15 @@
                 <div class="contacts-me-right-col">
                     <form action="#" class="main-form" id="main_form">
                         <div class="inputs-cont">
-                            <input type="text" name="user-name" id="user_name"  placeholder="Your Name........">
-                            <input type="email" name="user-email" id="user_email" placeholder="Email Address.....">
+                            <div class="input-field-group">
+                                <input class="validate" type="text" name="name" id="user_name"  placeholder="Your Name........">
+                            </div>
+                            <div class="input-field-group">
+                                <input class="validate" type="email" name="email" id="user_email" placeholder="Email Address.....">
+                            </div>
                         </div>
-                        <div class="textarea-cont">
-                            <textarea name="user-mssg" id="user_mssg" cols="30" rows="10" placeholder="Your Messages....."></textarea>
+                        <div class="textarea-cont input-field-group">
+                            <textarea class="validate" name="mssg" id="user_mssg" cols="30" rows="10" placeholder="Your Messages....."></textarea>
                         </div>
                         <button type="submit" class="main-btn orange-btn" id="form_btn">send messages</button>
                     </form>

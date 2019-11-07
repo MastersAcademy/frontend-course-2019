@@ -263,12 +263,18 @@ a:hover                        { text-decoration:none; }
 	display: flex;
 	margin-bottom: 29px;
 }
-.inputs-cont input:first-child {
+.input-field-group {
+	position: relative;
+}
+.inputs-cont .input-field-group:not(:last-child) {
 	margin-right: 22px;
+}
+.inputs-cont .input-field-group {
+	width: 370px;
 }
 .inputs-cont input {
 	display: block;
-	width: 370px;
+	width: 100%;
 	height: 53px;
 	outline: none;
 	border: 1px solid #5D5D5D;
@@ -289,9 +295,15 @@ a:hover                        { text-decoration:none; }
 	color: #ea2323;
     border: 1px solid #f70000;
 }
+.error-mssg {
+	padding: 0 20px;
+    position: absolute;
+    color: #f31616;
+}
 .textarea-cont {
 	margin-bottom: 49px;
 }
+
 .textarea-cont textarea {
 	display: block;
 	width: 100%;
