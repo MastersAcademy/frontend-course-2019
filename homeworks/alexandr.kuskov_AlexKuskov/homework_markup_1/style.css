@@ -39,7 +39,7 @@
 
 .section__header-title {
   margin: 0;
-  padding-top: 105px;
+  padding-top: 8%;
   font-size: var(--global--font-size--lg);
   text-align: center;
   line-height: .95em;
@@ -150,7 +150,7 @@
 .greeting {
   display: flex;
   justify-content: flex-end;
-  padding-top: 90px;
+  padding-top: 6%;
 }
 
 .greeting-text {
@@ -202,8 +202,8 @@
 
 .about-me__content {
   display: flex;
-  margin-top: 100px;
-  padding-bottom: 90px;
+  margin-top: 8%;
+  padding-bottom: 8%;
 }
 
 .about-me__image {
@@ -258,9 +258,9 @@
 
 .contact-me__content {
   display: flex;
-  margin-top: 100px;
+  margin-top: 8%;
   height: 330px;
-  margin-bottom: 200px;
+  margin-bottom: 16%;
 }
 
 .contact-details {
