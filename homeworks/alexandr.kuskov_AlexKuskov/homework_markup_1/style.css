@@ -358,14 +358,14 @@
   resize: none;
 }
 
+.form__input:focus, .form__messages-textarea:focus {
+  border: 1px solid var(--global--color--secondary);
+  outline: none;
+}
+
 .form__send-messages-btn {
   width: 220px;
   height: 50px;
-}
-
-.active-input:focus {
-  border: 1px solid var(--global--color--secondary);
-  outline: none;
 }
 
 /* Footer section */
