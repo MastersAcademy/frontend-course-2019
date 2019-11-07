@@ -1,0 +1,19 @@
+{
+  "name": "frontend-course-2019",
+  "version": "1.0.0",
+  "description": "node - v12.13.0\r npm - 6.9.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omega24v/frontend-course-2019.git"
+  },
+  "author": "Omega24v",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Omega24v/frontend-course-2019/issues"
+  },
+  "homepage": "https://github.com/Omega24v/frontend-course-2019#readme"
+}
