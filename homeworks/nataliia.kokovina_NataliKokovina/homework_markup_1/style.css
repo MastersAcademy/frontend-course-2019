@@ -1,0 +1,155 @@
+.bodyWraper {
+  max-width: 1200px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+}
+
+/* section Contact Me */
+
+.sectionContactMe {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionContactMe__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 84px;
+}
+
+.header__title {
+  color: #818181;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.header__separator-first {
+  height: 2px;
+  width: 105px;
+  background-color: #FE7E11;
+  margin: 3px 15px;
+}
+
+.header__separator-second {
+  height: 2px;
+  width: 95px;
+  background-color: #818181;
+  margin: 2px 15px;
+}
+
+.sectionContactMe__wraper {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contactInf__block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contactInf__block {
+  margin-top: 15px;
+  /* width: 400px; */
+}
+
+.contactInf__forImg {
+  width: 60px;
+  height: 60px;
+  border: 4px solid #FE7E11;
+  background-color: #818181;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.contactInf__Img {
+  fill: #FFF;
+  width: 25px;
+}
+
+.contactInf__text {
+  color: #818181;
+  width: 220px;
+}
+
+.sectionContactMe__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 5%;
+}
+
+.form__wraper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__forText {
+  height: 45px;
+  width: 48%;
+  border: 1px solid #818181;
+}
+
+.form__forMessages {
+  width: 100%;
+  height: 150px;
+  margin: 25px 0;
+  border: 1px solid #818181;
+  line-height: 5px;
+}
+
+.form_button {
+  padding: 15px 30px;
+  background-color: #FE7E11;
+  color: #FFF;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 100px;
+  font-style: unset;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.invalidFormName {
+  display: none;
+}
+
+.invalidFormEmail {
+  display: none;
+}
+
+.invalidForm {
+  display: none;
+}
+
+.invalidFormMessages {
+  display: none;
+}
+
+.error {
+  display: inline;
+  color: #FE7E11;
+  margin: -15px 0;
+}
+
+.empty {
+  display: inline;
+  color: #FE7E11;
+  margin: 0 auto;
+  margin-bottom: -20px;
+}
+
