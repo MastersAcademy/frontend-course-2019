@@ -133,7 +133,7 @@
   }
 
   .navigation ul li {
-    margin-left: 0.5rem;
+    margin-left: .5rem;
   }
 
   .mainbox {
@@ -154,7 +154,7 @@
   }
 
   .main-text {
-    font-size: 0.8rem;
+    font-size: .8rem;
   }
 
   .prime-text {
@@ -183,7 +183,7 @@
   }
 
   .btn {
-    padding: 0.5rem 2rem;
+    padding: .5rem 2rem;
   }
 
   .contacts-form {
