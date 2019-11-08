@@ -1,18 +1,19 @@
-const formInputs = document.querySelectorAll('.form__input');
-const messagesTextarea = document.querySelector('.form__messages-textarea');
+const nameInputEl = document.querySelectorAll('.form__input')[0];
+const emailInputEl = document.querySelectorAll('.form__input')[1];
+const messagesTextareaEl = document.querySelector('.form__messages-textarea');
 const sendMessageButton = document.querySelector('.form__send-messages-btn');
 
 const namePattern = /^[A-Za-z]+( [A-Za-z]+)*$/;
 const emailPattern = /^\S+@\S+\.\S+$/;
 
 sendMessageButton.addEventListener('click', (event) => {
-    const isInputNameValid = formInputs[0].value.match(namePattern);
-    const isInputEmailValid = formInputs[1].value.match(emailPattern);
+    const isInputNameValid = nameInputEl.value.match(namePattern);
+    const isInputEmailValid = emailInputEl.value.match(emailPattern);
 
-    if (isInputNameValid && isInputEmailValid && messagesTextarea.value) {
-        alert(`Name:  ${formInputs[0].value}
-Email: ${formInputs[1].value}
-Messages: ${messagesTextarea.value}`);
+    if (isInputNameValid && isInputEmailValid && messagesTextareaEl.value) {
+        alert(`Name:  ${nameInputEl.value}
+Email: ${emailInputEl.value}
+Messages: ${messagesTextareaEl.value}`);
     }
 
     event.preventDefault();
