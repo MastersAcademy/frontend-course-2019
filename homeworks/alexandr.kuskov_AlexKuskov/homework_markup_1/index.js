@@ -10,6 +10,18 @@ function isInputValid(elem, pattern) {
     return elem.value.match(pattern);
 }
 
+function removeExtraWhitespaces(text) {
+    return text.replace(/ {2,}/g, '');
+}
+
+function getOutputText(name, email, messages) {
+    const alertOutput = `Name: ${name}
+                         Email: ${email}
+                         Messages: ${messages}`;
+
+    return removeExtraWhitespaces(alertOutput);
+}
+
 formEl.addEventListener('submit', (event) => {
     const isInputNameValid = isInputValid(nameInputEl, namePattern);
     const isInputEmailValid = isInputValid(emailInputEl, emailPattern);
@@ -20,11 +32,8 @@ formEl.addEventListener('submit', (event) => {
             emailInputEl.value,
             messagesTextareaEl.value,
         ];
-        const alertOutput = `Name:  ${name}
-                             Email: ${email}
-                             Messages: ${messages}`;
 
-        alert(alertOutput);
+        alert(getOutputText(name, email, messages));
     }
 
     event.preventDefault();
