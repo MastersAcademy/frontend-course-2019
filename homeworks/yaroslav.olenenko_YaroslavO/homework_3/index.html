@@ -30,16 +30,15 @@
     (() => {
         class HTTPClient {
             get(url, options = {}) {
-                const {responseType = '', onprogress, method = "GET"} = options;
+                const method = "GET";
+                const {responseType = 'application/json', onprogress} = options;
                 const xhr = new XMLHttpRequest();
 
                 return new Promise((resolve) => {
                     xhr.onprogress = onprogress;
                     xhr.responseType = responseType;
 
-                    xhr.onload = () => {
-                        resolve({body: xhr.response});
-                    };
+                    xhr.onload = () => resolve({body: xhr.response});
 
                     xhr.open(method, url);
                     xhr.send();

@@ -1,10 +1,11 @@
-const form = document.getElementsByClassName('article__form')[0];
-const name = document.getElementsByClassName('article__input-name')[0];
-const email = document.getElementsByClassName('article__input-email')[0];
-const text = document.getElementsByClassName('article__textarea')[0];
+const getElement = selector => document.querySelector(selector);
+const form = getElement('.article__form');
+const name = getElement('.article__input-name');
+const email = getElement('.article__input-email');
+const text = getElement('.article__textarea');
 
-form.onsubmit = (event) => {
+form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     window.alert(`Hi "${name.value}". Your email "${email.value}". \n Your text "${text.value}"`);
-};
+});
