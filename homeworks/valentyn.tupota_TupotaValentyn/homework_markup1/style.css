@@ -320,3 +320,13 @@ svg {
   width: 16px;
   height: 16px;
 }
+
+/* errors */
+
+.error-color {
+  color: #F00;
+}
+
+.error-border {
+  border: 1px solid #F00;
+}
