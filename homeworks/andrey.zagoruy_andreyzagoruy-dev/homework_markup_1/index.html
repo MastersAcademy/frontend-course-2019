@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<!-- 
+    Naming convension:
+    c-* - components;
+    l-* - layout(general layout styling rules. Such as display property, margins, paddings, etc.);
+    h-* - helpers(general utility styling rules);
+    js-* - no real styling here. Used only as js hooks;
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Andrey Zagoruy - Freelance Developer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <header class="c-main-header l-container">
+            <div class="c-main-header__left">
+                <a href="#" class="c-logo">
+                    <img
+                        class="c-logo__image"
+                        src="./images/logo.svg"
+                        alt="Andrey Zagoruy - Software Development"
+                    />
+                </a>
+            </div>
+            <nav class="c-main-header__right">
+                <ul class="c-nav c-nav--inline h-text--bold h-text--uppercase">
+                    <a href="#" class="c-nav__item"><li>Home</li></a>
+                    <a href="#about" class="c-nav__item"><li>About</li></a>
+                    <a href="#" class="c-nav__item"><li>Resume</li></a>
+                    <a href="#" class="c-nav__item"><li>Portfolio</li></a>
+                    <a href="#" class="c-nav__item"><li>Blog</li></a>
+                    <a href="#contact" class="c-nav__item"><li>Contact</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="l-section l-container">
+                    <div
+                        class="l-columns l-columns--center l-columns--mobile-one"
+                    >
+                        <div
+                            class="l-column l-column--big l-column--pull-to-center h-text-align--mobile-center"
+                        >
+                            <p class="h-text--big">Hello,</p>
+                            <h1 class="c-title c-title--big h-text--yellow">
+                                I am Andrey Zagoruy
+                            </h1>
+                            <p class="h-text--big">Freelance web Developer</p>
+                            <p class="h-text--big">@Developer</p>
+                            <a
+                                class="c-button c-button--round c-button--primary l-mt--big"
+                                href="#"
+                                >Hire</a
+                            >
+                        </div>
+                        <div class="l-column l-column--small">
+                            <img src="./images/poster-hero.svg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="h-bg--grey">
+                <div class="l-section l-container">
+                    <h2 class="c-title h-text-align--center">
+                        <span class="c-title__underline">About Me</span>
+                    </h2>
+                    <div class="l-columns l-columns--mobile-one">
+                        <div class="l-column l-column--small h-mobile--hide">
+                            <img src="./images/poster-bio.svg" />
+                        </div>
+                        <div
+                            class="l-column l-column--big l-column--pull-to-center"
+                        >
+                            <p class="h-text--big">
+                                I'm a Front-End Developer with more than two
+                                years of work experience.
+                            </p>
+                            <p class="l-mt--big">
+                                I'm a constant learner, - continuously
+                                improving, analyzing and sharing findings and
+                                recommendations on SEO, website performance
+                                optimization and users' behaviour. Being
+                                passionate about UX, I make sure that design and
+                                usability exceed customer's expectations. I will
+                                be glad to be part of a team and raise a bar of
+                                web quality together.
+                            </p>
+                            <div class="l-mt--medium">
+                                <a
+                                    class="c-button c-button--round c-button--primary l-mt--big"
+                                    href="#"
+                                    >Hire</a
+                                >
+                                <a
+                                    class="c-button c-button--round c-button--secondary l-mt--big"
+                                    href="#"
+                                    >Download CV</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="l-section l-container">
+                    <h2 class="c-title h-text-align--center">
+                        <span class="c-title__underline">Contact Me</span>
+                    </h2>
+                    <div class="l-columns l-columns--mobile-one">
+                        <div class="l-column l-column--small">
+                            <div class="c-contact">
+                                <div class="c-contact__left">
+                                    <div class="c-contact__image">
+                                        <img src="./images/icon-mail.svg" />
+                                    </div>
+                                </div>
+                                <div class="c-contact__right">
+                                    <div class="c-contact__title">E-Mail</div>
+                                    <div class="c-contact__value">
+                                        <a
+                                            class="c-contact__link"
+                                            href="mailto:andreyzagoruy.dev@gmail.com"
+                                            >andreyzagoruy.dev@gmail.com</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-contact">
+                                <div class="c-contact__left">
+                                    <div class="c-contact__image">
+                                        <img src="./images/icon-phone.svg" />
+                                    </div>
+                                </div>
+                                <div class="c-contact__right">
+                                    <div class="c-contact__title">Phone</div>
+                                    <div class="c-contact__value">
+                                        <a
+                                            class="c-contact__link"
+                                            href="tel:+380675179401"
+                                            >+38(067)-517-94-01</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-contact">
+                                <div class="c-contact__left">
+                                    <div class="c-contact__image">
+                                        <img src="./images/icon-map.svg" />
+                                    </div>
+                                </div>
+                                <div class="c-contact__right">
+                                    <div class="c-contact__title">Location</div>
+                                    <div class="c-contact__value">
+                                        <a
+                                            class="c-contact__link"
+                                            href="https://www.openstreetmap.org/search?query=cherkassy%2C%20ukraine#map=19/49.44565/32.06286"
+                                            >Cherkassy, Ukraine</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-column l-column--big">
+                            <form class="c-form js-form" action="#">
+                                <div class="c-form__row">
+                                    <input
+                                        class="c-form__field c-form__field--inline"
+                                        placeholder="Your Name..."
+                                        type="text"
+                                        data-validators="name, required"
+                                    />
+                                    <input
+                                        class="c-form__field c-form__field--inline"
+                                        placeholder="Your E-Mail..."
+                                        type="text"
+                                        data-validators="email, required"
+                                    />
+                                </div>
+                                <div class="c-form__row">
+                                    <textarea
+                                        class="c-form__field c-form__field--textarea"
+                                        placeholder="Your Message..."
+                                        data-validators="required"
+                                    ></textarea>
+                                </div>
+                                <div class="c-form__row">
+                                    <button
+                                        class="c-button c-button--round c-button--primary"
+                                        type="submit"
+                                    >
+                                        Send message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="c-footer h-bg--grey">
+            <div class="l-container">
+                <div class="l-columns l-columns--center">
+                    <div class="l-column h-text--small h-text--light-grey">
+                        No copyright here. Feel free to steal everything you
+                        want
+                    </div>
+                    <div class="l-column h-text-align--right">
+                        <ul
+                            class="c-nav c-nav--inline h-text--bold h-text--uppercase"
+                        >
+                            <a href="#" class="c-nav__item"
+                                ><li>
+                                    <img
+                                        class="c-icon h-zoom--medium"
+                                        src="./images/facebook.svg"
+                                        alt="Andrey Zagoruy - Developer"
+                                    /></li
+                            ></a>
+                            <a href="#" class="c-nav__item"
+                                ><li>
+                                    <img
+                                        class="c-icon h-zoom--medium"
+                                        src="./images/twitter.svg"
+                                        alt="Andrey Zagoruy - Developer"
+                                    /></li
+                            ></a>
+                            <a href="#" class="c-nav__item"
+                                ><li>
+                                    <img
+                                        class="c-icon h-zoom--medium"
+                                        src="./images/youtube.svg"
+                                        alt="Andrey Zagoruy - Developer"
+                                    /></li
+                            ></a>
+                            <a href="#" class="c-nav__item"
+                                ><li>
+                                    <img
+                                        class="c-icon h-zoom--medium"
+                                        src="./images/linkedin.svg"
+                                        alt="Andrey Zagoruy - Developer"
+                                    /></li
+                            ></a>
+                            <a href="#" class="c-nav__item"
+                                ><li>
+                                    <img
+                                        class="c-icon h-zoom--medium"
+                                        src="./images/instagram.svg"
+                                        alt="Andrey Zagoruy - Developer"
+                                    /></li
+                            ></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>

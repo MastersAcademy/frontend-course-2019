@@ -40,10 +40,11 @@ function infFromForm() {
         message.name = nameFromForm;
         message.email = emailFromForm;
         message.text = textFromForm;
+        alert(`${message.name} send messages "${message.text}" from ${message.email}`);
     }
 
     document.querySelector('.sectionContactMe__form').reset();
-    alert(`${message.name} send messages "${message.text}" from ${message.email}`);
+
     return message;
 }
 
