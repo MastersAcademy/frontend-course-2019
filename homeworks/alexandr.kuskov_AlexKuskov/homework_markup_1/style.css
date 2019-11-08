@@ -4,7 +4,7 @@
   --global--color--primary: rgb(102, 102, 102);
   --global--color--primary-dark: rgb(85, 85, 85);
   --global--color--secondary: rgb(254, 126, 17);
-  
+
   --global--font-weight--bold: 900;
 
   --global--font-size--xs: 14px;
@@ -14,7 +14,7 @@
   --global--font-size--xlg: 60px;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -53,8 +53,8 @@
   background-color: var(--global--color--secondary);
 }
 
-.section__top-divider:before,
-.section__top-divider:after {
+.section__top-divider::before,
+.section__top-divider::after {
   content: "";
   display: block;
   position: absolute;
@@ -65,11 +65,11 @@
   border: 2px solid var(--global--color--primary);
 }
 
-.section__top-divider:before {
+.section__top-divider::before {
   left: -10px;
 }
 
-.section__top-divider:after {
+.section__top-divider::after {
   right: -10px;
 }
 
@@ -281,7 +281,7 @@
   height: 70px;
 }
 
-.icon-background:before {
+.icon-background::before {
   content: "";
   display: block;
   position: absolute;
@@ -294,7 +294,7 @@
   z-index: -1;
 }
 
-.icon-background:after {
+.icon-background::after {
   content: "";
   display: block;
   position: absolute;
