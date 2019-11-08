@@ -1,0 +1,289 @@
+.bodyWraper {
+  max-width: 1200px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  font-size: 15px;
+  color: #818181;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  color: #FE7E11;
+}
+
+a:visited {
+  color: #818181;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 15px 30px;
+  margin: 0 20px;
+  background-color: #FE7E11;
+  color: #FFF;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 100px;
+  font-style: unset;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #818181;
+}
+
+.header-block {
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 64px;
+}
+
+.header__title {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.header__separator-first {
+  height: 2px;
+  width: 105px;
+  background-color: #FE7E11;
+  margin: 3px 15px;
+}
+
+.header__separator-second {
+  height: 2px;
+  width: 95px;
+  background-color: #818181;
+  margin: 2px 15px;
+}
+
+/* header */
+
+.header-margen {
+  margin-top: 20px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu__item {
+  margin: 0 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.menu__item:hover {
+  color: #FE7E11;
+}
+
+/* section about me */
+
+.aboutMe__text-wraper {
+  font-size: 20px;
+  margin-left: 55px;
+  margin-right: 105px;
+  margin-bottom: 100px;
+  flex-direction: column;
+}
+
+.aboutMe__text-name {
+  display: inline-block;
+  font-size: 60px;
+  color: #FE7E11;
+  font-weight: 800;
+}
+
+.aboutMe__text-profession {
+  font-size: 24px;
+  color: #818181;
+}
+
+.aboutMe__button-size {
+  width: 150px;
+}
+
+/* section About */
+
+.section-about {
+  background-color: #F0F0F0;
+  padding-bottom: 80px;
+}
+
+.section-about__wraper {
+  width: 60%;
+  margin: 0 35px;
+}
+
+.section-about__bigger {
+  font-size: 20px;
+}
+
+.section-about__table-item {
+  width: 200px;
+  height: 35px;
+}
+
+.button-download {
+  background-color: transparent;
+  border: 2px solid #818181;
+  padding: 15px 30px;
+  color: #818181;
+  margin: 20px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 100px;
+  font-style: unset;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.button-download:hover {
+  border: 2px solid #FE7E11;
+}
+
+.section-about__img {
+  width: 355px;
+  height: 406px;
+}
+
+/* section Contact Me */
+
+.section-contactMe {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.section-contactMe__wraper {
+  align-items: center;
+  width: 100%;
+}
+
+.contactInf__block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.contactInf__forImg {
+  width: 60px;
+  height: 60px;
+  border: 4px solid #FE7E11;
+  background-color: #818181;
+  border-radius: 50%;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.contactInf__Img {
+  fill: #FFF;
+  width: 25px;
+}
+
+.contactInf__text {
+  width: 220px;
+}
+
+.section-contactMe__form {
+  flex-direction: column;
+  width: 60%;
+  margin-left: 5%;
+}
+
+.form__forText {
+  height: 45px;
+  width: 48%;
+  border: 1px solid #818181;
+}
+
+.form__forText:hover {
+  border: 1px solid #FE7E11;
+}
+
+.form__forMessages {
+  width: 100%;
+  height: 150px;
+  margin: 25px 0;
+  border: 1px solid #818181;
+  line-height: 5px;
+}
+
+.button-width {
+  width: 220px;
+}
+
+.form__forMessages:hover {
+  border: 1px solid #FE7E11;
+}
+
+.invalidFormName {
+  display: none;
+}
+
+.invalidFormEmail {
+  display: none;
+}
+
+.invalidForm {
+  display: none;
+}
+
+.invalidFormMessages {
+  display: none;
+}
+
+.error {
+  display: inline;
+  color: #FE7E11;
+  margin: -15px 0;
+}
+
+.empty {
+  display: inline;
+  color: #FE7E11;
+  margin-bottom: -20px;
+}
+
+/*footer */
+
+.footer {
+  background-color: #F0F0F0;
+}
+
+.footer__media-wraper {
+  display: flex;
+  align-items: center;
+}
+
+.footer__img {
+  margin: 10px;
+  fill: #818181;
+}
+
+.footer__img:hover {
+  fill: #FE7E11;
+}
