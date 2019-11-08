@@ -1,7 +1,7 @@
-const nameInputEl = document.querySelectorAll('.form__input')[0];
-const emailInputEl = document.querySelectorAll('.form__input')[1];
-const messagesTextareaEl = document.querySelector('.form__messages-textarea');
-const sendMessageButton = document.querySelector('.form__send-messages-btn');
+const nameInputEl = document.querySelector('.js-name');
+const emailInputEl = document.querySelector('.js-email');
+const messagesTextareaEl = document.querySelector('.js-messages');
+const sendMessageButton = document.querySelector('.js-send-message-btn');
 
 const namePattern = /^[A-Za-z]+( [A-Za-z]+)*$/;
 const emailPattern = /^\S+@\S+\.\S+$/;
