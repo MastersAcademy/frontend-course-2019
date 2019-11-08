@@ -1,4 +1,4 @@
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -162,7 +162,7 @@
   position: relative;
 }
 
-.section_two_caption:after {
+.section_two_caption::after {
   content: "";
   position: absolute;
   width: 110px;
@@ -181,8 +181,8 @@
   position: relative;
 }
 
-.stick:before,
-.stick:after {
+.stick::before,
+.stick::after {
   content: "";
   position: absolute;
   width: 10px;
@@ -192,11 +192,11 @@
   top: -4px;
 }
 
-.stick:before {
+.stick::before {
   left: -10px;
 }
 
-.stick:after {
+.stick::after {
   right: -10px;
 }
 
@@ -248,7 +248,7 @@
   padding: 37px 37px 111px;
 }
 
-.section_three_caption:after {
+.section_three_caption::after {
   content: "";
   position: absolute;
   width: 110px;
