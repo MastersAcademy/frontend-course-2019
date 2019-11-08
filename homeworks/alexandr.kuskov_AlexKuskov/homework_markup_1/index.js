@@ -15,9 +15,14 @@ formEl.addEventListener('submit', (event) => {
     const isInputEmailValid = isInputValid(emailInputEl, emailPattern);
 
     if (isInputNameValid && isInputEmailValid && messagesTextareaEl.value) {
-        const alertOutput = `Name:  ${nameInputEl.value}
-                             Email: ${emailInputEl.value}
-                             Messages: ${messagesTextareaEl.value}`;
+        const [name, email, messages] = [
+            nameInputEl.value,
+            emailInputEl.value,
+            messagesTextareaEl.value,
+        ];
+        const alertOutput = `Name:  ${name}
+                             Email: ${email}
+                             Messages: ${messages}`;
 
         alert(alertOutput);
     }
