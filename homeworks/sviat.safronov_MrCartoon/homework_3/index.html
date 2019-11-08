@@ -33,7 +33,7 @@
             return new Promise((resolve, reject) => {
                 const request = new XMLHttpRequest();
                 request.onload = () => this.#processResponse({request, resolve});
-                request.onerror = () => this.#handleError({request, reject});
+                request.onerror = (event) => this.#handleError({request, reject, event});
                 request.onprogress = onprogress;
 
                 request.open('GET', url);
@@ -44,8 +44,8 @@
           #processResponse = ({request, resolve}) => {
             resolve({body: request.response});
           };
-          #handleError = ({request, reject}) => {
-            reject({status: this.status, statusText: request.statusText})
+          #handleError = ({request, reject, event}) => {
+            reject({status: event.status, statusText: request.statusText})
           };
         }
 
