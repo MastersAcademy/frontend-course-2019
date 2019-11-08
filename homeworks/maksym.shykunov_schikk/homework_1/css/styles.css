@@ -77,8 +77,8 @@ a:hover                        { text-decoration:none; }
 }
 .main-header-wrapper,
 .main-menu-list {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 .main-logo {
 	display: block;
