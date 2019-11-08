@@ -6,14 +6,20 @@ const messagesTextareaEl = document.querySelector('.js-messages');
 const namePattern = /^[A-Za-z]+( [A-Za-z]+)*$/;
 const emailPattern = /^\S+@\S+\.\S+$/;
 
+function isInputValid(elem, pattern) {
+    return elem.value.match(pattern);
+}
+
 formEl.addEventListener('submit', (event) => {
-    const isInputNameValid = nameInputEl.value.match(namePattern);
-    const isInputEmailValid = emailInputEl.value.match(emailPattern);
+    const isInputNameValid = isInputValid(nameInputEl, namePattern);
+    const isInputEmailValid = isInputValid(emailInputEl, emailPattern);
 
     if (isInputNameValid && isInputEmailValid && messagesTextareaEl.value) {
-        alert(`Name:  ${nameInputEl.value}
-Email: ${emailInputEl.value}
-Messages: ${messagesTextareaEl.value}`);
+        const alertOutput = `Name:  ${nameInputEl.value}
+                             Email: ${emailInputEl.value}
+                             Messages: ${messagesTextareaEl.value}`;
+
+        alert(alertOutput);
     }
 
     event.preventDefault();
