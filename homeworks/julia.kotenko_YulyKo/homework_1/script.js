@@ -1,58 +1,52 @@
-let element = document.querySelector("#submit");
-
-function onSubmit() {
-    checkEmptyInputs()
-}
-
 function getEmailValue() {
-    let email = document.querySelector('#email')
-    return email.value
+    const email = document.querySelector('#email');
+    return email.value;
 }
 
 function getNameValue() {
-    let name = document.querySelector('#name')
-    return name.value
+    const name = document.querySelector('#name');
+    return name.value;
 }
 
 function getMessageValue() {
-    let message = document.querySelector('#message')
-    return message.value
+    const message = document.querySelector('#message');
+    return message.value;
 }
 
-function checkEmptyInputs() {
-    let email = getMessageValue()
-    let name = getNameValue()
-    let message = getMessageValue()
-    if (email != '' && name != '' && message != '') {
-        validationOfEmail()
-    } else {
-        alert('It won\'t work that way.\nWrite information in all inputs')
-    }
-}
-
-function validationOfEmail() {
-    let mailformat = /\S+@\S+\.\S+/
-    let email = getEmailValue()
-    if (email.match(mailformat)) {
-        return validationName(name)
-    } else {
-        alert("Your e-mail is not correct")
-    }
+function showResultMessage() {
+    const email = getEmailValue();
+    const name = getNameValue();
+    const message = getMessageValue();
+    alert(`User ${name}(${email})
+Your message: ${message} was sended to Jhon Smith`);
 }
 
 function validationName() {
-    let name = getNameValue()
+    const name = getNameValue();
     if (/^[A-Za-z\s]+$/.test(name)) {
-        return showResultMessage()
+        showResultMessage();
+    }
+    alert('Your name is not correct written.\nRemove numbers and special symbols from input');
+}
+
+function validationOfEmail() {
+    const mailFormat = /\S+@\S+\.\S+/;
+    const email = getEmailValue();
+    const name = getNameValue();
+    if (email.match(mailFormat)) {
+        validationName(name);
+    }
+    alert('Your e-mail is not correct');
+}
+
+function onSubmit() {
+    const email = getMessageValue();
+    const name = getNameValue();
+    const message = getMessageValue();
+    if (!!email && !!name && !!message) {
+        validationOfEmail();
     } else {
-        alert("Your name is not correct written.\nRemove numbers and special symbols from input")
+        alert('It won\'t work that way.\nWrite information in all inputs');
     }
 }
-
-
-function showResultMessage() {
-    let email = getEmailValue()
-    let name = getNameValue()
-    let message = getMessageValue()
-    alert('User ' + name + '(' + email + ')\nYour message: ' + message + ' was sended to Jhon Smith')
-}
+document.querySelector('#submit').addEventListener('click', onSubmit);
