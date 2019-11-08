@@ -1,12 +1,12 @@
+const formEl = document.querySelector('.js-form');
 const nameInputEl = document.querySelector('.js-name');
 const emailInputEl = document.querySelector('.js-email');
 const messagesTextareaEl = document.querySelector('.js-messages');
-const sendMessageButton = document.querySelector('.js-send-message-btn');
 
 const namePattern = /^[A-Za-z]+( [A-Za-z]+)*$/;
 const emailPattern = /^\S+@\S+\.\S+$/;
 
-sendMessageButton.addEventListener('click', (event) => {
+formEl.addEventListener('submit', (event) => {
     const isInputNameValid = nameInputEl.value.match(namePattern);
     const isInputEmailValid = emailInputEl.value.match(emailPattern);
 
