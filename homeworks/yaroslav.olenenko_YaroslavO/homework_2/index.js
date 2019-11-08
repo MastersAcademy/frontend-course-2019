@@ -1,4 +1,4 @@
-const getElement = selector => document.querySelector(selector);
+const getElement = (selector) => document.querySelector(selector);
 const form = getElement('.article__form');
 const name = getElement('.article__input-name');
 const email = getElement('.article__input-email');
