@@ -32,8 +32,8 @@
           get(url, {responseType, onprogress})  {
             return new Promise((resolve, reject) => {
                 const request = new XMLHttpRequest();
-                request.onload = () => this.#processResponse({request, resolve});
-                request.onerror = (event) => this.#handleError({request, reject, event});
+                request.onload = this._processResponse(resolve);
+                request.onerror = this._handleError(reject);
                 request.onprogress = onprogress;
 
                 request.open('GET', url);
@@ -41,11 +41,11 @@
                 request.send();
               });
           }
-          #processResponse = ({request, resolve}) => {
-            resolve({body: request.response});
+          _processResponse(resolve) {
+            return event => resolve({body: event.target.response});
           };
-          #handleError = ({request, reject, event}) => {
-            reject({status: event.status, statusText: request.statusText})
+          _handleError(reject) {
+            return event => reject({status: event.status, statusText: event.target.statusText})
           };
         }
 
