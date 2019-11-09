@@ -10,16 +10,10 @@ function isInputValid(elem, pattern) {
     return elem.value.match(pattern);
 }
 
-function removeExtraWhitespaces(text) {
-    return text.replace(/ {2,}/g, '');
-}
-
 function getOutputText(name, email, messages) {
-    const alertOutput = `Name: ${name}
-                         Email: ${email}
-                         Messages: ${messages}`;
+    const alertOutput = `Name: ${name}\nEmail: ${email}\nMessages: ${messages}`;
 
-    return removeExtraWhitespaces(alertOutput);
+    return alertOutput;
 }
 
 formEl.addEventListener('submit', (event) => {
