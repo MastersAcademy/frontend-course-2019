@@ -30,109 +30,109 @@
   height: 65px;
 }
 
-.articles__section .article {
+.container .article {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
   grid-template-rows: auto;
 }
 
-.articles__section .article__first {
+.container .article__first {
   grid-template-areas: "left-part left-part right-part";
 }
 
-.articles__section .article__first_greeting {
+.container .article__first_greeting {
   color: #FE7E11;
   font-size: 45px;
   font-weight: 600;
 }
 
-.articles__section .article__first_text {
+.container .article__first_text {
   padding: 10px;
 }
 
-.articles__section .article__next {
+.container .article__next {
   grid-template-areas: "article-header article-header article-header" "left-part right-part right-part";
 }
 
-.articles__section .article__content_left {
+.container .article__content_left {
   grid-area: left-part;
   width: 540px;
   margin: auto;
 }
 
-.articles__section .article__content_right {
+.container .article__content_right {
   grid-area: right-part;
 }
 
-.articles__section .article:nth-child(even) {
+.container .article:nth-child(even) {
   background-color: #F0F0F0;
 }
 
-.articles__section .article__profile-photo {
+.container .article__profile-photo {
   height: 500px;
 }
 
-.articles__section .article__header {
+.container .article__header {
   grid-area: article-header;
   padding: 60px 0;
 }
 
-.articles__section .article__header_text {
+.container .article__header_text {
   font-size: 30px;
   text-align: center;
   font-weight: 600;
 }
 
-.articles__section .article__separator {
+.container .article__separator {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.articles__section .article__separator_top {
+.container .article__separator_top {
   width: 100px;
   display: flex;
   justify-content: space-between;
 }
 
-.articles__section .article__separator_circle {
+.container .article__separator_circle {
   border: 1px solid #000;
   border-radius: 50%;
   width: 6px;
   height: 6px;
 }
 
-.articles__section .article__separator_line {
+.container .article__separator_line {
   border-bottom: 2px solid #FE7E11;
   height: 3px;
   width: 100%;
 }
 
-.articles__section .article__separator_bottom {
+.container .article__separator_bottom {
   width: 70px;
 }
 
-.articles__section .article__separator_bottom .article__separator_line {
+.container .article__separator_bottom .article__separator_line {
   border-color: #000;
 }
 
-.articles__section .article-image__imworking {
+.container .article-image__imworking {
   width: 350px;
   padding: 0 20px;
 }
 
-.articles__section .article__short-info {
+.container .article__short-info {
   font-size: 18px;
   padding: 0 80px 15px;
 }
 
-.articles__section .article__much-about-me {
+.container .article__much-about-me {
   font-size: 12.6px;
   padding: 0 80px 15px;
 }
 
-.articles__section .article__additional-info {
+.container .article__additional-info {
   font-size: 12.6px;
   padding: 0 80px 15px;
   display: grid;
@@ -141,11 +141,11 @@
   line-height: 2;
 }
 
-.articles__section .article__buttons {
+.container .article__buttons {
   padding: 0 80px 15px;
 }
 
-.articles__section .button {
+.container .button {
   cursor: pointer;
   color: #000;
   border-radius: 16px;
@@ -157,23 +157,23 @@
   transition: .3s;
 }
 
-.articles__section .button.action-button {
+.container .button.action-button {
   color: #FFF;
   background-color: #FE7E11;
   border: 1px solid #FE7E11;
 }
 
-.articles__section .button.action-button:hover {
+.container .button.action-button:hover {
   color: #FE7E11;
   border: 1px solid #FE7E11;
   background-color: #FFF;
 }
 
-.articles__section .button.default-button {
+.container .button.default-button {
   background-color: #F0F0F0;
   border: 1px solid #000;
 }
 
-.articles__section .button.default-button:hover {
+.container .button.default-button:hover {
   background-color: #FFF;
 }
