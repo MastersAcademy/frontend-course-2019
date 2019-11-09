@@ -1,0 +1,34 @@
+@import "variables";
+
+.button {
+  cursor: pointer;
+  color: $black_text;
+  border-radius: 16px;
+  height: 35px;
+  padding: 5px 30px;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .3s;
+
+  &.action-button {
+    color: $white;
+    background-color: $main_color;
+    border: 1px solid $main_color;
+
+    &:hover {
+      color: $main_color;
+      border: 1px solid $main_color;
+      background-color: $white;
+    }
+  }
+
+  &.default-button {
+    background-color: $opposite_block_color;
+    border: 1px solid $black_text;
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+}

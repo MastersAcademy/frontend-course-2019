@@ -1,0 +1,113 @@
+@import "variables";
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: auto;
+  grid-template-areas: "article-header article-header article-header"
+  "left-part right-part right-part";
+
+  &:first-child {
+    grid-template-areas: "left-part left-part right-part";
+  }
+
+  &_greeting {
+    color: $main_color;
+    font-size: $menu_font_size * 2.5;
+    font-weight: 600;
+  }
+
+  &_text {
+    padding: 10px;
+  }
+
+  &__content_left {
+    grid-area: left-part;
+    width: 540px;
+    margin: auto;
+  }
+
+  &__content_right {
+    grid-area: right-part;
+  }
+
+  &:nth-child(even) {
+    background-color: $opposite_block_color;
+  }
+
+  &__profile-photo {
+    height: 500px;
+  }
+
+  &__header {
+    grid-area: article-header;
+    padding: 60px 0;
+
+    &_text {
+      font-size: 30px;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  &-image__imworking {
+    width: 350px;
+    padding: 0 20px;
+  }
+
+  &__short-info {
+    font-size: $menu_font_size;
+    padding: 0 80px 15px;
+  }
+
+  &__much-about-me {
+    font-size: $menu_font_size * .7;
+    padding: 0 80px 15px;
+  }
+
+  &__additional-info {
+    font-size: $menu_font_size * .7;
+    padding: 0 80px 15px;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: auto;
+    line-height: 2;
+  }
+
+  &__buttons {
+    padding: 0 80px 15px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    grid-template-areas: "input-name input-email"
+    "textarea textarea";
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    padding-bottom: 20px;
+  }
+
+  &__input {
+    padding: 10px;
+
+    &-name {
+      grid-area: input-name;
+    }
+
+    &-email {
+      grid-area: input-email;
+    }
+
+    &:focus {
+      border-color: $main_color;
+      outline-color: $main_color;
+    }
+  }
+
+  &__textarea {
+    grid-area: textarea;
+    height: 150px;
+  }
+}

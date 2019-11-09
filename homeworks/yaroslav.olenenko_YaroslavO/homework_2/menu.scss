@@ -1,0 +1,26 @@
+@import "variables";
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  font-size: $menu_font_size;
+
+  &__item {
+    text-transform: uppercase;
+    text-decoration: unset;
+    padding: 0 10px;
+    color: $black_text;
+    font-weight: 600;
+
+    &_active {
+      color: $main_color;
+    }
+  }
+
+  &__logo-image {
+    width: 266px;
+    height: 65px;
+  }
+}
