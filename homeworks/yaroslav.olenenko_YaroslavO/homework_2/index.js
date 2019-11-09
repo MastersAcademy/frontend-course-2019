@@ -1,8 +1,8 @@
 const getElement = (selector) => document.querySelector(selector);
-const form = getElement('.article__form');
-const name = getElement('.article__input-name');
-const email = getElement('.article__input-email');
-const text = getElement('.article__textarea');
+const form = getElement('.js__form');
+const name = getElement('.js__name');
+const email = getElement('.js__email');
+const text = getElement('.js__textarea');
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
