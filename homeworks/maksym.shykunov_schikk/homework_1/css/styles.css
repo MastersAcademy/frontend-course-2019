@@ -64,7 +64,7 @@ ul > li {
   position: absolute;
   bottom: -20px;
   left: 20px;
-  background-image: url(../img/elements/title-elem.svg);
+  background-image: url("../img/elements/title-elem.svg");
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
