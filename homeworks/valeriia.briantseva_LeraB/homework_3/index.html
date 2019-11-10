@@ -33,6 +33,7 @@
                 const request = new XMLHttpRequest();
                 return new Promise((resolve, reject) => {
                     request.open('GET', url, true);
+                    request.responseType = option.responseType;
                     request.onprogress = option.onprogress;
                     request.onload = function() {
                         resolve({body: request.response})
