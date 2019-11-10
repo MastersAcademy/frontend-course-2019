@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework markup 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body class="body">
+    <header class="header section">
+        <img class="header__logo" src="./images/logo.png" alt="Rongila logo">
+        <nav>
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">Home</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">About</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">Service</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">Resume</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">Portfolio</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">Blog</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="greeting section">
+        <div class="greeting-text">
+            <span class="greeting-text__hello">Hello,</span>
+            <span class="greeting-text__name">I am Alex Kuskov</span>
+            <span class="greeting-text__profession">Future Front-End Developer <br>@ Not Designer</span>
+            <button class="button button--primary greeting-text__hire-btn">Hire</button>
+        </div>
+        
+        <img class="greeting__image" src="./images/image-1.png" alt="Image #1">
+    </div>
+
+    <section class="about-me section">
+        <header class="section__header">
+            <h2 class="section__header-title">About Me</h2>
+            <div class="section__top-divider"></div>
+            <div class="section__bottom-divider"></div>
+        </header>
+
+        <div class="about-me__content">
+            <img class="about-me__image" src="./images/image-2.png" alt="Image #2">
+
+            <div class="about-me-text">
+                <div class="about-me-text__greeting">
+                    Hello I am Alex Kuskov, I don't have much to say about myself, 
+                    so I just copy-paste text from PSD template :)
+                </div>
+
+                <div class="about-me-text__description">
+                    loream isam Mauris scelerisque ut ipsum id vulputate. Nulla laoreet, ligula vel 
+                    congue ultricies, nibh ipsum egestas nunc, id porta nibh nunc non felis. Vestibulum 
+                    nibh urna, lobortis ut euismod., 
+                </div>
+
+                <ul class="about-me-text__list">
+                    <li class="about-me-text__list-item">Name:</li>
+                    <li class="about-me-text__list-item">Email:</li>
+                    <li class="about-me-text__list-item">Phone:</li>
+                    <li class="about-me-text__list-item">Date of Birth:</li>
+                    <li class="about-me-text__list-item">Nationality:</li>
+                    <li class="about-me-text__list-item">Address:</li>
+                </ul>
+
+                <ul class="about-me-text__list about-me-text__list--values">
+                    <li class="about-me-text__list-item">Jhon Smith</li>
+                    <li class="about-me-text__list-item">jhonamith@gmail.com</li>
+                    <li class="about-me-text__list-item">0586321470</li>
+                    <li class="about-me-text__list-item">21-Oct-1990</li>
+                    <li class="about-me-text__list-item">Bangladesh</li>
+                    <li class="about-me-text__list-item">1212 Dhaka, Rampura, Btv  Brobon.</li>
+                </ul>
+
+                <div class="about-me-buttons">
+                    <button class="button button--primary about-me-buttons__hire-me-btn">Hire me</button>
+                    <button class="button button--secondary about-me-buttons__download-cv-btn">Download cv</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-me section">
+        <header class="section__header">
+            <h2 class="section__header-title">Contact Me</h2>
+            <div class="section__top-divider"></div>
+            <div class="section__bottom-divider"></div>
+        </header>
+
+        <div class="contact-me__content">
+            <address class="contact-details">
+                <div class="contact-details__item">
+                    <div class="icon-background">
+                        <img class="icon-background__icon" src="./images/house-icon.svg" alt="House icon">
+                    </div>
+                    <span class="contact-details__text">
+                        Rapthame@gmail.com <br>
+                        Your email name@gmail.com
+                    </span>
+                </div>
+                
+                <div class="contact-details__item">
+                    <div class="icon-background">
+                        <img class="icon-background__icon" src="./images/phone-cell.svg" alt="Phone icon">
+                    </div>
+                    <span class="contact-details__text">
+                        0088017123456 <br>
+                        0088019315388
+                    </span>
+                </div>
+
+                <div class="contact-details__item">
+                    <div class="icon-background">
+                        <img class="icon-background__icon" src="./images/placeholder.svg" alt="Placeholder icon">
+                    </div>
+                    <span class="contact-details__text">
+                        Dhaka 1200, Rampura <br>
+                        Hatirzil, Bangladesh
+                    </span>
+                </div>
+            </address>
+
+            <form class="form js-feedback-form">
+                <div class="form__inputs">
+                    <input class="form__input js-feedback-name" placeholder="Your Name....." type="text">
+                    <input class="form__input js-feedback-email" placeholder="Your Address....." type="text">
+                </div>
+                
+                <textarea 
+                    class="form__messages-textarea js-feedback-messages" 
+                    name="messages" 
+                    placeholder="Your Messages....."
+                    id="messages"></textarea>
+                <button class="button button--primary form__send-messages-btn" type="submit">Send message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer section">
+        <span class="footer__text">One Page Personal Protfolio Template By RapThame @ 2018</span>
+        <div class="footer__social-media-links">
+            <!-- Facebook link -->
+            <svg class="footer__media-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+                <path d="M72.089.02L59.624 0C45.62 0 36.57 9.285 36.57 23.656v10.907H24.037a1.96 
+                1.96 0 00-1.96 1.961v15.803a1.96 1.96 0 001.96 1.96H36.57v39.876a1.96 1.96 0 001.96 
+                1.96h16.352a1.96 1.96 0 001.96-1.96V54.287h14.654a1.96 1.96 0 001.96-1.96l.006-15.803a1.963 
+                1.963 0 00-1.961-1.961H56.842v-9.246c0-4.444 1.059-6.7 6.848-6.7l8.397-.003a1.96 1.96 0 
+                001.959-1.96V1.98A1.96 1.96 0 0072.089.02z"/>
+            </svg>
+
+            <!-- Twitter link -->
+            <svg class="footer__media-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 
+                46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 
+                48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 
+                23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 
+                0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 
+                36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 
+                0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 
+                44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 
+                464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 
+                38.336-33.248 52.608-54.496z"/>
+            </svg>
+
+            <!-- Instagram link -->
+            <svg class="footer__media-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97">
+                <path d="M12.501 0h72.393c6.875 0 12.5 5.09 12.5 12.5v72.395c0 7.41-5.625 12.5-12.5 
+                12.5H12.501C5.624 97.395 0 92.305 0 84.895V12.5C0 5.09 5.624 0 12.501 0zm58.447 
+                10.821a4.395 4.395 0 00-4.383 4.385v10.495a4.396 4.396 0 004.383 4.385h11.008a4.398 
+                4.398 0 004.385-4.385V15.206a4.397 4.397 0 00-4.385-4.385H70.948zm15.439 
+                30.367h-8.572a28.486 28.486 0 011.25 8.355c0 16.2-13.556 29.332-30.275 29.332-16.718 
+                0-30.272-13.132-30.272-29.332 0-2.904.438-5.708 1.25-8.355h-8.945v41.141a3.884 3.884 0 
+                003.872 3.872h67.822a3.883 3.883 0 003.872-3.872V41.188h-.002zM48.789 29.533c-10.802 
+                0-19.56 8.485-19.56 18.953s8.758 18.953 19.56 18.953c10.803 0 19.562-8.485 
+                19.562-18.953s-8.758-18.953-19.562-18.953z"/>
+            </svg>
+
+            <!-- Dribbble link -->
+            <svg class="footer__media-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.846 186.846">
+                <path d="M93.423.001C41.909.001 0 41.91 0 93.423s41.909 93.422 93.423 93.422 
+                93.423-41.909 93.423-93.422S144.937.001 93.423.001zm60.88 44.06c10.488 12.91 
+                16.945 29.205 17.482 46.968-19.428-4.022-37.02-3.55-52.55-.505a365.92 365.92 0 
+                00-8.661-18.762c16.913-7.286 31.637-16.592 43.729-27.701zm-10.524-10.696c-12.003 
+                10.956-25.913 19.068-40.156 25.057-10.454-19.117-20.456-33.513-26.549-41.694a78.382 
+                78.382 0 0116.349-1.727c19.157 0 36.722 6.914 50.356 18.364zM61.924 21.627c4.601 
+                5.962 15.56 20.89 27.332 42.129C59.67 73.395 30.962 75.019 17.167 75.17c5.75-24.02 
+                22.571-43.771 44.757-53.543zM15.082 90.208l.442.001c9.532 0 26.996-.641 47.556-4.39 
+                11.73-2.139 22.853-5.018 33.29-8.586a359.016 359.016 0 018.037 17.114c-14.614 
+                4.705-26.938 11.475-36.7 18.197-16.37 11.273-27.838 23.78-34.1 31.513C22.013 130.384 
+                15 112.712 15 93.423c0-1.078.038-2.147.082-3.215zm29.334 64.374c5.391-6.788 16.364-19.143 
+                32.237-29.984 10.787-7.368 21.947-12.842 33.436-16.435 6.666 17.278 12.357 36.369 
+                15.75 56.64a77.937 77.937 0 01-32.416 7.042c-18.532 0-35.571-6.475-49.007-17.263zm95.223 
+                2.144c-3.497-18.617-8.712-36.122-14.741-52.12 14.83-2.502 30.157-1.986 45.899 1.55-3.395 
+                20.69-14.908 38.674-31.158 50.57z"/>
+            </svg>
+
+            <!-- Pinterest link -->
+            <svg class="footer__media-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.977 511.977">
+                <path d="M262.948 0C122.628 0 48.004 89.92 48.004 187.968c0 45.472 25.408 102.176 
+                66.08 120.16 6.176 2.784 9.536 1.6 10.912-4.128 1.216-4.352 6.56-25.312 
+                9.152-35.2.8-3.168.384-5.92-2.176-8.896-13.504-15.616-24.224-44.064-24.224-70.752 
+                0-68.384 54.368-134.784 146.88-134.784 80 0 135.968 51.968 135.968 126.304 0 
+                84-44.448 142.112-102.208 142.112-31.968 0-55.776-25.088-48.224-56.128 9.12-36.96 
+                27.008-76.704 27.008-103.36 0-23.904-13.504-43.68-41.088-43.68-32.544 0-58.944 
+                32.224-58.944 75.488 0 27.488 9.728 46.048 9.728 46.048S144.676 371.2 138.692 
+                395.488c-10.112 41.12 1.376 107.712 2.368 113.44.608 3.168 4.16 4.16 6.144 1.568 
+                3.168-4.16 42.08-59.68 52.992-99.808 3.968-14.624 20.256-73.92 20.256-73.92 10.72 
+                19.36 41.664 35.584 74.624 35.584 98.048 0 168.896-86.176 168.896-193.12C463.62 
+                76.704 375.876 0 262.948 0z"/>
+            </svg>
+        </div>
+    </footer>
+</body>
+</html>

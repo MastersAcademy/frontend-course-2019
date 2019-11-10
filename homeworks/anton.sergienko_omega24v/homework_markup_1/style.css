@@ -455,6 +455,7 @@ a:hover, .btn:hover {
 
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -565,6 +566,8 @@ header .nav li:last-child {
 }
 
 .about-me h2 {
+  flex: 100%;
+  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -572,12 +575,19 @@ header .nav li:last-child {
   margin-top: 100px;
 }
 
-.about-me .d-flex .left-side {
-  flex: 2;
+.about-me .left-side {
+  width: 33.3%;
+  flex-grow: 3;
+} 
+
+.about-me .left-side img {
+  width: 100%;
+  max-width: 335px;
 }
 
-.about-me .d-flex .right-side {
-  flex: 3;
+.about-me .right-side {
+  width: 33.3%;
+  flex-grow: 9;
 }
 
 .about-me h3 {
@@ -626,6 +636,7 @@ header .nav li:last-child {
 }
 
 .contact-me h2 {
+  flex: 100%;
   margin-bottom: 100px;
   text-align: center;
 }
