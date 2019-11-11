@@ -17,7 +17,7 @@ function validateFields(templateName, name, templateEmail, email, message) {
     }
 }
 
-function showAlert(event) {  
+function showAlert(event) {
     event.preventDefault();
 
     const name = document.getElementById('name').value;
