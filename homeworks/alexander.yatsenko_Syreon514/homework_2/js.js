@@ -1,6 +1,6 @@
 function validationTemplates() {
-    let templateName = /^[a-zA-Zа-яА-Я ]/;
-    let templateEmail = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
+    const templateName = /^[a-zA-Zа-яА-Я ]/;
+    const templateEmail = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
     return { templateName, templateEmail };
 }
 
@@ -20,11 +20,11 @@ function validateFields(templateName, name, templateEmail, email, message) {
 function showAlert(event) {  
     event.preventDefault();
 
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
-    let { templateName, templateEmail } = validationTemplates();
+    const { templateName, templateEmail } = validationTemplates();
     
     validateFields(templateName, name, templateEmail, email, message);
 };
