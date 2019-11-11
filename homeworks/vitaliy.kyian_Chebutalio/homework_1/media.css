@@ -1,0 +1,202 @@
+@media (min-width: 900px) and (max-width: 1200px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    width: 120px;
+    height: 40px;
+  }
+
+  .navigation ul li {
+    margin-left: 1rem;
+  }
+
+  .mainbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  .main-text {
+    padding-left: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .prime-text {
+    font-size: 2rem;
+  }
+
+  .about-me-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-section img {
+    padding: 0;
+  }
+
+  .contacts-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form input[type="text"],.contact-form input[type="email"] {
+    width: 37%
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    width: 120px;
+    height: 40px;
+  }
+
+  .navigation ul li {
+    margin-left: 1rem;
+  }
+
+  .mainbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  .main-text {
+    padding-left: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .prime-text {
+    font-size: 2rem;
+  }
+
+  .about-me-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-section img {
+    padding: 0;
+  }
+
+  .contacts-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form input[type="text"],.contact-form input[type="email"] {
+    width: 37%
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 599px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    width: 120px;
+    height: 40px;
+  }
+
+  .navigation ul li {
+    margin-left: .5rem;
+  }
+
+  .mainbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  .main-text {
+    padding-left: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .main-text {
+    font-size: .8rem;
+  }
+
+  .prime-text {
+    font-size: 1.5rem;
+  }
+
+  .about-me-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-section img {
+    padding: 0;
+  }
+
+  .info-section {
+    max-width: 350px;
+  }
+
+  .info-text {
+    max-width: 350px;
+  }
+
+  .about-me-buttons {
+    max-width: 350px;
+  }
+
+  .btn {
+    padding: .5rem 2rem;
+  }
+
+  .contacts-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form input[type="text"],.contact-form input[type="email"] {
+    width: 37%
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
