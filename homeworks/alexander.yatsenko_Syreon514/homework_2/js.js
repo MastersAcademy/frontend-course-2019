@@ -25,8 +25,8 @@ function showAlert(event) {
     const message = document.getElementById('message').value;
 
     const { templateName, templateEmail } = validationTemplates();
-    
+
     validateFields(templateName, name, templateEmail, email, message);
-};
+}
 
 document.getElementById('form__btn').addEventListener('click', showAlert);
