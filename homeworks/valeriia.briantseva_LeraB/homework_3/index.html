@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <script src="https://bundle.run/buffer@5.4.3"></script>
+    <style>
+        .progress-bar {
+            height: 10px;
+            background-color: #f0f0f0;
+            --progress: 0;
+        }
+
+        .progress-bar:before {
+            content: "";
+            height: 100%;
+            display: block;
+            width: var(--progress);
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="progress-bar" data-progress></div>
+<img style="max-width: 100%;" data-cat/>
+
+<script defer>
+    (() => {
+        class HTTPClient {
+            get(url, option) {
+                const request = new XMLHttpRequest();
+                return new Promise((resolve, reject) => {
+                    request.open('GET', url, true);
+                    request.responseType = option.responseType;
+                    request.onprogress = option.onprogress;
+                    request.onload = function() {
+                        resolve({body: request.response})
+                    };
+                    request.onerror = function() {
+                        reject(new Error('Failed to execute'))
+                    };
+
+                    request.send();
+                });
+            }
+
+
+        }
+
+        const CAT_URL = 'https://media4.s-nbcnews.com/j/newscms/2019_10/1415012/cat-food-eat-today-main-190305_ec2dc58bbd275269fe5b1c233cd24f6a.fit-2000w.jpg';
+        const progressBarEl = document.querySelector('[data-progress]');
+
+        new HTTPClient()
+            .get(CAT_URL, {responseType: 'arraybuffer', onprogress})
+            .then(parseResponseCat)
+            .then(renderCat);
+
+        function onprogress({loaded, total}) {
+            const progress = `${(loaded / total) * 100}%`;
+            progressBarEl.style.setProperty('--progress', progress);
+        }
+
+        function parseResponseCat({body}) {
+            const base64Image = buffer.Buffer.from(body, 'binary').toString('base64');
+            return `data:image/jpg;base64,${base64Image}`;
+        }
+
+        function renderCat(catImage) {
+            document.querySelector('[data-cat]').src = catImage;
+        }
+    })()
+</script>
+</body>
+</html>
