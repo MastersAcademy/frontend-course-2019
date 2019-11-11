@@ -26,22 +26,27 @@
     <div class="progress-bar" data-progress></div>
     <img style="max-width: 100%;" data-cat />
 
-    <script defer>
+    <script>
       (() => {
         class HTTPClient {
-            get(url, options) {
-                const xhr = new XMLHttpRequest();
+          get(url, {responseType, onprogress})  {
+            return new Promise((resolve, reject) => {
+                const request = new XMLHttpRequest();
+                request.onload = this._processResponse(resolve);
+                request.onerror = this._handleError(reject);
+                request.onprogress = onprogress;
 
-                return new Promise((resolve, reject) => {
-                    xhr.onprogress = options.onprogress;
-                    xhr.onload = () => resolve({body: xhr.response});
-                    xhr.onerror = () => reject(xhr.status + " " + xhr.statusText);
-
-                    xhr.open('GET', url);
-                    xhr.responseType = options.responseType;
-                    xhr.send();
-                });
-            }
+                request.open('GET', url);
+                request.responseType = responseType;
+                request.send();
+              });
+          }
+          _processResponse(resolve) {
+            return event => resolve({body: event.target.response});
+          };
+          _handleError(reject) {
+            return event => reject({status: event.status, statusText: event.target.statusText})
+          };
         }
 
         const CAT_URL = 'https://media4.s-nbcnews.com/j/newscms/2019_10/1415012/cat-food-eat-today-main-190305_ec2dc58bbd275269fe5b1c233cd24f6a.fit-2000w.jpg';
