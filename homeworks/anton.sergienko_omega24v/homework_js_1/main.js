@@ -1,11 +1,14 @@
 (() => {
-
     class HTTPClient {
+        constructor() {
+
+        }
+        
         get(url, options) {
             const request = new XMLHttpRequest();
             return new Promise((resolve, reject) => {
                 request.onprogress = options.onprogress;
-                request.onload = () => resolve({body: request.response});
+                request.onload = () => resolve({ body: request.response });
                 request.onerror = () => reject(request.status + " " + request.statusText);
                 request.open('GET', url);
                 request.responseType = options.responseType;
