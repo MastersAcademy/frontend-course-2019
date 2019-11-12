@@ -1,3 +1,6 @@
+/*eslint-disable */
+
+
 (() => {
     class HTTPClient {
         get(url, options) {
