@@ -1,52 +1,44 @@
-function getEmailValue() {
-    const email = document.querySelector('#email');
-    return email.value;
-}
-
-function getNameValue() {
-    const name = document.querySelector('#name');
-    return name.value;
-}
-
-function getMessageValue() {
-    const message = document.querySelector('#message');
-    return message.value;
-}
+let email = '';
+let name = '';
+let message = '';
 
 function showResultMessage() {
-    const email = getEmailValue();
-    const name = getNameValue();
-    const message = getMessageValue();
-    alert(`User ${name}(${email})
+    alert(`User ${name}\n(${email})
 Your message: ${message} was sended to Jhon Smith`);
 }
 
-function validationName() {
-    const name = getNameValue();
-    if (/^[A-Za-z\s]+$/.test(name)) {
+function validateName() {
+    const nameFormat = /^[A-Za-z\s]+$/;
+    if (!nameFormat.test(name)) {
         showResultMessage();
+        alert('Your name is not correct written.\nRemove numbers and special symbols from input');
+        return false;
     }
-    alert('Your name is not correct written.\nRemove numbers and special symbols from input');
+    return true;
 }
 
-function validationOfEmail() {
+function validateEmail() {
     const mailFormat = /\S+@\S+\.\S+/;
-    const email = getEmailValue();
-    const name = getNameValue();
-    if (email.match(mailFormat)) {
-        validationName(name);
+    if (!email.match(mailFormat)) {
+        alert('Your e-mail is not correct');
+        return false;
     }
-    alert('Your e-mail is not correct');
+    return true;
+}
+
+function showValidationError(validationError) {
+    console.log(validationError);
 }
 
 function onSubmit() {
-    const email = getMessageValue();
-    const name = getNameValue();
-    const message = getMessageValue();
-    if (!!email && !!name && !!message) {
-        validationOfEmail();
-    } else {
-        alert('It won\'t work that way.\nWrite information in all inputs');
+    email = document.querySelector('#email').value;
+    name = document.querySelector('#name').value;
+    message = document.querySelector('#message').value;
+    console.log(email);
+    const validationError = validateEmail() || validateName();
+    if (validationError) {
+        showValidationError(validationError);
+        showResultMessage();
     }
 }
 document.querySelector('#submit').addEventListener('click', onSubmit);

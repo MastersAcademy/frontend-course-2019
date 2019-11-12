@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-template-columns: 20vw 1fr 20vw;
+  grid-template-columns: 20% 1fr 20%;
   grid-template-rows: 100vh;
 }
 
@@ -12,10 +12,11 @@
 .container__header {
   grid-area: container-header;
   justify-content: space-between !important;
+  align-items: center;
 }
 
 .grid--hello {
-  margin-top: 2rem;
+  margin-top: 32px;
   grid-template-areas: ". container-hello .";
 }
 
@@ -75,11 +76,11 @@
   font-size: 14px;
 }
 
-.list-item {
+.list__item {
   font-size: 14px;
 }
 
-.list-item:hover {
+.list__item:hover {
   color: #FE7E11;
 }
 
@@ -107,9 +108,9 @@
 }
 
 .button {
-  margin-top: 9%;
-  margin-right: 2vw;
-  padding: 3% 2vw;
+  margin-top: 15px;
+  margin-right: 39px;
+  padding: 15px 32px;
   border-radius: 25px;
   background: none;
   border: 2px solid #666;
@@ -184,8 +185,9 @@
   width: 38vw;
 }
 
-.form_input,
-.form_textarea {
+.form__input,
+.form__textarea {
+  will-change: transform;
   width: 47%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -196,12 +198,12 @@
   cursor: pointer;
 }
 
-.form_input,
-.form_textarea {
+.form__input,
+.form__textarea {
   -webkit-transition: 1s;
 }
 
-.form_textarea {
+.form__textarea {
   width: 100%;
   margin-top: 2rem;
   height: 68%;
@@ -212,7 +214,7 @@
   justify-content: space-between;
 }
 
-.form_input:focus,
+.form__input:focus,
 .form_textarea:focus {
   border-color: #FE7E11;
 }
