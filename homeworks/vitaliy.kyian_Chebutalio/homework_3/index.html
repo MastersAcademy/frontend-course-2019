@@ -8,19 +8,19 @@
     <title>Document</title>
     <script src="https://bundle.run/buffer@5.4.3"></script>
     <style>
-.progress-bar {
-  height: 10px;
-  background-color: #F0F0F0;
-  --progress: 0;
-}
+        .progress-bar {
+          height: 10px;
+          background-color: #F0F0F0;
+          --progress: 0;
+        }
 
-.progress-bar:before {
-  content: "";
-  height: 100%;
-  display: block;
-  width: var(--progress);
-  background-color: rgb(0, 128, 0);
-}
+        .progress-bar:before {
+          content: "";
+          height: 100%;
+          display: block;
+          width: var(--progress);
+          background-color: rgb(0, 128, 0);
+        }
     </style>
 </head>
 
@@ -33,25 +33,22 @@ max-width: 100%" data-cat />
     <script defer>
         (() => {
             class HTTPClient {
-                get(URL, { responseType, onprogress }) {
-                    const promise = new Promise(function (resolve) {
+                get(url, { responseType, onprogress }) {
+                    return new Promise((resolve) => {
                         const xhr = new XMLHttpRequest();
-                        xhr.open('GET', URL, true);
+                        xhr.open('GET', url);
                         xhr.responseType = responseType;
                         xhr.onprogress = onprogress;
-                        xhr.onload = function () {
-                            if (xhr.status !== 200) {
-                                aletr(`Помилка ${xhr.status}: ${xhr.statusText}`);
+                        xhr.onload = () => {
+                            if (xhr.status !== 200 && xhr.status !== 201) {
+                                reject({ status: xhr.status, statusText: xhr.statusText });
                             } else {
                                 resolve({ body: xhr.response });
                             }
                         };
-                        xhr.onerror = function () {
-                            alert('Невдалий запит')
-                        };
+                        xhr.onerror = () => reject({ status: xhr.status, statusText: xhr.statusText });
                         xhr.send();
                     });
-                    return promise;
                 }
             }
 
