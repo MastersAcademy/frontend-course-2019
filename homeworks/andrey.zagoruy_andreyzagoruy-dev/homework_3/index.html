@@ -35,33 +35,8 @@
             return request;
           }
 
-          _setResponseType(req, type) {
-            req.responseType = type;
-          }
-
-          _registerProgressCallback(req, callback) {
-            if (typeof callback !== "function") {
-              return;
-            }
-            req.onprogress = callback;
-          }
-
           _applyRequestOptions(req, options) {
-            const optionsList = Object.keys(options);
-
-            optionsList.forEach((option) => {
-              switch (option) {
-                case "responseType":
-                  this._setResponseType(req, options[option]);
-                  break;
-                case "onprogress":
-                  this._registerProgressCallback(req, options[option]);
-                  break;
-
-                default:
-                  break;
-              }
-            });
+            Object.assign(req, options);
           }
 
           get(url, options) {
@@ -70,13 +45,8 @@
                 reject(new Error("URL missing"));
               }
               const request = this._createRequestObject(options);
-              request.onload = () => {
-
-                resolve({body: request.response || request.responseText});
-              }
-              request.onerror = () => {
-                reject(new Error(request.statusText));
-              }
+              request.onload = () => resolve({body: request.response || request.responseText});
+              request.onerror = () => reject(new Error(request.statusText));
               request.open("GET", url);
               request.send();
             });
