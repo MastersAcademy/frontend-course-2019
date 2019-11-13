@@ -1,7 +1,7 @@
-const formEl = document.querySelector('.js-form');
-const nameInputEl = document.querySelector('.js-name');
-const emailInputEl = document.querySelector('.js-email');
-const messagesTextareaEl = document.querySelector('.js-messages');
+const formEl = document.querySelector('.js-feedback-form');
+const nameInputEl = document.querySelector('.js-feedback-name');
+const emailInputEl = document.querySelector('.js-feedback-email');
+const messagesTextareaEl = document.querySelector('.js-feedback-messages');
 
 const namePattern = /^[A-Za-z]+( [A-Za-z]+)*$/;
 const emailPattern = /^\S+@\S+\.\S+$/;
@@ -10,16 +10,10 @@ function isInputValid(elem, pattern) {
     return elem.value.match(pattern);
 }
 
-function removeExtraWhitespaces(text) {
-    return text.replace(/ {2,}/g, '');
-}
-
 function getOutputText(name, email, messages) {
-    const alertOutput = `Name: ${name}
-                         Email: ${email}
-                         Messages: ${messages}`;
+    const alertOutput = `Name: ${name}\nEmail: ${email}\nMessages: ${messages}`;
 
-    return removeExtraWhitespaces(alertOutput);
+    return alertOutput;
 }
 
 formEl.addEventListener('submit', (event) => {
