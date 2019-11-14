@@ -1,4 +1,4 @@
-// import { isValid } from './validation-module';
+import { isValid } from './validation-module';
 
 const formEl = document.querySelector('.js-registration-form');
 const firstNameInputEl = document.querySelector('.js-registration-first-name');
@@ -16,8 +16,8 @@ function setValidInputStyle(element) {
     element.setAttribute('style', 'border-color: rgb(0, 0, 0); color: rgb(0, 0, 0);');
 }
 
-function setInputFieldStyle(isValid, element) {
-    if (isValid) {
+function setInputFieldStyle(isInputValid, element) {
+    if (isInputValid) {
         setValidInputStyle(element);
     } else {
         setInvalidInputStyle(element);
@@ -28,12 +28,16 @@ function showValidationText() {
     validationTextSpanEl.setAttribute('style', 'visibility: visible;');
 }
 
+function isNameValid(name, min, max) {
+    return isValid.minLength(name, min) && isValid.maxLength(name, max);
+}
+
 formEl.addEventListener('submit', (event) => {
-    const isFirstNameValid = !!firstNameInputEl.value;
-    const isLastNameValid = !!lastNameInputEl.value;
-    const isEmailValid = !!emailInputEl.value;
-    const isPhoneValid = !!phoneInputEl.value;
-    const isAgeValid = !!ageInputEl.value;
+    const isFirstNameValid = isNameValid(firstNameInputEl.value, 2, 20);
+    const isLastNameValid = isNameValid(lastNameInputEl.value, 2, 20);
+    const isEmailValid = isValid.email(emailInputEl.value);
+    const isPhoneValid = isValid.phone(phoneInputEl.value);
+    const isAgeValid = isValid.numberRange(ageInputEl.value, 18, 120);
 
     setInputFieldStyle(isFirstNameValid, firstNameInputEl);
     setInputFieldStyle(isLastNameValid, lastNameInputEl);
