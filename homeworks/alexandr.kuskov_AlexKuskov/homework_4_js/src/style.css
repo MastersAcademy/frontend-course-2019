@@ -9,16 +9,23 @@
 .form__label {
   font-size: 20px;
   margin-bottom: 1%;
+  margin-top: 5%;
 }
 
 .form__input {
   height: 35px;
-  margin-bottom: 5%;
   padding-left: 10px;
   font-size: 16px;
   border-radius: 10px;
   border: 2px solid rgb(0, 0, 0);
   outline: none;
+}
+
+.form__validation-text {
+  visibility: hidden;
+  font-size: 20px;
+  margin: 4% auto;
+  color: rgb(0, 128, 0);
 }
 
 .form__submit-btn {
