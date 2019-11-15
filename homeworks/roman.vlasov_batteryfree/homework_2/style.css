@@ -145,3 +145,7 @@
 .contact__svg {
   fill: #FFF;
 }
+
+.contact__invalid {
+  border: 2px solid #F00;
+}

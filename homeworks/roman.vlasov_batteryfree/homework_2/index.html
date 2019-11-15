@@ -38,14 +38,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact__message">
+                <form class="contact__message">
                     <div class="contact__edit__wrap">
-                        <input class="contact__edit" type="text" value="Your Name........">
-                        <input class="contact__edit" type="email" value="Email Address.....">
+                        <input class="contact__edit js-contact-name" type="text" placeholder="Your Name........">
+                        <input class="contact__edit js-contact-email" type="email" placeholder="Email Address.....">
                     </div>
-                    <textarea class="contact__txtarea">Your Messages.....</textarea><br>
-                    <input class="contact__btn" type="button" value="Send messages">
-                </div>
+                    <textarea class="contact__txtarea js-contact-message"  placeholder="Your Messages...."></textarea><br>
+                    <button class="contact__btn js-submit" type="submit">Send messages</button>
+                </form>
             </div>
         </section>
         <svg style="position: absolute; width: 0;">
@@ -62,6 +62,6 @@
                 <path d="M16 1l-16 16 3 3 3-3v13h8v-6h4v6h8v-13l3 3 3-3-16-16zM16 14c-1.105 0-2-0.895-2-2s0.895-2 2-2c1.105 0 2 0.895 2 2s-0.895 2-2 2z"></path>
             </symbol>
         </svg>
-        <script src="app.js"></script>
+       <script src="app.js" defer></script>
     </body>
 </html>
