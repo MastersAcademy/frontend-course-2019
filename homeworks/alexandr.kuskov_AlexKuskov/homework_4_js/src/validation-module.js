@@ -1,7 +1,5 @@
 import { emailPattern, phonePattern } from './regex-patterns';
 
-export default 0; // TODO remove this export, when eslint(import/prefer-default-export) disabled
-
 export const isValid = {
     minLength(text, length) {
         return text.length >= length;
