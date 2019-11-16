@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/prefer-default-export
 export const isValid = {
     minLength(text, length) {
         return text.length >= length;
