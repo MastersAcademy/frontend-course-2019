@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="app.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const content = {
+                    header_links: ['Home', 'About', 'Expertise', 'Teams', 'Works', 'People say', 'Contact'],
+                    expertise: [
+                        {img: 'computer', header: 'Web Design & Development'},
+                        {img: 'brush', header: 'Branding Identity'},
+                        {img: 'mobile', header: 'Mobile App'},
+                        {img: 'data', header: 'Search Engine Optimization'},
+                        {img: 'game-boy', header: 'Game Development'},
+                        {img: 'heart', header: 'Made With Love'},
+                    ],
+                    lorem_ipsum: 'This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.',
+                    people: [
+                        {img: '', name: 'Semf Ucuk', position: 'CEO & Founder'},
+                        {img: '', name: 'Dik Adalin', position: 'Engineering'},
+                        {img: '', name: 'Jeng Kol', position: 'Designer'},
+                        {img: '', name: 'Pet Romak', position: 'Marketing'},
+                    ],
+                    avatars: ['', '', '', '', ''],
+                    clients: ['', '', '', '', '', '', '', '', '', ''],
+                    socials: [
+                        'fb.svg',
+                        'fb.svg',
+                        'fb.svg',
+                        'fb.svg',
+                        'fb.svg',
+                        'fb.svg',
+                    ],
+                    footer_links: [
+                        'Help',
+                        'Terms & Condition',
+                        'Privacy'
+                    ]
+                };
+               document.querySelector('body').innerHTML =
+                Handlebars.compile(document.querySelector('body').innerHTML)(content);
+            }, false);
+        </script>
+    </head>
+    <body class="page">
+        <section id="Home" class="home-section">
+            <header>
+                <img src="public/logo.svg"/>
+                <nav>
+                    {{#each header_links}}
+                        <a href="#{{this}}">{{this}}</a>
+                    {{/each}}
+                </nav>
+            </header>
+            <div class="wrapper">
+                <h1>We Are Awesome Creative Agency</h1>
+                <img src="public/underline.svg"/>
+                <p>{{lorem_ipsum}}</p>
+                <button>Learn more</button>
+            </div>
+        </section>
+        <section id="About">
+            <img src="public/story-logo.svg"/>
+            <div class="wrapper">
+                <h2>OUR STORY</h2>
+                <p>{{lorem_ipsum}}
+
+                    {{lorem_ipsum}}
+                <button>Learn more</button>
+            </div>
+        </section>
+        <section>
+            <button>
+                <img svg/>
+            </button>
+            <label>Watch our story</label>
+        </section>
+        <section id="Expertise">
+            <h2>Expertise</h2>
+            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+            <img src="public/underline.svg"/>
+            <div class="wrapper">
+                {{#each expertise}}
+                    <div class="item">
+                        <img src="public/expertise/{{img}}.svg" />
+                        <h3>{{header}}</h3>
+                        <p>{{../lorem_ipsum}}</p>
+                    </div>
+                {{/each}}
+            </div>
+        </section>
+        <section id="Teams">
+            <h2>Meet our team</h2>
+            <p>text</p>
+            <img src="public/underline.svg"/>
+            {{#each people}}
+                <section itemscope itemtype="http://schema.org/Person">
+                    <img itemprop="image" alt="{{name}}">
+                    <strong itemprop="name">{{name}}</strong>
+                    <div itemprop="jobTitle">{{position}}</div>
+                </section>
+            {{/each}}
+            <p>Become part of our dream team, let’s join us !</p>
+            <button>We are hiring</button>
+        </section>
+        <section id="Works">
+            <img quote/>
+            <blockquote>
+                <p>{{lorem_ipsum}}</p>
+                <cite>
+                    <p>Jane Galadriel</p>
+                    <p>CEO Tengkurep</p>
+                </cite>
+            </blockquote>
+            <div>
+                <button prev></button>
+                <ul>
+                    {{#each avatars}}
+                        <li><img src="{{this}}"/></li>
+                    {{/each}}
+                </ul>
+                <button next></button>
+            </div>
+        </section>
+        <section id="People say">
+            <div>
+                <h2>Give Us A Good News</h2>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea></textarea>
+                    <button action="submit">Submit</button>
+                </form>
+            </div>
+            <div>
+                <h2>Our Happy Client</h2>
+                <ul>
+                    {{#each clients}}
+                        <li><a href="#{{this}}"><img src="{{this}}"/></a></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </section>
+        <section id="Contact">
+            <div>
+                <img src=""/>
+                <p>{{lorem_ipsum}}</p>
+            </div>
+            <div>
+                <h2>Our Studio</h2>
+                <div>
+                    <img src="">
+                    <address>Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+11480 - Indonesia</address>
+                </div>
+                <div>
+                    <img src="">
+                    <a href="tel:(+62) 21-2224 3333">(+62) 21-2224 3333</a>
+                </div>
+            </div>
+            <div>
+                <h2>Stay In Touch</h2>
+                <form>
+                    <input placeholder="Subscribe our newsletter">
+                    <button action="submit">
+                        <img>
+                    </button>
+                </form>
+                <ul>
+                    {{#each socials}}
+                        <li><a href="#{{this}}"><img src="{{this}}"></a></li>
+                    {{/each}}
+                </ul>
+            </div>
+            <footer>
+                <ul>
+                    {{#each footer_links}}
+                        <li>
+                            <a href="#{{this}}">{{this}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
+                <p></p>
+            </footer>
+        </section>
+    </body>
+</html>
