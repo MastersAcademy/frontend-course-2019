@@ -3,11 +3,12 @@ const MAIL_FORMAT = /\S+@\S+\.\S+/;
 
 class ContactMeForm {
     constructor() {
-        this.form = document.querySelector('form');
+        this.form = document.querySelector('#form');
         this.email = this.form.querySelector('#email');
         this.name = this.form.querySelector('#name');
         this.message = this.form.querySelector('#message');
-        this.form.querySelector('#submit').addEventListener('click', () => this.onSubmit());
+        // this.form.querySelector('#submit').addEventListener('click', this.onSubmit.bind(this));
+        this.form.addEventListener('onsubmit', this.onSubmit.bind(this));
     }
 
     getEmailValue() {
@@ -54,5 +55,4 @@ class ContactMeForm {
         return this.showResultMessage();
     }
 }
-
 new ContactMeForm();
