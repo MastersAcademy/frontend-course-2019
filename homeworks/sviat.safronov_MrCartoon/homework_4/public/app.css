@@ -1,0 +1,25 @@
+body, form {
+  height: 100%;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.result {
+  color: #0F0;
+}
+
+.no-display {
+  display: none;
+}
+
+.error {
+  border-color: #F00;
+}
