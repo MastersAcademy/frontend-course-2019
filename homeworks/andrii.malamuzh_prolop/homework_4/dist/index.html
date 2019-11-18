@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homework 4</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form" class="form">
+        <h1 class="title">Homework 4</h1>
+        <div class="form-group">
+            <label for="first-name" class="form-group__label">First Name*:</label>
+            <input id="first-name" type="text" class="form-control">
+            <span class="form-group__error">Invalid field. First name must contain 2-20 letters!</span>
+        </div>
+        <div class="form-group">
+            <label for="last-name" class="form-group__label">Last Name*:</label>
+            <input id="last-name" type="text" class="form-control">
+            <span class="form-group__error">Invalid field. Last name must contain 2-20 letters!</span>
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-group__label">Email*:</label>
+            <input id="email" type="text" class="form-control">
+            <span class="form-group__error">Invalid field. Wrong email format!</span>
+        </div>
+        <div class="form-group">
+            <label for="phone" class="form-group__label">Phone*:</label>
+            <input id="phone" type="text" class="form-control" placeholder="+38(000)000-00-00">
+            <span class="form-group__error">Invalid field. Phone must be in +38(000)000-00-00 format!</span>
+        </div>
+        <div class="form-group">
+            <label for="age" class="form-group__label">Age:</label>
+            <input id="age" type="text" class="form-control">
+            <span class="form-group__error">Invalid field. Age should be from 18 to 120 years!</span>
+        </div>
+        <p class="success">Validation successful!</p>
+        <button type="submit" class="btn btn--black">Send</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>

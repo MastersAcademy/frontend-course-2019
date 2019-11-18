@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="text.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <title>Hello World</title>
+</head>
+
+<body class="grid-skeleton">
+    <header class="grid grid--header">
+        <div class="container container__header">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="49" viewBox="0 0 200 49"><g><g><image width="200" height="49" xlink:href="data:image/png;base64,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"/></g></g></svg>
+            <menu type="toolbar" class="container__header_menu">
+                <ul class="list list__menu">
+                    <li class="title list__item">HOME</li>
+                    <li class="title list__item">ABOUT</li>
+                    <li class="title list__item">SERVICE</li>
+                    <li class="title list__item">RESUME</li>
+                    <li class="title list__item">PORTFOLIO</li>
+                    <li class="title list__item">BLOG</li>
+                    <li class="title list__item">CONTACT US</li>
+                </ul>
+            </menu>
+        </div>
+    </header>
+    <main class="grid grid--hello">
+        <div class="container container__hello">
+            <article class="article article__hello">
+                <p class="text">Hello,</p>
+                <h1 class="title title--xxl">I am Jhon Smith</h1>
+                <h2 class="title title--xl">Freelance web Designer @ Developer</h2>
+                <button class="button button--orange title">HIRE</button>
+            </article>
+            <img class="image-profile--big" src="img/profile-photo.png" alt="profile photo">
+        </div>
+    </main>
+    <main class="grid grid--about-me">
+        <div class="container container__about-me">
+            <div class="container-title">
+                <h2 class="title title__container">About Me</h2>
+                <!-- it for future <span><span class="circle"></span><span class="line"></span><span class="circle"></span></span> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="154" height="14" viewBox="0 0 154 14"><defs><clipPath id="agjua"><path fill="#fff" d="M148-.001a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/></clipPath><clipPath id="agjub"><path fill="#fff" d="M6-.001a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/></clipPath></defs><g><g><g><path fill="none" stroke="#666" stroke-miterlimit="50" stroke-width="4" d="M148-.001a6 6 0 1 1 0 12 6 6 0 0 1 0-12z" clip-path="url(&quot;#agjua&quot;)"/></g><g><path fill="none" stroke="#666" stroke-miterlimit="50" stroke-width="4" d="M6-.001a6 6 0 1 1 0 12 6 6 0 0 1 0-12z" clip-path="url(&quot;#agjub&quot;)"/></g><g><path fill="#fe7e11" d="M13.912 4.999h126.176c1.056 0 1.912.448 1.912 1s-.856 1-1.912 1H13.912c-1.056 0-1.912-.448-1.912-1s.856-1 1.912-1z"/></g><g><path fill="#666" d="M23.618 11.998h106.764c.894 0 1.618.448 1.618 1 0 .553-.724 1-1.618 1H23.618c-.894 0-1.618-.447-1.618-1 0-.552.724-1 1.618-1z"/></g></g></g></svg>
+            </div>
+            <div class="container container__article">
+                <img class="image-profile--small" src="img/photo-profile1.png" alt="portret of Jhon Smith">
+                <article class="article article__about-me">
+                    <p class="text text--xl">Hello I am Jhon Smith, I am a freelance web designer or developer from Nowakhali, Bangladesh.</p>
+                    <p class="text text--l">loream isam Mauris scelerisque ut ipsum id vulputate. Nulla laoreet, ligula vel congue ultricies, nibh ipsum egestas nunc, id porta nibh nunc non felis. Vestibulum nibh urna, lobortis ut euismod., </p>
+                    <table>
+                        <tr>
+                            <td class="text text--s">Name:</td>
+                            <td class="table-column2 text text--s">Jhon Smith</td>
+                        </tr>
+                        <tr>
+                            <td class="text text--s">Email:</td>
+                            <td class="table-column2 text text--s">jhonamith@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td class="text text--s">Phone:</td>
+                            <td class="table-column2 text text--s">0586321470</td>
+                        </tr>
+                        <tr>
+                            <td class="text text--s">Date of Birth:</td>
+                            <td class="table-column2 text text--s">21-Oct-1990</td>
+                        </tr>
+                        <tr>
+                            <td class="text text--s">Nationality:</td>
+                            <td class="table-column2 text text--s">Bangladesh</td>
+                        </tr>
+                        <tr>
+                            <td class="text text--s">Address:</td>
+                            <td class="table-column2 text text--s">1212 Dhaka, Rampura, Btv Brobon.</td>
+                        </tr>
+                    </table>
+                    <div class="container container__btns">
+                        <button class="title button button--orange">HIRE ME</button>
+                        <button class="title button">DOWNLOAD CV</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <main class="grid grid--contact-me">
+        <div class="container container__contact-me">
+            <div class="container-title">
+                <h2 class="title title__container">Contact Me</h2>
+                <!-- it for future <span><span class="circle"></span><span class="line"></span><span class="circle"></span></span> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="154" height="14" viewBox="0 0 154 14"><defs><clipPath id="agjua"><path fill="#fff" d="M148-.001a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/></clipPath><clipPath id="agjub"><path fill="#fff" d="M6-.001a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/></clipPath></defs><g><g><g><path fill="none" stroke="#666" stroke-miterlimit="50" stroke-width="4" d="M148-.001a6 6 0 1 1 0 12 6 6 0 0 1 0-12z" clip-path="url(&quot;#agjua&quot;)"/></g><g><path fill="none" stroke="#666" stroke-miterlimit="50" stroke-width="4" d="M6-.001a6 6 0 1 1 0 12 6 6 0 0 1 0-12z" clip-path="url(&quot;#agjub&quot;)"/></g><g><path fill="#fe7e11" d="M13.912 4.999h126.176c1.056 0 1.912.448 1.912 1s-.856 1-1.912 1H13.912c-1.056 0-1.912-.448-1.912-1s.856-1 1.912-1z"/></g><g><path fill="#666" d="M23.618 11.998h106.764c.894 0 1.618.448 1.618 1 0 .553-.724 1-1.618 1H23.618c-.894 0-1.618-.447-1.618-1 0-.552.724-1 1.618-1z"/></g></g></g></svg>
+            </div>
+
+            <div class="container container__form">
+                <ul class="list list__contact-me">
+                    <li class="list__contact-me_item list__contact-me_item--home">
+                        <img src="img/home-icon.png" alt="icon home" class="icon">
+                        <div class="item__container">
+                            <p class="text text--list">Rapthame@gmail.com</p>
+                            <p class="text text--list">Your email name@gmail.com</p>
+                        </div>
+                    </li>
+                    <li class="list__contact-me_item list__contact-me_item--phone">
+                        <img src="img/call-icon.png" alt="icon home" class="icon">
+                        <div class="item__container">
+                            <p class="text text--list">0088017123456</p>
+                            <p class="text text--list">0088019315388</p>
+                        </div>
+                    </li>
+                    <li class="list__contact-me_item list__contact-me_item--location">
+                        <img src="img/location-icon.png" alt="icon home" class="icon">
+                        <div class="item__container">
+                            <p class="text text--list">Dhaka 1200, Rampura Hatirzil, Bangladesh</p>
+                        </div>
+                    </li>
+                </ul>
+                <form id="form" class="form" action="" method="get">
+                    <div class="form__container">
+                        <input class="form__input" type="text" name="" id="name" placeholder="Your Name........">
+                        <input class="form__input" type="email" name="" id="email" placeholder="Email Address.....">
+                    </div>
+                    <label for="message"></label><textarea class="form__textarea" name="" id="message" cols="30" rows="10" placeholder="Your Messages....."></textarea>
+                    <button type="submit" id="submit" class="title button button--orange button--submit">send messages</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="grid grid--footer">
+        <div class="container container__footer">
+<p class="text">One Page Personal Protfolio Template By RapThame @ 2018</p>
+            <menu class="footer__menu">
+                <ul class="list list__menu">
+                    <li class="menu__item">
+                        <a href="http://facebook.com" class="link-social link-social--fb">.</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="http://twitter.com" class="link-social link-social--tw">.</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="http://instagram.com" class="link-social link-social--inst">/</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://dribbble.com/" class="link-social link-social--dribble">.</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="http://pinterest.com" class="link-social link-social--pint">.</a>
+                    </li>
+
+                </ul>
+            </menu>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>

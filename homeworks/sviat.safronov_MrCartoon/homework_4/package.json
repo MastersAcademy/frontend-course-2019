@@ -1,0 +1,18 @@
+{
+  "name": "homework_4",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"test\"",
+    "build": "node_modules/webpack/bin/webpack.js --progress --hide-modules"
+  },
+  "author": "Sviat",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "webpack": "^4.41.2"
+  }
+}
