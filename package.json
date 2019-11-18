@@ -24,7 +24,7 @@
       "eslint --config .eslintrc.js",
       "git add"
     ],
-    "*.css": [
+    "*.{css,scss}": [
       "stylelint --config .stylelintrc",
       "git add"
     ]
