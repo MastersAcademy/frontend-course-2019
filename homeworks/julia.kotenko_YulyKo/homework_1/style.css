@@ -98,7 +98,7 @@
   align-items: center;
 }
 
-.image-profile0 {
+.image-profile--big {
   height: 100%;
   width: auto;
 }
@@ -124,7 +124,7 @@
 
 .button--submit {
   margin-top: 3rem;
-  padding: 2% 5%;
+  padding: 15px 37px;
 }
 
 .container__about-me {
@@ -133,7 +133,7 @@
   flex-direction: column;
 }
 
-.image-profile1 {
+.image-profile--small {
   height: 73%;
   width: auto;
 }
@@ -215,7 +215,7 @@
 }
 
 .form__input:focus,
-.form_textarea:focus {
+.form__textarea:focus {
   border-color: #FE7E11;
 }
 
