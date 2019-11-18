@@ -31,25 +31,25 @@
 
 .send__button {
   padding: 5px 15px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   background-color: #000;
   color: #FFF;
 }
 
-.send__button:hover{
+.send__button:hover {
   background-color: #FFF;
   color: #000;
 }
 
-.send__button:focus{
+.send__button:focus {
   background-color: #FFF;
   color: #000;
 }
 
 .valid-error--color {
-  color:#C00;
+  color: #C00;
 }
 
 .valid-error--border {
   border: 2px solid #C00;
-};
+}
