@@ -1,0 +1,112 @@
+/* ------------------------------------------------- */
+/* VARIABLES */
+/* ------------------------------------------------- */
+
+/*
+synopsis - [ id-entity-context ]
+where ....
+.... id - identifier for variable
+.... entity - may also be a block, component, category
+.... context - destination or what it is used for
+in some cases, the entity and the context can mean the same thing
+
+I take abbrs for naming my variables from Emmet Documentation
+color - can be used in any properties
+c - color
+bgc - background-color
+bdc - border color
+olc - outline color
+*/
+
+:root {
+  --color-default: #555;
+  --color-important: #666;
+  --color-accent: #FE7E11;
+  --color-inverse: #FFF;
+  --color-transparent: transparent;
+
+  --bgc-light: #FAFAFA;
+  --bgc-grey: #F0F0F0;
+  --bgc-decor-address: #818181;
+}
+/*
+If I want change some colore I do not need seek for it below in code.
+I just can change it here in variables
+*/
+
+/* color set */
+/*
+color: var(--color-default);
+color: var(--color-important);
+color: var(--color-accent);
+color: var(--color-inverse);
+color: var(--color-transparent);
+*/
+
+/* background-color set */
+/*
+background-color: var(--bgc-light);
+background-color: var(--bgc-grey);
+background-color: var(--bgc-decor-address);
+*/
+
+/* ------------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button:active,
+button:focus {
+  box-shadow: 0 0 0 3px var(--color-inverse), 0 0 0 6px var(--color-accent);
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  box-shadow: 0 0 0 3px var(--color-inverse), 0 0 0 6px var(--color-accent);
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  overflow-y: scroll;
+  height: auto;
+  min-height: 100vh;
+  background-color: var(--bgc-body);
+  color: var(--color-default);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
