@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-useless-escape
 const MAILVALID = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/;
 const PHONEVALID = /^\+{1}\d{1,2}\({1}\d{3}\){1}\d{3}([-]{1}\d{2}){2}/;
 const NUMVALID = /^([0-9])+$/;
