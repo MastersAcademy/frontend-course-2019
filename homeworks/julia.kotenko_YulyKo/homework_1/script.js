@@ -2,13 +2,12 @@ const NAME_FORMAT = /^[A-Za-z\s]+$/;
 const MAIL_FORMAT = /\S+@\S+\.\S+/;
 
 class ContactMeForm {
-    constructor() {
+    initialization() {
         this.form = document.querySelector('#form');
         this.email = this.form.querySelector('#email');
         this.name = this.form.querySelector('#name');
         this.message = this.form.querySelector('#message');
-        // this.form.querySelector('#submit').addEventListener('click', this.onSubmit.bind(this));
-        this.form.addEventListener('onsubmit', this.onSubmit.bind(this));
+        this.form.addEventListener('submit', this.onSubmit.bind(this));
     }
 
     getEmailValue() {
@@ -46,13 +45,17 @@ class ContactMeForm {
         return '';
     }
 
-    onSubmit() {
+    onSubmit(event) {
+        event.preventDefault();
         const validationEmailError = this.validateEmail();
         const validationNameError = this.validateName();
-        if (validationEmailError === '' || validationNameError === '') {
+        if (validationEmailError !== '' || validationNameError !== '') {
+            alert(`${validationEmailError}\n${validationNameError}`);
             return '';
         }
         return this.showResultMessage();
     }
 }
-new ContactMeForm();
+
+const contactMeForm = new ContactMeForm();
+contactMeForm.initialization();
