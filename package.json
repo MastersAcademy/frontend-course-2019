@@ -16,7 +16,7 @@
   "scripts": {
     "test": "lint-staged",
     "test-js": "eslint --config .eslintrc.js ./homeworks/**/*.js",
-    "test-css": "stylelint --config .stylelintrc ./homeworks/**/*.css",
+    "test-css": "stylelint --config .stylelintrc ./homeworks/**/*.{css,scss}",
     "jest": "jest"
   },
   "lint-staged": {
@@ -24,7 +24,7 @@
       "eslint --config .eslintrc.js",
       "git add"
     ],
-    "*.css": [
+    "*.{css,scss}": [
       "stylelint --config .stylelintrc",
       "git add"
     ]
