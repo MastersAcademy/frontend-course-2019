@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 1024px;
+  margin: auto;
+  background-color: #FFF;
+}
+
+.contact__title {
+  color: #666;
+  font-size: 32px;
+  font-weight: 700;
+  padding-top: 15px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact__line {
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: #F57D0F;
+  margin: auto;
+}
+
+.contact__line::after {
+  width: 168px;
+  height: 1px;
+  background-color: #666;
+  display: block;
+  content: "";
+  margin: -5px auto;
+}
+
+.contact__circle--right {
+  position: relative;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #666;
+  border-radius: 50px;
+  left: 198px;
+  top: -10px;
+}
+
+.contact__circle--left {
+  position: relative;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #666;
+  border-radius: 50px;
+  top: -3px;
+  left: -5px;
+}
+
+.contact__wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.contact__lists {
+  width: 40%;
+}
+
+.contact__list {
+  display: flex;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.contact__svg {
+  border: 3px solid #FE7E11;
+  fill: #FFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  padding: 11px;
+  background-color: #818181;
+}
+
+.txt {
+  color: #555;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 6px;
+  margin: 0 10px;
+}
+
+.contact__message {
+  text-align: center;
+}
+
+.contact__edit__wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.contact__edit {
+  width: 47%;
+  color: #666;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.contact__txtarea {
+  color: #666;
+  font-size: 15px;
+  width: 92%;
+  height: 50%;
+  resize: none;
+  margin-top: 20px;
+  padding: 5px 15px;
+}
+
+.contact__btn {
+  background-color: #FE7E11;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 50px;
+  border: solid;
+}
+
+.contact__btn:hover {
+  border: 2px solid #FE7E11;
+  background-color: #FFF;
+  color: #666;
+}
+
+.contact__btn:focus {
+  background-color: #FE7E11;
+  border: solid;
+  color: #FFF;
+}
+
+.contact__svg {
+  fill: #FFF;
+}
+
+.contact__invalid {
+  border: 2px solid #F00;
+}
