@@ -22,10 +22,10 @@ export const isValid = {
         return true;
     },
     numberRange(text, min, max) {
-        if ((parseInt(text) >= min) && (parseInt(text) <= max)) {
+        if ((text >= min) && (text <= max)) {
             return true;
         }
 
         return false;
-    }
-}
+    },
+};
