@@ -1076,7 +1076,6 @@ html {
 
 .btn:disabled {
   background-color: #555;
-  cursor: none;
 }
 
 .title-h2 {
@@ -1533,6 +1532,29 @@ html {
 
 .contact .list-info li:nth-child(3)::before {
   content: url("../img/svg/point.svg");
+}
+
+.contact label {
+  position: relative;
+}
+
+.contact .error-text {
+  position: absolute;
+  width: max-content;
+  left: 15px;
+  bottom: 9px;
+  color: #F00;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.contact textarea ~ .error-text {
+  left: 0;
+  bottom: 59px;
+}
+
+.error-border {
+  border: 1px solid #F00;
 }
 
 .contact input {
