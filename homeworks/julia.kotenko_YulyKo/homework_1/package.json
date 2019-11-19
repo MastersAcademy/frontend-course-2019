@@ -1,0 +1,19 @@
+{
+  "name": "homework_1",
+  "version": "1.0.0",
+  "description": "node -v  ->  v12.13.0 npm -v   ->  6.9.2",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YulyKo/frontend-course-2019.git"
+  },
+  "author": "Yulia Kotenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YulyKo/frontend-course-2019/issues"
+  },
+  "homepage": "https://github.com/YulyKo/frontend-course-2019#readme"
+}
