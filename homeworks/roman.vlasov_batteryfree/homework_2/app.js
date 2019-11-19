@@ -10,7 +10,7 @@ class SendMessage {
             contactMessage: this.el.querySelector('.js-contact-message'),
             contactName: this.el.querySelector('.js-contact-name'),
             contactEmail: this.el.querySelector('.js-contact-email'),
-            contactSubmit: this.el.querySelector('.js-submit'),
+            contactForm: this.el.querySelector('.js-contact__form'),
         };
     }
 
@@ -31,7 +31,7 @@ class SendMessage {
             this.getValidateData(this.elements.contactMessage, VALID_MESS);
         });
 
-        this.elements.contactSubmit.addEventListener('click', (element) => {
+        this.elements.contactForm.addEventListener('submit', (element) => {
             let isValid = this.getValidateData(this.elements.contactName, VALID_NAME);
             isValid = this.getValidateData(this.elements.contactEmail, VALID_MAIL) && isValid;
             isValid = this.getValidateData(this.elements.contactMessage, VALID_MESS) && isValid;
@@ -66,7 +66,5 @@ class SendMessage {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const sendMessage = new SendMessage(document.querySelector('.contact__message'));
+    const sendMessage = new SendMessage(document.querySelector('.js-contact__form'));
     console.dir(sendMessage);
-});
