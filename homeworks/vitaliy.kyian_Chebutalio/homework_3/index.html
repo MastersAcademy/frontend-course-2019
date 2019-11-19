@@ -40,7 +40,8 @@ max-width: 100%" data-cat />
                         xhr.responseType = responseType;
                         xhr.onprogress = onprogress;
                         xhr.onload = () => {
-                            if (xhr.status !== 200 && xhr.status !== 201) {
+                            const isError = xhr.status >= 400;
+                            if (isError) {
                                 reject({ status: xhr.status, statusText: xhr.statusText });
                             } else {
                                 resolve({ body: xhr.response });
