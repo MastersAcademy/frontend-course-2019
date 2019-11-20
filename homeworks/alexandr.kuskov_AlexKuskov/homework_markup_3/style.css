@@ -12,7 +12,11 @@
   --global--font-size--md: 30px;
 
   --global--width: 960px;
+
+  --global--linear-gradient: linear-gradient(0deg, rgba(9, 5, 47, .85) 0%, rgba(49, 29, 94, .85) 100%);
 }
+
+/* Utility classes */
 
 .button {
   height: 40px;
@@ -37,15 +41,24 @@
   background-color: var(--global--color--secondary);
 }
 
+.background-image {
+  background-position: center;
+  background-size: cover;
+}
+
+.background-image--forest {
+  background-image: var(--global--linear-gradient), url("./images/forest.png");
+}
+
+.background-image--city {
+  background-image: var(--global--linear-gradient), url("./images/city.png");
+}
+
 .body {
   margin: 0;
 }
 
-.background-image {
-  background-image: linear-gradient(0deg, rgba(9, 5, 47, .85) 0%, rgba(49, 29, 94, .85) 100%), url("./images/forest.png");
-  background-position: center;
-  background-size: cover;
-}
+/* Header section */
 
 .header {
   display: flex;
@@ -99,6 +112,8 @@
   text-decoration: none;
 }
 
+/* Home section */
+
 .home {
   padding-top: 160px;
   padding-bottom: 200px;
@@ -120,6 +135,8 @@
   font-weight: 300;
   font-size: 15px;
 }
+
+/* About section */
 
 .about {
   display: flex;
@@ -156,4 +173,39 @@
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 28px;
+}
+
+/* Watch our story section */
+
+.watch-story {
+  padding: 200px 0;
+  text-align: center;
+}
+
+.watch-story__play {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 3px solid var(--global--color--primary);
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.watch-story__play-icon {
+  position: absolute;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 37px;
+  height: 45px;
+  filter: invert(100%);
+}
+
+.watch-story__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--global--color--primary);
 }
