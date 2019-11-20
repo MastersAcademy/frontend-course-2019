@@ -1,3 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,900&display=swap");
+
+:root {
+  --global--color--primary: rgb(102, 102, 102);
+  --global--color--primary-dark: rgb(85, 85, 85);
+  --global--color--secondary: rgb(0, 224, 208);
+
+  --global--font-weight--bold: 900;
+
+  --global--font-size--xs: 12px;
+  --global--font-size--md: 30px;
+}
+
 .content {
   width: 960px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  position: relative;
+}
+
+.header__logo-icon {
+  filter: invert(75%) sepia(34%) saturate(5194%) hue-rotate(127deg) brightness(100%) contrast(101%);
+}
+
+.header__logo-text {
+  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Roboto", sans-serif;
+  color: var(--global--color--secondary);
+  font-size: var(--global--font-size--md);
+  font-weight: 100;
+}
+
+.header__navigation-list {
+  margin: auto;
+  list-style-type: none;
+}
+
+.header__navigation-item {
+  display: inline;
+  margin: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--global--font-weight--bold);
+  font-size: var(--global--font-size--xs);
+  text-transform: uppercase;
+}
+
+.header__navigation-item:hover {
+  color: var(--global--color--secondary);
+}
+
+.header__navigation-link {
+  color: inherit;
+  text-decoration: none;
 }
