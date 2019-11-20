@@ -5,7 +5,7 @@
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 const content = {
-                    header_links: ['Home', 'About', 'Expertise', 'Teams', 'Works', 'People say', 'Contact'],
+                    header_links: ['About', 'Expertise', 'Teams', 'Works', 'People say', 'Contact'],
                     expertise: [
                         {img: 'computer', header: 'Web Design & Development'},
                         {img: 'brush', header: 'Branding Identity'},
@@ -15,6 +15,7 @@
                         {img: 'heart', header: 'Made With Love'},
                     ],
                     lorem_ipsum: 'This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.',
+                    big_lorem_ipsum: 'This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.',
                     people: [
                         {img: '', name: 'Semf Ucuk', position: 'CEO & Founder'},
                         {img: '', name: 'Dik Adalin', position: 'Engineering'},
@@ -38,28 +39,33 @@
                     ]
                 };
                document.querySelector('body').innerHTML =
+
                 Handlebars.compile(document.querySelector('body').innerHTML)(content);
             }, false);
         </script>
     </head>
     <body class="page">
         <section id="Home" class="home-section">
-            <header>
-                <img src="public/logo.svg"/>
-                <nav>
+            <div class="overlay"></div>
+            <header class="header">
+                <a href="#/">
+                    <img src="public/logo-2.svg"/>
+                </a>
+                <nav class="header-nav">
+                    <a class="link active" href="#Home">Home</a>
                     {{#each header_links}}
-                        <a href="#{{this}}">{{this}}</a>
+                        <a class="link" href="#{{this}}">{{this}}</a>
                     {{/each}}
                 </nav>
             </header>
-            <div class="wrapper">
+            <div class="home-section__content">
                 <h1>We Are Awesome Creative Agency</h1>
                 <img src="public/underline.svg"/>
-                <p>{{lorem_ipsum}}</p>
+                <p>{{big_lorem_ipsum}}</p>
                 <button>Learn more</button>
             </div>
         </section>
-        <section id="About">
+        <section id="About" class="about-section">
             <img src="public/story-logo.svg"/>
             <div class="wrapper">
                 <h2>OUR STORY</h2>
@@ -69,7 +75,7 @@
                 <button>Learn more</button>
             </div>
         </section>
-        <section>
+        <section class="story-section">
             <button>
                 <img svg/>
             </button>
@@ -89,7 +95,7 @@
                 {{/each}}
             </div>
         </section>
-        <section id="Teams">
+        <section id="Teams" class="team-section">
             <h2>Meet our team</h2>
             <p>text</p>
             <img src="public/underline.svg"/>
@@ -103,7 +109,7 @@
             <p>Become part of our dream team, let’s join us !</p>
             <button>We are hiring</button>
         </section>
-        <section id="Works">
+        <section id="Works" class="works-section">
             <img quote/>
             <blockquote>
                 <p>{{lorem_ipsum}}</p>
@@ -144,7 +150,7 @@
         </section>
         <section id="Contact">
             <div>
-                <img src=""/>
+                <img src="public/logo.svg"/>
                 <p>{{lorem_ipsum}}</p>
             </div>
             <div>
@@ -173,7 +179,7 @@
                     {{/each}}
                 </ul>
             </div>
-            <footer>
+            <footer class="footer">
                 <ul>
                     {{#each footer_links}}
                         <li>
