@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap");
 
 :root {
   --global--color--primary: rgb(255, 255, 255);
@@ -10,6 +10,8 @@
 
   --global--font-size--xs: 12px;
   --global--font-size--md: 30px;
+
+  --global--width: 960px;
 }
 
 .button {
@@ -22,6 +24,17 @@
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
+}
+
+.line {
+  width: 50px;
+  height: 1px;
+  margin: 25px auto;
+  background-color: var(--global--color--primary-dark);
+}
+
+.line--blue {
+  background-color: var(--global--color--secondary);
 }
 
 .body {
@@ -38,7 +51,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 960px;
+  max-width: var(--global--width);
   margin: 0 auto;
   padding-top: 16px;
 }
@@ -108,13 +121,39 @@
   font-size: 15px;
 }
 
-.line {
-  width: 50px;
-  height: 1px;
-  margin: 25px auto;
-  background-color: var(--global--color--primary-dark);
+.about {
+  display: flex;
+  max-width: var(--global--width);
+  margin: 0 auto;
+  padding: 70px 0;
+  color: var(--global--color--primary-dark);
 }
 
-.line--blue {
-  background-color: var(--global--color--secondary);
+.about__big-logo {
+  width: 235px;
+  height: 230px;
+  padding: 0 70px;
+}
+
+.about-text {
+  padding: 0 10px 0 30px;
+}
+
+.about-text__header {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 28px;
+  line-height: .7em;
+}
+
+.about-text__description {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4em;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 28px;
 }
