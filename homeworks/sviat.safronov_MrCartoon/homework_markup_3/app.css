@@ -5,15 +5,29 @@
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
+
+  --bg-overlay: linear-gradient(0deg, rgba(36, 38, 69, .9), rgba(36, 38, 69, .9));
+  --max-width: 770px;
 }
 
 p {
   font-size: 14;
+  line-height: 24px;
+}
+
+button {
+  background: none;
+  border: 2px solid #36C0AE;
+  color: #36C0AE;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 122px;
+  height: 42px;
+  font-weight: 900;
 }
 
 .home-section {
-  background: linear-gradient(0deg, rgba(100,100,100,.5), rgba(100,100,100,.5)),
-    url("public/backgrounds/header.png") no-repeat center center;
+  background: var(--bg-overlay), url("public/backgrounds/header.png") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -35,7 +49,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 526px;
+  max-width: var(--max-width);
   min-width: 400px;
 }
 
@@ -57,28 +71,59 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  max-width: 770px;
+  max-width: var(--max-width);
   width: 90%;
   text-align: center;
 }
 
 .home-section__content > h1 {
   font-size: 32;
+  margin-top: 228px;
+  margin-bottom: 20px
+}
+
+.home-section__content > p {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .home-section__content > button {
-  background: none;
-  border: 1px solid #36C0AE;
-  color: #36C0AE;
-  text-transform: uppercase;
-  cursor: pointer;
+  margin-bottom: 206px;
 }
 
-/* .about-section {} */
+.about-section {
+  display: flex;
+  align-intems: center;
+  max-width: var(--max-width);
+  width: 90%;
+  margin: 70px auto;
+}
+
+.about-section__content {
+  margin-left: 98px;
+}
 
 .story-section {
-  background: url("public/backgrounds/watch-story.png") no-repeat center center;
+  background: var(--bg-overlay), url("public/backgrounds/watch-story.png") no-repeat center center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0;
+}
+
+.story-section > button {
+  border: none;
+  margin-bottom: 34px;
+  height: auto;
+}
+
+.story-section > label {
+  color: #FFF;
+  font-size: 16;
+  text-transform: uppercase;
+  font-weight: 900;
+  cursor: pointer;
 }
 
 .team-section {
