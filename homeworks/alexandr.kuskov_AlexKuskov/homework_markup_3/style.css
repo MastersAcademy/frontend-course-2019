@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap");
 
 :root {
-  --global--color--primary: rgb(102, 102, 102);
-  --global--color--primary-dark: rgb(85, 85, 85);
+  --global--color--primary: rgb(255, 255, 255);
+  --global--color--primary-dark: rgb(65, 61, 75);
   --global--color--secondary: rgb(0, 224, 208);
 
   --global--font-weight--bold: 900;
@@ -11,16 +12,35 @@
   --global--font-size--md: 30px;
 }
 
-.content {
-  width: 960px;
+.button {
+  height: 40px;
+  width: 120px;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid var(--global--color--secondary);
+  color: var(--global--color--secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.body {
+  margin: 0;
+}
+
+.background-image {
+  background-image: linear-gradient(0deg, rgba(9, 5, 47, .85) 0%, rgba(49, 29, 94, .85) 100%), url("./images/forest.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
+  padding-top: 16px;
 }
 
 .header__logo {
@@ -54,6 +74,7 @@
   font-weight: var(--global--font-weight--bold);
   font-size: var(--global--font-size--xs);
   text-transform: uppercase;
+  color: var(--global--color--primary);
 }
 
 .header__navigation-item:hover {
@@ -63,4 +84,37 @@
 .header__navigation-link {
   color: inherit;
   text-decoration: none;
+}
+
+.home {
+  padding-top: 160px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: var(--global--color--primary);
+}
+
+.home__header {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  margin: 0;
+}
+
+.home__description {
+  max-width: 740px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.line {
+  width: 50px;
+  height: 1px;
+  margin: 25px auto;
+  background-color: var(--global--color--primary-dark);
+}
+
+.line--blue {
+  background-color: var(--global--color--secondary);
 }
