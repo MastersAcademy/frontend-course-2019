@@ -23,7 +23,7 @@
                         {img: '', name: 'Pet Romak', position: 'Marketing'},
                     ],
                     avatars: ['1', '2', '3', '4', '5'],
-                    clients: ['', '', '', '', '', '', '', '', '', ''],
+                    clients: ['zara', 'barnets', 'calvin', 'converse', 'levis', 'mango', 'gucci', 'nike', 'puma', 'billabong'],
                     socials: [
                         'fb.svg',
                         'fb.svg',
@@ -135,27 +135,27 @@
                 <button><img src="public/next.svg"></button>
             </div>
         </section>
-        <section id="People say">
-            <div>
+        <section class="people-say-section" id="People say">
+            <div class="contact-form">
                 <h2>Give Us A Good News</h2>
                 <form>
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
                     <input type="text" placeholder="Subject">
-                    <textarea></textarea>
+                    <textarea placeholder="Your Message"></textarea>
                     <button action="submit">Submit</button>
                 </form>
             </div>
-            <div>
+            <div class="happy-clients">
                 <h2>Our Happy Client</h2>
                 <ul>
                     {{#each clients}}
-                        <li><a href="#{{this}}"><img src="{{this}}"/></a></li>
+                        <li><a href="#{{this}}"><img src="public/clients/{{this}}.png"/></a></li>
                     {{/each}}
                 </ul>
             </div>
         </section>
-        <section id="Contact">
+        <section class="contact-section" id="Contact">
             <div>
                 <img src="public/logo.svg"/>
                 <p>{{lorem_ipsum}}</p>

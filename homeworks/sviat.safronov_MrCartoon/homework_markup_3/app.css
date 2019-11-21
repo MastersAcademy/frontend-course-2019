@@ -32,7 +32,8 @@ button:active {
 
 .home-section__content, .about-section,
 .story-section, .expertise-section,
-.team-section, .works-section {
+.team-section, .works-section,
+.people-say-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,11 +349,6 @@ button:active {
   fill: #36C0AE;
 }
 
-.works-people__list img {
-  width: 45px;
-  height: 45px;
-}
-
 .works-people button img {
   width: 25px;
   height: 40px;
@@ -374,7 +370,112 @@ button:active {
   height: 70px;
 }
 
-.footer {
-  background: url("public/backgrounds/footer.png") no-repeat center center;
+.works-people__list img { /* stylelint-disable-line no-descending-specificity */
+  width: 45px;
+  height: 45px;
+}
+
+.people-say-section {
+  max-width: 1040px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* padding-right: 50px; */
+  /* padding-left: 50px; */
+}
+
+.contact-form h2 {
+  color: #413D4B;
+  font-size: 22;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.contact-form form > * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 461px;
+}
+
+.contact-form form input {
+  height: 46px;
+  border: 2px solid rgba(0,0,0,.1);
+  padding: 0 22px;
+}
+
+.contact-form form *::placeholder {
+  color: rgba(0,0,0,.3);
+  font-weight: 550;
+}
+
+.contact-form form textarea {
+  height: 200px;
+  border: 2px solid rgba(0,0,0,.1);
+  resize: none;
+  padding: 17px 22px;
+}
+
+.contact-form form button { /* stylelint-disable-line no-descending-specificity */
+  padding-left: 34px;
+  padding-right: 34px;
+  width: auto;
+  margin-bottom: 0;
+}
+
+.happy-clients {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  max-width: 381px;
+  width: 100%;
+}
+
+.happy-clients h2 {
+  color: #413D4B;
+  font-size: 22;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.happy-clients ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 423px;
+}
+
+.happy-clients ul li {
+  width: 162px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.contact-section {
+  background: var(--bg-overlay), url("public/backgrounds/footer.png") no-repeat center center;
   background-size: cover;
 }
