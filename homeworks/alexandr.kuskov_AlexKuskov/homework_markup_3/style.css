@@ -11,8 +11,6 @@
   --global--font-size--xs: 12px;
   --global--font-size--md: 30px;
 
-  --global--width: 960px;
-
   --global--linear-gradient: linear-gradient(0deg, rgba(9, 5, 47, .85) 0%, rgba(49, 29, 94, .85) 100%);
 
   --global--border: 1px solid rgb(235, 235, 235);
@@ -22,7 +20,8 @@
 
 .button {
   height: 40px;
-  width: 120px;
+  padding-right: 14px;
+  padding-left: 14px;
   background-color: transparent;
   border-radius: 2px;
   border: 1px solid var(--global--color--secondary);
@@ -48,17 +47,69 @@
   opacity: 1;
 }
 
+.line--white {
+  background-color: var(--global--color--primary);
+  opacity: .2;
+}
+
 .background-image {
   background-position: center;
   background-size: cover;
 }
 
-.background-image--forest {
-  background-image: var(--global--linear-gradient), url("./images/forest.png");
+.background-image--forest-1 {
+  background-image: var(--global--linear-gradient), url("./images/forest-1.jpeg");
+}
+
+.background-image--forest-2 {
+  background-image: var(--global--linear-gradient), url("./images/forest-2.jpeg");
 }
 
 .background-image--city {
-  background-image: var(--global--linear-gradient), url("./images/city.png");
+  background-image: var(--global--linear-gradient), url("./images/city.jpeg");
+}
+
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section__header {
+  font-family: "Playfair Display";
+  letter-spacing: 1px;
+  padding-top: 70px;
+}
+
+.section__header--expertise {
+  margin-bottom: 50px;
+}
+
+.section__header--teams {
+  margin-bottom: 45px;
+}
+
+.section__title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--global--color--primary-dark);
+  margin: 0;
+}
+
+.section__title--teams {
+  color: var(--global--color--primary);
+}
+
+.section__title-description {
+  text-align: center;
+  color: rgb(47, 45, 53);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.section__title-description--teams {
+  color: var(--global--color--primary);
 }
 
 .body {
@@ -71,8 +122,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: var(--global--width);
-  margin: 0 auto;
   padding-top: 16px;
 }
 
@@ -143,8 +192,6 @@
 
 .about {
   display: flex;
-  max-width: var(--global--width);
-  margin: 0 auto;
   padding: 70px 0;
   color: var(--global--color--primary-dark);
 }
@@ -215,33 +262,6 @@
 
 /* Expertise section */
 
-.expertise {
-  max-width: var(--global--width);
-  margin: 0 auto;
-}
-
-.expertise__header {
-  font-family: "Playfair Display";
-  letter-spacing: 1px;
-  margin-top: 70px;
-  margin-bottom: 50px;
-}
-
-.expertise__title {
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--global--color--primary-dark);
-}
-
-.expertise__title-description {
-  text-align: center;
-  color: rgb(47, 45, 53);
-  font-weight: 400;
-  font-size: 15px;
-}
-
 .expertise-grid {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
@@ -300,4 +320,48 @@
   font-weight: 300;
   font-size: 15px;
   color: rgb(51, 51, 51);
+}
+
+/* Teams section */
+
+.teams {
+  text-align: center;
+  padding-bottom: 68px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.member {
+  font-family: "Roboto", sans-serif;
+  width: 220px;
+  height: 310px;
+  border: 1px solid rgba(225, 225, 225, .5);
+}
+
+.member__name {
+  color: var(--global--color--primary);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.member__role {
+  color: var(--global--color--primary);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: .7;
+}
+
+.join-us-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgb(243, 243, 243);
+  margin-bottom: 25px;
 }
