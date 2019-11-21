@@ -65,6 +65,10 @@
   background-image: var(--global--linear-gradient), url("./images/forest-2.jpeg");
 }
 
+.background-image--forest-3 {
+  background-image: var(--global--linear-gradient), url("./images/forest-3.jpeg");
+}
+
 .background-image--city {
   background-image: var(--global--linear-gradient), url("./images/city.jpeg");
 }
@@ -75,7 +79,7 @@
 }
 
 .section__header {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   letter-spacing: 1px;
   padding-top: 70px;
 }
@@ -364,4 +368,92 @@
   font-weight: 300;
   color: rgb(243, 243, 243);
   margin-bottom: 25px;
+}
+
+/* People say section */
+
+.people-say {
+  text-align: center;
+}
+
+.people-say__quote {
+  font-family: "Playfair Display", serif;
+  font-size: 100px;
+  line-height: .5em;
+  vertical-align: top;
+  margin: 0;
+  padding-top: 68px;
+}
+
+.people-say__feedback {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0 90px;
+  opacity: .85;
+  line-height: 1.625em;
+}
+
+.people-say__author-name,
+.people-say__author-role {
+  font-family: "Roboto", sans-serif;
+  color: var(--global--color--primary);
+  text-transform: uppercase;
+}
+
+.people-say__author-name {
+  font-weight: 900;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.people-say__author-role {
+  font-weight: 300;
+  font-size: 12px;
+  opacity: .7;
+}
+
+.people-say__quote,
+.people-say__feedback,
+.people-say__author-name,
+.people-say__author-role {
+  color: var(--global--color--primary);
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 45px;
+  padding-bottom: 65px;
+}
+
+.carousel::before,
+.carousel::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 28px;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid rgb(159, 159, 159);
+  border-top: 2px solid rgb(159, 159, 159);
+  transform: rotate(45deg);
+}
+
+.carousel::before {
+  left: 300px;
+  transform: rotate(-135deg);
+}
+
+.carousel::after {
+  right: 300px;
+}
+
+.carousel__photo {
+  padding: 0 5px;
 }
