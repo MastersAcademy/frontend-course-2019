@@ -1,11 +1,23 @@
 @media (max-width: 991px) {
 
+  .container,
+  .header,
+  .welcome .container,
+  .reviews .container {
+    max-width: 720px;
+  }
+
   .service {
     padding: 20px 10px;
   }
 
   .contacts__form {
+    width: 100%;
     margin-bottom: 20px;
+  }
+
+  .contacts__info {
+    width: 100%;
   }
 
   .contacts__logos {
@@ -14,6 +26,10 @@
 
   .contacts__logo {
     margin-right: 10px;
+  }
+
+  .footer__block {
+    width: 100%;
   }
 }
 
@@ -44,7 +60,7 @@
     font-weight: 400;
   }
 
-  .header-burger {
+  .btn-menu {
     display: block;
   }
 
@@ -58,8 +74,12 @@
   }
 
   .about__image {
-    text-align: center;
+    width: 100%;
     margin-bottom: 20px;
+  }
+
+  .about__info {
+    width: 100%;
   }
 
   .story {
@@ -77,10 +97,12 @@
   }
 
   .member {
+    width: 50%;
     margin-bottom: 30px;
   }
 
   .footer-list {
+    width: 100%;
     justify-content: center;
     margin-bottom: 10px;
   }
@@ -90,6 +112,7 @@
   }
 
   .copyright {
+    width: 100%;
     text-align: center;
   }
 

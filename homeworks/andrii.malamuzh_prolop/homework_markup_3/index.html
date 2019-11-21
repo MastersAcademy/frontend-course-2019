@@ -7,7 +7,6 @@
     <title>Homework markup 3</title>
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:300,400,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -59,54 +58,44 @@
     </symbol>
 </svg>
 <header class="header">
-    <div class="container">
-        <a href="/" class="header__logo">
-            <img src="img/logo.png" alt="tajam">
-        </a>
-        <nav class="header-nav">
-            <a href="#" class="header-nav__list">Home</a>
-            <a href="#" class="header-nav__list">About</a>
-            <a href="#" class="header-nav__list">Expertise</a>
-            <a href="#" class="header-nav__list">Teams</a>
-            <a href="#" class="header-nav__list">Works</a>
-            <a href="#" class="header-nav__list">People say</a>
-            <a href="#" class="header-nav__list">Contact</a>
-        </nav>
-        <button type="button" class="header-burger">
-            <span></span>
-        </button>
-    </div>
+    <a href="/" class="header__logo">
+        <img src="img/logo.png" alt="tajam">
+    </a>
+    <nav class="header-nav">
+        <a href="#" class="header-nav__list">Home</a>
+        <a href="#" class="header-nav__list">About</a>
+        <a href="#" class="header-nav__list">Expertise</a>
+        <a href="#" class="header-nav__list">Teams</a>
+        <a href="#" class="header-nav__list">Works</a>
+        <a href="#" class="header-nav__list">People say</a>
+        <a href="#" class="header-nav__list">Contact</a>
+    </nav>
+    <button type="button" class="btn-menu">
+        <span></span>
+    </button>
 </header>
 <section class="welcome">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <h1 class="welcome__title">We Are Awesome Creative Agency</h1>
-                <p class="welcome__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-                <a href="#" class="btn">Learn more</a>
-            </div>
-        </div>
+        <h1 class="welcome__title">We Are Awesome Creative Agency</h1>
+        <p class="welcome__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+        <button type="button" class="btn" id="scroll-to-about">Learn more</button>
     </div>
 </section>
-<section class="about">
+<section id="about" class="about">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="about__image">
-                    <img src="img/about-img.png" alt="About logo">
-                </div>
-            </div>
-            <div class="col-lg-7 offset-lg-1 col-md-8">
-                <h2 class="title">Our story</h2>
-                <p class="about__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
-                <p class="about__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                <a href="#" class="btn">Learn more</a>
-            </div>
+        <div class="about__image">
+            <img src="img/about-img.png" alt="About logo">
+        </div>
+        <div class="about__info">
+            <h2 class="title">Our story</h2>
+            <p class="about__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+            <p class="about__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <a href="#" class="btn">Learn more</a>
         </div>
     </div>
 </section>
 <section class="story">
-    <button class="story-btn">
+    <button type="button" class="story-btn">
         <svg class="story-btn__svg"><use xlink:href="#story-play"></use></svg>
         <span class="story-btn__text">Watch our story</span>
     </button>
@@ -118,36 +107,48 @@
             <p class="sect-header__text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
         </div>
         <div class="expertise__inner">
-            <div class="service">
+            <figure class="service">
                 <img src="img/expertise1.png" alt="Web design & development" class="service__image">
-                <h3 class="service__title">Web design & development</h3>
-                <p class="service__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-            </div>
-            <div class="service">
+                <figcaption class="service__info">
+                    <h3 class="service__title">Web design & development</h3>
+                    <p class="service__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                </figcaption>
+            </figure>
+            <figure class="service">
                 <img src="img/expertise2.png" alt="Branding identity" class="service__image">
-                <h3 class="service__title">Branding identity</h3>
-                <p class="service__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-            </div>
-            <div class="service">
+                <figcaption class="service__info">
+                    <h3 class="service__title">Branding identity</h3>
+                    <p class="service__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                </figcaption>
+            </figure>
+            <figure class="service">
                 <img src="img/expertise3.png" alt="Mobile app" class="service__image">
-                <h3 class="service__title">Mobile app</h3>
-                <p class="service__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-            </div>
-            <div class="service">
+                <figcaption class="service__info">
+                    <h3 class="service__title">Mobile app</h3>
+                    <p class="service__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                </figcaption>
+            </figure>
+            <figure class="service">
                 <img src="img/expertise4.png" alt="Search engine optimization" class="service__image">
-                <h3 class="service__title">Search engine optimization</h3>
-                <p class="service__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-            </div>
-            <div class="service">
+                <figcaption class="service__info">
+                    <h3 class="service__title">Search engine optimization</h3>
+                    <p class="service__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                </figcaption>
+            </figure>
+            <figure class="service">
                 <img src="img/expertise5.png" alt="Game development" class="service__image">
-                <h3 class="service__title">Game development</h3>
-                <p class="service__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-            </div>
-            <div class="service">
+                <figcaption class="service__info">
+                    <h3 class="service__title">Game development</h3>
+                    <p class="service__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                </figcaption>
+            </figure>
+            <figure class="service">
                 <img src="img/expertise6.png" alt="Made with love" class="service__image">
-                <h3 class="service__title">Made with love</h3>
-                <p class="service__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
-            </div>
+                <figcaption class="service__info">
+                    <h3 class="service__title">Made with love</h3>
+                    <p class="service__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+                </figcaption>
+            </figure>
         </div>
     </div>
 </section>
@@ -158,33 +159,25 @@
             <p class="sect-header__text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
         </div>
         <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="member">
-                    <img src="img/member.jpg" alt="Semf Ucuk" class="member__image">
-                    <h3 class="member__name">Semf Ucuk</h3>
-                    <p class="member__position">CEO & Founder</p>
-                </div>
+            <div class="member">
+                <img src="img/member.jpg" alt="Semf Ucuk" class="member__image">
+                <h3 class="member__name">Semf Ucuk</h3>
+                <p class="member__position">CEO & Founder</p>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="member">
-                    <img src="img/member.jpg" alt="Dik Adalin" class="member__image">
-                    <h3 class="member__name">Dik Adalin</h3>
-                    <p class="member__position">Engineering</p>
-                </div>
+            <div class="member">
+                <img src="img/member.jpg" alt="Dik Adalin" class="member__image">
+                <h3 class="member__name">Dik Adalin</h3>
+                <p class="member__position">Engineering</p>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="member">
-                    <img src="img/member.jpg" alt="Jeng Kol" class="member__image">
-                    <h3 class="member__name">Jeng Kol</h3>
-                    <p class="member__position">Designer</p>
-                </div>
+            <div class="member">
+                <img src="img/member.jpg" alt="Jeng Kol" class="member__image">
+                <h3 class="member__name">Jeng Kol</h3>
+                <p class="member__position">Designer</p>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="member">
-                    <img src="img/member.jpg" alt="Pet Romak" class="member__image">
-                    <h3 class="member__name">Pet Romak</h3>
-                    <p class="member__position">Marketing</p>
-                </div>
+            <div class="member">
+                <img src="img/member.jpg" alt="Pet Romak" class="member__image">
+                <h3 class="member__name">Pet Romak</h3>
+                <p class="member__position">Marketing</p>
             </div>
         </div>
         <p class="team__text">Become part of our dream team, let’s join us !</p>
@@ -193,58 +186,50 @@
 </section>
 <section class="reviews">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="quote-icon">
-                    <svg class="quote-icon__svg"><use xlink:href="#quote-icon"></use></svg>
-                </div>
-                <div class="reviews__slider-for">
-                    <div class="review">
-                        <p class="review__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-                        <p class="review__author">JANE GALADRIEL</p>
-                        <p class="review__position">CEO TENGKUREP</p>
-                        <img src="img/review1.jpg" alt="JANE GALADRIEL" class="review__image">
-                    </div>
-                </div>
+        <div class="quote-icon">
+            <svg class="quote-icon__svg"><use xlink:href="#quote-icon"></use></svg>
+        </div>
+        <div class="reviews__slider-for">
+            <div class="review">
+                <p class="review__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+                <p class="review__author">JANE GALADRIEL</p>
+                <p class="review__position">CEO TENGKUREP</p>
+                <img src="img/review1.jpg" alt="JANE GALADRIEL" class="review__image">
             </div>
         </div>
     </div>
 </section>
 <section class="contacts">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <form action="/" class="contacts__form">
-                    <h2 class="title">GIVE US A GOOD NEWS</h2>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Your message"></textarea>
-                    </div>
-                    <button class="btn" type="submit">Submit</button>
-                </form>
+        <form action="/" class="contacts__form">
+            <h2 class="title">GIVE US A GOOD NEWS</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name">
             </div>
-            <div class="col-lg-5 offset-lg-1">
-                <h2 class="title">OUR HAPPY CLIENT</h2>
-                <div class="contacts__logos">
-                    <img src="img/zara.png" alt="zara" class="contacts__logo">
-                    <img src="img/mango.png" alt="mango" class="contacts__logo">
-                    <img src="img/bn.png" alt="barneys NewYork" class="contacts__logo">
-                    <img src="img/gucci.png" alt="gucci" class="contacts__logo">
-                    <img src="img/ck.png" alt="Calvin Klein" class="contacts__logo">
-                    <img src="img/nike.png" alt="nike" class="contacts__logo">
-                    <img src="img/converse.png" alt="converse" class="contacts__logo">
-                    <img src="img/puma.png" alt="puma" class="contacts__logo">
-                    <img src="img/levis.png" alt="levis" class="contacts__logo">
-                    <img src="img/billabong.png" alt="billabong" class="contacts__logo">
-                </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Your message"></textarea>
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+        <div class="contacts__info">
+            <h2 class="title">OUR HAPPY CLIENT</h2>
+            <div class="contacts__logos">
+                <img src="img/zara.png" alt="zara" class="contacts__logo">
+                <img src="img/mango.png" alt="mango" class="contacts__logo">
+                <img src="img/bn.png" alt="barneys NewYork" class="contacts__logo">
+                <img src="img/gucci.png" alt="gucci" class="contacts__logo">
+                <img src="img/ck.png" alt="Calvin Klein" class="contacts__logo">
+                <img src="img/nike.png" alt="nike" class="contacts__logo">
+                <img src="img/converse.png" alt="converse" class="contacts__logo">
+                <img src="img/puma.png" alt="puma" class="contacts__logo">
+                <img src="img/levis.png" alt="levis" class="contacts__logo">
+                <img src="img/billabong.png" alt="billabong" class="contacts__logo">
             </div>
         </div>
     </div>
@@ -252,13 +237,13 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="footer__block">
                 <a href="#" class="footer__logo">
                     <img src="img/logo.png" alt="tajam">
                 </a>
                 <p class="footer__info">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
             </div>
-            <div class="col-lg-4">
+            <div class="footer__block">
                 <h2 class="footer__title">OUR STUDIO</h2>
                 <div class="footer-contact">
                     <div class="footer-contact__icon">
@@ -274,7 +259,7 @@
                     <p class="footer-contact__text">(+62) 21-2224 3333</p>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="footer__block">
                 <h2 class="footer__title">STAY IN TOUCH</h2>
                 <form action="/" class="subscribe">
                     <input type="text" class="form-control" placeholder="Subscribe our newsletter">
@@ -317,24 +302,18 @@
             </div>
         </div>
         <div class="footer__bottom">
-            <div class="row">
-                <div class="col-md-6">
-                    <ul class="footer-list">
-                        <li class="footer-list__item">
-                            <a href="#" class="footer-list__link">HELP</a>
-                        </li>
-                        <li class="footer-list__item">
-                            <a href="#" class="footer-list__link">TERMS & CONDITION</a>
-                        </li>
-                        <li class="footer-list__item">
-                            <a href="#" class="footer-list__link">PRIVACY</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <p class="copyright">Copyright © 2015 - Tajem Creative</p>
-                </div>
-            </div>
+            <ul class="footer-list">
+                <li class="footer-list__item">
+                    <a href="#" class="footer-list__link">HELP</a>
+                </li>
+                <li class="footer-list__item">
+                    <a href="#" class="footer-list__link">TERMS & CONDITION</a>
+                </li>
+                <li class="footer-list__item">
+                    <a href="#" class="footer-list__link">PRIVACY</a>
+                </li>
+            </ul>
+            <p class="copyright">Copyright © 2015 - Tajem Creative</p>
         </div>
     </div>
 </footer>

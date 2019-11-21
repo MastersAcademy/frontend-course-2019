@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #FFF;
   font-size: 14px;
@@ -41,28 +47,22 @@ img {
   vertical-align: bottom;
 }
 
-@media (min-width: 1200px) {
-
-  .container {
-    max-width: 960px;
-  }
+figure {
+  margin: 0;
 }
 
 .container {
+  width: 100%;
+  max-width: 960px;
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 .row {
-  margin: 0 -10px;
-}
-
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
-.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
-.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
-.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
-.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
-.col-xl-auto {
-  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .btn {
@@ -171,15 +171,15 @@ textarea.form-control {
 .header {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  padding: 15px 0;
-}
-
-.header .container {
+  padding: 15px 10px;
+  max-width: 960px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  z-index: 999;
 }
 
 .header-nav {
@@ -200,7 +200,7 @@ textarea.form-control {
   color: #00E0D0;
 }
 
-.header-burger {
+.btn-menu {
   display: none;
   background: transparent;
   border: none;
@@ -210,7 +210,7 @@ textarea.form-control {
   z-index: 999;
 }
 
-.header-burger::before {
+.btn-menu::before {
   content: "";
   display: block;
   width: 100%;
@@ -222,7 +222,7 @@ textarea.form-control {
   transition: .5s;
 }
 
-.header-burger::after {
+.btn-menu::after {
   content: "";
   display: block;
   width: 100%;
@@ -234,7 +234,7 @@ textarea.form-control {
   transition: .5s;
 }
 
-.header-burger span {
+.btn-menu span {
   display: block;
   width: 100%;
   height: 2px;
@@ -246,19 +246,19 @@ textarea.form-control {
   opacity: 1;
 }
 
-.header-burger.close::before {
+.btn-menu.close::before {
   top: 50% !important;
   transition: .5s;
   transform: translateY(-50%) rotate(45deg);
 }
 
-.header-burger.close::after {
+.btn-menu.close::after {
   top: 50% !important;
   transition: .5s;
   transform: translateY(-50%) rotate(-45deg);
 }
 
-.header-burger.close span {
+.btn-menu.close span {
   opacity: 0
 }
 
@@ -275,6 +275,10 @@ textarea.form-control {
   justify-content: center;
   text-align: center;
   color: #FFF;
+}
+
+.welcome .container {
+  max-width: 800px;
 }
 
 .welcome__title {
@@ -308,12 +312,22 @@ textarea.form-control {
   padding: 70px 0;
 }
 
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .about__image {
-  text-align: right;
+  text-align: center;
+  width: 40%;
 }
 
 .about__image img {
   max-width: 100%;
+}
+
+.about__info {
+  width: 60%;
 }
 
 .about .title {
@@ -420,6 +434,8 @@ textarea.form-control {
 }
 
 .member {
+  width: 25%;
+  padding: 0 10px;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -457,6 +473,10 @@ textarea.form-control {
   background: url("../img/reviews.jpg") no-repeat center;
   background-size: cover;
   text-align: center;
+}
+
+.reviews .container {
+  max-width: 800px;
 }
 
 .quote-icon {
@@ -501,12 +521,26 @@ textarea.form-control {
   padding: 70px 0;
 }
 
+.contacts .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .contacts .title {
   margin-bottom: 30px;
 }
 
+.contacts__form {
+  width: 50%;
+}
+
 .contacts__form .btn {
   padding: 16px 30px 14px;
+}
+
+.contacts__info {
+  width: 40%;
 }
 
 .contacts__logos {
@@ -528,6 +562,11 @@ textarea.form-control {
   background: url("../img/footer.jpg") no-repeat center;
   background-size: cover;
   color: #FFF;
+}
+
+.footer__block {
+  width: 33.3333%;
+  padding: 0 10px;
 }
 
 .footer__logo {
@@ -638,6 +677,10 @@ textarea.form-control {
 
 .footer__bottom {
   padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-list {
