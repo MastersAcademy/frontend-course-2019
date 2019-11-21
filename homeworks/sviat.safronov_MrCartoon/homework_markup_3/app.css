@@ -21,9 +21,26 @@ button {
   color: #36C0AE;
   text-transform: uppercase;
   cursor: pointer;
-  width: 122px;
-  height: 42px;
+  padding: 13px;
   font-weight: 900;
+}
+
+button:active {
+  background: #36C0AE;
+  color: #FFF;
+}
+
+.home-section__content, .about-section,
+.story-section, .expertise-section,
+.team-section, .works-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  width: 90%;
+  padding-top: 73px;
+  padding-bottom: 67px;
 }
 
 .home-section {
@@ -67,36 +84,28 @@ button {
 }
 
 .home-section__content {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  max-width: var(--max-width);
-  width: 90%;
   text-align: center;
+  padding-bottom: 207px;
 }
 
-.home-section__content > h1 {
+.home-section__content h1 {
   font-size: 32;
-  margin-top: 228px;
+  margin-top: 163px;
   margin-bottom: 20px
 }
 
-.home-section__content > p {
+.home-section__content p {
   margin-top: 30px;
   margin-bottom: 50px;
 }
 
-.home-section__content > button {
-  margin-bottom: 206px;
+.home-section__content button {
+  margin: 0 auto;
 }
 
 .about-section {
-  display: flex;
-  align-intems: center;
-  max-width: var(--max-width);
-  width: 90%;
-  margin: 70px auto;
+  /* margin: 70px auto; */
 }
 
 .about-section__content {
@@ -106,19 +115,21 @@ button {
 .story-section {
   background: var(--bg-overlay), url("public/backgrounds/watch-story.png") no-repeat center center;
   background-size: cover;
-  display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 200px 0;
+  max-width: unset;
+  width: 100%;
 }
 
-.story-section > button {
+.story-section button {
+  padding: 0;
   border: none;
   margin-bottom: 34px;
   height: auto;
+  border-radius: 50%;
 }
 
-.story-section > label {
+.story-section label {
   color: #FFF;
   font-size: 16;
   text-transform: uppercase;
@@ -126,24 +137,244 @@ button {
   cursor: pointer;
 }
 
+.expertise-section {
+  flex-direction: column;
+  --max-width: 950px;
+}
+
+.expertise-section h2 {
+  font-size: 22;
+  margin-top: 0;
+  margin-bottom: 16px
+}
+
+.expertise-section p {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.expertise-section img {
+  margin-top: 0;
+  margin-bottom: 46px;
+}
+
+.expertise-section__items {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: auto;
+}
+
+.expertise-item {
+  flex: 0 0 calc(var(--max-width) / 3 - 66px);
+  min-width: 245px;
+  height: 250px;
+  border-top: .5px solid #AAA;
+  border-left: .5px solid #AAA;
+  margin-top: -.5px;
+  margin-left: -.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 33px;
+  text-align: center;
+}
+
+.expertise-item img {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.expertise-item p {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.expertise-item h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 900;
+}
+
 .team-section {
-  background: url("public/backgrounds/team.png") no-repeat center center;
+  background: var(--bg-overlay), url("public/backgrounds/team.png") no-repeat center center;
   background-size: cover;
+  padding: 70px 0;
+  color: #FFF;
+  flex-direction: column;
+  margin: 0;
+  max-width: unset;
+  width: 100%;
+}
+
+.team-section h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 22;
+  text-transform: uppercase;
+}
+
+.team-section p {
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.team-section .underline {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.teammates {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 940px;
+  width: 90%;
+  margin-top: 47px;
+  margin-bottom: 70px;
+}
+
+.teammate {
+  margin: 5px;
+  border: 1px solid rgba(255, 255, 255, .5);
+  width: 220px;
+}
+
+.teammate img {
+  height: 229px;
+  width: 220px;
+}
+
+.teammate img::before {
+  height: 230;
+  width: 220px;
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: #FFF;
+}
+
+.teammate-name {
+  margin-top: 24px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.teammate-position {
+  margin-top: 6px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #FAFAFA;
+  font-size: 13;
+}
+
+.team-section p.lets-join-us {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.team-section button {
+  margin: 0;
 }
 
 .works-section {
-  background: url("public/backgrounds/works.png") no-repeat center center;
+  background: var(--bg-overlay), url("public/backgrounds/works.png") no-repeat center center;
   background-size: cover;
+  flex-direction: column;
+  padding: 69px 0;
+  max-width: unset;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+}
+
+.works-section img.quote {
+  width: 32px;
+  height: 26px;
+  margin-bottom: 21px;
+}
+
+.works-quote {
+  max-width: var(--max-width);
+  margin-top: 21px;
+}
+
+.works-quote p {
+  margin-bottom: 26px;
+}
+
+.works-quote cite {
+  margin-top: 26px;
+}
+
+.works-quote cite * {
+  margin: 0;
+}
+
+.works-quote__author-name {
+  font-weight: 900;
+  margin: 0;
+}
+
+.works-quote__author-position {
+  font-size: 13px;
+  margin: 0;
+}
+
+.works-people {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.works-people button {
+  border: none;
+  margin-right: 32px;
+  margin-left: 32px;
+  padding: 0;
+}
+
+.works-people button:active {
+  background: none;
+  fill: #36C0AE;
+}
+
+.works-people__list img {
+  width: 45px;
+  height: 45px;
+}
+
+.works-people button img {
+  width: 25px;
+  height: 40px;
+}
+
+.works-people__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 305px;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.works-people__list li:nth-child(3) img {
+  width: 70px;
+  height: 70px;
 }
 
 .footer {
   background: url("public/backgrounds/footer.png") no-repeat center center;
   background-size: cover;
-}
-
-.item {
-  border-top: 1px solid #000;
-  border-left: 1px solid #000;
-  margin-top: -1px;
-  margin-left: -1px;
 }

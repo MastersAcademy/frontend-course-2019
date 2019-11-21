@@ -22,7 +22,7 @@
                         {img: '', name: 'Jeng Kol', position: 'Designer'},
                         {img: '', name: 'Pet Romak', position: 'Marketing'},
                     ],
-                    avatars: ['', '', '', '', ''],
+                    avatars: ['1', '2', '3', '4', '5'],
                     clients: ['', '', '', '', '', '', '', '', '', ''],
                     socials: [
                         'fb.svg',
@@ -60,7 +60,7 @@
             </header>
             <div class="home-section__content">
                 <h1>We Are Awesome Creative Agency</h1>
-                <img src="public/underline.svg"/>
+                <img src="public/underline-cyan.svg"/>
                 <p>{{big_lorem_ipsum}}</p>
                 <button>Learn more</button>
             </div>
@@ -80,13 +80,13 @@
             </button>
             <label for="watch-story-btn">Watch our story</label>
         </section>
-        <section id="Expertise">
+        <section class="expertise-section" id="Expertise">
             <h2>Expertise</h2>
-            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+            <p>{{lorem_ipsum}}</p>
             <img src="public/underline.svg"/>
-            <div class="wrapper">
+            <div class="expertise-section__items">
                 {{#each expertise}}
-                    <div class="item">
+                    <div class="expertise-item">
                         <img src="public/expertise/{{img}}.svg" />
                         <h3>{{header}}</h3>
                         <p>{{../lorem_ipsum}}</p>
@@ -95,36 +95,44 @@
             </div>
         </section>
         <section id="Teams" class="team-section">
-            <h2>Meet our team</h2>
-            <p>text</p>
-            <img src="public/underline.svg"/>
-            {{#each people}}
-                <section itemscope itemtype="http://schema.org/Person">
-                    <img itemprop="image" alt="{{name}}">
-                    <strong itemprop="name">{{name}}</strong>
-                    <div itemprop="jobTitle">{{position}}</div>
-                </section>
-            {{/each}}
-            <p>Become part of our dream team, let’s join us !</p>
+            <h2>Meet our amazing team</h2>
+            <p>{{lorem_ipsum}}</p>
+            <img class="underline" src="public/underline.svg"/>
+            <div class="teammates">
+                {{#each people}}
+                    <section class="teammate" itemscope itemtype="http://schema.org/Person">
+                        <img src="public/not-found.png" itemprop="image" alt="{{name}}">
+                        <div class="teammate-name">
+                            <strong itemprop="name">{{name}}</strong>
+                        </div>
+                        <div class="teammate-position" itemprop="jobTitle">{{position}}</div>
+                    </section>
+                {{/each}}
+            </div>
+            <p class="lets-join-us">Become part of our dream team, let’s join us !</p>
             <button>We are hiring</button>
         </section>
         <section id="Works" class="works-section">
-            <img quote/>
-            <blockquote>
-                <p>{{lorem_ipsum}}</p>
+            <img class="quote" src="public/quote.svg"/>
+            <blockquote class="works-quote">
+                <p>{{big_lorem_ipsum}}</p>
                 <cite>
-                    <p>Jane Galadriel</p>
-                    <p>CEO Tengkurep</p>
+                    <p class="works-quote__author-name">Jane Galadriel</p>
+                    <p class="works-quote__author-position">CEO Tengkurep</p>
                 </cite>
             </blockquote>
-            <div>
-                <button prev></button>
-                <ul>
+            <div class="works-people">
+                <button><img src="public/prev.svg"></button>
+                <ul class="works-people__list">
                     {{#each avatars}}
-                        <li><img src="{{this}}"/></li>
+                        <li>
+                            <a href="#{{this}}">
+                                <img class="works-avatar" src="public/works-people/{{this}}.png"/>
+                            </a>
+                        </li>
                     {{/each}}
                 </ul>
-                <button next></button>
+                <button><img src="public/next.svg"></button>
             </div>
         </section>
         <section id="People say">
