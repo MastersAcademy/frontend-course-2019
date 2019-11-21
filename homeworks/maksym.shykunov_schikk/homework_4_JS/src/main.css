@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-form-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 300px;
+  margin: auto;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-wrapper label {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.input-wrapper input {
+  display: block;
+  width: 100%;
+  padding: 8px 5px;
+  font-size: 16px;
+  border: 2px solid #000;
+  outline: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  box-shadow: 0 0 0 1px #C8E9AE;
+}
+
+.btn-submit {
+  width: 300px;
+  padding: 8px 5px;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  border: 2px solid #000;
+  outline: none;
+  border-radius: 10px;
+  font-weight: 600;
+  background: #C8E9AE;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.success-message {
+  text-align: center;
+  font-weight: 600;
+  color: #11A113;
+  margin-bottom: 10px;
+}
+
+.input-wrapper input.invalid {
+  color: #CA2936;
+  border: 2px solid #CA2936;
+}
