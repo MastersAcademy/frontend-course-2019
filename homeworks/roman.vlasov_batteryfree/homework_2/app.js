@@ -1,64 +1,69 @@
 class SendMessage {
     constructor(el) {
-        this.formEl = el;
-        this.initElements();
+        this.el = el;
+        this.findElements();
         this.listenEvents();
         this.isValid = false;
     }
 
-    initElements() {
+    findElements() {
         this.elements = {
-            messageEl: this.formEl.querySelector('.js-contact-message'),
-            nameEl: this.formEl.querySelector('.js-contact-name'),
-            emailEl: this.formEl.querySelector('.js-contact-email'),
+            message: this.el.querySelector('.js-contact-message'),
+            name: this.el.querySelector('.js-contact-name'),
+            email: this.el.querySelector('.js-contact-email'),
+            form: this.el,
         };
     }
 
     listenEvents() {
-        this.formEl.addEventListener('submit', (element) => {
+        this.form.addEventListener('submit', (element) => {
             element.preventDefault();
             this.validate();
             if (this.isValid) this.sendMessage();
         });
     }
-/* eslint-disable */
+
     isEmptyField(text) {
         return !text.trim();
     }
 
-    isPattern(text, pattern) {
-        return !pattern.test(text);
+    isEmail(text) {
+        const EMAIL_PATTERN = /^([a-z0-9_-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+        return !EMAIL_PATTERN.test(text);
+    }
+
+    isName(text) {
+        const NAME_PATTERN = /^([a-zA-Z])+\s{1}([a-zA-Z])+$/;
+        return !NAME_PATTERN.test(text);
     }
 
     validateName() {
-        const NAME_PATTERN = /^([a-zA-Z])+\s{1}([a-zA-Z])+$/;
-        if (this.isEmptyField(this.elements.nameEl.value)) return '\'Name\' fiels is required.\n';
-        if (this.isPattern(this.elements.nameEl.value, NAME_PATTERN)) return '\'Name\' has not valid format.\n';
+        if (this.isEmptyField(this.elements.name.value)) return '\'Name\' fiels is required.\n';
+        if (this.isName(this.elements.name.value)) return '\'Name\' has not valid format.\n';
     }
 
     validateEmail() {
-        const EMAIL_PATTERN = /^([a-z0-9_-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
-        if (this.isEmptyField(this.elements.emailEl.value)) return '\'Email\' fiels is required.\n';
-        if (this.isPattern(this.elements.emailEl.value, EMAIL_PATTERN)) return '\'Email\' has not valid format.\n';
+        if (this.isEmptyField(this.elements.email.value)) return '\'Email\' fiels is required.\n';
+        if (this.isEmail(this.elements.email.value)) return '\'Email\' has not valid format.\n';
     }
 
     validateMessage() {
-        if (this.isEmptyField(this.elements.messageEl.value)) return '\'Messages\' fiels is required.\n';
+        if (this.isEmptyField(this.elements.message.value)) return '\'Messages\' fiels is required.\n';
     }
 
     validate() {
         let validationError = '';
-        const vErrorName = this.validateName();
-        const vErrorEmail = this.validateEmail();
-        const vErrorMessage = this.validateMessage();
+        const validationErrorName = this.validateName();
+        const validationErrorEmail = this.validateEmail();
+        const validationErrorMessage = this.validateMessage();
 
-        this.setValidStyle(this.elements.nameEl, !vErrorName);
-        this.setValidStyle(this.elements.emailEl, !vErrorEmail);
-        this.setValidStyle(this.elements.messageEl, !vErrorMessage);
+        this.renderValidationState(this.elements.name, !validationErrorName);
+        this.renderValidationState(this.elements.email, !validationErrorEmail);
+        this.renderValidationState(this.elements.message, !validationErrorMessage);
 
-        if (vErrorName) validationError = vErrorName;
-        if (vErrorEmail) validationError += vErrorEmail;
-        if (vErrorMessage) validationError += vErrorMessage;
+        if (vErrorName) validationError = validationErrorName;
+        if (vErrorEmail) validationError += validationErrorEmail;
+        if (vErrorMessage) validationError += validationErrorMessage;
 
         this.isValid = !validationError;
 
@@ -69,8 +74,8 @@ class SendMessage {
         alert('Message send');
     }
 
-    setValidStyle(input, swKey) {
-        input.classList.toggle('contact__invalid', !swKey);
+    renderValidationState(input, toggle) {
+        input.classList.toggle('contact__invalid', !toggle);
     }
 }
 
