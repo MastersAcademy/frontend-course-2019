@@ -70,6 +70,7 @@ form.addEventListener('submit', (e) => {
 
     if (messages.length > 0) {
         errorElement.innerText = messages.join(', ');
+        succesElement.innerText = '';
     } else {
         succesElement.innerText = 'Validation successful!';
         errorElement.innerText = '';
