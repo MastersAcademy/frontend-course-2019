@@ -19,6 +19,10 @@
     "test-css": "stylelint --config .stylelintrc ./homeworks/**/*.{css,scss}",
     "jest": "jest"
   },
+  "eslintIgnore": [
+    "*dist",
+    "*node_modules"
+  ],
   "lint-staged": {
     "*.js": [
       "eslint --config .eslintrc.js",
