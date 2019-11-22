@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 4 JS</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script defer src="./dist/form-validation.js"></script>
+</head>
+<body>
+    <form class="form js-registration-form">
+        <label class="form__label" for="first-name">First Name</label>
+        <input class="form__input js-registration-first-name" type="text" name="first-name" id="first-name">
+
+        <label class="form__label" for="last-name">Last Name</label>
+        <input class="form__input js-registration-last-name" type="text" name="last-name" id="last-name">
+
+        <label class="form__label" for="email">Email</label>
+        <input class="form__input js-registration-email" type="email" name="email" id="email">
+
+        <label class="form__label" for="phone">Phone</label>
+        <input class="form__input js-registration-phone" type="tel" name="phone" id="phone">
+
+        <label class="form__label" for="age">Age</label>
+        <input class="form__input js-registration-age" type="text" name="age" id="age">
+        <span class="form__validation-text js-registration-validation">Validation successful!</span>
+
+        <button class="form__input form__submit-btn" type="submit">Submit</button>
+    </form>
+</body>
+</html>

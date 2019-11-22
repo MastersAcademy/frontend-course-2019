@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://bundle.run/buffer@5.4.3"></script>
+    <style>
+        .progress-bar {
+            height: 10px;
+            background-color: #f0f0f0;
+            --progress: 0;
+        }
+
+        .progress-bar:before {
+            content: "";
+            height: 100%;
+            display: block;
+            width: var(--progress);
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-bar" data-progress></div>
+    <img style="max-width: 100%;" data-cat />
+</body>
+
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,53 @@
+.text {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  color: #555;
+}
+
+.text--xl {
+  margin-top: 0;
+  margin-bottom: 4.8%;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.text--l {
+  font-size: 15px;
+}
+
+.text--s {
+  font-size: 14px;
+  height: 3vh;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #666;
+}
+
+.title--xxl {
+  color: #FE7E11;
+  font-size: 60px;
+}
+
+.title--xl {
+  font-weight: 400;
+  font-size: 24px;
+  width: 19rem;
+  color: #555;
+}
+
+.button--orange {
+  color: #FFF;
+  font-size: 20px;
+}
+
+.text--list {
+  margin: 0;
+}
+
+.button--submit {
+  font-size: 18px;
+}

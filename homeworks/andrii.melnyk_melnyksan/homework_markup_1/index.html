@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework markup 1 - First Introduction</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans&display=swap">
+</head>
+
+<body>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol fill="currentColor" id="icon-home" viewBox="0 0 32 32">
+                <title>home</title>
+                <path
+                    d="M16 1l-16 16 3 3 3-3v13h8v-6h4v6h8v-13l3 3 3-3-16-16zM16 14c-1.105 0-2-0.895-2-2s0.895-2 2-2c1.105 0 2 0.895 2 2s-0.895 2-2 2z">
+                </path>
+            </symbol>
+            <symbol fill="currentColor" id="icon-phone" viewBox="0 0 32 32">
+                <title>phone</title>
+                <path
+                    d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z">
+                </path>
+            </symbol>
+            <symbol fill="currentColor" id="icon-location" viewBox="0 0 32 32">
+                <title>location</title>
+                <path
+                    d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16.125c-3.383 0-6.125-2.742-6.125-6.125s2.742-6.125 6.125-6.125 6.125 2.742 6.125 6.125-2.742 6.125-6.125 6.125zM12.125 10c0-2.14 1.735-3.875 3.875-3.875s3.875 1.735 3.875 3.875c0 2.14-1.735 3.875-3.875 3.875s-3.875-1.735-3.875-3.875z">
+                </path>
+            </symbol>
+            <symbol fill="currentColor" id="icon-facebook" viewBox="0 0 32 32">
+                <title>facebook</title>
+                <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+            </symbol>
+            <symbol fill="currentColor" id="icon-instagram" viewBox="0 0 32 32">
+                <title>instagram</title>
+                <path
+                    d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z">
+                </path>
+                <path
+                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
+                </path>
+                <path
+                    d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
+                </path>
+            </symbol>
+            <symbol fill="currentColor" id="icon-twitter" viewBox="0 0 32 32">
+                <title>twitter</title>
+                <path
+                    d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z">
+                </path>
+            </symbol>
+            <symbol fill="currentColor" id="icon-dribbble" viewBox="0 0 32 32">
+                <title>dribbble</title>
+                <path
+                    d="M16 32c-8.825 0-16-7.175-16-16s7.175-16 16-16c8.825 0 16 7.175 16 16s-7.175 16-16 16v0zM29.494 18.188c-0.469-0.15-4.231-1.269-8.512-0.581 1.788 4.912 2.512 8.912 2.656 9.744 3.063-2.075 5.25-5.356 5.856-9.163v0zM21.337 28.6c-0.206-1.2-0.994-5.375-2.913-10.363-0.031 0.012-0.063 0.019-0.087 0.031-7.713 2.688-10.481 8.031-10.725 8.531 2.319 1.806 5.231 2.887 8.387 2.887 1.894 0 3.7-0.387 5.338-1.087v0zM5.844 25.156c0.313-0.531 4.063-6.738 11.106-9.019 0.175-0.056 0.356-0.113 0.538-0.162-0.344-0.775-0.719-1.556-1.106-2.319-6.819 2.044-13.444 1.956-14.044 1.95-0.006 0.137-0.006 0.275-0.006 0.419 0 3.506 1.331 6.712 3.512 9.131v0zM2.625 13.219c0.612 0.006 6.244 0.031 12.637-1.662-2.262-4.025-4.706-7.412-5.069-7.906-3.825 1.806-6.688 5.331-7.569 9.569v0zM12.8 2.731c0.375 0.506 2.863 3.888 5.1 8 4.863-1.819 6.919-4.588 7.163-4.938-2.413-2.144-5.587-3.444-9.063-3.444-1.1 0.006-2.175 0.138-3.2 0.381v0zM26.581 7.381c-0.288 0.388-2.581 3.325-7.631 5.388 0.319 0.65 0.625 1.313 0.906 1.981 0.1 0.238 0.2 0.469 0.294 0.706 4.55-0.569 9.069 0.344 9.519 0.438-0.031-3.225-1.188-6.188-3.087-8.512v0z">
+                </path>
+            </symbol>
+            <symbol fill="currentColor" id="icon-pinterest" viewBox="0 0 32 32">
+                <title>pinterest</title>
+                <path
+                    d="M16 2.138c-7.656 0-13.863 6.206-13.863 13.863 0 5.875 3.656 10.887 8.813 12.906-0.119-1.094-0.231-2.781 0.050-3.975 0.25-1.081 1.625-6.887 1.625-6.887s-0.412-0.831-0.412-2.056c0-1.925 1.119-3.369 2.506-3.369 1.181 0 1.756 0.887 1.756 1.95 0 1.188-0.756 2.969-1.15 4.613-0.331 1.381 0.688 2.506 2.050 2.506 2.462 0 4.356-2.6 4.356-6.35 0-3.319-2.387-5.638-5.787-5.638-3.944 0-6.256 2.956-6.256 6.019 0 1.194 0.456 2.469 1.031 3.163 0.113 0.137 0.131 0.256 0.094 0.4-0.106 0.438-0.338 1.381-0.387 1.575-0.063 0.256-0.2 0.306-0.463 0.188-1.731-0.806-2.813-3.337-2.813-5.369 0-4.375 3.175-8.387 9.156-8.387 4.806 0 8.544 3.425 8.544 8.006 0 4.775-3.012 8.625-7.194 8.625-1.406 0-2.725-0.731-3.175-1.594 0 0-0.694 2.644-0.863 3.294-0.313 1.206-1.156 2.712-1.725 3.631 1.3 0.4 2.675 0.619 4.106 0.619 7.656 0 13.863-6.206 13.863-13.863 0-7.662-6.206-13.869-13.863-13.869z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+    <header class="header main-header">
+        <div class="inner-wrapper header-inner-wrapper">
+            <a href="/" class="logo-wrapper"><img src="./images/logo-rongila.png" alt="Rongila logo" class="logo"></a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item_active"><a class="nav__link" href="/">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#about-section">About me</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#contact-section">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="home-section">
+            <h1 class="visually-hidden">Introduction</h1>
+            <div class="intro inner-wrapper inner-wrapper_clear-padding-left">
+                <div class="intro__content-wrapper">
+                    <div class="intro__content">
+                        <p class="intro__title">
+                            <span class="intro__title-fragment">Hello, </span>
+                            I am Jhon Smith
+                            <span class="intro__title-fragment">Freelance web Designer </span>
+                            <span class="intro__title-fragment">@ Developer</span>
+                        </p>
+                        <button class="button button_accent intro__button" type="button">Hire</button>
+                    </div>
+                </div>
+                <div class="intro__image-wrapper">
+                    <img class="intro_image" src="./images/home-image.jpg" alt="My look and feel">
+                </div>
+            </div>
+        </section>
+
+        <section id="about-section" class="section section_grey">
+            <h2 class="heading">About me</h2>
+            <div class="entry inner-wrapper">
+                <div class="entry__image-wrapper">
+                    <img src="./images/about-image.jpg" alt="Another look and feel" class="entry__image">
+                </div>
+
+                <div class="entry__content-wrapper">
+                    <p class="entry__description">Hello I am Jhon Smith, I am a freelance web designer or developer from
+                        Nowakhali, Bangladesh.</p>
+                    <p class="entry__text">loream isam Mauris scelerisque ut ipsum id vulputate. Nulla laoreet, ligula
+                        vel congue ultricies, nibh ipsum egestas nunc, id porta nibh nunc non felis. Vestibulum nibh
+                        urna, lobortis ut euismod.</p>
+                    <address class="address entry__address" itemscope itemtype="http://schema.org/Person">
+                        <dl>
+                            <dt>Name:</dt>
+                            <dd><span itemprop="givenName">Jhon</span> <span itemprop="familyName">Smith</span></dd>
+                            <dt>Email:</dt>
+                            <dd itemprop="email">jhonamith@gmail.com</dd>
+                            <dt>Phone:</dt>
+                            <dd itemprop="telephone">0586321470</dd>
+                            <dt>Date of Birth:</dt>
+                            <dd itemprop="birthDate">21-Oct-1990</dd>
+                            <dt>Nationality:</dt>
+                            <dd itemprop="nationality">Bangladesh</dd>
+                            <dt>Address:</dt>
+                            <dd itemprop="homeLocation">1212 Dhaka, Rampura, Btv Brobon.</dd>
+                        </dl>
+                    </address>
+                    <div class="entry__buttons-wrapper">
+                        <button class="button button_accent" type="button">Hire me</button>
+                        <button class="button button_transparent" type="button">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-section" class="section">
+            <h2 class="heading">Contact me</h2>
+            <div class="entry inner-wrapper">
+                <div class="entry__work-address-list-wrapper">
+                    <ul class="work-address-list"  itemscope itemtype="http://schema.org/Person">
+                        <li class="work-address-list__item">
+                            <div class="work-address-list__icon-wrapper">
+                                <svg class="work-address-list__icon svg-icon-home">
+                                    <use xlink:href="#icon-home"></use>
+                                </svg>
+                            </div>
+                            <div class="work-address-list__content">
+                                <span itemprop="email">Rapthame@gmail.com</span><br>
+                                <span>Your email name@gmail.com</span>
+                            </div>
+                        </li>
+                        <li class="work-address-list__item">
+                            <div class="work-address-list__icon-wrapper">
+                                <svg class="work-address-list__icon svg-icon-phone">
+                                    <use xlink:href="#icon-phone"></use>
+                                </svg>
+                            </div>
+                            <div class="work-address-list__content">
+                                <span itemprop="telephone">0088017123456</span><br>
+                                <span itemprop="telephone">0088019315388</span>
+                            </div>
+                        </li>
+                        <li class="work-address-list__item">
+                            <div class="work-address-list__icon-wrapper">
+                                <svg class="work-address-list__icon svg-icon-location">
+                                    <use xlink:href="#icon-location"></use>
+                                </svg>
+                            </div>
+                            <div class="work-address-list__content" itemprop="workLocation">
+                                <span>Dhaka 1200, Rampura</span><br>
+                                <span>Hatirzil, Bangladesh</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="entry__message-form-wrapper">
+                    <form action="/my-handing-form-page" method="post" class="message-form">
+                        <div class="input-block message-form__input-block">
+                            <input class="guest-name form-element-style form-element-style_input" type="text" name="guest-name" placeholder="Your Name.....">
+                            <input class="guest-email form-element-style form-element-style_input" type="email" name="guest-email" placeholder="Email Address.....">
+                        </div>
+                        <textarea class="guest-message form-element-style form-element-style_textarea" name="guest-message"  cols="30" rows="10" placeholder="Your Messages..."></textarea>
+                        <button class="button button_accent button_submit message-form__button" type="submit">Send Messages</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer section_grey">
+        <div class="footer-inner-wrapper inner-wrapper">
+            <div>One Page Personal Protfolio Template By RapThame &copy; <time datetime="2018">2018</time></div>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a href="#0" class="social-list__link">
+                        <svg class="social-list__icon svg-icon-facebook">
+                            <use xlink:href="#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="#0" class="social-list__link">
+                        <svg class="social-list__icon svg-icon-twitter">
+                            <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="#0" class="social-list__link">
+                        <svg class="social-list__icon svg-icon-instagram">
+                            <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="#0" class="social-list__link">
+                        <svg class="social-list__icon svg-icon-dribbble">
+                            <use xlink:href="#icon-dribbble"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="#0" class="social-list__link">
+                        <svg class="social-list__icon svg-icon-pinterest">
+                            <use xlink:href="#icon-pinterest"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
