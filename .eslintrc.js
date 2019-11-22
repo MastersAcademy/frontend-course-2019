@@ -35,6 +35,7 @@ module.exports = {
         "guard-for-in": "error",
         "no-loop-func": "error",
         "no-self-compare": "error",
-        "no-unneeded-ternary": "error"
+        "no-unneeded-ternary": "error",
+        'import/prefer-default-export': "off"
     }
 };
