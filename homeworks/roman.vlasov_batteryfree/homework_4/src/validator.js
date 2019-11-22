@@ -1,7 +1,6 @@
-// eslint-disable-next-line no-useless-escape
-const MAILVALID = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/;
-const PHONEVALID = /^\+{1}\d{1,2}\({1}\d{3}\){1}\d{3}([-]{1}\d{2}){2}/;
-const NUMVALID = /^([0-9])+$/;
+const MAIL_VALID = /^([a-z0-9_.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/;
+const PHONE_VALID = /^\+{1}\d{1,2}\({1}\d{3}\){1}\d{3}([-]{1}\d{2}){2}/;
+const NUM_VALID = /^([0-9])+$/;
 
 export const isValid = {
     minLength(text, length) {
@@ -14,13 +13,13 @@ export const isValid = {
         return pattern.test(text);
     },
     email(text) {
-        return this.pattern(text, MAILVALID);
+        return this.pattern(text, MAIL_VALID);
     },
     phone(text) {
-        return this.pattern(text, PHONEVALID);
+        return this.pattern(text, PHONE_VALID);
     },
     numberRange(text, min, max) {
-        if (this.pattern(text, NUMVALID)) {
+        if (this.pattern(text, NUM_VALID)) {
             return text >= min && text <= max;
         }
         return false;
