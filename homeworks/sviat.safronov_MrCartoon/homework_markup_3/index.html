@@ -25,12 +25,12 @@
                     avatars: ['1', '2', '3', '4', '5'],
                     clients: ['zara', 'barnets', 'calvin', 'converse', 'levis', 'mango', 'gucci', 'nike', 'puma', 'billabong'],
                     socials: [
-                        'fb.svg',
-                        'fb.svg',
-                        'fb.svg',
-                        'fb.svg',
-                        'fb.svg',
-                        'fb.svg',
+                        'fb',
+                        'tw',
+                        'globe',
+                        'inst',
+                        'g+',
+                        'youtube',
                     ],
                     footer_links: [
                         'Help',
@@ -49,7 +49,7 @@
             <div class="overlay"></div>
             <header class="header">
                 <a href="#/">
-                    <img src="public/logo-2.svg"/>
+                    <img src="public/logo.svg"/>
                 </a>
                 <nav class="header-nav">
                     <a class="link active" href="#Home">Home</a>
@@ -156,35 +156,43 @@
             </div>
         </section>
         <section class="contact-section" id="Contact">
-            <div>
-                <img src="public/logo.svg"/>
-                <p>{{lorem_ipsum}}</p>
-            </div>
-            <div>
-                <h2>Our Studio</h2>
-                <div>
-                    <img src="">
-                    <address>Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
-11480 - Indonesia</address>
+            <div class="contact-section__content">
+                <div class="contact-section__desc">
+                    <img src="public/logo.svg"/>
+                    <p>{{big_lorem_ipsum}}</p>
                 </div>
-                <div>
-                    <img src="">
-                    <a href="tel:(+62) 21-2224 3333">(+62) 21-2224 3333</a>
+                <div class="contact-section__contacts">
+                    <h2>Our Studio</h2>
+                    <ul>
+                        <li class="contact-section__address">
+                            <img src="public/location.svg">
+                            <address>Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</address>
+                        </li>
+                        <li class="contact-section__phone">
+                            <img src="public/phone.svg">
+                            <a href="tel:(+62) 21-2224 3333">(+62) 21-2224 3333</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div>
-                <h2>Stay In Touch</h2>
-                <form>
-                    <input placeholder="Subscribe our newsletter">
-                    <button action="submit">
-                        <img>
-                    </button>
-                </form>
-                <ul>
-                    {{#each socials}}
-                        <li><a href="#{{this}}"><img src="{{this}}"></a></li>
-                    {{/each}}
-                </ul>
+                <div class="contact-section__stay-in-touch">
+                    <h2>Stay In Touch</h2>
+                    <div class="stay-in-touch__content">
+                        <form class="contact-section__form">
+                            <input placeholder="Subscribe our newsletter">
+                            <button action="submit">
+                                <img src="public/send.svg">
+                            </button>
+                        </form>
+                        <ul class="socials-links">
+                            {{#each socials}}
+                                <li>
+                                    <!--  -->
+                                    <a href="#{{this}}" class="social" style='background-image: url("public/socials/{{this}}.svg") /* stylelint-disable-line */ '>{{this}}</a>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
             </div>
             <footer class="footer">
                 <ul>
@@ -194,7 +202,7 @@
                         </li>
                     {{/each}}
                 </ul>
-                <p></p>
+                <p class="copyright">Copyright © 2015 - Tajem Creative</p>
             </footer>
         </section>
     </body>
