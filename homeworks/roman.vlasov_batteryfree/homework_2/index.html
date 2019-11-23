@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="container contact">
+            <h2 class="contact__title">Contact Me</h2>
+            <span class="contact__line">
+                <span class="contact__circle--left"></span>
+                <span class="contact__circle--right"></span>
+            </span>
+            <div class="contact__wrap">
+                <div class="contact__lists">
+                    <div class="contact__list">
+                        <svg class="contact__svg"><use xlink:href="#home-icon"></svg>
+                        <div class="contact__list__wrap">
+                            <p class="txt">Rapthame@gmail.com</p>
+                            <p class="txt">Your email name@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact__list">
+                        <svg class="contact__svg"><use xlink:href="#phone-icon"></svg>
+                        <div class="contact__list__wrap">
+                            <p class="txt">0088017123456</p>
+                            <p class="txt">0088019315388</p>
+                        </div>
+                    </div>
+                    <div class="contact__list">
+                        <svg class="contact__svg"><use xlink:href="#location-icon"></svg>
+                        <div class="contact__list__wrap">
+                            <p class="txt">Dhaka 1200, Rampura</p>
+                            <p class="txt">Hatirzil, Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__message js-contact-form">
+                    <div class="contact__edit__wrap">
+                        <input class="contact__edit js-contact-name" type="text" placeholder="Your Name........">
+                        <input class="contact__edit js-contact-email" type="text" placeholder="Email Address.....">
+                    </div>
+                    <textarea class="contact__txtarea js-contact-message"  placeholder="Your Messages...."></textarea><br>
+                    <button class="contact__btn" type="submit">Send messages</button>
+                </form>
+            </div>
+        </section>
+        <svg style="position: absolute; width: 0;">
+            <symbol id="phone-icon" viewBox="0 0 32 32">
+                <title>phone</title>
+                <path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+            </symbol>
+            <symbol id="location-icon" viewBox="0 0 32 32">
+                <title>location</title>
+                <path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"></path>
+            </symbol>
+            <symbol id="home-icon" viewBox="0 0 32 32">
+                <title>home</title>
+                <path d="M16 1l-16 16 3 3 3-3v13h8v-6h4v6h8v-13l3 3 3-3-16-16zM16 14c-1.105 0-2-0.895-2-2s0.895-2 2-2c1.105 0 2 0.895 2 2s-0.895 2-2 2z"></path>
+            </symbol>
+        </svg>
+       <script src="app.js" defer></script>
+    </body>
+</html>
