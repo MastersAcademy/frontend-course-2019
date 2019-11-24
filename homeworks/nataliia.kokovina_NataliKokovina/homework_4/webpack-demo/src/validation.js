@@ -10,7 +10,6 @@ function isValidName(name, min, max) {
 }
 
 function isValidAge(numberRange, min, max) {
-    console.log(numberRange.value);
     if (numberRange.value.length !== 0) {
         return reAge.test(numberRange.value)
         && Number(numberRange.value) >= min
