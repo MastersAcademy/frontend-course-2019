@@ -10,9 +10,13 @@ function isValidName(name, min, max) {
 }
 
 function isValidAge(numberRange, min, max) {
-    return reAge.test(numberRange.value)
-    && Number(numberRange.value) >= min
-    && Number(numberRange.value) <= max;
+    console.log(numberRange.value);
+    if (numberRange.value.length !== 0) {
+        return reAge.test(numberRange.value)
+        && Number(numberRange.value) >= min
+        && Number(numberRange.value) <= max;
+    }
+    return true;
 }
 
 export function isValid(form) {
