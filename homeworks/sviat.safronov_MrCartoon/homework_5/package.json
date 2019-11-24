@@ -5,6 +5,7 @@
   "homepage": "./",
   "dependencies": {
     "eslint": "^6.6.0",
+    "prop-types": "^15.7.2",
     "rc-slider": "^8.7.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -15,9 +16,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
