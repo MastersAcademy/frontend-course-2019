@@ -21,7 +21,8 @@
     },
     "eslintIgnore": [
         "*dist",
-        "*node_modules"
+        "*node_modules",
+        "*webpack.config.js"
     ],
     "lint-staged": {
         "*.js": [
