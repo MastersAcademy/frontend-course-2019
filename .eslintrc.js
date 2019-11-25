@@ -1,5 +1,5 @@
 module.exports = {
-    extends: "airbnb-base",
+    extends: ["airbnb-base", "eslint:recommended", "plugin:react/recommended"],
     env: {
         browser: true,
         es6: true,
@@ -7,6 +7,12 @@ module.exports = {
         mocha: true,
         jasmine: true,
         jest: true
+    },
+    plugins: ["react"],
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true
+        }
     },
     rules: {
         // enable additional rules
@@ -36,6 +42,8 @@ module.exports = {
         "no-loop-func": "error",
         "no-self-compare": "error",
         "no-unneeded-ternary": "error",
-        'import/prefer-default-export': "off"
+        "import/prefer-default-export": "off",
+        "no-underscore-dangle": "off",
+        "class-methods-use-this": "off"
     }
 };
