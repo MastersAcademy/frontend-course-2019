@@ -71,24 +71,24 @@
         <a href="#" class="header-nav__list">Contact</a>
     </nav>
     <button type="button" class="btn-menu">
-        <span></span>
+        <span class="btn-menu__line"></span>
     </button>
 </header>
 <main class="main">
     <section class="welcome">
-        <div class="container">
+        <div class="container welcome__container">
             <h1 class="welcome__title">We Are Awesome Creative Agency</h1>
             <p class="welcome__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
             <button type="button" class="btn" id="scroll-to-about">Learn more</button>
         </div>
     </section>
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about__image">
-                <img src="img/about-img.png" alt="About logo">
+    <section id="about" class="about section">
+        <div class="container about__container">
+            <div class="about__image-wrap">
+                <img src="img/about-img.png" alt="About logo" class="about__image">
             </div>
             <div class="about__info">
-                <h2 class="title">Our story</h2>
+                <h2 class="title about__title">Our story</h2>
                 <p class="about__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
                 <p class="about__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                 <a href="#" class="btn">Learn more</a>
@@ -101,7 +101,7 @@
             <span class="story-btn__text">Watch our story</span>
         </button>
     </section>
-    <section class="expertise">
+    <section class="expertise section">
         <div class="container">
             <div class="sect-header">
                 <h2 class="title">Expertise</h2>
@@ -153,7 +153,7 @@
             </div>
         </div>
     </section>
-    <section class="team">
+    <section class="team section">
         <div class="container">
             <div class="sect-header sect-header--white">
                 <h2 class="title">Expertise</h2>
@@ -185,8 +185,8 @@
             <a href="#" class="btn">We are hiring</a>
         </div>
     </section>
-    <section class="reviews">
-        <div class="container">
+    <section class="reviews section">
+        <div class="container reviews__container">
             <div class="quote-icon">
                 <svg class="quote-icon__svg"><use xlink:href="#quote-icon"></use></svg>
             </div>
@@ -200,10 +200,10 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
-        <div class="container">
+    <section class="contacts section">
+        <div class="container contacts__container">
             <form action="/" class="contacts__form">
-                <h2 class="title">GIVE US A GOOD NEWS</h2>
+                <h2 class="title contacts__title">GIVE US A GOOD NEWS</h2>
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Name">
                 </div>
@@ -216,7 +216,7 @@
                 <div class="form-group">
                     <textarea class="form-control" placeholder="Your message"></textarea>
                 </div>
-                <button class="btn" type="submit">Submit</button>
+                <button class="btn contacts__btn" type="submit">Submit</button>
             </form>
             <div class="contacts__info">
                 <h2 class="title">OUR HAPPY CLIENT</h2>
@@ -249,14 +249,14 @@
                 <h2 class="footer__title">OUR STUDIO</h2>
                 <div class="footer-contact">
                     <div class="footer-contact__icon">
-                        <svg><use xlink:href="#map-icon"></use></svg>
+                        <svg class="footer-contact__svg"><use xlink:href="#map-icon"></use></svg>
                     </div>
                     <p class="footer-contact__text">Ruko cucruk, Jl. Radio luar dalem jos <br>No.12 - 13, Kalideres - Jakarta Barat
                         <br>11480 - Indonesia</p>
                 </div>
                 <div class="footer-contact">
                     <div class="footer-contact__icon">
-                        <svg><use xlink:href="#phone-icon"></use></svg>
+                        <svg class="footer-contact__svg"><use xlink:href="#phone-icon"></use></svg>
                     </div>
                     <p class="footer-contact__text">(+62) 21-2224 3333</p>
                 </div>
@@ -264,40 +264,40 @@
             <div class="footer__block">
                 <h2 class="footer__title">STAY IN TOUCH</h2>
                 <form action="/" class="subscribe">
-                    <input type="text" class="form-control" placeholder="Subscribe our newsletter">
+                    <input type="text" class="form-control subscribe__form-control" placeholder="Subscribe our newsletter">
                     <button type="submit" class="subscribe__btn">
-                        <svg><use xlink:href="#paper-plane"></use></svg>
+                        <svg class="subscribe__svg"><use xlink:href="#paper-plane"></use></svg>
                     </button>
                 </form>
                 <ul class="social-list">
                     <li class="social-list__item">
                         <a href="#" class="social-list__link">
-                            <svg><use xlink:href="#facebook"></use></svg>
+                            <svg class="social-list__svg"><use xlink:href="#facebook"></use></svg>
                         </a>
                     </li>
                     <li class="social-list__item">
                         <a href="#" class="social-list__link">
-                            <svg><use xlink:href="#twitter"></use></svg>
+                            <svg class="social-list__svg"><use xlink:href="#twitter"></use></svg>
                         </a>
                     </li>
                     <li class="social-list__item">
                         <a href="#" class="social-list__link">
-                            <svg><use xlink:href="#dribbble"></use></svg>
+                            <svg class="social-list__svg"><use xlink:href="#dribbble"></use></svg>
                         </a>
                     </li>
                     <li class="social-list__item">
                         <a href="#" class="social-list__link">
-                            <svg><use xlink:href="#instagram"></use></svg>
+                            <svg class="social-list__svg"><use xlink:href="#instagram"></use></svg>
                         </a>
                     </li>
                     <li class="social-list__item">
                         <a href="#" class="social-list__link">
-                            <svg><use xlink:href="#g-plus"></use></svg>
+                            <svg class="social-list__svg"><use xlink:href="#g-plus"></use></svg>
                         </a>
                     </li>
                     <li class="social-list__item">
                         <a href="#" class="social-list__link">
-                            <svg><use xlink:href="#youtube"></use></svg>
+                            <svg class="social-list__svg"><use xlink:href="#youtube"></use></svg>
                         </a>
                     </li>
                 </ul>

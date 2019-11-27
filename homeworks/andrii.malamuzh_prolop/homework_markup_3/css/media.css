@@ -2,8 +2,8 @@
 
   .container,
   .header,
-  .welcome .container,
-  .reviews .container {
+  .welcome__container,
+  .reviews__container {
     max-width: 720px;
   }
 
@@ -64,12 +64,7 @@
     display: block;
   }
 
-  .about,
-  .expertise,
-  .team,
-  .reviews,
-  .contacts,
-  .footer {
+  .section {
     padding: 30px 0;
   }
 
@@ -99,6 +94,10 @@
   .member {
     width: 50%;
     margin-bottom: 30px;
+  }
+
+  .footer {
+    padding: 30px 0;
   }
 
   .footer-list {

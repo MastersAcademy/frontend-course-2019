@@ -166,6 +166,10 @@ textarea.form-control {
   visibility: visible;
 }
 
+.section {
+  padding: 70px 0;
+}
+
 /*HEADER START*/
 
 .header {
@@ -234,7 +238,7 @@ textarea.form-control {
   transition: .5s;
 }
 
-.btn-menu span {
+.btn-menu__line {
   display: block;
   width: 100%;
   height: 2px;
@@ -277,7 +281,7 @@ textarea.form-control {
   color: #FFF;
 }
 
-.welcome .container {
+.welcome__container {
   max-width: 800px;
 }
 
@@ -308,21 +312,17 @@ textarea.form-control {
 
 /*ABOUT START*/
 
-.about {
-  padding: 70px 0;
-}
-
-.about .container {
+.about__container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.about__image {
+.about__image-wrap {
   text-align: center;
   width: 40%;
 }
 
-.about__image img {
+.about__image {
   max-width: 100%;
 }
 
@@ -330,7 +330,7 @@ textarea.form-control {
   width: 60%;
 }
 
-.about .title {
+.about__title {
   margin-bottom: 20px;
 }
 
@@ -386,10 +386,6 @@ textarea.form-control {
 
 /*EXPERTISE START*/
 
-.expertise {
-  padding: 70px 0;
-}
-
 .expertise__inner {
   display: flex;
   flex-wrap: wrap;
@@ -427,7 +423,6 @@ textarea.form-control {
 /*TEAM START*/
 
 .team {
-  padding: 70px 0;
   background: url("../img/team.jpg") no-repeat center;
   background-size: cover;
   text-align: center;
@@ -469,13 +464,12 @@ textarea.form-control {
 /*REVIEWS START*/
 
 .reviews {
-  padding: 70px 0;
   background: url("../img/reviews.jpg") no-repeat center;
   background-size: cover;
   text-align: center;
 }
 
-.reviews .container {
+.reviews__container {
   max-width: 800px;
 }
 
@@ -517,17 +511,13 @@ textarea.form-control {
 
 /*CONTACTS START*/
 
-.contacts {
-  padding: 70px 0;
-}
-
-.contacts .container {
+.contacts__container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.contacts .title {
+.contacts__title {
   margin-bottom: 30px;
 }
 
@@ -535,7 +525,7 @@ textarea.form-control {
   width: 50%;
 }
 
-.contacts__form .btn {
+.contacts__btn {
   padding: 16px 30px 14px;
 }
 
@@ -589,7 +579,7 @@ textarea.form-control {
   margin-bottom: 15px;
 }
 
-.footer-contact__icon svg {
+.footer-contact__svg {
   width: 20px;
   height: 20px;
   fill: #FFF;
@@ -605,7 +595,7 @@ textarea.form-control {
   margin-bottom: 25px;
 }
 
-.subscribe .form-control {
+.subscribe__form-control {
   background: none;
   border-color: #9D97B0;
   width: calc(100% - 80px);
@@ -613,8 +603,8 @@ textarea.form-control {
   color: #FFF;
 }
 
-.subscribe .form-control:hover,
-.subscribe .form-control:focus {
+.subscribe__form-control:hover,
+.subscribe__form-control:focus {
   border-color: #FFF;
 }
 
@@ -633,7 +623,7 @@ textarea.form-control {
   background: #FFF;
 }
 
-.subscribe__btn svg {
+.subscribe__svg {
   width: 25px;
   height: 25px;
   fill: #000;
@@ -663,15 +653,15 @@ textarea.form-control {
   background: #FFF;
 }
 
-.social-list__item svg {
+.social-list__svg {
   width: 15px;
   height: 15px;
   fill: #FFF;
   transition: fill .3s ease-in-out;
 }
 
-.social-list__link:hover svg,
-.social-list__link:focus svg {
+.social-list__link:hover .social-list__svg,
+.social-list__link:focus .social-list__svg {
   fill: #000;
 }
 
