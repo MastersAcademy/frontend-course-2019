@@ -44,6 +44,7 @@ module.exports = {
         "no-unneeded-ternary": "error",
         "import/prefer-default-export": "off",
         "no-underscore-dangle": "off",
-        "class-methods-use-this": "off"
+        "class-methods-use-this": "off",
+        "import/no-unresolved": "off"
     }
 };
