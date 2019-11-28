@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap&subset=cyrillic,latin-ext,vietnamese"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap&subset=latin-ext" rel="stylesheet">
@@ -19,16 +20,25 @@
             <img src="images/Logo.png" alt="logo">
         </a>
     </div>
-    <nav class="main-menu">
-        <ul class="main-list list-style-none">
-            <li class="main-list-item"><a href="#" class="menu-link">Home</a></li>
-            <li class="main-list-item"><a href="#" class="menu-link">About</a></li>
-            <li class="main-list-item"><a href="#" class="menu-link">EXPERTISE</a></li>
-            <li class="main-list-item"><a href="#" class="menu-link">TEAMS</a></li>
-            <li class="main-list-item"><a href="#" class="menu-link">WORKS</a></li>
-            <li class="main-list-item"><a href="#" class="menu-link">PEOPLE SAY</a></li>
-            <li class="main-list-item"><a href="#" class="menu-link">Contact</a></li>
-        </ul>
+    <nav role="navigation main-menu" class="navigation" role="navigation">
+        <div id="menuToggle">
+
+            <input type="checkbox"/>
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul class="main-list list-style-none menu">
+                <li class="main-list-item"><a href="#" class="menu-link">Home</a></li>
+                <li class="main-list-item"><a href="#" class="menu-link">About</a></li>
+                <li class="main-list-item"><a href="#" class="menu-link">EXPERTISE</a></li>
+                <li class="main-list-item"><a href="#" class="menu-link">TEAMS</a></li>
+                <li class="main-list-item"><a href="#" class="menu-link">WORKS</a></li>
+                <li class="main-list-item"><a href="#" class="menu-link">PEOPLE SAY</a></li>
+                <li class="main-list-item"><a href="#" class="menu-link">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 <main>
@@ -79,29 +89,29 @@
         <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
 
         <ul class="list-style-none">
-            <li class="col-3"><img src="images/PUT_YOUR_ICON_HERE.png" alt="web design and development"><label>WEB
+            <li class="col-3 col-2"><img src="images/PUT_YOUR_ICON_HERE.png" alt="web design and development"><label>WEB
                 DESIGN
                 &
                 DEVELOPMENT</label>
                 <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
             </li>
-            <li class="col-3"><img src="images/PUT_YOUR_ICON_HERE%20(1).png" alt="branding identity"><label>BRANDING
+            <li class="col-3 col-2 "><img src="images/PUT_YOUR_ICON_HERE%20(1).png" alt="branding identity"><label>BRANDING
                 IDENTITY</label>
                 <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
             </li>
-            <li class="col-3"><img src="images/PUT_YOUR_ICON_HERE%20(2).png" alt="mobile app"><label>MOBILE APP</label>
+            <li class="col-3 col-2 "><img src="images/PUT_YOUR_ICON_HERE%20(2).png" alt="mobile app"><label>MOBILE APP</label>
                 <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
             </li>
-            <li class="col-3"><img src="images/PUT_YOUR_ICON_HERE%20(3).png" alt="search engine optimization"><label>SEARCH
+            <li class="col-3 col-2 "><img src="images/PUT_YOUR_ICON_HERE%20(3).png" alt="search engine optimization"><label>SEARCH
                 ENGINE
                 OPTIMIZATION</label>
                 <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
             </li>
-            <li class="col-3"><img src="images/PUT_YOUR_ICON_HERE%20(4).png" alt="game development"><label>GAME
+            <li class="col-3 col-2 "><img src="images/PUT_YOUR_ICON_HERE%20(4).png" alt="game development"><label>GAME
                 DEVELOPMENT</label>
                 <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
             </li>
-            <li class="col-3"><img src="images/PUT_YOUR_ICON_HERE%20(5).png" alt="made with love"><label>MADE WITH
+            <li class="col-3 col-2 "><img src="images/PUT_YOUR_ICON_HERE%20(5).png" alt="made with love"><label>MADE WITH
                 LOVE</label>
                 <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
             </li>
@@ -112,25 +122,25 @@
             <h2 class="title-level-two-white">MEET OUR AMAZING TEAM</h2>
             <p class="block-description">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
             <ul class="list-style-none">
-                <li class="col-4"><img src="images/user_picture.png" alt="">
+                <li class="col-4 col-2"><img src="images/user_picture.png" alt="">
                     <div class="content">
                         <label class="user-name">SEMF UCUK</label>
                         <span>CEO & FOUNDER</span>
                     </div>
                 </li>
-                <li class="col-4"><img src="images/user_picture.png" alt="">
+                <li class="col-4 col-2"><img src="images/user_picture.png" alt="">
                     <div class="content">
                         <label class="user-name">DIK ADALIN</label>
                         <span>ENGINEERING</span>
                     </div>
                 </li>
-                <li class="col-4"><img src="images/user_picture.png" alt="">
+                <li class="col-4 col-2"><img src="images/user_picture.png" alt="">
                     <div class="content">
                         <label class="user-name">JENG KOL</label>
                         <span>DESIGNER</span>
                     </div>
                 </li>
-                <li class="col-4">
+                <li class="col-4 col-2">
                     <img src="images/user_picture.png" alt="">
                     <div class="content">
                         <label class="user-name">PET ROMAK</label>
@@ -162,7 +172,7 @@
                 <li><img src="images/chevron-left-solid.svg" alt="arrow left"></li>
                 <li><img src="images/user_one.png" alt="user one"></li>
                 <li><img src="images/user_two.png" alt="user two"></li>
-                <li><img src="images/user_three.png" alt="user three"></li>
+                <li class="active"><img src="images/user_three.png" alt="user three"></li>
                 <li><img src="images/user_four.png" alt="user four"></li>
                 <li><img src="images/user_five.png" alt="user five"></li>
                 <li><img src="images/chevron-right-solid.svg" alt="arrow right"></li>
@@ -231,7 +241,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-3">
+        <div class="col-3   ">
             <h3 class="title-level-three-white">STAY IN TOUCH</h3>
             <form>
                 <input type="email" placeholder="Subscribe our newsletter">
@@ -239,7 +249,8 @@
             </form>
             <div class="social-buttons">
                 <ul class="list-style-none">
-                    <li class="facebook"><a href="#" class="social-link"><img src="images/facebook.png" alt="facebook icon">facebook</a>
+                    <li class="facebook"><a href="#" class="social-link"><img src="images/facebook.png"
+                                                                              alt="facebook icon">facebook</a>
                     </li>
                     <li><a href="#"><img src="images/twitter.png" alt="twitter icon">twitter</a></li>
                     <li><a href="#"><img src="images/dribbble.png" alt="dribbble icon">dribbble</a></li>
