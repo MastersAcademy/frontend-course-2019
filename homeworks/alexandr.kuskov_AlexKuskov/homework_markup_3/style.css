@@ -33,9 +33,7 @@
 /* Utility classes */
 
 .button {
-  height: 40px;
-  padding-right: 14px;
-  padding-left: 14px;
+  padding: 12px 14px;
   background-color: transparent;
   border-radius: 2px;
   border: 1px solid var(--global--color--secondary);
@@ -46,7 +44,8 @@
 }
 
 .button--submit {
-  width: 120px;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
 .line::after {
@@ -590,7 +589,7 @@
 }
 
 .stay-in-touch__input {
-  height: 45px;
+  height: 48px;
   width: 100%;
   max-width: 195px;
   padding: 0;
@@ -609,12 +608,10 @@
   background-image: url("./images/footer-icons/send-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 70px;
-  height: 45px;
+  padding: 24px 35px;
   background-color: var(--global--color--primary);
   border: 1px solid var(--global--color--primary);
   margin-left: 10px;
-  padding-top: 5px;
   opacity: .5;
   cursor: pointer;
 }
