@@ -107,3 +107,22 @@ document.getElementById('filed-message').addEventListener('focus', function () {
 document.getElementById('filed-message').addEventListener('focusout', function () {
     validateMessage(this);
 });
+
+const checkBox = document.getElementById('mobile-menu');
+const mobileMenu = document.getElementById('mobile-main-list');
+
+// If the checkbox is checked, display the output text
+function toogleMenu() {
+    if (checkBox.checked == true){
+        mobileMenu.classList.add("opened");
+    } else {
+        mobileMenu.classList.remove("opened");
+    }
+}
+
+toogleMenu();
+
+checkBox.addEventListener('change', (e) => {
+    e.preventDefault();
+    toogleMenu();
+});
