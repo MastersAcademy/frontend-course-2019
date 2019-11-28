@@ -670,15 +670,16 @@
   transform: translate(-50%, -50%);
 }
 
-.footer__additional-information {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer__additional-information .navigation-list__item {
+.footer .navigation-list__item {
   margin: 0 24px 0 0;
 }
 
+.footer__navigation {
+  display: inline-block;
+}
+
 .footer__copyright {
+  float: right;
+  margin: 0;
   font-size: var(--global--font-size--sm);
 }
