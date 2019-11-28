@@ -630,10 +630,7 @@
   margin-right: 5px;
 }
 
-.tajam__description,
-.our-studio__address,
-.our-studio__phone,
-.stay-in-touch__input {
+.contact-information-text {
   font-size: var(--global--font-size--sm);
   font-weight: var(--global--font-weight--light);
   line-height: 26px;
