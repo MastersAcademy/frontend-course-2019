@@ -134,6 +134,10 @@ header {
   margin: 0 15px;
 }
 
+.facebook a {
+  width: 10px;
+}
+
 .main-list-item a {
   text-decoration: none;
   color: #FFF;
@@ -150,10 +154,28 @@ header {
 /* hero block */
 
 .block-hero .title-level-one {
-  background-image: url(images/separator-blue.png);
+  background-image: url("images/separator-blue.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-bottom: 20px;
+}
+
+footer p {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: .35px;
+}
+
+footer img,
+footer p {
+  display: inline-block;
+  max-width: 90%;
+  vertical-align: text-top;
+  margin-top: 0;
+  line-height: 1.75;
 }
 
 .block-hero p {
@@ -166,7 +188,7 @@ header {
 }
 
 .block-hero {
-  background-image: url('images/header-bg.png');
+  background-image: url("images/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 500px;
@@ -213,9 +235,17 @@ header {
   flex-direction: column;
   text-align: center;
   min-height: 500px;
-  background-image: url('images/bg-video.png');
+  background-image: url("images/bg-video.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+footer img {
+  margin-right: 10px;
+}
+
+footer button img {
+  margin: 0;
 }
 
 .video-block img {
@@ -255,6 +285,10 @@ header {
   padding-bottom: 18px;
 }
 
+footer ul {
+  padding: 0;
+}
+
 .block-our-expertise ul {
   margin-top: 40px;
 }
@@ -265,6 +299,11 @@ header {
   border-right: 1px solid rgba(0, 0, 0, .08);
   padding-top: 30px;
   padding-bottom: 35px;
+}
+
+.col-3 {
+  width: 30%;
+  margin-right: 3%;
 }
 
 .col-3:nth-child(3n) {
@@ -290,6 +329,15 @@ header {
   display: block;
 }
 
+.block-our-team p {
+  color: #F3F3F3;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: .7px;
+  margin-bottom: 25px;
+}
+
 .block-our-expertise li p {
   opacity: .75;
   color: #333;
@@ -304,7 +352,7 @@ header {
 /* our team block */
 
 .block-our-team {
-  background-image: url('images/our-team-bg.png');
+  background-image: url("images/our-team-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 500px;
@@ -340,6 +388,10 @@ header {
   margin-bottom: 70px;
 }
 
+footer li {
+  margin-top: 0;
+}
+
 .block-our-team li {
   border: 1px solid #E1E1E1;
 }
@@ -359,15 +411,6 @@ header {
   font-size: 13px;
   font-weight: 300;
   text-transform: uppercase;
-}
-
-.block-our-team p {
-  color: #F3F3F3;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: .7px;
-  margin-bottom: 25px;
 }
 
 /* Testimonials block */
@@ -415,7 +458,7 @@ header {
 }
 
 input, textarea {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, .1);
   margin-bottom: 20px;
   width: 100%;
   padding: 15px 20px;
@@ -466,41 +509,6 @@ footer .container {
   display: flex;
 }
 
-.col-3 {
-  width: 30%;
-  margin-right: 3%;
-}
-
-footer p {
-  color: #FFF;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 26px;
-  letter-spacing: .35px;
-}
-
-footer ul {
-  padding: 0;
-}
-
-footer li {
-  margin-top: 0;
-}
-
-footer img,
-footer p {
-  display: inline-block;
-  max-width: 90%;
-  vertical-align: text-top;
-  margin-top: 0;
-  line-height: 1.75;
-}
-
-footer img {
-  margin-right: 10px;
-}
-
 footer input {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, .5);
@@ -530,10 +538,6 @@ footer button {
   cursor: pointer;
 }
 
-footer button img {
-  margin: 0;
-}
-
 .social-buttons {
   font-size: 0;
 }
@@ -558,10 +562,6 @@ footer button img {
 
 .social-buttons img {
   margin: 0;
-}
-
-.facebook a {
-  width: 10px;
 }
 
 footer form {
