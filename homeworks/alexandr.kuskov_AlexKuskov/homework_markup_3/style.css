@@ -98,8 +98,8 @@
 }
 
 .section {
-  max-width: 960px;
-  margin: 0 auto;
+  padding-right: calc((100% - 940px) / 2);
+  padding-left: calc((100% - 940px) / 2);
 }
 
 .section__header {
@@ -229,7 +229,6 @@
 
 .about {
   display: flex;
-  padding: 70px 0;
   color: var(--global--color--primary-dark);
 }
 
@@ -481,7 +480,6 @@
 
 .contact {
   display: flex;
-  padding: 70px 10px;
 }
 
 .form {
@@ -544,8 +542,11 @@
 
 /* Footer section */
 
+.about,
+.contact,
 .footer {
-  padding: 70px 10px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .footer__contact-information {
