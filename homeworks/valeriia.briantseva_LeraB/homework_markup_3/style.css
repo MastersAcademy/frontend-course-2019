@@ -308,16 +308,13 @@ footer ul {
 }
 
 .col-3 {
-  width: 32%;
+  width: 29%;
   display: inline-block;
   border-right: 1px solid rgba(0, 0, 0, .08);
   padding-top: 30px;
   padding-bottom: 50px;
-}
-
-.col-3 {
-  width: 30%;
-  margin-right: 3%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .col-3:nth-child(3n) {
@@ -427,6 +424,10 @@ footer li {
   font-size: 13px;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.block-our-team img {
+  max-width: 100%;
 }
 
 /* Testimonials block */
