@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap");
 
 :root {
-  --global--color--primary: rgb(255, 255, 255);
-  --global--color--primary-dark: rgb(65, 61, 75);
-  --global--color--secondary: rgb(0, 224, 208);
+  --global--color--primary: #FFF;
+  --global--color--primary-dark: #413D4B;
+  --global--color--secondary: #00E0D0;
 
   --global--font-weight--thin: 100;
   --global--font-weight--light: 300;
@@ -20,9 +20,9 @@
 
   --global--font-family--primary: "Playfair Display", serif;
 
-  --global--linear-gradient: linear-gradient(0deg, rgba(9, 5, 47, .85) 0%, rgba(49, 29, 94, .85) 100%);
+  --global--linear-gradient: linear-gradient(0deg, #09052FD9 0%, #311D5ED9 100%);
 
-  --global--border: 1px solid rgb(235, 235, 235);
+  --global--border: 1px solid #EBEBEB;
 }
 
 .body {
@@ -130,7 +130,7 @@
 
 .section__title-description {
   text-align: center;
-  color: rgb(47, 45, 53);
+  color: #2F2D35;
   font-weight: 400;
   font-size: var(--global--font-size--md);
 }
@@ -352,7 +352,7 @@
 .expertise-grid__item-description {
   font-weight: var(--global--font-weight--light);
   font-size: var(--global--font-size--md);
-  color: rgb(51, 51, 51);
+  color: #333;
 }
 
 /* Teams section */
@@ -371,7 +371,7 @@
 .member {
   width: 220px;
   height: 310px;
-  border: 1px solid rgba(225, 225, 225, .5);
+  border: 1px solid #E1E1E180;
   margin: 0;
 }
 
@@ -394,7 +394,7 @@
 
 .join-us-text {
   font-weight: var(--global--font-weight--light);
-  color: rgb(243, 243, 243);
+  color: #F3F3F3;
   margin-bottom: 25px;
 }
 
@@ -459,8 +459,8 @@
   top: 28px;
   width: 12px;
   height: 12px;
-  border-right: 2px solid rgb(159, 159, 159);
-  border-top: 2px solid rgb(159, 159, 159);
+  border-right: 2px solid #9F9F9F;
+  border-top: 2px solid #9F9F9F;
   transform: rotate(45deg);
 }
 
@@ -506,7 +506,7 @@
   width: 100%;
   padding-left: 20px;
   margin-bottom: 20px;
-  border: 1px solid rgb(0, 0, 0, .1);
+  border: 1px solid #0000001A;
 }
 
 .form__input {
@@ -595,13 +595,13 @@
   padding: 0;
   padding-left: 16px;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, .5);
+  border: 1px solid #FFFFFF80;
   color: var(--global--color--primary);
   line-height: normal;
 }
 
 .stay-in-touch__input::placeholder {
-  color: rgba(255, 255, 255, .75);
+  color: #FFFFFFBF;
 }
 
 .stay-in-touch__send-button {
