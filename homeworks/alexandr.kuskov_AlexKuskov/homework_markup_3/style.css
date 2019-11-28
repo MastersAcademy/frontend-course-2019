@@ -306,6 +306,7 @@
 .expertise-grid__item {
   text-align: center;
   padding: 32px 32px 40px;
+  margin: 0;
 }
 
 .expertise-grid__item:nth-child(-n+3) {
