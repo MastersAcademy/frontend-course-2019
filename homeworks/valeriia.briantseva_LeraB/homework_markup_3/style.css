@@ -760,6 +760,10 @@ footer .block-left a:hover {
 
 @media screen and (min-width: 992px) {
 
+  .block-our-team li {
+    height: 235px;
+  }
+
   .block-our-expertise li {
     padding-left: 0;
     padding-right: 0;
@@ -872,6 +876,10 @@ footer .block-left a:hover {
 }
 
 @media screen and (min-width: 1200px) {
+
+  .block-our-team li {
+    height: auto;
+  }
 
   .col-3 {
     width: 32%;
