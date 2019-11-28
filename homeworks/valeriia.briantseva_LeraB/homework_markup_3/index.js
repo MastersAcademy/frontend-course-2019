@@ -1,6 +1,3 @@
-let userName = document.getElementById('field-user-name').value;
-let userEmail = document.getElementById('field-user-email').value;
-let userMessage = document.getElementById('filed-message').value;
 const btnSubmit = document.getElementById('btn-submit-messages');
 
 // Validate field.
@@ -66,12 +63,6 @@ btnSubmit.addEventListener('click', (e) => {
 
     // If fields are valid show user data.
     if ((!document.getElementById('field-user-name').classList.contains('error')) && (!document.getElementById('field-user-email').classList.contains('error')) && (!document.getElementById('filed-message').classList.contains('error'))) {
-        const person = {
-            name: userName,
-            email: userEmail,
-            message: userMessage,
-        };
-
         // Clear fields.
         document.getElementById('field-user-name').value = '';
         document.getElementById('field-user-email').value = '';
