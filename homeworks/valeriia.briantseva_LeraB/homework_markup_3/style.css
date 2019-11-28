@@ -6,7 +6,7 @@ body {
   display: none;
 }
 
-ul {
+.list-style-none {
   list-style-type: none;
 }
 
@@ -71,7 +71,6 @@ ul {
 }
 
 .user-name {
-  color: #FFF;
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
@@ -99,7 +98,7 @@ ul {
   background: linear-gradient(180deg, rgba(0, 224, 208, 1) 43%, rgba(64, 41, 129, .9612219887955182) 98%);
 }
 
-blockquote {
+.blockquote {
   background-image: url("images/quotes.png");
   background-repeat: no-repeat;
   padding-top: 60px;
@@ -108,7 +107,7 @@ blockquote {
 
 /* header */
 
-header {
+.block-header {
   overflow: hidden;
   margin: 0 auto;
   padding-top: 15px;
@@ -134,16 +133,26 @@ header {
   margin: 0 15px;
 }
 
-.facebook a {
+.social-link {
   width: 10px;
 }
 
-.main-list-item a {
+.menu-link {
   text-decoration: none;
   color: #FFF;
   font-family: "Roboto";
   font-size: 13px;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer .block-left a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
   text-transform: uppercase;
 }
 
@@ -162,7 +171,7 @@ header {
 
 footer p {
   color: #FFF;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 300;
   line-height: 26px;
@@ -206,7 +215,7 @@ footer p {
 .block-about-us p {
   opacity: .8;
   color: #413D4B;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
@@ -216,6 +225,11 @@ footer p {
 .block-about-us .link-transparent {
   margin-top: 21px;
   display: inline-block;
+}
+
+footer .block-right {
+  text-align: right;
+  width: 50%;
 }
 
 .block-about-us .block-left {
@@ -298,7 +312,7 @@ footer ul {
   display: inline-block;
   border-right: 1px solid rgba(0, 0, 0, .08);
   padding-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 50px;
 }
 
 .col-3 {
@@ -331,7 +345,7 @@ footer ul {
 
 .block-our-team p {
   color: #F3F3F3;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 300;
   letter-spacing: .7px;
@@ -402,12 +416,14 @@ footer li {
 
 .block-our-team .user-name {
   display: block;
+  color: #FFF;
+  font-weight: 700;
 }
 
 .block-our-team span {
   opacity: .8;
   color: #FAFAFA;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 13px;
   font-weight: 300;
   text-transform: uppercase;
@@ -459,7 +475,6 @@ footer li {
 
 input, textarea {
   border: 1px solid rgba(0, 0, 0, .1);
-  margin-bottom: 20px;
   width: 100%;
   padding: 15px 20px;
 }
@@ -468,11 +483,15 @@ textarea {
   min-height: 200px;
 }
 
+.field-wrapper {
+  margin-bottom: 20px;
+}
+
 input::placeholder,
 textarea::placeholder {
   opacity: .5;
   color: #413D4B;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 300;
   letter-spacing: .7px;
@@ -521,7 +540,7 @@ footer input {
 footer input::placeholder {
   opacity: .75;
   color: #FFF;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 300;
   line-height: 26px;
@@ -552,15 +571,6 @@ footer button {
 }
 
 .social-buttons img {
-  border: 1px solid rgba(255, 255, 255, .5);
-  border-radius: 50%;
-  display: block;
-  padding: 10px;
-  width: 15px;
-  height: 15px;
-}
-
-.social-buttons img {
   margin: 0;
 }
 
@@ -570,4 +580,28 @@ footer form {
 
 footer .logo {
   margin-bottom: 20px;
+}
+
+.contact-us .error {
+  border-color: #F00;
+}
+
+.contact-us .error + p {
+  margin: .25rem 0 0;
+  font-size: .75rem;
+  color: #F00;
+  padding-left: 15px;
+}
+
+footer .block-left ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer .block-left li:not(:last-child) {
+  margin-right: 25px;
+}
+
+footer .block-left a:hover {
+  color: #00E0D0;
 }
