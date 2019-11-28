@@ -113,10 +113,10 @@ const mobileMenu = document.getElementById('mobile-main-list');
 
 // If the checkbox is checked, display the output text
 function toogleMenu() {
-    if (checkBox.checked == true){
-        mobileMenu.classList.add("opened");
+    if (checkBox.checked === true) {
+        mobileMenu.classList.add('opened');
     } else {
-        mobileMenu.classList.remove("opened");
+        mobileMenu.classList.remove('opened');
     }
 }
 

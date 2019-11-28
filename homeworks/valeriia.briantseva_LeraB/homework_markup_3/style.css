@@ -111,6 +111,23 @@ head .logo {
   width: 100%;
 }
 
+footer img {
+  margin-right: 10px;
+}
+
+footer img,
+footer p {
+  display: inline-block;
+  max-width: 90%;
+  vertical-align: text-top;
+  margin-top: 0;
+  line-height: 1.75;
+}
+
+footer button img {
+  margin: 0;
+}
+
 .logo img {
   max-width: 100%;
 }
@@ -179,15 +196,6 @@ footer p {
   letter-spacing: .35px;
 }
 
-footer img,
-footer p {
-  display: inline-block;
-  max-width: 90%;
-  vertical-align: text-top;
-  margin-top: 0;
-  line-height: 1.75;
-}
-
 .block-hero p {
   color: #FFF;
   font-family: "Roboto";
@@ -243,14 +251,6 @@ footer p {
   background-image: url("images/bg-video.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-footer img {
-  margin-right: 10px;
-}
-
-footer button img {
-  margin: 0;
 }
 
 .video-block img {
@@ -584,6 +584,28 @@ footer .block-left ul {
   justify-content: flex-start;
 }
 
+.block-our-expertise li {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 0;
+}
+
+.social-buttons li {
+  margin-bottom: 10px;
+}
+
+.block-our-expertise li:not(:nth-last-child(-n+1)) {
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+.main-list.opened li {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 footer .block-left li:not(:last-child) {
   margin-right: 25px;
 }
@@ -592,14 +614,14 @@ footer .block-left a:hover {
   color: #00E0D0;
 }
 
-#menuToggle {
+.menuToggle {
   display: block;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
 }
 
-#menuToggle input {
+.menuToggle input {
   display: inline-block;
   width: 40px;
   height: 32px;
@@ -611,7 +633,7 @@ footer .block-left a:hover {
   -webkit-touch-callout: none;
 }
 
-#menuToggle span {
+.menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
@@ -620,18 +642,16 @@ footer .block-left a:hover {
   background: #CDCDCD;
   border-radius: 3px;
   z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-  background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-  opacity 0.55s ease;
+  transform-origin: 4px 0;
+  transition: transform .5s cubic-bezier(.77, .2, .05, 1), background .5s cubic-bezier(.77, .2, .05, 1), opacity .55s ease;
 }
 
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
+.menuToggle span:first-child {
+  transform-origin: 0 0;
 }
 
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
+.menuToggle span:nth-last-child(2) {
+  transform-origin: 0 100%;
 }
 
 .hamburger-menu {
@@ -640,53 +660,35 @@ footer .block-left a:hover {
   height: 30px;
 }
 
-#menuToggle input:checked ~ span:nth-child(3) {
-  position: absolute;
-  top: 25px;
-  left: 10px;
-}
-
-#menuToggle input:checked ~ span:nth-child(4) {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-}
-
-#menuToggle input:checked ~ span {
+.menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #FFF;
   margin-bottom: 22px;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+.menuToggle input:checked ~ span:nth-child(3) {
+  position: absolute;
+  top: 25px;
+  left: 10px;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2) {
+.menuToggle input:checked ~ span:nth-child(4) {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+
+.menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(.2, .2);
+}
+
+.menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #EDEDED;
-  list-style-type: none;
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-}
-
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-#menuToggle input:checked ~ ul {
+.menuToggle input:checked ~ ul {
   transform: none;
 }
 
@@ -695,27 +697,8 @@ footer .block-left a:hover {
   float: right;
 }
 
-.block-our-expertise li:not(:nth-last-child(-n+1)) {
-  border-bottom: 1px solid rgba(0, 0, 0, .08);
-}
-
-.block-our-expertise li {
-  padding-top: 30px;
-  padding-bottom: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .contact-us .block-right {
   text-align: center;
-}
-
-.block-our-expertise li {
-  border-right: 0;
-}
-
-.social-buttons li {
-  margin-bottom: 10px;
 }
 
 .hamburger-menu {
@@ -723,26 +706,21 @@ footer .block-left a:hover {
   float: right;
 }
 
-#menuToggle .main-list {
+.menuToggle .main-list {
   display: none;
 }
 
-#menuToggle .main-list.opened {
+.menuToggle .main-list.opened {
   display: block;
   width: 100%;
   height: 200px;
-  background-color: black;
+  background-color: #000;
   position: absolute;
   right: 0;
 }
 
-.main-list.opened li {
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
 @media screen and (max-width: 375px) {
+
   .contact-us ul {
     width: 100%;
   }
@@ -778,10 +756,14 @@ footer .block-left a:hover {
   input, textarea {
     width: 90%;
   }
-
 }
 
 @media screen and (min-width: 992px) {
+
+  .block-our-expertise li {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   .block-hero {
     margin-top: -87px;
@@ -803,6 +785,14 @@ footer .block-left a:hover {
     display: inline-block;
   }
 
+  .block-our-expertise li {
+    border-right: 1px solid rgba(0, 0, 0, .08);
+  }
+
+  .block-our-expertise li:nth-child(3n) {
+    border-right: none;
+  }
+
   .block-our-expertise ul li:not(:nth-last-child(-n+3)) {
     border-bottom: 1px solid rgba(0, 0, 0, .08);
   }
@@ -820,6 +810,11 @@ footer .block-left a:hover {
 
   .col-4:not(:nth-child(4)) {
     margin-right: 20px;
+  }
+
+  footer .block-right {
+    text-align: right;
+    width: 48%;
   }
 
   .block-about-us .block-left {
@@ -844,24 +839,12 @@ footer .block-left a:hover {
     padding-top: 200px;
   }
 
-  .block-our-team li {
-    margin-bottom: 0;
-  }
-
   .block-testimonials li.active {
     position: inherit;
     left: inherit;
     transform: none;
     margin-right: 0;
     top: auto;
-  }
-
-  .block-our-expertise li {
-    border-right: 1px solid rgba(0, 0, 0, .08);
-  }
-
-  .block-our-expertise li:nth-child(3n) {
-    border-right: none;
   }
 
   .block-our-team .col-2:nth-child(2n+1) {
@@ -878,16 +861,20 @@ footer .block-left a:hover {
     max-width: 20%;
   }
 
-  footer .block-right {
-    text-align: right;
-    width: 48%;
+  .block-our-expertise .col-3 {
+    width: 32%;
+    display: inline-block;
+  }
+
+  .block-our-expertise .col-3:nth-child(3n) {
+    border-right: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
 
   .col-3 {
-    width: 33%;
+    width: 32%;
     display: inline-block;
   }
 
@@ -898,5 +885,4 @@ footer .block-left a:hover {
   footer .container {
     display: flex;
   }
-
 }
