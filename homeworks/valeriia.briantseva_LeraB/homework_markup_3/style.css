@@ -105,27 +105,16 @@ body {
 
 .logo {
   text-align: center;
-}
-
-head .logo {
   width: 100%;
 }
 
-footer img {
-  margin-right: 10px;
+.footer-logo {
+  width: auto;
 }
 
-footer img,
-footer p {
-  display: inline-block;
-  max-width: 90%;
-  vertical-align: text-top;
-  margin-top: 0;
-  line-height: 1.75;
-}
-
-footer button img {
-  margin: 0;
+.footer {
+  color: #FFF;
+  font-style: normal;
 }
 
 .logo img {
@@ -155,7 +144,7 @@ footer button img {
   width: 10px;
 }
 
-.menu-link {
+.link-white {
   text-decoration: none;
   color: #FFF;
   font-family: "Roboto";
@@ -164,17 +153,7 @@ footer button img {
   text-transform: uppercase;
 }
 
-footer .block-left a {
-  text-decoration: none;
-  color: #FFF;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-.main-list-item a:hover {
+.link-white:hover {
   color: #00E0D0;
 }
 
@@ -187,22 +166,14 @@ footer .block-left a {
   padding-bottom: 20px;
 }
 
-footer p {
-  color: #FFF;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 26px;
-  letter-spacing: .35px;
-}
-
-.block-hero p {
+.block-hero-description {
   color: #FFF;
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   margin: 0 20%;
+  margin-bottom: 50px;
 }
 
 .block-hero {
@@ -215,17 +186,13 @@ footer p {
   padding-top: 100px;
 }
 
-.block-hero p {
-  margin-bottom: 50px;
-}
-
 /* Our story block */
 
 .block-about-us {
   text-align: center;
 }
 
-.block-about-us p {
+.block-about-us-description {
   opacity: .8;
   color: #413D4B;
   font-family: "Roboto";
@@ -253,13 +220,13 @@ footer p {
   background-size: cover;
 }
 
-.video-block img {
+.play-icon {
   display: block;
   margin: 0 auto;
   cursor: pointer;
 }
 
-.video-block label {
+.play-icon-label {
   display: inline-block;
   color: #FFF;
   font-family: "Roboto", sans-serif;
@@ -276,7 +243,7 @@ footer p {
   text-align: center;
 }
 
-.block-our-expertise > p {
+.block-our-expertise-description {
   opacity: .75;
   color: #2F2D35;
   font-family: "Playfair Display";
@@ -288,22 +255,15 @@ footer p {
   background-position-x: center;
   background-position-y: bottom;
   padding-bottom: 18px;
+  margin-bottom: 40px;
 }
 
-footer ul {
-  padding: 0;
-}
-
-.block-our-expertise ul {
-  margin-top: 40px;
-}
-
-.block-our-expertise img {
+.expertise-picture {
   display: block;
   margin: 0 auto;
 }
 
-.block-our-expertise label {
+.expertise-item-label {
   color: #413D4B;
   font-family: "Roboto";
   font-size: 14px;
@@ -313,7 +273,7 @@ footer ul {
   display: block;
 }
 
-.block-our-team p {
+.block-description {
   color: #F3F3F3;
   font-family: "Roboto";
   font-size: 14px;
@@ -322,7 +282,7 @@ footer ul {
   margin-bottom: 25px;
 }
 
-.block-our-expertise li p {
+.expertise-item-description {
   opacity: .75;
   color: #333;
   font-family: "Roboto";
@@ -351,6 +311,9 @@ footer ul {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 1.05px;
+}
+
+.block-our-team .block-description:first-of-type {
   background-image: url("images/separator-white.png");
   background-repeat: no-repeat;
   background-position-x: center;
@@ -358,16 +321,8 @@ footer ul {
   padding-bottom: 18px;
 }
 
-.block-our-team ul {
+.team-member {
   margin-top: 45px;
-  margin-bottom: 70px;
-}
-
-footer li {
-  margin-top: 0;
-}
-
-.block-our-team li {
   border: 1px solid #E1E1E1;
   margin-bottom: 25px;
 }
@@ -376,13 +331,13 @@ footer li {
   padding: 20px;
 }
 
-.block-our-team .user-name {
+.team-member-name {
   display: block;
   color: #FFF;
   font-weight: 700;
 }
 
-.block-our-team span {
+.team-member-position {
   opacity: .8;
   color: #FAFAFA;
   font-family: "Roboto";
@@ -391,7 +346,7 @@ footer li {
   text-transform: uppercase;
 }
 
-.block-our-team img {
+.team-member-picture {
   width: 100%;
 }
 
@@ -405,13 +360,13 @@ footer li {
   padding-bottom: 70px;
 }
 
-.block-testimonials li {
+.testimonial {
   display: inline-block;
   margin: 5px;
   margin-top: 95px;
 }
 
-.block-testimonials li.active {
+.testimonial.active {
   position: absolute;
   top: 35px;
   left: 50%;
@@ -420,7 +375,7 @@ footer li {
   margin: 0;
 }
 
-.block-testimonials blockquote {
+.blockquote {
   opacity: .85;
   color: #FFF;
   font-family: "Playfair Display";
@@ -450,7 +405,7 @@ footer li {
   margin-bottom: 35px;
 }
 
-.contact-us img {
+.partner-logo {
   max-width: 100%;
 }
 
@@ -492,7 +447,7 @@ textarea::placeholder {
   padding: 0;
 }
 
-.contact-us li {
+.partner {
   margin-bottom: 50px;
 }
 
@@ -514,7 +469,7 @@ footer .container {
   display: block;
 }
 
-footer input {
+.subscribe-field {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, .5);
   width: 51%;
@@ -523,7 +478,7 @@ footer input {
   vertical-align: top;
 }
 
-footer input::placeholder {
+.subscribe-field::placeholder {
   opacity: .75;
   color: #FFF;
   font-family: "Roboto";
@@ -533,39 +488,25 @@ footer input::placeholder {
   letter-spacing: .7px;
 }
 
-footer button {
-  background-color: rgba(255, 255, 255, .5);
-  border: 1px solid rgba(255, 255, 255, .5);
-  min-height: 47px;
-  min-width: 70px;
-  display: inline-block;
-  text-align: center;
-  cursor: pointer;
-}
-
-.social-buttons {
+.social-links {
   font-size: 0;
 }
 
-.social-buttons ul {
+.social-links ul {
   padding: 0;
 }
 
-.social-buttons li {
+.social-button-item {
   display: inline-block;
   margin-right: 15px;
 }
 
-.social-buttons img {
+.social-link-icon {
   margin: 0;
 }
 
-footer form {
+.subscribe-form {
   margin-bottom: 15px;
-}
-
-footer .logo {
-  margin-bottom: 20px;
 }
 
 .contact-us .error {
@@ -579,12 +520,12 @@ footer .logo {
   padding-left: 15px;
 }
 
-footer .block-left ul {
+.secondary-menu {
   display: flex;
   justify-content: flex-start;
 }
 
-.block-our-expertise li {
+.expertise-item {
   padding-top: 30px;
   padding-bottom: 50px;
   padding-left: 10px;
@@ -592,11 +533,13 @@ footer .block-left ul {
   border-right: 0;
 }
 
-.social-buttons li {
+.social-link-item {
   margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 15px;
 }
 
-.block-our-expertise li:not(:nth-last-child(-n+1)) {
+.expertise-item:not(:nth-last-child(-n+1)) {
   border-bottom: 1px solid rgba(0, 0, 0, .08);
 }
 
@@ -706,17 +649,53 @@ footer .block-left a:hover {
   float: right;
 }
 
-.menuToggle .main-list {
+.main-list {
   display: none;
 }
 
-.menuToggle .main-list.opened {
+.main-list.opened {
   display: block;
   width: 100%;
   height: 200px;
   background-color: #000;
   position: absolute;
   right: 0;
+}
+
+.address,
+.phone {
+  background-image: url("images/phone351.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  padding-left: 25px;
+  background-size: 15px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.address {
+  background-image: url("images/location.png");
+  font-style: normal;
+  line-height: 26px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.btn-submit {
+  background-image: url("images/paper.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-color: rgba(255, 255, 255, .5);
+  border: 1px solid rgba(255, 255, 255, .5);
+  min-height: 47px;
+  min-width: 65px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  opacity: .75;
+  margin-left: 10px
 }
 
 @media screen and (max-width: 375px) {
@@ -741,15 +720,15 @@ footer .block-left a:hover {
     margin-right: 5%;
   }
 
-  .block-our-expertise li {
+  .expertise-item {
     border-bottom: 1px solid rgba(0, 0, 0, .08);
   }
 
-  .block-our-expertise li:nth-last-child(-n+2) {
+  .expertise-item:nth-last-child(-n+2) {
     border-bottom: 0;
   }
 
-  .block-our-expertise li:nth-child(2n+1) {
+  .border-right-md {
     border-right: 1px solid rgba(0, 0, 0, .08);
   }
 
@@ -760,13 +739,17 @@ footer .block-left a:hover {
 
 @media screen and (min-width: 992px) {
 
-  .block-our-team li {
-    height: 235px;
+  .border-right-md {
+    border-right: none;
   }
 
-  .block-our-expertise li {
+  .expertise-item {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .team-member {
+    height: 235px;
   }
 
   .block-hero {
@@ -789,20 +772,16 @@ footer .block-left a:hover {
     display: inline-block;
   }
 
-  .block-our-expertise li {
-    border-right: 1px solid rgba(0, 0, 0, .08);
-  }
-
-  .block-our-expertise li:nth-child(3n) {
-    border-right: none;
-  }
-
-  .block-our-expertise ul li:not(:nth-last-child(-n+3)) {
+  .expertise-item:not(:nth-last-child(-n+3)) {
     border-bottom: 1px solid rgba(0, 0, 0, .08);
   }
 
-  .block-our-expertise ul li:nth-last-child(-n+3) {
+  .expertise-item:nth-last-child(-n+3) {
     border-bottom: none;
+  }
+
+  .border-right-lg {
+    border-right: 1px solid rgba(0, 0, 0, .08);
   }
 
   .col-4 {
@@ -843,7 +822,7 @@ footer .block-left a:hover {
     padding-top: 200px;
   }
 
-  .block-testimonials li.active {
+  .testimonial.active {
     position: inherit;
     left: inherit;
     transform: none;
@@ -865,29 +844,45 @@ footer .block-left a:hover {
     max-width: 20%;
   }
 
+  .footer-logo {
+    float: none;
+  }
+
   .block-our-expertise .col-3 {
     width: 32%;
     display: inline-block;
   }
 
-  .block-our-expertise .col-3:nth-child(3n) {
-    border-right: none;
+  .hamburger-menu {
+    display: none;
+  }
+
+  .main-list {
+    display: flex;
+  }
+
+  .main-list-item {
+    display: inline-block
+  }
+
+  .block-our-team .col-2:not(:last-child) {
+    margin-right: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
 
-  .block-our-team li {
+  .footer-logo {
+    max-width: 50%;
+  }
+
+  .team-member {
     height: auto;
   }
 
   .col-3 {
     width: 32%;
     display: inline-block;
-  }
-
-  .col-3:nth-child(3n) {
-    border-right: none;
   }
 
   footer .container {
