@@ -225,12 +225,13 @@
 
 .about {
   display: flex;
+  align-items: center;
   color: var(--global--color--primary-dark);
 }
 
 .about__big-logo {
-  width: 235px;
-  height: 230px;
+  width: 70%;
+  height: auto;
   padding: 0 8%;
 }
 
@@ -366,10 +367,15 @@
 }
 
 .member {
-  width: 220px;
-  height: 310px;
+  max-width: 220px;
+  height: auto;
   border: 1px solid #E1E1E180;
   margin: 0;
+  margin-right: 1%;
+}
+
+.member__photo {
+  width: 100%;
 }
 
 .member__name {
