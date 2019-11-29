@@ -374,15 +374,18 @@
 .footer {
   background-image: url("./images/PUT\ YOUR\ IMAGE\ HERE@1X\ \(2\).jpeg");
   background-repeat: round;
+  display: flex;
   align-items: flex-start;
   height: 400px;
-  width: 100%;
+  padding: 0 15%;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer__block {
-  width: 400px;
+  width: 22%;
   justify-content: start;
-  margin: 65px 55px;
+  margin: 3% 4%;
 }
 
 .footer__logo_text {
@@ -392,7 +395,6 @@
 .footer__block_img {
   fill: #FFF;
   margin-right: 10px;
-  height: 24px;
 }
 
 .footer__block_item {
@@ -417,6 +419,9 @@
 .footer__button {
   background-color: #FFF;
   opacity: .5;
+  border-color: transparent;
+  width: 70px;
+  height: 45px;
 }
 
 .footer__block_input-wraper {
@@ -432,19 +437,13 @@
   margin-right: 5px;
 }
 
-.footer__button {
-  border-color: transparent;
-  width: 70px;
-  height: 45px;
-}
-
 .nav__network_wraper {
   margin-top: 7px;
 }
 
 .footer__nav {
   justify-content: start;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .footer__block-wraper {
