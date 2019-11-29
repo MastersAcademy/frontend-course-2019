@@ -14,12 +14,12 @@
   --secondary-color: #36C0AE;
 }
 
-p {
+.text {
   font-size: 14;
   line-height: 24px;
 }
 
-button {
+.btn {
   background: none;
   border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
@@ -29,7 +29,7 @@ button {
   font-weight: 900;
 }
 
-button:active {
+.btn:active {
   background: var(--secondary-color);
   color: var(--primary-color);
   border-color: var(--primary-color);
@@ -49,21 +49,10 @@ button:active {
   padding-bottom: 67px;
 }
 
-.home-section {
-  background: var(--bg-overlay), url("public/backgrounds/header.png") no-repeat center center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px;
-  color: var(--primary-color);
-}
-
-.header {
+.header.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 940px;
   width: 100%;
   height: 50px;
 }
@@ -76,6 +65,15 @@ button:active {
   min-width: 400px;
 }
 
+.home-section, .header {
+  background: var(--bg-overlay), url("public/backgrounds/header.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  color: var(--primary-color);
+}
 
 .link {
   text-decoration: none;
@@ -99,7 +97,7 @@ button:active {
   padding-bottom: 207px;
 }
 
-.home-section__content h1 {
+.home-section__content .title {
   font-size: 32;
   margin-top: 163px;
   margin-bottom: 20px
@@ -110,7 +108,7 @@ button:active {
   margin-bottom: 0;
 }
 
-.home-section__content button {
+.home-section__content .btn-learn-more {
   margin: 0 auto;
 }
 
@@ -125,7 +123,7 @@ button:active {
   /* max-width: 100%; */
 }
 
-.about-section p {
+.about-section .text {
   max-width: 435px;
 }
 
@@ -138,7 +136,7 @@ button:active {
   width: 100%;
 }
 
-.story-section button {
+.story-section .btn-watch-story {
   padding: 0;
   border: none;
   margin-bottom: 34px;
@@ -146,7 +144,7 @@ button:active {
   border-radius: 50%;
 }
 
-.story-section label {
+.watch-story__label {
   color: var(--primary-color);
   font-size: 16;
   text-transform: uppercase;
@@ -159,19 +157,19 @@ button:active {
   --max-width: 950px;
 }
 
-.expertise-section h2 {
+.expertise-section .title {
   font-size: 22;
   margin-top: 0;
   margin-bottom: 16px
 }
 
-.expertise-section p {
+.expertise-section .text {
   margin-top: 0;
   margin-bottom: 16px;
   text-align: center;
 }
 
-.expertise-section img {
+.expertise-section .underline {
   margin-top: 0;
   margin-bottom: 46px;
 }
@@ -202,18 +200,18 @@ button:active {
   text-align: center;
 }
 
-.expertise-item img {
+.expertise-item__img {
   margin-top: 0;
   margin-bottom: 35px;
 }
 
-.expertise-item p {
+.expertise-item__text {
   margin-top: 25px;
   margin-bottom: 5px;
   color: #333;
 }
 
-.expertise-item h3 {
+.expertise-item__title {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
@@ -231,7 +229,7 @@ button:active {
   width: 100%;
 }
 
-.team-section h2 {
+.team-section .title {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 22;
@@ -265,12 +263,12 @@ button:active {
   width: 220px;
 }
 
-.teammate img {
+.teammate .teammate-avatar {
   height: 229px;
   width: 220px;
 }
 
-.teammate img::before {
+.teammate .teammate-avatar::before {
   height: 230;
   width: 220px;
   content: " ";
@@ -283,6 +281,7 @@ button:active {
   margin-top: 24px;
   margin-bottom: 6px;
   text-align: center;
+  font-weight: 700;
 }
 
 .teammate-position {
@@ -293,12 +292,12 @@ button:active {
   font-size: 13;
 }
 
-.team-section p.lets-join-us {
+.team-section .lets-join-us {
   margin-top: 0;
   margin-bottom: 25px;
 }
 
-.team-section button {
+.team-section .btn-hiring {
   margin: 0;
 }
 
@@ -313,7 +312,7 @@ button:active {
   text-align: center;
 }
 
-.works-section img.quote {
+.works-section .quote-img {
   width: 32px;
   height: 26px;
   margin-bottom: 21px;
@@ -324,15 +323,15 @@ button:active {
   margin-top: 21px;
 }
 
-.works-quote p {
+.works-quote .text {
   margin-bottom: 26px;
 }
 
-.works-quote cite {
+.works-quote .quote-person {
   margin-top: 26px;
 }
 
-.works-quote cite * {
+.works-quote .quote-person * {
   margin: 0;
 }
 
@@ -353,21 +352,26 @@ button:active {
   margin-top: 45px;
 }
 
-.works-people button {
+.works-people .btn-navigation {
+  width: 25px;
+  height: 40px;
   border: none;
   margin-right: 32px;
   margin-left: 32px;
   padding: 0;
 }
 
-.works-people button:active {
+.works-people .btn-navigation:active {
   background: none;
   fill: var(--secondary-color);
 }
 
-.works-people button img {
-  width: 25px;
-  height: 40px;
+.btn-prev {
+  background: url("public/prev.svg") center center no-repeat;
+}
+
+.btn-next {
+  background: url("public/next.svg") center center no-repeat;
 }
 
 .works-people__list {
@@ -381,12 +385,12 @@ button:active {
   margin-bottom: 0;
 }
 
-.works-people__list li:nth-child(3) img {
+.works-people__list .works-person:nth-child(3) .works-avatar {
   width: 70px;
   height: 70px;
 }
 
-.works-people__list img {
+.works-people__list .works-avatar {
   width: 45px;
   height: 45px;
 }
@@ -405,14 +409,14 @@ button:active {
   justify-content: center;
 }
 
-.contact-form h2 {
+.contact-form .title {
   color: #413D4B;
   font-size: 22;
   margin-top: 0;
   margin-bottom: 24px;
 }
 
-.contact-form form {
+.contact-form .contact-form__form {
   display: flex;
   flex-wrap: no-wrap;
   flex-direction: column;
@@ -420,31 +424,31 @@ button:active {
   margin-bottom: 0;
 }
 
-.contact-form form > * {
+.contact-form .contact-form__form > * {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 461px;
 }
 
-.contact-form form input {
+.contact-form .contact-form__input {
   height: 46px;
   border: 2px solid rgba(0,0,0,.1);
   padding: 0 22px;
 }
 
-.contact-form form *::placeholder {
+.contact-form .contact-form__form *::placeholder {
   color: rgba(0,0,0,.3);
   font-weight: 550;
 }
 
-.contact-form form textarea {
+.contact-form .contact-form__form .contact-form__textarea {
   height: 200px;
   border: 2px solid rgba(0,0,0,.1);
   resize: none;
   padding: 17px 22px;
 }
 
-.contact-form form button {
+.contact-form .contact-form__form .button-contact {
   padding-left: 34px;
   padding-right: 34px;
   width: auto;
@@ -460,14 +464,14 @@ button:active {
   width: 100%;
 }
 
-.happy-clients h2 {
+.happy-clients .title {
   color: #413D4B;
   font-size: 22;
   margin-top: 0;
   margin-bottom: 24px;
 }
 
-.happy-clients ul {
+.happy-clients .happy-clients__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -479,7 +483,7 @@ button:active {
   height: 423px;
 }
 
-.happy-clients ul li {
+.happy-clients .li-client {
   width: 162px;
   height: 70px;
   display: flex;
@@ -505,12 +509,12 @@ button:active {
   margin-bottom: 70px;
 }
 
-.contact-section a:link {
+.contact-section .link:link {
   color: var(--primary-color);
   text-decoration: none;
 }
 
-.contact-section a:hover {
+.contact-section .link:hover {
   color: var(--secondary-color);
   text-decoration: underline;
 }
@@ -518,10 +522,6 @@ button:active {
 .contact-section > * {
   max-width: 1155px;
   width: 90%;
-}
-
-.contact-section ul {
-  list-style: none;
 }
 
 .contact-section__content {
@@ -550,7 +550,7 @@ button:active {
   max-width: 283px;
 }
 
-.contact-section__desc p {
+.contact-section__desc .text {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -559,14 +559,15 @@ button:active {
   max-width: 267px;
 }
 
-.contact-section h2 {
+.contact-section .subsection-title {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 15px;
   text-transform: uppercase;
 }
 
-.contact-section__contacts ul {
+.contact-section__list {
+  list-style: none;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -577,28 +578,28 @@ button:active {
   padding: 0;
 }
 
-.contact-section__contacts ul > *:not(:last-child) {
+.contact-section__list > *:not(:last-child) {
   margin-bottom: 27px;
 }
 
-.contact-section__address, .contact-section__phone {
+.contact-section__location, .contact-section__phone {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
 }
 
-.contact-section__address img {
+.contact-section__location .contact-section__img-address {
   height: 19px;
   width: 14px;
   margin-right: 16px;
 }
 
-.contact-section__address address {
+.contact-section__location .contact-section__address {
   width: fit-content;
 }
 
-.contact-section__phone img {
+.contact-section__phone .contact-section__img-phone {
   height: 17px;
   width: 17px;
   margin-right: 12px;
@@ -626,7 +627,7 @@ button:active {
   height: 46px;
 }
 
-.contact-section__form input {
+.contact-form__input {
   height: 46px;
   width: 212px;
   background: none;
@@ -635,18 +636,18 @@ button:active {
   padding: 17px 26px 17px 17px;
 }
 
-.contact-section__form input::placeholder {
+.contact-form__input::placeholder {
   color: rgba(255, 255, 255, .4);
   font-weight: 550;
 }
 
-.contact-section__form button {
+.contact-section__form .btn-contact {
   width: 71px;
   border: none;
   background: rgba(255, 255, 255, .5)
 }
 
-.contact-section__form button:active {
+.contact-section__form .btn-contact:active {
   border: solid 2px rgba(255, 255, 255, .5);
   background: none;
 }
@@ -655,6 +656,7 @@ button:active {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  list-style: none;
   padding: 0;
   margin: 20px 0 0;
 }
@@ -663,7 +665,7 @@ button:active {
   margin-right: 7px;
 }
 
-.socials-links a.social {
+.socials-links .social {
   border: 1px solid #FFF;
   font-size: 0;
   border-radius: 50%;
@@ -689,7 +691,7 @@ button:active {
   padding: 0;
 }
 
-.footer *:not(:last-child) > a {
+.footer *:not(:last-child) > .footer-link {
   margin-right: 10px;
   white-space: nowrap;
 }
