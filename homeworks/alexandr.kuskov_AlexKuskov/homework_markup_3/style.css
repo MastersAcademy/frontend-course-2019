@@ -570,14 +570,27 @@
 }
 
 .our-studio__address {
+  background-image: url("./images/footer-icons/location-icon.svg");
+  background-position: top left;
   width: 85%;
   margin: 0;
+}
+
+.our-studio__phone {
+  background-image: url("./images/footer-icons/phone-icon.svg");
+  background-position: center left;
+  margin-top: 5%;
+  color: #000;
+  filter: invert(100%);
 }
 
 .our-studio__address,
 .our-studio__phone {
   display: inline-block;
-  padding-left: 12px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  text-decoration: none;
+  filter: invert(100%);
 }
 
 .stay-in-touch {
@@ -648,15 +661,6 @@
 
 .footer__icon {
   filter: invert(100%);
-}
-
-.footer__icon--location-pointer {
-  vertical-align: top;
-}
-
-.our-studio > .footer__icon {
-  position: relative;
-  top: 2px;
 }
 
 .social-media-link > .footer__icon {
