@@ -1,55 +1,62 @@
 {
-  "name": "frontend-course-2019",
-  "version": "1.0.0",
-  "description": "add some magic for Frontend Course 2019",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MastersAcademy/frontend-course-2019.git"
-  },
-  "author": "smithua <aleksandr.fesenko@masterofcode.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/MastersAcademy/frontend-course-2019/issues"
-  },
-  "homepage": "https://github.com/MastersAcademy/frontend-course-2019",
-  "main": "index.js",
-  "scripts": {
-    "test": "lint-staged",
-    "test-js": "eslint --config .eslintrc.js ./homeworks/**/*.js",
-    "test-css": "stylelint --config .stylelintrc ./homeworks/**/*.{css,scss}",
-    "jest": "jest"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --config .eslintrc.js",
-      "git add"
+    "name": "frontend-course-2019",
+    "version": "1.0.0",
+    "description": "add some magic for Frontend Course 2019",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MastersAcademy/frontend-course-2019.git"
+    },
+    "author": "smithua <aleksandr.fesenko@masterofcode.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MastersAcademy/frontend-course-2019/issues"
+    },
+    "homepage": "https://github.com/MastersAcademy/frontend-course-2019",
+    "main": "index.js",
+    "scripts": {
+        "test": "lint-staged",
+        "test-js": "eslint --config .eslintrc.js ./homeworks/**/*.js",
+        "test-css": "stylelint --config .stylelintrc ./homeworks/**/*.{css,scss}",
+        "jest": "jest"
+    },
+    "eslintIgnore": [
+        "*dist",
+        "*node_modules",
+        "*webpack.config.js",
+        "*webpack.config.dev.js"
     ],
-    "*.{css,scss}": [
-      "stylelint --config .stylelintrc",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "lint-staged": {
+        "*.js": [
+            "eslint --config .eslintrc.js",
+            "git add"
+        ],
+        "*.{css,scss}": [
+            "stylelint --config .stylelintrc",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "jest": {
+        "clearMocks": true,
+        "testEnvironment": "node",
+        "testMatch": [
+            "**/*.test.js"
+        ]
+    },
+    "dependencies": {
+        "eslint": "^6.7.0",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-react": "^7.16.0",
+        "lint-staged": "^9.4.2",
+        "stylelint": "^11.1.1"
+    },
+    "devDependencies": {
+        "husky": "^3.0.9",
+        "jest": "^24.9.0"
     }
-  },
-  "jest": {
-    "clearMocks": true,
-    "testEnvironment": "node",
-    "testMatch": [
-      "**/*.test.js"
-    ]
-  },
-  "dependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "lint-staged": "^9.4.2",
-    "stylelint": "^11.1.1"
-  },
-  "devDependencies": {
-    "husky": "^3.0.9",
-    "jest": "^24.9.0"
-  }
 }
