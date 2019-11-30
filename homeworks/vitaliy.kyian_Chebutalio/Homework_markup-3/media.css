@@ -1,0 +1,217 @@
+@media (min-width: 900px) and (max-width: 1200px) {
+
+  .conteiner {
+    max-width: 1200px;
+  }
+
+  .logo-nav {
+    flex-direction: column-reverse;
+  }
+
+  .navigation-list {
+    margin: 2rem 0;
+  }
+
+  .logo {
+    margin-top: 2rem;
+  }
+
+  .team {
+    width: 850px;
+  }
+
+  .team-pic {
+    width: 180px;
+    height: 205px;
+  }
+
+  .name-p-border {
+    width: 178px;
+  }
+
+  .contact-and-clients-content {
+    width: 850px;
+  }
+
+  .footer-container {
+    width: 850px;
+  }
+
+  .footer-email {
+    width: 170px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+  .container {
+    max-width: 899px;
+  }
+
+  .logo-nav {
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+  }
+
+  .logo {
+    margin-top: 5rem;
+  }
+
+  .main-section {
+    width: 550px;
+  }
+
+  .story-content-section {
+    width: 550px;
+  }
+
+  .story-image {
+    display: none;
+  }
+
+  .iframe {
+    width: 550px;
+    height: 300px;
+  }
+
+  .expertise {
+    width: 550px;
+  }
+
+  .t-text {
+    width: 180px;
+    font-size: .6rem;
+  }
+
+  .team {
+    width: 550px;
+  }
+
+  .team-pic {
+    width: 110px;
+    height: 125px;
+  }
+
+  .name-p-border {
+    width: 108px;
+    height: 45px;
+    margin-top: -4px;
+  }
+
+  .team-name {
+    padding-bottom: .3rem;
+    font-size: .8rem;
+  }
+
+  .team-info {
+    width: 550px;
+  }
+
+  .info-slider {
+    position: absolute;
+    padding-top: 25rem;
+  }
+
+  .contact-and-clients-content {
+    width: 550px;
+  }
+
+  .clients {
+    display: none;
+  }
+
+  .footer-container {
+    width: 550px;
+  }
+
+  .subscribition {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+
+  .container {
+    max-width: 599px;
+  }
+
+  .logo-nav {
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+  }
+
+  .logo {
+    margin-top: 5rem;
+  }
+
+  .main-section {
+    width: 500px;
+  }
+
+  .story-content-section {
+    width: 500px;
+  }
+
+  .story-image {
+    display: none;
+  }
+
+  .iframe {
+    width: 500px;
+    height: 300px;
+  }
+
+  .expertise {
+    width: 500px;
+  }
+
+  .t-text {
+    width: 180px;
+    font-size: .6rem;
+  }
+
+  .team {
+    width: 500px;
+  }
+
+  .team-pic {
+    width: 110px;
+    height: 125px;
+  }
+
+  .name-p-border {
+    width: 108px;
+    height: 45px;
+    margin-top: -4px;
+  }
+
+  .team-name {
+    padding-bottom: .3rem;
+    font-size: .8rem;
+  }
+
+  .team-info {
+    width: 500px;
+  }
+
+  .info-slider {
+    position: absolute;
+    padding-top: 25rem;
+  }
+
+  .contact-and-clients-content {
+    width: 500px;
+  }
+
+  .clients {
+    display: none;
+  }
+
+  .footer-container {
+    width: 500px;
+  }
+
+  .subscribition {
+    display: none;
+  }
+}
