@@ -1,0 +1,150 @@
+@font-face{
+  font-family:Merriweather;
+  font-style:normal;
+  font-weight:400;
+  src:url(../fonts/Merriweather-Regular.woff) format("woff"); }
+
+@font-face{
+  font-family:Merriweather;
+  font-style:italic;
+  font-weight:400;
+  src:url(../fonts/Merriweather-Italic.woff) format("woff"); }
+
+@font-face{
+  font-family:Merriweather;
+  font-style:normal;
+  font-weight:700;
+  src:url(../fonts/Merriweather-Bold.woff) format("woff"); }
+
+@font-face{
+  font-family:Merriweather;
+  font-style:italic;
+  font-weight:700;
+  src:url(../fonts/Merriweather-BoldItalic.woff) format("woff"); }
+
+@font-face{
+  font-family:Montserrat;
+  font-style:normal;
+  font-weight:400;
+  src:url(../fonts/Montserrat-Regular.woff) format("woff"); }
+
+@font-face{
+  font-family:Montserrat;
+  font-style:normal;
+  font-weight:700;
+  src:url(../fonts/Montserrat-Bold.woff) format("woff"); }
+
+@font-face{
+  font-family:Raleway;
+  font-style:normal;
+  font-weight:400;
+  src:url(../fonts/Raleway-Regular.woff) format("woff"); }
+
+@font-face{
+  font-family:Raleway;
+  font-style:normal;
+  font-weight:500;
+  src:url(../fonts/Raleway-Medium.woff) format("woff"); }
+
+h1,h2,h3{
+  font-family:Montserrat,sans-serif;
+  text-transform:uppercase; }
+
+h1{
+  font-size:45px; }
+
+h1,h2{
+  font-weight:700; }
+
+h2{
+  font-size:38px; }
+
+h3{
+  font-size:20px;
+  font-weight:700; }
+
+.bg_grey{
+  background-color:#eff0f2; }
+
+.container{
+  position:relative;
+  max-width:1040px;
+  margin:0 auto;
+  padding:0 15px; }
+
+.grid{
+  display:grid; }
+
+.justify-content-center{
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center; }
+
+.align-items-center{
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center; }
+
+.btn{
+  display:block;
+  width:100%;
+  padding:15px 0;
+  border-radius:2px;
+  border:2px solid #000;
+  background-color:rgba(0, 0, 0, 0);
+  font-family:Montserrat,sans-serif;
+  font-size:18px;
+  font-weight:400;
+  line-height:1;
+  text-transform:uppercase;
+  letter-spacing:2.16px;
+  cursor:pointer;
+  -webkit-transition:.3s ease-out;
+  -o-transition:.3s ease-out;
+  transition:.3s ease-out;
+  opacity:1; }
+  .btn:hover{
+    opacity:.6; }
+
+body{
+  min-width:320px;
+  font-size:16px;
+  font-family:Raleway;
+  font-weight:400;
+  line-height:1.7;
+  color:#000; }
+
+.say-hello{
+  min-height:800px;
+  padding-top:65px; }
+  .say-hello__container:before{
+    content:"";
+    position:absolute;
+    right:50px;
+    bottom:-120px;
+    display:block;
+    width:121px;
+    height:156px;
+    background-image:url(../img/juice-glass.png);
+    background-repeat:no-repeat; }
+  .say-hello .header{
+    grid-template-columns:1fr auto;
+    grid-column-gap:15px;
+    line-height:0; }
+  .say-hello .title{
+    margin-top:200px;
+    text-align:center;
+    text-shadow:4px 8px 10px rgba(0, 0, 0, .24);
+    line-height:1.4;
+    letter-spacing:2.7px;
+    color:#505050; }
+  .say-hello .accent-color{
+    padding:5px 10px;
+    background-color:#76f4ea; }
+  .say-hello .toggler{
+    border:none;
+    background-color:rgba(0, 0, 0, 0); }
+  .say-hello .btn{
+    margin:150px auto 0;
+    max-width:232px; }
+

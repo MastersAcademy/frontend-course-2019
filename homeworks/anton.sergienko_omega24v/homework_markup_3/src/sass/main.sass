@@ -1,0 +1,47 @@
+@import vars
+@import fonts
+@import default
+
+body
+    min-width: 320px
+    font-size: $main-font-size
+    font-family: $main-font-family
+    font-weight: $main-font-weight
+    line-height: 1.7
+    color: #000
+
+// SAY HELLO SECTION
+.say-hello
+    min-height: 800px
+    padding-top: 65px
+    &__container::before
+        content: ''
+        position: absolute
+        right: 50px
+        bottom: -120px
+        display: block
+        width: 121px
+        height: 156px
+        background-image: url("../img/juice-glass.png")
+        background-repeat: no-repeat
+    .header
+        grid-template-columns: 1fr auto
+        grid-column-gap: 15px
+        line-height: 0
+    .title
+        margin-top: 200px
+        text-align: center
+        text-shadow: 4px 8px 10px rgba(0, 0, 0, .24)
+        line-height: 1.4
+        letter-spacing: 2.7px
+        color: #505050
+    .accent-color
+        padding: 5px 10px
+        background-color: #76f4ea
+    .toggler
+        border: none
+        background-color: transparent
+    .btn
+        margin: 150px auto 0
+        max-width: 232px
+
