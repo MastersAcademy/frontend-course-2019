@@ -46,22 +46,9 @@
   font-weight:500;
   src:url(../fonts/Raleway-Medium.woff) format("woff"); }
 
-h1,h2,h3{
+.title{
   font-family:Montserrat,sans-serif;
   text-transform:uppercase; }
-
-h1{
-  font-size:45px; }
-
-h1,h2{
-  font-weight:700; }
-
-h2{
-  font-size:38px; }
-
-h3{
-  font-size:20px;
-  font-weight:700; }
 
 .bg_grey{
   background-color:#eff0f2; }
@@ -127,17 +114,19 @@ body{
     height:156px;
     background-image:url(../img/juice-glass.png);
     background-repeat:no-repeat; }
-  .say-hello .header{
-    grid-template-columns:1fr auto;
-    grid-column-gap:15px;
-    line-height:0; }
-  .say-hello .title{
+  .say-hello__title{
     margin-top:200px;
+    font-size:45px;
+    font-weight:700;
     text-align:center;
     text-shadow:4px 8px 10px rgba(0, 0, 0, .24);
     line-height:1.4;
     letter-spacing:2.7px;
     color:#505050; }
+  .say-hello .header{
+    grid-template-columns:1fr auto;
+    grid-column-gap:15px;
+    line-height:0; }
   .say-hello .accent-color{
     padding:5px 10px;
     background-color:#76f4ea; }
