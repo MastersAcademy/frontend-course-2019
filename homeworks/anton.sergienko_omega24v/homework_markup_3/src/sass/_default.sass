@@ -11,19 +11,6 @@ body
     font-family: "Montserrat", sans-serif
     text-transform: uppercase
 
-.title-block
-    text-align: center
-    line-height: 1.4
-    &__title
-        font-size: 38px
-    &__subtitle
-        font-family: "Merriweather", sans-serif
-        font-size: 18px
-        font-weight: 400
-        text-transform: uppercase
-        letter-spacing: 1.08px
-        opacity: .6
-
 .bg_grey
     background-color: #eff0f2
 
@@ -60,3 +47,30 @@ body
     opacity: 1
     &:hover
         opacity: .6
+
+.img-responsive
+    display: block
+    width: 100%
+    height: auto
+
+.title-block
+    text-align: center
+    line-height: 1.4
+    &__title
+        font-size: 38px
+    &__subtitle
+        font-family: "Merriweather", sans-serif
+        font-size: 18px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 1.08px
+        opacity: .6
+
+.works-grid
+    grid-template-columns: repeat(3, auto)
+    grid-gap: 15px
+    &__item
+        opacity: 1
+        transition: .3s ease-out
+        &:hover
+            opacity: 0.6

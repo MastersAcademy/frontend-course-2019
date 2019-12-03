@@ -59,25 +59,12 @@ body{
   font-family:Montserrat,sans-serif;
   text-transform:uppercase; }
 
-.title-block{
-  text-align:center;
-  line-height:1.4; }
-  .title-block__title{
-    font-size:38px; }
-  .title-block__subtitle{
-    font-family:Merriweather,sans-serif;
-    font-size:18px;
-    font-weight:400;
-    text-transform:uppercase;
-    letter-spacing:1.08px;
-    opacity:.6; }
-
 .bg_grey{
   background-color:#eff0f2; }
 
 .container{
   position:relative;
-  max-width:1040px;
+  max-width:1140px;
   margin:0 auto;
   padding:0 15px; }
 
@@ -114,6 +101,35 @@ body{
   opacity:1; }
   .btn:hover{
     opacity:.6; }
+
+.img-responsive{
+  display:block;
+  width:100%;
+  height:auto; }
+
+.title-block{
+  text-align:center;
+  line-height:1.4; }
+  .title-block__title{
+    font-size:38px; }
+  .title-block__subtitle{
+    font-family:Merriweather,sans-serif;
+    font-size:18px;
+    font-weight:400;
+    text-transform:uppercase;
+    letter-spacing:1.08px;
+    opacity:.6; }
+
+.works-grid{
+  grid-template-columns:repeat(3, auto);
+  grid-gap:15px; }
+  .works-grid__item{
+    opacity:1;
+    -webkit-transition:.3s ease-out;
+    -o-transition:.3s ease-out;
+    transition:.3s ease-out; }
+    .works-grid__item:hover{
+      opacity:.6; }
 
 .say-hello{
   min-height:800px;
@@ -168,7 +184,13 @@ body{
     font-weight:700;
     text-transform:uppercase; }
   .about-us .text-paragraph{
+    margin-bottom:20px;
     color:#000;
     letter-spacing:.8px;
     opacity:.7; }
+
+.featured-works{
+  padding:120px 0; }
+  .featured-works .works-grid{
+    margin-top:120px; }
 
