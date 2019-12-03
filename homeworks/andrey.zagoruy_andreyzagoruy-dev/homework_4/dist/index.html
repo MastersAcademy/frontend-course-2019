@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Validator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="c-main-header l-container">
+      <div class="c-main-header__left">
+        <a href="#" class="c-logo">
+          <img
+            class="c-logo__image"
+            src="./img/logo.svg"
+            alt="Andrey Zagoruy - Software Development"
+          />
+        </a>
+      </div>
+      <nav class="c-main-header__right">
+        <ul class="c-nav c-nav--inline h-text--bold h-text--uppercase">
+          <a href="#" class="c-nav__item"><li>Home</li></a>
+          <a href="#about" class="c-nav__item"><li>About</li></a>
+          <a href="#" class="c-nav__item"><li>Resume</li></a>
+          <a href="#" class="c-nav__item"><li>Portfolio</li></a>
+          <a href="#" class="c-nav__item"><li>Blog</li></a>
+          <a href="#contact" class="c-nav__item"><li>Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main class="l-container">
+      <section class="l-section l-section--one-screen">
+        <h1 class="c-title h-text-align--center">
+          <span class="c-title__underline">Useless form</span>
+        </h1>
+        <div class="l-columns l-columns--mobile-one">
+          <div class="l-column l-column--small h-mobile--hide">
+            <img src="./img/poster-bio.svg" />
+          </div>
+          <div class="l-column l-column--big">
+            <form class="c-form js-form" action="#">
+              <div class="c-form__row">
+                <input
+                  class="c-form__field c-form__field--inline"
+                  placeholder="Your first name..."
+                  type="text"
+                  data-validators="minLength: 2, maxLength: 20, required"
+                />
+                <input
+                  class="c-form__field c-form__field--inline"
+                  placeholder="Your last name..."
+                  type="text"
+                  data-validators="minLength: 2, maxLength: 20, required"
+                />
+              </div>
+              <div class="c-form__row">
+                <input
+                  class="c-form__field"
+                  placeholder="Your e-mail..."
+                  type="text"
+                  data-validators="email, required"
+                />
+              </div>
+              <div class="c-form__row">
+                <input
+                  class="c-form__field"
+                  placeholder="Your phone..."
+                  type="text"
+                  data-validators="phone, required"
+                />
+              </div>
+              <div class="c-form__row">
+                <input
+                  class="c-form__field"
+                  placeholder="Your age..."
+                  type="text"
+                  data-validators="range: 18-120"
+                />
+              </div>
+              <div class="c-form__row">
+                <button
+                  class="c-button c-button--round c-button--primary"
+                  type="submit"
+                >
+                  Validate
+                </button>
+                <span class="c-form__valid">
+                  Validation successful!
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="c-footer h-bg--grey">
+      <div class="l-container">
+        <div class="l-columns l-columns--center">
+          <div class="l-column h-text--small h-text--light-grey">
+            No copyright here. Feel free to steal everything you want
+          </div>
+          <div class="l-column h-text-align--right">
+            <ul class="c-nav c-nav--inline h-text--bold h-text--uppercase">
+              <a href="#" class="c-nav__item"
+                ><li>
+                  <img
+                    class="c-icon h-zoom--medium"
+                    src="./img/facebook.svg"
+                    alt="Andrey Zagoruy - Developer"
+                  /></li
+              ></a>
+              <a href="#" class="c-nav__item"
+                ><li>
+                  <img
+                    class="c-icon h-zoom--medium"
+                    src="./img/twitter.svg"
+                    alt="Andrey Zagoruy - Developer"
+                  /></li
+              ></a>
+              <a href="#" class="c-nav__item"
+                ><li>
+                  <img
+                    class="c-icon h-zoom--medium"
+                    src="./img/youtube.svg"
+                    alt="Andrey Zagoruy - Developer"
+                  /></li
+              ></a>
+              <a href="#" class="c-nav__item"
+                ><li>
+                  <img
+                    class="c-icon h-zoom--medium"
+                    src="./img/linkedin.svg"
+                    alt="Andrey Zagoruy - Developer"
+                  /></li
+              ></a>
+              <a href="#" class="c-nav__item"
+                ><li>
+                  <img
+                    class="c-icon h-zoom--medium"
+                    src="./img/instagram.svg"
+                    alt="Andrey Zagoruy - Developer"
+                  /></li
+              ></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
