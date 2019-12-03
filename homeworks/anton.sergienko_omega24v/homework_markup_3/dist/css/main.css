@@ -46,9 +46,31 @@
   font-weight:500;
   src:url(../fonts/Raleway-Medium.woff) format("woff"); }
 
+body{
+  min-width:320px;
+  font-size:16px;
+  font-family:Raleway;
+  font-weight:400;
+  line-height:1.7;
+  color:#000; }
+
 .title{
+  margin:0;
   font-family:Montserrat,sans-serif;
   text-transform:uppercase; }
+
+.title-block{
+  text-align:center;
+  line-height:1.4; }
+  .title-block__title{
+    font-size:38px; }
+  .title-block__subtitle{
+    font-family:Merriweather,sans-serif;
+    font-size:18px;
+    font-weight:400;
+    text-transform:uppercase;
+    letter-spacing:1.08px;
+    opacity:.6; }
 
 .bg_grey{
   background-color:#eff0f2; }
@@ -93,17 +115,10 @@
   .btn:hover{
     opacity:.6; }
 
-body{
-  min-width:320px;
-  font-size:16px;
-  font-family:Raleway;
-  font-weight:400;
-  line-height:1.7;
-  color:#000; }
-
 .say-hello{
   min-height:800px;
-  padding-top:65px; }
+  padding-top:65px;
+  background-color:#eff0f2; }
   .say-hello__container:before{
     content:"";
     position:absolute;
@@ -136,4 +151,24 @@ body{
   .say-hello .btn{
     margin:150px auto 0;
     max-width:232px; }
+
+.about-us{
+  background-color:#f8fafa;
+  padding:104px 0; }
+  .about-us__bottom{
+    grid-template-columns:1fr auto;
+    grid-column-gap:110px; }
+  .about-us .title-block{
+    margin-bottom:130px; }
+  .about-us .text-block{
+    padding-top:15px; }
+  .about-us .text-title{
+    font-family:Merriweather,sans-serif;
+    font-size:20px;
+    font-weight:700;
+    text-transform:uppercase; }
+  .about-us .text-paragraph{
+    color:#000;
+    letter-spacing:.8px;
+    opacity:.7; }
 

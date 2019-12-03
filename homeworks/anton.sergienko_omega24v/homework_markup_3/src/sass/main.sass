@@ -2,18 +2,11 @@
 @import fonts
 @import default
 
-body
-    min-width: 320px
-    font-size: $main-font-size
-    font-family: $main-font-family
-    font-weight: $main-font-weight
-    line-height: 1.7
-    color: #000
-
 // SAY HELLO SECTION
 .say-hello
     min-height: 800px
     padding-top: 65px
+    background-color: #eff0f2;
     &__container::before
         content: ''
         position: absolute
@@ -47,3 +40,23 @@ body
         margin: 150px auto 0
         max-width: 232px
 
+// ABOUT US
+.about-us
+    background-color: #f8fafa
+    padding: 104px 0
+    &__bottom
+        grid-template-columns: 1fr auto
+        grid-column-gap: 110px
+    .title-block
+        margin-bottom: 130px
+    .text-block
+        padding-top: 15px
+    .text-title
+        font-family: "Merriweather", sans-serif
+        font-size: 20px
+        font-weight: 700
+        text-transform: uppercase
+    .text-paragraph
+        color: #000
+        letter-spacing: .8px
+        opacity: .7
