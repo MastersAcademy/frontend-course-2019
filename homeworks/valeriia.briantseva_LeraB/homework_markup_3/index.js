@@ -109,7 +109,7 @@ document.getElementById('filed-message').addEventListener('focusout', function (
 });
 
 const checkBox = document.getElementById('mobile-menu');
-const mobileMenu = document.getElementById('mobile-main-list');
+const mobileMenu = document.getElementById('menu-list');
 
 // If the checkbox is checked, display the output text
 function toogleMenu() {

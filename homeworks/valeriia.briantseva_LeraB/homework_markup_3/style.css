@@ -137,7 +137,9 @@ body {
 }
 
 .main-list-item {
-  margin: 0 15px;
+  display: block;
+  text-align: center;
+  margin: 15px;
 }
 
 .social-link {
@@ -543,12 +545,6 @@ footer .container {
   border-bottom: 1px solid rgba(0, 0, 0, .08);
 }
 
-.main-list.opened li {
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
 footer .block-left li:not(:last-child) {
   margin-right: 25px;
 }
@@ -576,7 +572,7 @@ footer .block-left a:hover {
   -webkit-touch-callout: none;
 }
 
-.menuToggle span {
+.menuToggle .mobile-nav {
   display: block;
   width: 33px;
   height: 4px;
@@ -589,11 +585,11 @@ footer .block-left a:hover {
   transition: transform .5s cubic-bezier(.77, .2, .05, 1), background .5s cubic-bezier(.77, .2, .05, 1), opacity .55s ease;
 }
 
-.menuToggle span:first-child {
+.menuToggle .mobile-nav:first-child {
   transform-origin: 0 0;
 }
 
-.menuToggle span:nth-last-child(2) {
+.menuToggle .mobile-nav:nth-last-child(2) {
   transform-origin: 0 100%;
 }
 
@@ -603,36 +599,32 @@ footer .block-left a:hover {
   height: 30px;
 }
 
-.menuToggle input:checked ~ span {
+.mobile-menu:checked ~ .mobile-nav {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #FFF;
   margin-bottom: 22px;
 }
 
-.menuToggle input:checked ~ span:nth-child(3) {
+.mobile-menu:checked ~ .mobile-nav:nth-child(3) {
   position: absolute;
   top: 25px;
   left: 10px;
 }
 
-.menuToggle input:checked ~ span:nth-child(4) {
+.mobile-menu:checked ~ .mobile-nav:nth-child(4) {
   position: absolute;
   top: 8px;
   left: 10px;
 }
 
-.menuToggle input:checked ~ span:nth-last-child(3) {
+.mobile-menu:checked ~ .mobile-nav:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(.2, .2);
 }
 
-.menuToggle input:checked ~ span:nth-last-child(2) {
+.mobile-menu:checked ~ .mobile-nav:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
-}
-
-.menuToggle input:checked ~ ul {
-  transform: none;
 }
 
 .navigation {
@@ -655,8 +647,8 @@ footer .block-left a:hover {
 
 .main-list.opened {
   display: block;
-  width: 100%;
-  height: 200px;
+  width: 300px;
+  height: 225px;
   background-color: #000;
   position: absolute;
   right: 0;
@@ -862,7 +854,7 @@ footer .block-left a:hover {
   }
 
   .main-list-item {
-    display: inline-block
+    display: inline-block;
   }
 
   .block-our-team .col-2:not(:last-child) {
