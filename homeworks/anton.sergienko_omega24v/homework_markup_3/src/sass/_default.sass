@@ -38,7 +38,7 @@ body
     background-color: transparent
     font-family: "Montserrat", sans-serif
     font-size: 18px
-    font-weight: 400
+    font-weight: 600
     line-height: 1
     text-transform: uppercase
     letter-spacing: 2.16px
@@ -129,7 +129,7 @@ body
 
 .team-grid
     grid-template-columns: repeat(3, 1fr)
-    grid-template-rows: repeat(3, 440px)
+    grid-template-rows: repeat(2, 440px)
     grid-gap: 15px
     &__item
         position: relative
@@ -138,25 +138,6 @@ body
         padding: 30px
         &:hover .item-info
             opacity: 1
-    .item-info
-        position: relative
-        padding: 30px
-        background-color: $accent
-        transition: opacity .2s ease-in
-        z-index: 1
-        opacity: 0
-        &::before
-            content: ''
-            position: absolute
-            left: 10px
-            top: -20px
-            display: block
-            width: 0px
-            height: 0
-            border-bottom: 30px solid $accent
-            border-left: 15px solid rgba(0, 0, 0, 0)
-            border-right: 15px solid rgba(0, 0, 0, 0)
-            z-index: 0
     .name
         font-family: "Merriweather", sans-serif
         font-weight: 700
@@ -175,9 +156,30 @@ body
             content: '/'
             margin-right: 5px
 
+.item-info
+    position: relative
+    padding: 30px
+    background-color: $accent
+    transition: opacity .2s ease-in
+    z-index: 1
+    opacity: 0
+    &::before
+        content: ''
+        position: absolute
+        left: 10px
+        top: -20px
+        display: block
+        width: 0px
+        height: 0
+        border-bottom: 30px solid $accent
+        border-left: 15px solid rgba(0, 0, 0, 0)
+        border-right: 15px solid rgba(0, 0, 0, 0)
+        z-index: 0
+    &__paragraph
+        text-transform: capitalize
+        letter-spacing: .16
+
 .social-list
-    margin: 35px 0 0
-    padding: 0
     grid-template-columns: repeat(4, 15px)
     grid-column-gap: 10px
     list-style: none
@@ -186,3 +188,53 @@ body
         transition: .3s ease-out
         &:hover
             opacity: .5
+
+.contact-form
+    padding: 40px
+    grid-template-columns: 1fr
+    background-color: rgba(2, 22, 35, .7)
+    box-shadow: 0 0 30px rgba(21, 21, 21, .12)
+    &__input
+        margin-top: 25px
+        padding-bottom: 15px
+        &:first-child
+            margin-top: 0
+    &__textarea
+        height: 100px
+        margin: 30px 0
+        resize: none
+    &__input,
+    &__textarea
+        border: none
+        border-bottom: 1px solid rgba(255, 255, 255, .3)
+        background-color: transparent
+        color: #fff
+        &::placeholder
+            color: #fff
+            text-transform: capitalize
+            transition: .3s ease-out
+            opacity: 1
+        &:focus::placeholder
+            opacity: 0
+    .btn
+        max-width: 244px
+        border: none
+        background-color: $accent
+        color: #000
+
+.adress-list
+    margin: 0
+    padding: 0
+    list-style: none
+    &__item
+        color: #fff
+        opacity: .7
+    .web
+        margin-top: 20px
+    .link
+        font-size: 15px
+        color: #fff
+        transition: .3s ease-out
+        opacity: 1
+        &:hover
+            opacity: .6
