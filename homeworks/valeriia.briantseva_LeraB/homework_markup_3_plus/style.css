@@ -12,7 +12,7 @@ body {
 }
 
 .section-description {
-  opacity: 0.62;
+  opacity: .62;
   color: #000;
   font-family: Merriweather, sans-serif;
   font-size: 18px;
@@ -61,7 +61,7 @@ body {
 }
 
 .title--secondary {
-  opacity: 0.9;
+  opacity: .9;
   color: #000;
   font-family: Montserrat, sans-serif;
   font-size: 38px;
@@ -103,7 +103,7 @@ body {
 }
 
 .title--third-level {
-  opacity: 0.75;
+  opacity: .75;
   color: #000;
   font-family: Merriweather, sans-serif;
   font-size: 20px;
@@ -133,6 +133,7 @@ body {
 }
 
 /*Header */
+
 .header {
   padding-top: 30px;
 }
@@ -181,6 +182,7 @@ body {
 }
 
 /* Hero */
+
 .hero {
   background-image: url("images/hero_bg.png");
   min-height: 500px;
@@ -210,7 +212,7 @@ body {
 }
 
 .about-us_title--fourth-level {
-  opacity: 0.75;
+  opacity: .75;
   color: #000;
   font-family: Merriweather, sans-serif;
   font-size: 17px;
@@ -222,13 +224,13 @@ body {
 }
 
 .about-us_text {
-  opacity: 0.74;
+  opacity: .74;
   color: #000;
   font-family: Raleway, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0.8px;
+  letter-spacing: .8px;
 }
 
 /* featured works */
@@ -264,7 +266,7 @@ body {
   width: 49%;
   height: 200px;
   display: inline-block;
-  padding: 140px 60px 60px 60px;
+  padding: 140px 60px 60px;
   position: relative;
   margin-top: 15px;
 }
@@ -307,7 +309,7 @@ body {
 
 .our-services_service--hover .our-services_cross-btn {
   text-indent: -9999px;
-  background-image: url(images/cross.png);
+  background-image: url("images/cross.png");
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
@@ -317,8 +319,19 @@ body {
   cursor: pointer;
 }
 
+.our-services_service-title--third-level {
+  opacity: .95;
+  color: #FFF;
+  font-family: Merriweather, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .our-services_service--hover .our-services_service-title--third-level {
-  opacity: 0.83;
+  opacity: .83;
   color: #000;
   font-family: Merriweather, sans-serif;
   font-size: 20px;
@@ -328,26 +341,37 @@ body {
   letter-spacing: 1.2px;
 }
 
+.our-services_service-description {
+  opacity: .9;
+  color: #FFF;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: .32px;
+  max-width: 75%;
+}
+
 .our-services_service--hover .our-services_service-description {
-  opacity: 0.75;
+  opacity: .75;
   color: #000;
   font-family: Raleway, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0.4px;
+  letter-spacing: .4px;
   max-width: 90%;
 }
 
 .our-services_link {
-  opacity: 0.9;
+  opacity: .9;
   color: #F9FBFB;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 85px;
   text-transform: uppercase;
-  letter-spacing: 0.72px;
+  letter-spacing: .72px;
   text-decoration: none;
   background-image: url("images/arrow.png");
   background-repeat: no-repeat;
@@ -384,28 +408,6 @@ body {
   background-image: url("images/design-five.png");
 }
 
-.our-services_service-title--third-level {
-  opacity: 0.95;
-  color: #FFF;
-  font-family: Merriweather, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 29px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.our-services_service-description {
-  opacity: 0.9;
-  color: #FFF;
-  font-family: Raleway, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0.32px;
-  max-width: 75%;
-}
-
 /* team */
 
 .team {
@@ -425,8 +427,8 @@ body {
   position: relative;
 }
 
-.team-member_info-wrapper:before {
-  content: '';
+.team-member_info-wrapper::before {
+  content: "";
   position: absolute;
   top: -20px;
   left: 20px;
@@ -453,7 +455,7 @@ body {
 }
 
 .team-member_name {
-  opacity: 0.95;
+  opacity: .95;
   color: #272727;
   font-family: "Merriweather", sans-serif;
   font-size: 20px;
@@ -465,18 +467,18 @@ body {
   font-family: "Merriweather";
   font-weight: 400;
   font-style: italic;
-  letter-spacing: 0.45px;
+  letter-spacing: .45px;
   color: #767070;
 }
 
 .team-member_description {
-  opacity: 0.8;
+  opacity: .8;
   color: #000;
   font-family: Raleway;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.16px;
+  letter-spacing: .16px;
 }
 
 .testimonials {
@@ -549,7 +551,7 @@ body {
 }
 
 .slider_user-name {
-  opacity: 0.95;
+  opacity: .95;
   font-style: italic;
   line-height: 28px;
   text-transform: uppercase;
@@ -561,21 +563,21 @@ body {
 }
 
 .slider_user-position {
-  opacity: 0.95;
+  opacity: .95;
   color: #787878;
   font-family: "Merriweather - Regular";
   font-weight: 400;
-  letter-spacing: 0.9px;
+  letter-spacing: .9px;
 }
 
 .slider_testimonial {
-  opacity: 0.7;
+  opacity: .7;
   color: #000;
   font-family: Raleway;
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0.96px;
+  letter-spacing: .96px;
 }
 
 .slider_marks {
@@ -597,7 +599,7 @@ body {
 .slider_prev,
 .slider_next {
   padding: 25px;
-  box-shadow: 3px 7px 11px rgba(20, 20, 21, 0.05);
+  box-shadow: 3px 7px 11px rgba(20, 20, 21, .05);
   border-radius: 3px;
   background-color: #FFF;
   border: none;
@@ -633,7 +635,7 @@ body {
 }
 
 .contact-form {
-  box-shadow: 0 0 30px rgba(21, 21, 21, 0.12);
+  box-shadow: 0 0 30px rgba(21, 21, 21, .12);
   background-color: rgba(2, 22, 35, .71);
   padding: 50px 30px;
 }
@@ -647,7 +649,7 @@ body {
   background: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, .25);
-  padding: 10px 5px 15px 5px;
+  padding: 10px 5px 15px;
   margin-top: 30px;
   overflow: hidden;
   color: #FFF;
@@ -657,7 +659,7 @@ body {
 .contact-form_subject::placeholder,
 .contact-form_email::placeholder,
 .contact-form_message::placeholder {
-  opacity: 0.6;
+  opacity: .6;
   color: #FFF;
   font-family: Raleway;
   font-size: 15px;
@@ -701,7 +703,7 @@ body {
 }
 
 .contact-data {
-  box-shadow: 0 0 30px rgba(21, 21, 21, 0.12);
+  box-shadow: 0 0 30px rgba(21, 21, 21, .12);
   background-color: rgba(2, 22, 35, .71);
   padding: 30px;
 }
@@ -712,7 +714,7 @@ body {
 .contact-data_fax,
 .contact-data_site,
 .contact-data_email {
-  opacity: 0.7;
+  opacity: .7;
   color: #FFF;
   font-family: Raleway;
   font-size: 15px;
@@ -739,7 +741,7 @@ body {
 }
 
 .footer_title--fourth-level {
-  opacity: 0.8;
+  opacity: .8;
   color: #FFF;
   font-family: Raleway;
   font-size: 16px;
@@ -759,7 +761,7 @@ body {
 }
 
 .footer .social-icons_link:hover {
-  background-color: #71f6eb;
+  background-color: #71F6EB;
 }
 
 .footer .social-icons_link-twitter {
@@ -776,12 +778,12 @@ body {
 }
 
 .footer_copyright {
-  opacity: 0.4;
-  color: #ffffff;
+  opacity: .4;
+  color: #FFF;
   font-family: Raleway;
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
-  letter-spacing: 0.16px;
+  letter-spacing: .16px;
   margin-top: 40px;
 }
