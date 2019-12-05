@@ -45,7 +45,7 @@
     background-color: #f8fafa
     padding: 104px 0
     &__bottom
-        grid-template-columns: 1fr auto
+        grid-template-columns: repeat(auto-fit, minmax(320px, auto))
         grid-column-gap: 110px
     .title-block
         margin-bottom: 130px
@@ -100,8 +100,8 @@
     background-size: cover
     background-position: top center
     .container
-        grid-template-columns: repeat(2, 1fr)
-        grid-column-gap: 25px
+        grid-template-columns: repeat(auto-fit, minmax(320px, auto))
+        grid-gap: 25px
     .contact-adress
         padding: 30px 30px 20px
         box-shadow: 0 0 30px rgba(21, 21, 21, .12)
@@ -132,7 +132,7 @@
         justify-content: center
     .list-item
         width: 46px
-        height: 40px
+        height: 46px
         background-color: #8a8a8a
         opacity: .4
         transition: .3s ease-out

@@ -77,8 +77,7 @@ body
 
 .services-grid
     width: 100%
-    grid-auto-columns: fit-content(473px)
-    grid-template-rows: repeat(3, 1fr)
+    grid-template-columns: repeat(auto-fit, minmax(auto, 473px))
     grid-gap: 15px
     &__item
         position: relative
@@ -128,14 +127,17 @@ body
         margin-left: 10px
 
 .team-grid
-    grid-template-columns: repeat(3, 1fr)
-    grid-template-rows: repeat(2, 440px)
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto))
     grid-gap: 15px
     &__item
         position: relative
         display: grid
-        align-items: end
+        height: 440px
         padding: 30px
+        align-items: end
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
         &:hover .item-info
             opacity: 1
     .name
