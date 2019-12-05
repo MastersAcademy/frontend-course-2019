@@ -173,8 +173,68 @@ body {
   height: 30px;
 }
 
+.menu-toggle_checkbox {
+  display: inline-block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+.menu-toggle_checkbox:checked ~ .menu-toggle_line {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  margin-bottom: 22px;
+}
+
+.menu-toggle_checkbox:checked ~ .menu-toggle_line:nth-child(3) {
+  position: absolute;
+  top: 26px;
+  left: 6px;
+}
+
+.menu-toggle_checkbox:checked ~ .menu-toggle_line:nth-child(4) {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.menu-toggle_checkbox:checked ~ .menu-toggle_line:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(.2, .2);
+}
+
+.menu-toggle_checkbox:checked ~ .menu-toggle_line:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
 .menu {
-  display: none;
+  visibility: hidden;
+  float: right;
+  background-color: rgba(118, 244, 234, .5);
+  padding: 20px;
+}
+
+.menu.opened {
+  visibility: visible;
+}
+
+.menu_link {
+  color: #505050;
+  text-decoration: none;
+  margin: 10px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.menu_link:active,
+.menu_link:focus,
+.menu_link:hover {
+  color: rgba(118, 244, 234, .5);
+  background-color: #505050;
 }
 
 .mobile-nav:nth-last-child(2) {
@@ -187,7 +247,7 @@ body {
   background-image: url("images/hero_bg.png");
   min-height: 500px;
   padding-top: 200px;
-  margin-top: -90px;
+  margin-top: -100px;
   text-align: center;
 }
 
