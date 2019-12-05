@@ -108,3 +108,44 @@
         background-color: rgba(2, 22, 35, .7)
     .adress-list
         margin-bottom: 20px
+
+// FOOTER
+.footer
+    padding: 90px 0
+    background-color: #262b2e
+    color: #fff
+    text-align: center
+    &__text
+        margin-bottom: 10px
+        opacity: .8
+        text-transform: uppercase
+    &__copyright
+        font-weight: 500
+        letter-spacing: .16px
+        opacity: .4
+    .follow-us-list
+        margin: 0 0 40px
+        padding: 0
+        list-style: none
+        grid-template-columns: repeat(4, 45px)
+        grid-column-gap: 5px
+        justify-content: center
+    .list-item
+        width: 46px
+        height: 40px
+        background-color: #8a8a8a
+        opacity: .4
+        transition: .3s ease-out
+        &:hover
+            opacity: 1
+            background-color: $accent
+            .item-ico
+                fill: #000
+    .item-ico
+        width: 20px
+        fill: #faf4f4
+    .link
+        height: 100%
+        justify-content: center
+        align-items: center
+        line-height: 0

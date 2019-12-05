@@ -243,6 +243,7 @@ body{
   grid-column-gap:10px;
   list-style:none; }
   .social-list .link{
+    display:block;
     opacity:1;
     -webkit-transition:.3s ease-out;
     -o-transition:.3s ease-out;
@@ -435,4 +436,52 @@ body{
     background-color:rgba(2, 22, 35, .7); }
   .contact-us .adress-list{
     margin-bottom:20px; }
+
+.footer{
+  padding:90px 0;
+  background-color:#262b2e;
+  color:#fff;
+  text-align:center; }
+  .footer__text{
+    margin-bottom:10px;
+    opacity:.8;
+    text-transform:uppercase; }
+  .footer__copyright{
+    font-weight:500;
+    letter-spacing:.16px;
+    opacity:.4; }
+  .footer .follow-us-list{
+    margin:0 0 40px;
+    padding:0;
+    list-style:none;
+    grid-template-columns:repeat(4, 45px);
+    grid-column-gap:5px;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center; }
+  .footer .list-item{
+    width:46px;
+    height:40px;
+    background-color:#8a8a8a;
+    opacity:.4;
+    -webkit-transition:.3s ease-out;
+    -o-transition:.3s ease-out;
+    transition:.3s ease-out; }
+    .footer .list-item:hover{
+      opacity:1;
+      background-color:#76f4ea; }
+      .footer .list-item:hover .item-ico{
+        fill:#000; }
+  .footer .item-ico{
+    width:20px;
+    fill:#faf4f4; }
+  .footer .link{
+    height:100%;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    line-height:0; }
 
