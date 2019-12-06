@@ -10,32 +10,32 @@ const inputPhone = document.querySelector('#phone');
 const inputAge = document.querySelector('#age');
 
 // INPUTS FUNCTION VALIDATION
-const nameValidation = (text, min, max) => {
+function nameValidation(text, min, max) {
     const isName = isValid.minLength(text, min) && isValid.maxLength(text, max);
     return isName;
-};
-const emailValidation = (text, min) => {
+}
+function emailValidation(text, min) {
     const isEmail = isValid.email(text) && isValid.minLength(text, min);
     return isEmail;
-};
-const phoneValidation = (text, min) => {
+}
+function phoneValidation(text, min) {
     const isPhone = isValid.phone(text) && isValid.minLength(text, min);
     return isPhone;
-};
-const ageValidation = (text, min, max) => {
+}
+function ageValidation(text, min, max) {
     const isAgeValidation = isValid.numberRange(text, min, max);
     return isAgeValidation;
-};
+}
 
 // ERROR FIELDS
 const formLabel = document.querySelectorAll('.form__label');
 const status = document.querySelector('.form__status');
 
-const errorField = (isFieldValid, fieldName) => {
+function errorField(isFieldValid, fieldName) {
     if (!isFieldValid) {
         fieldName.closest('label').classList.add('error');
     }
-};
+}
 
 // SEND & CHECK FORM
 form.addEventListener('submit', (event) => {
