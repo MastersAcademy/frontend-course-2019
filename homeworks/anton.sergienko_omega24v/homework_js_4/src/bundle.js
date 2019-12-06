@@ -31,7 +31,7 @@ function ageValidation(text, min, max) {
 const formLabels = document.querySelectorAll('.form__label');
 const status = document.querySelector('.form__status');
 
-function errorField(isFieldValid, fieldName) {
+function renderErrorField(isFieldValid, fieldName) {
     if (!isFieldValid) {
         fieldName.closest('label').classList.add('form__label_error');
     }
@@ -56,10 +56,10 @@ form.addEventListener('submit', (event) => {
     if (firstNameValue && lastNameValue && emailValue && phoneValue && ageValue) {
         status.removeAttribute('hidden');
     } else {
-        errorField(firstNameValue, inputFirstName);
-        errorField(lastNameValue, inputLastName);
-        errorField(emailValue, inputEmail);
-        errorField(phoneValue, inputPhone);
-        errorField(ageValue, inputAge);
+        renderErrorField(firstNameValue, inputFirstName);
+        renderErrorField(lastNameValue, inputLastName);
+        renderErrorField(emailValue, inputEmail);
+        renderErrorField(phoneValue, inputPhone);
+        renderErrorField(ageValue, inputAge);
     }
 });

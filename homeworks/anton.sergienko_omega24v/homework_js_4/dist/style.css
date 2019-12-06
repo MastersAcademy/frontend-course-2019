@@ -16,7 +16,7 @@ body {
   flex-direction: column;
 }
 
-.form__label .form-input {
+.form-input {
   padding: 10px;
   border: 1px solid #000;
 }
@@ -39,12 +39,12 @@ body {
   border-color: #F00;
 }
 
-.form__label .form-input::placeholder {
+.form-input::placeholder {
   opacity: 1;
   transition: .3s ease-out;
 }
 
-.form__label .form-input:focus::placeholder {
+.form-input:focus::placeholder {
   opacity: 0;
 }
 
@@ -57,7 +57,7 @@ body {
   cursor: pointer;
 }
 
-.form .form__btn:hover {
+.form__btn:hover {
   opacity: .6;
 }
 
