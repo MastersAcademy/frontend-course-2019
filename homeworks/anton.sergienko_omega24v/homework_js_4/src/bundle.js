@@ -28,12 +28,12 @@ function ageValidation(text, min, max) {
 }
 
 // ERROR FIELDS
-const formLabel = document.querySelectorAll('.form__label');
+const formLabels = document.querySelectorAll('.form__label');
 const status = document.querySelector('.form__status');
 
 function errorField(isFieldValid, fieldName) {
     if (!isFieldValid) {
-        fieldName.closest('label').classList.add('error');
+        fieldName.closest('label').classList.add('form__label_error');
     }
 }
 
@@ -48,8 +48,9 @@ form.addEventListener('submit', (event) => {
     const ageValue = ageValidation(inputAge.value, 16, 80);
 
     status.setAttribute('hidden', true);
-    [].forEach.call(formLabel, (labelItem) => {
-        labelItem.classList.remove('error');
+
+    formLabels.forEach((labelItem) => {
+        labelItem.classList.remove('form__label_error');
     });
 
     if (firstNameValue && lastNameValue && emailValue && phoneValue && ageValue) {

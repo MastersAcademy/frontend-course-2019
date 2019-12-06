@@ -13,21 +13,18 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(css|scss|sass)$/,
+                test: /\.(css)$/,
                 use: ExtractTextPlugin.extract(
                     {
                         fallback: 'style-loader',
-                        use: ['css-loader', 'sass-loader'],
+                        use: ['css-loader'],
                     },
                 ),
             },
         ],
     },
     plugins: [
-        new CleanWebpackPlugin(),
-        new ExtractTextPlugin(
-            { filename: 'style.css' },
-        ),
+        new CleanWebpackPlugin(), new ExtractTextPlugin({ filename: 'style.css' }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: false,
