@@ -4,8 +4,7 @@
 
 // SAY HELLO SECTION
 .say-hello
-    min-height: 800px
-    padding-top: 65px
+    padding: 65px 0 200px
     background-color: #eff0f2;
     &__container::before
         content: ''
@@ -17,6 +16,8 @@
         height: 156px
         background-image: url("../img/juice-glass.png")
         background-repeat: no-repeat
+        @media (max-width: 768px)
+            display: none
     &__title
         margin-top: 200px
         font-size: 45px
@@ -26,6 +27,8 @@
         line-height: 1.4
         letter-spacing: 2.7px
         color: #505050
+        @media (max-width: 768px)
+            font-size: 36px
     .header
         grid-template-columns: 1fr auto
         grid-column-gap: 15px
@@ -45,8 +48,10 @@
     background-color: #f8fafa
     padding: 104px 0
     &__bottom
-        grid-template-columns: 1fr auto
+        grid-template-columns: repeat(auto-fit, minmax(320px, auto))
         grid-column-gap: 110px
+        @media (max-width: 768px)
+            grid-template-columns: 1fr
     .title-block
         margin-bottom: 130px
     .text-block
@@ -100,8 +105,10 @@
     background-size: cover
     background-position: top center
     .container
-        grid-template-columns: repeat(2, 1fr)
-        grid-column-gap: 25px
+        grid-template-columns: repeat(auto-fit, minmax(320px, auto))
+        grid-gap: 25px
+        @media (max-width: 768px)
+            grid-template-columns: 1fr
     .contact-adress
         padding: 30px 30px 20px
         box-shadow: 0 0 30px rgba(21, 21, 21, .12)
@@ -124,18 +131,18 @@
         letter-spacing: .16px
         opacity: .4
     .follow-us-list
-        grid-template-columns: repeat(4, 45px)
-        grid-column-gap: 5px
-        justify-content: center
         margin: 0 0 40px
         padding: 0
         list-style: none
+        grid-template-columns: repeat(4, 45px)
+        grid-column-gap: 5px
+        justify-content: center
     .list-item
         width: 46px
-        height: 40px
+        height: 46px
         background-color: #8a8a8a
         opacity: .4
-        transition: opacity .3s ease-out
+        transition: .3s ease-out
         &:hover
             opacity: 1
             background-color: $accent
