@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3%;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.first {
+  background-color: #EFF0F2;
+}
+
+.hamburger-menu {
+  width: 33px;
+  height: 24px;
+  background-image: url("./images/hamburger-menu.png");
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+}
