@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -6,10 +6,25 @@ body {
 }
 
 .header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 3%;
+  z-index: 1;
+}
+
+.hamburger-menu {
+  width: 32px;
+  height: 24px;
+  background-image: url("./images/hamburger-menu.png");
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .container {
@@ -17,15 +32,41 @@ body {
   margin: 0 auto;
 }
 
-.first {
+.main {
+  position: relative;
   background-color: #EFF0F2;
+  padding-top: 16%;
+  text-align: center;
 }
 
-.hamburger-menu {
-  width: 33px;
-  height: 24px;
-  background-image: url("./images/hamburger-menu.png");
-  background-repeat: no-repeat;
-  border: none;
+.main__title {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #505050;
+  text-shadow: 3px 8px 8px #0000003D;
+  margin: 0;
+}
+
+.main__title--bg {
+  background-color: #76F4EA80;
+}
+
+.contact-us-btn {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: .8% 2.4%;
   background-color: transparent;
+  border: 2px solid #777879;
+  margin-top: 8%;
+  margin-bottom: 10%;
+  color: #505050;
+  cursor: pointer;
+}
+
+.glass {
+  position: absolute;
+  right: 24%;
+  bottom: 8%;
 }
