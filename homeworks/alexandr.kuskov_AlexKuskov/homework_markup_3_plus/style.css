@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap");
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -31,6 +32,8 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
+
+/* Main section ('Say hello to shopno!') */
 
 .main {
   position: relative;
@@ -69,4 +72,105 @@ body {
   position: absolute;
   right: 24%;
   bottom: 8%;
+}
+
+/* About Us section */
+
+.about-us {
+  padding-top: 6%;
+  padding-bottom: 5%;
+  background-color: #F8FAFA;
+}
+
+.about-us__header {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.about-us__title {
+  font-size: 38px;
+  letter-spacing: 2px;
+  opacity: .9;
+}
+
+.about-us__title-description {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  opacity: .6;
+}
+
+.pictures {
+  position: relative;
+  margin-bottom: 1%;
+}
+
+.picture-slider {
+  max-width: 485px;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.pictures__current-image {
+  position: relative;
+}
+
+.pictures__next-image {
+  position: absolute;
+  top: 10%;
+  right: -4%;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #D0D0D0;
+  border: none;
+  border-radius: 3px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slider-dot:focus {
+  background-color: #71F6EB;
+}
+
+.about-us__title,
+.about-us__title-description {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-us-text {
+  width: 42%;
+  margin-left: 10%;
+  opacity: .6;
+  line-height: 28px;
+}
+
+.about-us-text,
+.picture-slider {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.about-us-text__title {
+  font-size: 20px;
+}
+
+.about-us-text__mini-title {
+  font-size: 18px;
+}
+
+.about-us-text__title,
+.about-us-text__mini-title {
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4%;
+}
+
+.about-us-text__description {
+  font-size: 16px;
+  margin-bottom: 6%;
 }
