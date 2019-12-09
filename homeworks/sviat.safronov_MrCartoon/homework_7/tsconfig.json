@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "system",
+    "target": "es5",
+    "sourceMap": true
+  }
+}
