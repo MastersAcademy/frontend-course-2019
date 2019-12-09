@@ -4,5 +4,5 @@ export const isValid = {
     pattern: ({ text, pattern }: { text: string, pattern: string }): boolean => text.includes(pattern),
     email: ({ text }: { text: string }): boolean => /(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/.test(text),
     phone: ({ text }: { text: string }): boolean => text.length >= 6 && /[0-9 -()+]+$/.test(text),
-    numberRange: ({ text, min, max }: { text: string, min: number, max: number }): boolean => text.length >= min && text.length <= max,
+    numberRange: ({ text, min, max }: { text: string | number, min: number, max: number }): boolean => Number(text) >= min && Number(text) <= max,
 };
