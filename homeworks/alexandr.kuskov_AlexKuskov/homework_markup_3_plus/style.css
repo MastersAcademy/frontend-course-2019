@@ -77,23 +77,23 @@ body {
 /* About Us section */
 
 .about-us {
-  padding-top: 6%;
   padding-bottom: 5%;
   background-color: #F8FAFA;
 }
 
-.about-us__header {
+.section-header {
   text-align: center;
+  padding-top: 10%;
   margin-bottom: 10%;
 }
 
-.about-us__title {
+.section-header__title {
   font-size: 38px;
   letter-spacing: 2px;
   opacity: .9;
 }
 
-.about-us__title-description {
+.section-header__title-description {
   font-family: "Merriweather", serif;
   font-size: 18px;
   letter-spacing: 1px;
@@ -135,8 +135,8 @@ body {
   background-color: #71F6EB;
 }
 
-.about-us__title,
-.about-us__title-description {
+.section-header__title,
+.section-header__title-description {
   text-transform: uppercase;
   margin: 0;
 }
@@ -173,4 +173,22 @@ body {
 .about-us-text__description {
   font-size: 16px;
   margin-bottom: 6%;
+}
+
+/* Featured Works section  */
+
+.works-grid {
+  display: grid;
+  width: 100%;
+  grid-template: repeat(2, 360px) / repeat(3, 1fr);
+  grid-gap: 2% 1%;
+  padding-bottom: 12%;
+}
+
+.works-grid__item {
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
+  object-fit: cover;
 }
