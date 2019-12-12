@@ -1,5 +1,5 @@
 module.exports = {
-    extends: "airbnb-base",
+    extends: ["airbnb-base", "eslint:recommended"],
     env: {
         browser: true,
         es6: true,
@@ -36,6 +36,8 @@ module.exports = {
         "no-loop-func": "error",
         "no-self-compare": "error",
         "no-unneeded-ternary": "error",
-        'import/prefer-default-export': "off"
+        "import/prefer-default-export": "off",
+        "no-underscore-dangle": "off",
+        "class-methods-use-this": "off"
     }
 };
