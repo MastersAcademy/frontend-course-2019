@@ -4,18 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600, 800, 400 ,300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
         <title>HWMU-3</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-<!--Section BANNER-->
-        <section class="banner">
-             <header class="header">
-                <a href="#" class="header__logo-link">
-                    <img class="header__logo" src="img/logo.png" alt="Logotyp TAJAM">
+        <header class="header">
+            <div class="header__nav">
+                <a href="#" class="logo">
+                    <img class="logo__img" src="img/logo.png" alt="Logotyp TAJAM">
                 </a>
-                <nav class="header__nav">
+                <nav class="nav">
                     <a href="#" class="nav__link">Home</a>
                     <a href="#" class="nav__link">About</a>
                     <a href="#" class="nav__link">Expertise</a>
@@ -24,23 +24,21 @@
                     <a href="#" class="nav__link">People say</a>
                     <a href="#" class="nav__link">Contact</a>
                 </nav>
-            </header>
-            <div class="container">
-                <div class="banner__wrap">
-                    <h1 class="banner__title-txt">We are awesome creative agency</h1>
-                    <p class="banner__txt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem 
-                        quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh 
-                        vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-                    </p>
-                    <button class="banner__btn" type="button" title="click to Lean More">Lean more</button>
-                </div>
             </div>
-        </section>
+            <div class="header__description conatiner">
+                <h1 class="header__headline header__line">We are awesome creative agency</h1>
+                <p class="header__txt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem 
+                    quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh 
+                    vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                </p>
+                <button class="header__btn" type="button" title="click to Lean More">Lean more</button>
+            </div>
+        </header>
+        <main> 
 <!--Section ABOUT-->
-        <section class="about">
-            <div class="container">
+            <section class="about container">
+                <h2 class="about__headline">Our story</h2>
                 <div class="about__wrap">
-                    <h2 class="about__title-txt">Our story</h2>
                     <p class="about__txt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor 
                         aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, 
                         nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
@@ -49,102 +47,264 @@
                         Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu 
                         ad litora torquent per conubia nostra, per inceptos himenaeos.
                     </p>
-                    <button class="about__btn" type="button" title="click to Lean More">Lean more</button></p>
+                    <button class="about__btn" type="button" title="click to Lean More">Lean more</button>
                 </div>
-            </div>
-        </section>
+            </section>
 <!--Section STORY-->
-        <section class="story">
-            <button class="story__btn" type="button" title="click to play story">Play our story</button>
-        </section>
+            <section class="story">
+                    <button class="story__btn" type="button" title="click to play story">Play our story</button>
+            </section>
 <!--Section EXPRTISE-->
-        <section class="expertise">
-            <div class="container">
-                <h2 class="expertise__title-txt">Expertise</h2>
-                <p class="expertise-line">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
-                <div class="expertise__wrap">
+            <section class="expertise">
+                <h2 class="expertise__headline">Expertise</h2>
+                <p class="expertise__txt expertise__line">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+                <div class="expertise__wrap container">
                     <figure class="expertise__figure">
                         <img class="expertise__img" src="img/exp-1.png" alt="Monitor">
                         <figurecaption>
                             <p class="expertise__txt expertise__txt--upcase"><strong>Web Design & Development</strong></p>
-                            <p class="expertise__txt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                            <p class="expertise__txt expertise__txt--light">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                        </figurecaption>
                     </figure>
                     <figure class="expertise__figure">
                         <img class="expertise__img" src="img/exp-2.png" alt="Brush">
                         <figurecaption>
                             <p class="expertise__txt expertise__txt--upcase"><strong>Branding identity</strong></p>
-                            <p class="expertise__txt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                            <p class="expertise__txt expertise__txt--light">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
                         </figurecaption>
                     </figure>
                     <figure class="expertise__figure expertise__figure--border-r">
                         <img class="expertise__img" src="img/exp-3.png" alt="Phone">
                         <figurecaption>
                             <p class="expertise__txt expertise__txt--upcase"><strong>Mobile APP</strong></p>
-                            <p class="expertise__txt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                            <p class="expertise__txt expertise__txt--light">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
                         </figurecaption>
                     </figure>
                     <figure class="expertise__figure expertise__figure--border-b">
                         <img class="expertise__img" src="img/exp-4.png" alt="Gistagram"> 
                         <figurecaption>
-                            <p class="expertise__txt"><strong>Search engine optimization</strong></p>
-                            <p class="expertise__txt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                            <p class="expertise__txt expertise__txt--upcase"><strong>Search engine optimization</strong></p>
+                            <p class="expertise__txt expertise__txt--light">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
                         </figurecaption>
                     </figure>
                     <figure class="expertise__figure expertise__figure--border-b">
                         <img class="expertise__img" src="img/exp-5.png" alt="Gamepad">
                         <figurecaption>
                             <p class="expertise__txt expertise__txt--upcase"><strong>Game development</strong></p>
-                            <p class="expertise__txt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                            <p class="expertise__txt expertise__txt--light">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
                         </figurecaption>
                     </figure>
                     <figure class="expertise__figure expertise__figure--border-r expertise__figure--border-b">
-                        <img class="expertise__img " src="img/exp-6.png" alt="heart">
+                        <img class="expertise__img expertise__txt--light" src="img/exp-6.png" alt="heart">
                         <figurecaption>
                             <p class="expertise__txt expertise__txt--upcase"><strong>Made with love</strong></p>
-                            <p class="expertise__txt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                            <p class="expertise__txt expertise__txt--light">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
                         </figurecaption>
                     </figure>
                 </div>
-            </div>
-        </section>
+            </section>
 <!--Section TEAM-->
-        <section class="team">
-            <div class="container">
-                <h2 class="team__title-txt">Meet our amazing team</h2>
-                <p> Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
-                <div class="team__wrap">
+            <section class="team">
+                <h2 class="team__headline">Meet our amazing team</h2>
+                <p class="team__txt team__line"> Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+                <div class="team__wrap container">
                     <figure class="team__figure">
                         <img class="team__img" src="img/tm-1.jpg" alt="Photo Ceo & Founder">
-                        <figurecaption class="team__figure-caption">
-                            <p class="team__txt"><strong>Senf Ucuk</strong></p>
-                            <p class="team__txt team__txt--opacity">Ceo & Founder</p>
+                        <figurecaption>
+                            <p class="team__txt team__txt--uppercase team__txt--bold"><strong>Senf Ucuk</strong></p>
+                            <p class="team__txt team__txt--uppercase">Ceo & Founder</p>
                         </figurecaption>
                     </figure>
                     <figure class="team__figure">
                         <img class="team__img" src="img/tm-2.jpg" alt="Photo Engineering">
-                        <figurecaption class="team__figure-caption">
-                            <p class="team__txt"><strong>Dik Adaling</strong></p>
-                            <p class="team__txt team__txt--opacity">Engineering</p>
+                        <figurecaption>
+                            <p class="team__txt team__txt--uppercase team__txt--bold"><strong>Dik Adaling</strong></p>
+                            <p class="team__txt team__txt--uppercase">Engineering</p>
                         </figurecaption>
                     </figure>
                     <figure class="team__figure">
                         <img class="team__img" src="img/tm-3.jpg" alt="Photo Designer">
-                        <figurecaption class="team__figure-caption">
-                            <p class="team__txt"><strong>Jeng Kol</strong></p>
-                            <p class="team__txt team__txt--opacity">Designer</p>
-                        </figurecaption class="team__figure-caption">
+                        <figurecaption>
+                            <p class="team__txt team__txt--uppercase team__txt--bold"><strong>Jeng Kol</strong></p>
+                            <p class="team__txt team__txt--uppercase">Designer</p>
+                        </figurecaption>
                     </figure>
                     <figure class="team__figure">
                         <img class="team__img" src="img/tm-4.jpg" alt="Photo Marketing">
-                        <figurecaption>
-                            <p class="team__txt"><strong>Pet Romak</strong></p>
-                            <p class="team__txt team__txt--opacity">Marketing</p>
-                        </figurecaption class="team__figure-caption">
+                        <figurecaption">
+                            <p class="team__txt team__txt--uppercase team__txt--bold"><strong>Pet Romak</strong></p>
+                            <p class="team__txt team__txt--uppercase">Marketing</p>
+                        </figurecaption>
                     </figure>
                 </div>
-                <p>Become part of our dream team, let’s join us !</p>
+                <p class="team__txt">Become part of our dream team, let’s join us !</p>
                 <button class="team__btn" type="button" title="click to Are Hiring">We are hiring</button>
+            </section>
+<!--section TESTINONILS-->
+            <section class="testimonials">
+                <h2 class="testimonials__headline">&#8220</h2>
+                <div class="container">
+                    <p class="testimonials__txt">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                        sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                        Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                        Sed non  mauris vitae erat consequat auctor eu in elit.
+                    </p>
+                    <p class="testimonials__txt testimonials__txt--uppercase testimonials__txt--bold"><strong>Ane Galadriel</strong></p>
+                    <p class="testimonials__txt testimonials__txt--uppercase">Ceo Tengkuper</p>
+                    <div class="slider">
+                        <button class="slider__btn" type="button" title="click to slide left">
+                            <img src="img/back.png" alt="slide left">
+                        </button>
+                                <img class="slider__img slider__img--size" src="img/slide-1.jpg" alt="slide1">
+                                <img class="slider__img slider__img--size" src="img/slide-2.jpg" alt="slide2">
+                                <img class="slider__img" src="img/slide-3.jpg" alt="slide3">
+                                <img class="slider__img slider__img--size" src="img/slide-4.jpg" alt="slide4">
+                                <img class="slider__img slider__img--size" src="img/slide-5.jpg" alt="slide5">
+                        <button class="slider__btn" type="button" title="click to slide right">
+                            <img src="img/forw.png" alt="slide right">
+                        </button>
+                    </div>
+                </div>
+            </section>
+<!--section CONTACT-->
+            <section class="contact container">
+                <form class="form">
+                    <h2 class="form__headline">Give us a good news</h2>
+                    <input class="form__input" type="text" placeholder="Name"><br>
+                    <input class="form__input" type="email" placeholder="Email"><br>
+                    <input class="form__input" type="text" placeholder="Subject"><br>
+                    <textarea class="form__textarea" placeholder="Your Message"></textarea><br>
+                    <input class="form__btn" type="submit" value="Submit">
+                </form>
+                <div class="client">
+                    <h2 class="client__headline">Our Happy client</h2>
+                    <div class="client__images">
+                        <img class="client__image" src="img/client-1.png" alt="Zara">
+                        <img class="client__image" src="img/client-2.png" alt="Mango">
+                        <img class="client__image" src="img/client-3.png" alt="Barnneys Newyork">
+                        <img class="client__image" src="img/client-4.png" alt="Guchi">
+                        <img class="client__image" src="img/client-5.png" alt="Calvin Klein">
+                        <img class="client__image" src="img/client-6.png" alt="Nike">
+                        <img class="client__image" src="img/client-7.png" alt="Converse">
+                        <img class="client__image" src="img/client-8.png" alt="Puma">
+                        <img class="client__image" src="img/client-9.png" alt="Levi`s">
+                        <img class="client__image" src="img/client-10.png" alt="Billa Bong">
+                    </div>
+                </div>
+            </section>
+        </main>
+<!--FOOTER-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__block">
+                    <a href="#" class="logo">
+                        <img class="logo__img" src="img/logo.png" alt="Logotyp TAJAM">
+                    </a>
+                    <p class="footer__txt">lorem quis bibendum auctor, nisi elit consequat ipsum,
+                        nec sagittis sem nibh elit. Duis sed odio sit amet auctror
+                        a ornare odio non mauris vitae erat in elit
+                    </p>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__headline" >Our Studio</h3>
+                    <div class="footer__studio">
+                        <svg class="footer__svg"><use xlink:href="#location-icon"></svg>
+                        <p class="footer__txt">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+                            11480 - Indonesia
+                        </p>
+                    </div>
+                    <div class="footer__studio">
+                        <svg class="footer__svg footer__svg--margin"><use xlink:href="#phone-icon"></svg>
+                        <p class="footer__txt">(+62) 21-2224 3333</p>
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <h3 class="footer__headline">Stay In Touch</h3>
+                    <input class="footer__input" type="text" placeholder="Subscribe our newsletter">
+                    <button class="footer__btn" type="button" title="click to send">
+                        <svg class="footer__btn-svg" width="25px" height="25px" viewBox="0 0 32 32">
+                            <path id="paperplane" d="M31.543,0.16C31.377,0.053,31.188,0,31,0c-0.193,0-0.387,0.055-0.555,0.168l-30,20
+                                c-0.309,0.205-0.479,0.566-0.439,0.936c0.038,0.369,0.278,0.688,0.623,0.824l7.824,3.131l3.679,6.438
+                                c0.176,0.309,0.503,0.5,0.857,0.504c0.004,0,0.007,0,0.011,0c0.351,0,0.677-0.186,0.857-0.486l2.077-3.463l9.695,3.877
+                                C25.748,31.977,25.873,32,26,32c0.17,0,0.338-0.043,0.49-0.129c0.264-0.148,0.445-0.408,0.496-0.707l5-30
+                                C32.051,0.771,31.877,0.377,31.543,0.16z M3.136,20.777L26.311,5.326L9.461,23.363c-0.089-0.053-0.168-0.123-0.266-0.162
+                                L3.136,20.777z M10.189,24.066c-0.002-0.004-0.005-0.006-0.007-0.01L29.125,3.781L12.976,28.943L10.189,24.066z M25.217,29.609
+                                l-8.541-3.416c-0.203-0.08-0.414-0.107-0.623-0.119L29.205,5.686L25.217,29.609z"/>
+                       </svg>
+                    </button>
+                    <nav class="social-net">
+                        <a class="social-net__link" href="#">
+                            <svg class="social-net__svg"><use xlink:href="#facebook-icon"></svg>
+                        </a>
+                        <a class="social-net__link" href="#">
+                            <svg class="social-net__svg"><use xlink:href="#instagram-icon"></svg>
+                        </a>
+                        <a class="social-net__link" href="#">
+                            <svg class="social-net__svg"><use xlink:href="#dribbble-icon"></svg>
+                        </a>
+                        <a class="social-net__link" href="#">
+                            <svg class="social-net__svg"><use xlink:href="#pinterest-icon"></svg>
+                        </a>
+                        <a class="social-net__link" href="#">
+                            <svg class="social-net__svg"><use xlink:href="#googleplus-icon"></svg>
+                        </a>
+                        <a class="social-net__link" href="#">
+                            <svg class="social-net__svg"><use xlink:href="#tumblr-icon"></svg>
+                        </a>
+                    <nav>
+                </div>
             </div>
-        </section>
+            <div class="footer__container container">
+                <nav class="footer__nav">
+                    <a class="footer__link" href="#">Help</a>
+                    <a class="footer__link" href="#">Terms & Condition</a>
+                    <a class="footer__link" href="#">Privacy</a>
+                </nav>
+                <p class="footer__txt">Copyright © 2015 - Tajem Creative</p>
+            </div>
+        </footer>
+<!--Images SVG-->
+        <svg style="position: absolute; width: 0;">
+            <symbol id="facebook-icon" width="20" height="20" viewBox="0 0 32 32">
+                <title>facebook</title>
+                <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+            </symbol>
+            <symbol id="instagram-icon" width="20" height="20" viewBox="0 0 32 32">
+                <title>instagram</title>
+                <path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
+                <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+                <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
+            </symbol>
+            <symbol id="dribbble-icon" width="20" height="20" viewBox="0 0 32 32">
+                <title>dribbble</title>
+                <path d="M16 32c-8.825 0-16-7.175-16-16s7.175-16 16-16c8.825 0 16 7.175 16 16s-7.175 16-16 16v0zM29.494 18.188c-0.469-0.15-4.231-1.269-8.512-0.581 1.788 4.912 2.512 8.912 2.656 9.744 3.063-2.075 5.25-5.356 5.856-9.163v0zM21.337 28.6c-0.206-1.2-0.994-5.375-2.913-10.363-0.031 0.012-0.063 0.019-0.087 0.031-7.713 2.688-10.481 8.031-10.725 8.531 2.319 1.806 5.231 2.887 8.387 2.887 1.894 0 3.7-0.387 5.338-1.087v0zM5.844 25.156c0.313-0.531 4.063-6.738 11.106-9.019 0.175-0.056 0.356-0.113 0.538-0.162-0.344-0.775-0.719-1.556-1.106-2.319-6.819 2.044-13.444 1.956-14.044 1.95-0.006 0.137-0.006 0.275-0.006 0.419 0 3.506 1.331 6.712 3.512 9.131v0zM2.625 13.219c0.612 0.006 6.244 0.031 12.637-1.662-2.262-4.025-4.706-7.412-5.069-7.906-3.825 1.806-6.688 5.331-7.569 9.569v0zM12.8 2.731c0.375 0.506 2.863 3.888 5.1 8 4.863-1.819 6.919-4.588 7.163-4.938-2.413-2.144-5.587-3.444-9.063-3.444-1.1 0.006-2.175 0.138-3.2 0.381v0zM26.581 7.381c-0.288 0.388-2.581 3.325-7.631 5.388 0.319 0.65 0.625 1.313 0.906 1.981 0.1 0.238 0.2 0.469 0.294 0.706 4.55-0.569 9.069 0.344 9.519 0.438-0.031-3.225-1.188-6.188-3.087-8.512v0z"></path>
+            </symbol>
+            <symbol id="pinterest-icon"width="20" height="20" viewBox="0 0 32 32">
+                <title>pinterest</title>
+                <path d="M16 0c-8.825 0-16 7.175-16 16s7.175 16 16 16 16-7.175 16-16-7.175-16-16-16zM16 29.863c-1.431 0-2.806-0.219-4.106-0.619 0.563-0.919 1.412-2.431 1.725-3.631 0.169-0.65 0.863-3.294 0.863-3.294 0.45 0.863 1.775 1.594 3.175 1.594 4.181 0 7.194-3.844 7.194-8.625 0-4.581-3.738-8.006-8.544-8.006-5.981 0-9.156 4.019-9.156 8.387 0 2.031 1.081 4.563 2.813 5.369 0.262 0.125 0.4 0.069 0.463-0.188 0.044-0.194 0.281-1.131 0.387-1.575 0.031-0.137 0.019-0.262-0.094-0.4-0.575-0.694-1.031-1.975-1.031-3.162 0-3.056 2.313-6.019 6.256-6.019 3.406 0 5.788 2.319 5.788 5.637 0 3.75-1.894 6.35-4.356 6.35-1.363 0-2.381-1.125-2.050-2.506 0.394-1.65 1.15-3.425 1.15-4.613 0-1.063-0.569-1.95-1.756-1.95-1.394 0-2.506 1.438-2.506 3.369 0 1.225 0.412 2.056 0.412 2.056s-1.375 5.806-1.625 6.887c-0.281 1.2-0.169 2.881-0.050 3.975-5.156-2.012-8.813-7.025-8.813-12.9 0-7.656 6.206-13.863 13.862-13.863s13.863 6.206 13.863 13.863c0 7.656-6.206 13.863-13.863 13.863z"></path>
+            </symbol>
+            <symbol id="googleplus-icon" width="20" height="20" viewBox="0 0 32 32">
+                <title>google-plus</title>
+                <path d="M10.181 14.294v3.494h5.775c-0.231 1.5-1.744 4.394-5.775 4.394-3.475 0-6.313-2.881-6.313-6.431s2.838-6.431 6.313-6.431c1.981 0 3.3 0.844 4.056 1.569l2.762-2.662c-1.775-1.656-4.075-2.662-6.819-2.662-5.631 0.006-10.181 4.556-10.181 10.188s4.55 10.181 10.181 10.181c5.875 0 9.775-4.131 9.775-9.95 0-0.669-0.075-1.181-0.163-1.688h-9.613z"></path>
+                <path d="M32 14h-3v-3h-3v3h-3v3h3v3h3v-3h3z"></path>
+             </symbol>
+             <symbol id="location-icon" width="20" height="20" viewBox="0 0 32 32">
+                <title>location</title>
+                <path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16.125c-3.383 0-6.125-2.742-6.125-6.125s2.742-6.125 6.125-6.125 6.125 2.742 6.125 6.125-2.742 6.125-6.125 6.125zM12.125 10c0-2.14 1.735-3.875 3.875-3.875s3.875 1.735 3.875 3.875c0 2.14-1.735 3.875-3.875 3.875s-3.875-1.735-3.875-3.875z"></path>
+            </symbol>
+            <symbol id="phone-icon" width="20" height="20" viewBox="0 0 32 32">
+                <title>phone</title>
+                <path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+            </symbol>
+            <symbol id="tumblr-icon" width="20" height="20" viewBox="0 0 32 32">
+                <title>tumblr</title>
+                <path d="M18.001 14l-0 7.318c0 1.857-0.024 2.927 0.173 3.453 0.195 0.524 0.685 1.067 1.218 1.381 0.709 0.425 1.517 0.637 2.428 0.637 1.62 0 2.577-0.214 4.179-1.267v4.811c-1.366 0.642-2.558 1.019-3.666 1.279-1.109 0.258-2.308 0.388-3.596 0.388-1.463 0-2.327-0.184-3.45-0.552-1.124-0.371-2.083-0.9-2.876-1.579-0.795-0.685-1.344-1.413-1.652-2.182s-0.46-1.888-0.46-3.351v-11.222h-4.295v-4.531c1.256-0.408 2.661-0.993 3.556-1.755 0.899-0.764 1.618-1.678 2.16-2.748 0.543-1.067 0.917-2.429 1.121-4.079h5.159l-0 8h7.999v6h-7.999z"></path>
+            </symbol>
+            <symbol id="paperplane-icon" width="20" height="20" viewBox="0 0 469.335 469.335" enable-background="new 0 0 32 32" xml:space="preserve">
+                <title>paperplane</title>
+                <path d="M464.761,1.918c-3.385-2.365-7.813-2.552-11.385-0.51l-448,256c-3.656,2.083-5.74,6.125-5.323,10.313c0.417,4.188,3.25,7.74,7.24,9.063l133.784,44.591l51.57,140.961c1.552,4.24,5.583,7,10.01,7c0.406,0,0.823-0.021,1.229-0.073c2.882-0.331,5.307-1.881,7.021-4.031l0.104,0.083l75.891-95.328l104.391,34.797c1.104,0.375,2.24,0.552,3.375,0.552c1.917,0,3.823-0.521,5.5-1.531c2.677-1.604,4.51-4.302,5.021-7.385l64-384C469.866,8.355,468.147,4.272,464.761,1.918zM36.678,264.095L391.616,61.266L146.532,300.714L36.678,264.095z M209.095,329.314c-1.094,1.49-1.792,3.229-2.01,5.063l-9.635,78.979l-35.729-97.656l208.615-203.813L209.095,329.314z M217.821,422.506l8.858-72.595l38.673,12.891L217.821,422.506zM386.199,380.605l-151.195-50.398L440.863,52.594L386.199,380.605z"/>
+            </symbol>
+        </svg>
     </body>
 </html>
