@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="c-main-header l-container">
@@ -46,40 +46,35 @@
             <form class="c-form js-form" action="#">
               <div class="c-form__row">
                 <input
-                  class="c-form__field c-form__field--inline"
+                  class="c-form__field c-form__field--inline js-form__firstname"
                   placeholder="Your first name..."
                   type="text"
-                  data-validators="minLength: 2, maxLength: 20, required"
                 />
                 <input
-                  class="c-form__field c-form__field--inline"
+                  class="c-form__field c-form__field--inline js-form__lastname"
                   placeholder="Your last name..."
                   type="text"
-                  data-validators="minLength: 2, maxLength: 20, required"
                 />
               </div>
               <div class="c-form__row">
                 <input
-                  class="c-form__field"
+                  class="c-form__field js-form__email"
                   placeholder="Your e-mail..."
                   type="text"
-                  data-validators="email, required"
                 />
               </div>
               <div class="c-form__row">
                 <input
-                  class="c-form__field"
+                  class="c-form__field js-form__phone"
                   placeholder="Your phone..."
                   type="text"
-                  data-validators="phone, required"
                 />
               </div>
               <div class="c-form__row">
                 <input
-                  class="c-form__field"
+                  class="c-form__field js-form__age"
                   placeholder="Your age..."
                   type="text"
-                  data-validators="range: 18-120"
                 />
               </div>
               <div class="c-form__row">
@@ -151,6 +146,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="/js/main.js" defer></script>
   </body>
 </html>
