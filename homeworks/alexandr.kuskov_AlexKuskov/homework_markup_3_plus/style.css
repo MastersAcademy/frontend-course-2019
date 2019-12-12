@@ -349,3 +349,82 @@ body {
 .service-grid__item--1 .service-grid__item-description {
   margin-bottom: 15%;
 }
+
+/* Small Team section */
+
+.small-team {
+  padding-bottom: 8%;
+}
+
+.small-team-grid {
+  display: grid;
+  width: 100%;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  grid-gap: 1.4%;
+}
+
+.small-team-grid__item {
+  max-height: 415px;
+  position: relative;
+  overflow: hidden;
+  align-self: stretch;
+}
+
+.small-team-grid__image {
+  width: 100%;
+  height: 100%;
+}
+
+.member-info {
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+  left: 4%;
+  background-color: #6FF6EB;
+  padding: 40px;
+}
+
+.member-info::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #6FF6EB;
+}
+
+.member-info__name {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+.member-info__job-position {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  opacity: .6;
+}
+
+.member-info__description {
+  color: #272727;
+  margin-bottom: 15%;
+  opacity: .6;
+}
+
+.social-media-icon {
+  height: 12px;
+  width: 12px;
+  margin-right: 4%;
+  opacity: .6;
+  cursor: pointer;
+}
+
+.social-media-icon:hover {
+  opacity: 1;
+}
