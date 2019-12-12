@@ -9,15 +9,14 @@ function setFormState(form, invalidFields) {
 }
 
 const formToValidate = document.querySelector('.js-form');
+const firstNameField = formToValidate.querySelector('.js-form__firstname');
+const lastNameField = formToValidate.querySelector('.js-form__lastname');
+const emailField = formToValidate.querySelector('.js-form__email');
+const phoneField = formToValidate.querySelector('.js-form__phone');
+const ageField = formToValidate.querySelector('.js-form__age');
 
 formToValidate.addEventListener('submit', (event) => {
     event.preventDefault();
-
-    const firstNameField = formToValidate.querySelector('.js-form__firstname');
-    const lastNameField = formToValidate.querySelector('.js-form__lastname');
-    const emailField = formToValidate.querySelector('.js-form__email');
-    const phoneField = formToValidate.querySelector('.js-form__phone');
-    const ageField = formToValidate.querySelector('.js-form__age');
 
     const isFirstNameValid = (
         IsValid.minLength(firstNameField.value, 2)
