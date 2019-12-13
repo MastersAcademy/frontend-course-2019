@@ -39,13 +39,13 @@ formToValidate.addEventListener('submit', (event) => {
     setFieldState(phoneField, isPhoneValid);
     setFieldState(ageField, isAgeValid);
 
-    const isFormInvalid = (
-        !isFirstNameValid
-        || !isLastNameValid
-        || !isEmailValid
-        || !isPhoneValid
-        || !isAgeValid
+    const isFormValid = (
+        isFirstNameValid
+        && isLastNameValid
+        && isEmailValid
+        && isPhoneValid
+        && isAgeValid
     );
 
-    setFormState(formToValidate, !isFormInvalid);
+    setFormState(formToValidate, isFormValid);
 });
