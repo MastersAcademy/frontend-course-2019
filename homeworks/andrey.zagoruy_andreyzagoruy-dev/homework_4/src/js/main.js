@@ -4,8 +4,8 @@ function setFieldState(field, isValid) {
     field.classList.toggle('c-form__field--invalid', !isValid);
 }
 
-function setFormState(form, invalidFields) {
-    form.classList.toggle('c-form--valid', invalidFields === 0);
+function setFormState(form, isValid) {
+    form.classList.toggle('c-form--valid', isValid);
 }
 
 const formToValidate = document.querySelector('.js-form');
@@ -29,8 +29,8 @@ formToValidate.addEventListener('submit', (event) => {
     const isEmailValid = IsValid.email(emailField.value);
     const isPhoneValid = IsValid.phone(phoneField.value);
     const isAgeValid = (
-        IsValid.numberRange(ageField.value, 18, 120)
-        || !ageField.value
+        !ageField.value
+        || IsValid.numberRange(ageField.value, 18, 120)
     );
 
     setFieldState(lastNameField, isLastNameValid);
@@ -39,7 +39,13 @@ formToValidate.addEventListener('submit', (event) => {
     setFieldState(phoneField, isPhoneValid);
     setFieldState(ageField, isAgeValid);
 
-    const numberOfInvalidFields = formToValidate.querySelectorAll('.c-form__field--invalid').length;
+    const isFormInvalid = (
+        !isFirstNameValid
+        || !isLastNameValid
+        || !isEmailValid
+        || !isPhoneValid
+        || !isAgeValid
+    );
 
-    setFormState(formToValidate, numberOfInvalidFields);
+    setFormState(formToValidate, !isFormInvalid);
 });
