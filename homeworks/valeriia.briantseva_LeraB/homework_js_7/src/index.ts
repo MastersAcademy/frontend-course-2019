@@ -1,4 +1,4 @@
-import { minLength, maxLength, isEmail, isPhone, numberRange, pattern} from './validate';
+import {minLength, maxLength, isEmail, isPhone, numberRange, pattern} from './validate';
 
 const email = (document.getElementById('user-email') as HTMLInputElement);
 const firstName = (document.getElementById('first-name') as HTMLInputElement);
@@ -8,87 +8,93 @@ const age = (document.getElementById('user-age') as HTMLInputElement);
 const submit = (document.getElementById('btn-submit') as HTMLInputElement);
 const successMessage = (document.getElementById('success-message') as HTMLInputElement);
 
-function isValidFirstName(): void {
+const regexEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+const regexPhone = /^\\+38\\([0-9]{3}\\)[0-9]{3}[-][0-9]{2}[-][0-9]{2}$/;
 
-    if ((minLength({text: firstName.value, length: 2})) && (maxLength({text: firstName.value, length: 20})) && !(firstName.value === '')) {
+function isValidFirstName(): boolean {
+
+    const isFirstNameMinLengthValid = minLength({text: firstName.value, length: 2});
+    const isFirstNameMaxLengthValid = maxLength({text: firstName.value, length: 20});
+
+    if (isFirstNameMinLengthValid && isFirstNameMaxLengthValid && firstName.value !== '') {
         firstName.classList.remove('error');
+        return true;
     } else {
         firstName.classList.add('error');
+        return false;
     }
 }
 
-function isValidSecondName(): void {
+function isValidSecondName(): boolean {
 
-    if ((minLength({text: secondName.value, length: 2})) && (maxLength({text: secondName.value,  length: 20})) && !(secondName.value === '')) {
+    const isSecondNameMinLengthValid = minLength({text: secondName.value, length: 2});
+    const isSecondNameMaxLengthValid = maxLength({text: secondName.value, length: 20});
+
+    if (isSecondNameMinLengthValid && isSecondNameMaxLengthValid && secondName.value !== '') {
         secondName.classList.remove('error');
+        return true;
     } else {
         secondName.classList.add('error');
+        return false;
     }
 }
 
-function isValidEmail(): void {
-    // eslint-disable-next-line no-useless-escape
+function isValidEmail(): boolean {
 
-    const regexEmail = '^(([^<>()/\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$';
-    if ((isEmail({text: email.value})) && (pattern({text: email.value, pattern: regexEmail}))) {
+    const isEmailValid = isEmail({text: email.value});
+    const isEmailFormatValid = pattern({text: email.value, patterns: regexEmail});
+
+    if (isEmailValid && isEmailFormatValid) {
         email.classList.remove('error');
+        return true;
     } else {
         email.classList.add('error');
+        return false;
     }
 }
 
-function isValidPhone(): void {
+function isValidPhone(): boolean {
 
-    // eslint-disable-next-line no-useless-escape
+    const isPhoneValid = isPhone({text: phone.value});
+    const isPhoneFormatValid = pattern({text: phone.value, patterns: regexPhone});
 
-    const regexPhone = '^\\+38\\([0-9]{3}\\)[0-9]{3}[-][0-9]{2}[-][0-9]{2}$';
-    if ((isPhone({text : phone.value})) && (pattern({text : phone.value, pattern: regexPhone}))) {
+    if (isPhoneValid && isPhoneFormatValid) {
         phone.classList.remove('error');
+        return true;
     } else {
         phone.classList.add('error');
+        return false;
     }
 }
 
-function isValidAge() {
-    if ((numberRange({text: age.value, min: 18, max: 120})) || (age.value === '')) {
+function isValidAge(): boolean {
+    if ((numberRange({text: Number(age.value), min: 18, max: 120})) || (age.value === '')) {
         age.classList.remove('error');
+        return true;
     } else {
         age.classList.add('error');
+        return false;
     }
 }
 
-firstName.addEventListener('change', () => {
-    isValidFirstName();
-});
-
-secondName.addEventListener('change', () => {
-    isValidSecondName();
-});
-
-email.addEventListener('change', () => {
-    isValidEmail();
-});
-
-phone.addEventListener('change', () => {
-    isValidPhone();
-});
-
-age.addEventListener('change', () => {
-    isValidAge();
-});
+firstName.addEventListener('change', isValidFirstName);
+secondName.addEventListener('change', isValidSecondName);
+email.addEventListener('change', isValidEmail);
+phone.addEventListener('change', isValidPhone);
+age.addEventListener('change', isValidAge);
 
 submit.addEventListener('click', (event) => {
     event.preventDefault();
 
-    isValidFirstName();
-    isValidSecondName();
-    isValidEmail();
-    isValidPhone();
-    isValidAge();
+    const isFirstName = isValidFirstName();
+    const isSecondName = isValidSecondName();
+    const isEmail = isValidEmail();
+    const isPhone = isValidPhone();
+    const isAge = isValidAge();
 
-    if (firstName.classList.contains('error') || secondName.classList.contains('error') || email.classList.contains('error') || phone.classList.contains('error') || age.classList.contains('error')) {
-        successMessage.classList.add('hide');
-    } else {
+    if (isFirstName && isSecondName && isEmail && isPhone && isAge) {
         successMessage.classList.remove('hide');
+    } else {
+        successMessage.classList.add('hide');
     }
 });

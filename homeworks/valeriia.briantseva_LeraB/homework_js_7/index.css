@@ -1,40 +1,37 @@
-form {
-  overflow: hidden;
+.contact-form {
   width: 50%;
   margin: 0 auto;
   display: block;
 }
 
+.rov {
+  display: flex;
+}
+
 .col-6 {
-  display: inline-block;
-  width: 47%;
-  margin-bottom: 10px;
+  flex-basis: 47%;
+  flex-grow: 5;
+  flex-shrink: 0;
+}
+
+.col-6 {
+  margin: 10px;
   padding: 10px;
   border: 1px solid #505050;
-}
-
-.col-6:not(:nth-child(even)) {
-  float: left;
-}
-
-.col-6:not(:nth-child(odd)) {
-  float: right;
 }
 
 .col-12 {
-  display: inline-block;
-  width: calc(100% - 24px);
-  margin-bottom: 10px;
+  width: 100%;
+  margin: 10px;
   padding: 10px;
   border: 1px solid #505050;
 }
 
-input {
+.input-field {
   border-radius: 3px;
 }
 
 .btn-submit {
-  float: right;
   color: #FFF;
   background-color: #008000;
   border: 1px solid #008000;
@@ -42,6 +39,7 @@ input {
   padding: 8px 20px;
   border-radius: 8%;
   cursor: pointer;
+  margin: 10px;
 }
 
 .error {
