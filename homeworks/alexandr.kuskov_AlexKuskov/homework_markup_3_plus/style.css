@@ -486,3 +486,23 @@ body {
 .feedback__button--back {
   transform: rotate(180deg);
 }
+
+/* Brands */
+
+.brands {
+  padding-top: 8%;
+  padding-bottom: 4%;
+}
+
+.brands__tier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brands__logo {
+  filter: contrast(0);
+  padding: 0 32px;
+  margin-bottom: 4%;
+}
