@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"test\"",
-    "build": "node_modules/webpack/bin/webpack.js --progress --hide-modules"
+    "build": "webpack --progress --hide-modules"
   },
   "author": "Sviat",
   "license": "ISC",

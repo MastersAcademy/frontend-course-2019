@@ -1,10 +1,7 @@
 import { isValid } from './validator';
+import * as types from './types'
 
-type SubmitEvent = Event & {
-    target: HTMLElement;
-}
-
-const callback = (event: SubmitEvent) => {
+const callback = (event: types.SubmitEvent) => {
     event.preventDefault();
 
     const firstName = (event.target.querySelector('#first-name') as HTMLInputElement);
@@ -20,17 +17,17 @@ const callback = (event: SubmitEvent) => {
     console.log(allFields);
 
     if (!firstName.value
-        || !isValid.minLength({ text: firstName.value, length: 2 })
-        || !isValid.maxLength({ text: firstName.value, length: 20 })) firstName.classList.add('error');
+        || !isValid.minLength(firstName.value, 2)
+        || !isValid.maxLength(firstName.value, 20)) firstName.classList.add('error');
 
     if (!lastName.value
-        || !isValid.minLength({ text: lastName.value, length: 2 })
-        || !isValid.maxLength({ text: lastName.value, length: 20 })) lastName.classList.add('error');
+        || !isValid.minLength(lastName.value, 2)
+        || !isValid.maxLength(lastName.value, 20)) lastName.classList.add('error');
 
-    if (!email.value || !isValid.email({ text: email.value })) email.classList.add('error');
-    if (!phone.value || !isValid.phone({ text: phone.value })) phone.classList.add('error');
+    if (!email.value || !isValid.email(email.value)) email.classList.add('error');
+    if (!phone.value || !isValid.phone(phone.value)) phone.classList.add('error');
     if ((age.value || age.value === '0')
-        && !isValid.numberRange({ text: age.value, min: 18, max: 120 })) age.classList.add('error');
+        && !isValid.numberRange(age.value, 18, 120)) age.classList.add('error');
 
     const result = event.target.querySelector('#result');
     if (allFields.map((dom) => dom.classList.contains('error')).includes(true)) {
