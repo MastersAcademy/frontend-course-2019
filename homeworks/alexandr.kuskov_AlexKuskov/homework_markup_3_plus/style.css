@@ -109,16 +109,22 @@ body {
 }
 
 .picture-slider {
-  max-width: 485px;
+  width: 40%;
   text-align: center;
   margin-left: 5%;
 }
 
+.picture-slider--small {
+  width: 33%;
+}
+
 .pictures__current-image {
   position: relative;
+  width: 100%;
 }
 
 .pictures__next-image {
+  width: 108%;
   position: absolute;
   top: 10%;
   right: -4%;
@@ -397,14 +403,16 @@ body {
   border-bottom: 20px solid #6FF6EB;
 }
 
-.member-info__name {
+.member-info__name,
+.feedback__name {
   font-family: "Merriweather", serif;
   font-size: 20px;
   margin-top: 0;
   letter-spacing: 1px;
 }
 
-.member-info__job-position {
+.member-info__job-position,
+.feedback__job-position {
   font-size: 14px;
   font-style: italic;
   font-weight: 400;
@@ -427,4 +435,54 @@ body {
 
 .social-media-icon:hover {
   opacity: 1;
+}
+
+/* What They Says section */
+
+.what-they-says {
+  background-color: #F9FBFB;
+}
+
+.feedback {
+  display: inline-block;
+  text-align: center;
+  width: 500px;
+  margin-left: 8%;
+  padding: 100px 85px 65px;
+  background-color: #EAEBED;
+}
+
+.feedback__description {
+  opacity: .5;
+}
+
+.feedback__rate {
+  display: inline-block;
+  width: 95px;
+  height: 20px;
+  background-image: url("./images/star.png");
+  background-repeat: space;
+}
+
+.feedback__button {
+  width: 55px;
+  height: 55px;
+  border-radius: 3px;
+  filter: drop-shadow(3.126px 7.364px 5.5px rgba(20,20,21,.05));
+  background-color: #FFF;
+  background-image: url("./images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .5;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback__button:hover {
+  background-color: #71F6EB;
+  opacity: 1;
+}
+
+.feedback__button--back {
+  transform: rotate(180deg);
 }
