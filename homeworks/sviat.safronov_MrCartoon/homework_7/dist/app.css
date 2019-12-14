@@ -1,9 +1,9 @@
-body, form {
+body, .form {
   height: 100%;
   width: 100%;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
