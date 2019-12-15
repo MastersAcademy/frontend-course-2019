@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+        href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700|Roboto:400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Homework markup 3</title>
+</head>
+
+<body>
+    <!-- MAIN HEADER -->
+    <header class="main-header">
+        <div class="main-header__wrapper wrapper">
+            <a href="/" class="main-header__logo">
+                <img src="img/logo.png" alt="tajam logo">
+            </a>
+            <nav class="main-header__nav">
+                <ul class="main-menu-list">
+                    <li class="main-menu-list__item">
+                        <a href="#" class="main-menu-list__item_link">HOME</a>
+                    </li>
+                    <li class="main-menu-list__item">
+                        <a href="#about" class="main-menu-list__item_link">ABOUT</a>
+                    </li>
+                    <li class="main-menu-list__item">
+                        <a href="#expertise" class="main-menu-list__item_link">EXPERTISE</a>
+                    </li>
+                    <li class="main-menu-list__item">
+                        <a href="#teams" class="main-menu-list__item_link">TEAMS</a>
+                    </li>
+                    <li class="main-menu-list__item">
+                        <a href="#works" class="main-menu-list__item_link">WORKS</a>
+                    </li>
+                    <li class="main-menu-list__item">
+                        <a href="#people" class="main-menu-list__item_link">PEOPLE SAY</a>
+                    </li>
+                    <li class="main-menu-list__item">
+                        <a href="#contacts" class="main-menu-list__item_link">CONTACTS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <section class="about bg-overlay">
+            <div class="wrapper about__wrapper">
+                <h1 class="about__title">We Are Awesome Creative Agency</h1>
+                <p class="about__descr">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                    aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                    sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                    ipsum velit.</p>
+                <a href="#" class="main-btn">LEARN MORE</a>
+            </div>
+        </section>
+        <section class="history" id="about">
+            <div class="history__wrapper wrapper">
+                <div class="history__logo">
+                    <img src="img/history/history-logo.svg" alt="tajam logo big">
+                </div>
+                <div class="history__descr">
+                    <h2 class="history__title section-title">OUR STORY</h2>
+                    <div class="history__text text">
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                            nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
+                            mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos himenaeos.</p>
+                    </div>
+                    <a href="#" class="main-btn">LEARN MORE</a>
+                </div>
+            </div>
+        </section>
+        <section class="story bg-overlay">
+            <a href="#" class="btn-watch">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Play_Icon"
+                    data-name="Play Icon" width="103" height="103" viewBox="0 0 103 103">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: none;
+                                stroke: #fff;
+                                stroke-width: 3px;
+                            }
+                        </style>
+                    </defs>
+                    <circle id="outline" class="cls-1" cx="51.5" cy="51.5" r="50" />
+                    <image id="play" x="36.5" y="28.5" width="37" height="45"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAtCAYAAAApzaJuAAACwElEQVRYhcXZX2hPYRzH8Y81yoobZf6lXJh/oYgkN0jTFFrUSKj5kxS5cKUoWaEl5UYuRqJdiPzd/Ffyc8GNYrYllHYxYhckSe2tZz1nnc6e57f9fr/zO8+3vr+L55zf2Wvf77PnPOdMwBQgB3wH2oGVgEKm+bjL0DgPjA8FMx+/HSgTvcDOEKgKaSBdUS3poqR2SbM855QlDOifvTCSHkjqTfygtZI6JR3LTAX8jLVsBTAOuOVp6TtgTRZzKo7aHTtYD3zw4FqACVmhGhMnVADHPbA+YFcIVJRz87T0ETA/BCrKzcBnD+5EKJTJ0Rbgii6gLgQq3tI2D+4qUF0syrdwjiTeS6qT1CCpJ3H+VkndkvalsU4VUql4VgHNnqo9BhZl1T5XLgDue3AngVEhUFHuAHocsE5gQyjUcC1tBSaHQEW5BHjogP0CDoRCRbkd+OrA5Sx88NxSloRC47KkGklnE99bLumVpGZJY9JcEopp6VNH1T4BNVlWKh6vJa2S1Gg3kP322AxJN0KhomiRtFrSt9jYvNCobZLaJE2MjXVUBsIslHRKUm1i3NxDN2VdqSqLeeMAnZM0W1JXlpVqsH/2UxPjZtIfkpSLBrKolGnVPUmtCdBfSYclLY2DBqKM65TZoTZ57n3XgelZ3/u22IUwGR/tPj/v99NGzQFue6pzxlZv2OukhcrXqufAskKulwaq3tMq8zbnYDG/ZCko8zRz01Md8zQzrdhpUAzK7LOPejBmIm8scV4WjFoPdHtAp4HKUkGFoGYC1zwYM5EXp4EpBHUE6HdgzB57f5oYH2pP7OA6oMNTnSvApHKAXCjzJm9snlZ1W2xZMC6UadEd4IsH1DTSJ9w0UH88iCiepP1SbLisiG3ak9Enaa/dQ7/NYIszGAb1zDF+yT6jXcgSMxj2fzMvgR/AC6A2y1YNSdB/IZYgsGBnsLcAAAAASUVORK5CYII=" />
+                </svg>
+            </a>
+            <span class="btn-watch__text">WATCH OUR STORY</span>
+        </section>
+        <section class="expertise" id="expertise">
+            <div class="wrapper">
+                <div class="expertise__heading section-heading">
+                    <h2 class="expertise__heading-title section-title">EXPERTISE</h2>
+                    <p class="expertise__heading-descr">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+                </div>
+                <ul class="expertise__list">
+                    <li class="expertise__list_item">
+                        <div class="expertise__list_item-icon">
+                            <img src="img/expertise/icon1.svg" alt="WEB DESIGN & DEVELOPMENT icon">
+                        </div>
+                        <h3 class="expertise__list_item-title">WEB DESIGN & DEVELOPMENT</h3>
+                        <p class="expertise__list_item-descr">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                            nibh</p>
+                    </li>
+                    <li class="expertise__list_item">
+                        <div class="expertise__list_item-icon">
+                            <img src="img/expertise/icon2.svg" alt="BRANDING IDENTITY icon">
+                        </div>
+                        <h3 class="expertise__list_item-title">BRANDING IDENTITY</h3>
+                        <p class="expertise__list_item-descr">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                            nibh</p>
+                    </li>
+                    <li class="expertise__list_item">
+                        <div class="expertise__list_item-icon">
+                            <img src="img/expertise/icon3.svg" alt="MOBILE APP icon">
+                        </div>
+                        <h3 class="expertise__list_item-title">MOBILE APP</h3>
+                        <p class="expertise__list_item-descr">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                            nibh</p>
+                    </li>
+                    <li class="expertise__list_item">
+                        <div class="expertise__list_item-icon">
+                            <img src="img/expertise/icon4.svg" alt="SEARCH ENGINE OPTIMIZATION icon">
+                        </div>
+                        <h3 class="expertise__list_item-title">SEARCH ENGINE OPTIMIZATION</h3>
+                        <p class="expertise__list_item-descr">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                            nibh</p>
+                    </li>
+                    <li class="expertise__list_item">
+                        <div class="expertise__list_item-icon">
+                            <img src="img/expertise/icon5.svg" alt="GAME DEVELOPMENT icon">
+                        </div>
+                        <h3 class="expertise__list_item-title">GAME DEVELOPMENT</h3>
+                        <p class="expertise__list_item-descr">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                            nibh</p>
+                    </li>
+                    <li class="expertise__list_item">
+                        <div class="expertise__list_item-icon">
+                            <img src="img/expertise/icon6.svg" alt="MADE WITH LOVE icon">
+                        </div>
+                        <h3 class="expertise__list_item-title">MADE WITH LOVE</h3>
+                        <p class="expertise__list_item-descr">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                            nibh</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="team bg-overlay" id="teams">
+            <div class="wrapper">
+                <div class="team__heading section-heading">
+                    <h2 class="team__heading-title section-title">MEET OUR AMAZING TEAM</h2>
+                    <p class="team__heading-descr">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+                </div>
+                <ul class="team__list">
+                    <li class="team__list_item">
+                        <div class="team__list_item-photo"></div>
+                        <div class="team__list_item-descr">
+                            <h3 class="team__list_item-name">SEMF UCUK</h3>
+                            <p class="team__list_item-postition">CEO & FOUNDER</p>
+                        </div>
+                    </li>
+                    <li class="team__list_item">
+                        <div class="team__list_item-photo"></div>
+                        <div class="team__list_item-descr">
+                            <h3 class="team__list_item-name">SEMF UCUK</h3>
+                            <p class="team__list_item-postition">CEO & FOUNDER</p>
+                        </div>
+                    </li>
+                    <li class="team__list_item">
+                        <div class="team__list_item-photo"></div>
+                        <div class="team__list_item-descr">
+                            <h3 class="team__list_item-name">SEMF UCUK</h3>
+                            <p class="team__list_item-postition">CEO & FOUNDER</p>
+                        </div>
+                    </li>
+                    <li class="team__list_item">
+                        <div class="team__list_item-photo"></div>
+                        <div class="team__list_item-descr">
+                            <h3 class="team__list_item-name">SEMF UCUK</h3>
+                            <p class="team__list_item-postition">CEO & FOUNDER</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="team__bottom_container">
+                    <p class="team__bottom_container-descr">Become part of our dream team, let’s join us !</p>
+                    <a href="#" class="main-btn">WE ARE HIRING</a>
+                </div>
+            </div>
+        </section>
+        <section class="blockquotes bg-overlay" id="people">
+            <div class="wrapper">
+                <div class="blockquotes-text-cont">
+                    <ul class="blockquotes-list">
+                        <li class="blockquotes-list__item">
+                            <blockquote class="blockquotes__feedback">This is Photoshop's version of Lorem Ipsum. Proin
+                                gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                                nisi
+                                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                vulputate
+                                cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                                auctor
+                                a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</blockquote>
+                            <h3 class="blockquotes__author">JANE GALADRIEL</h3>
+                            <h4 class="blockquotes__position">CEO TENGKUREP</h4>
+                        </li>
+                        <li class="blockquotes-list__item">
+                            <blockquote class="blockquotes__feedback">This is Photoshop's version of Lorem Ipsum. Proin
+                                gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                                nisi
+                                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                vulputate
+                                cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                                auctor
+                                a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</blockquote>
+                            <h3 class="blockquotes__author">JANE GALADRIEL</h3>
+                            <h4 class="blockquotes__position">CEO TENGKUREP</h4>
+                        </li>
+                        <li class="blockquotes-list__item active">
+                            <blockquote class="blockquotes__feedback">This is Photoshop's version of Lorem Ipsum. Proin
+                                gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                                nisi
+                                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                vulputate
+                                cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                                auctor
+                                a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</blockquote>
+                            <h3 class="blockquotes__author">JANE GALADRIEL</h3>
+                            <h4 class="blockquotes__position">CEO TENGKUREP</h4>
+                        </li>
+                        <li class="blockquotes-list__item">
+                            <blockquote class="blockquotes__feedback">This is Photoshop's version of Lorem Ipsum. Proin
+                                gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                                nisi
+                                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                vulputate
+                                cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                                auctor
+                                a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</blockquote>
+                            <h3 class="blockquotes__author">JANE GALADRIEL</h3>
+                            <h4 class="blockquotes__position">CEO TENGKUREP</h4>
+                        </li>
+                        <li class="blockquotes-list__item">
+                            <blockquote class="blockquotes__feedback">This is Photoshop's version of Lorem Ipsum. Proin
+                                gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                                nisi
+                                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                vulputate
+                                cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                                auctor
+                                a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</blockquote>
+                            <h3 class="blockquotes__author">JANE GALADRIEL</h3>
+                            <h4 class="blockquotes__position">CEO TENGKUREP</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blockquotes-photo-cont">
+                    <ul class="blockquotes-photo-list">
+                        <li class="blockquotes-photo-list__item">
+                            <div class="blockquotes__photo">
+                                <img src="img/blockqoutes/photo.png" alt="JANE GALADRIEL">
+                            </div>
+                        </li>
+                        <li class="blockquotes-photo-list__item">
+                            <div class="blockquotes__photo">
+                                <img src="img/blockqoutes/photo.png" alt="JANE GALADRIEL">
+                            </div>
+                        </li>
+                        <li class="blockquotes-photo-list__item active">
+                            <div class="blockquotes__photo">
+                                <img src="img/blockqoutes/photo.png" alt="JANE GALADRIEL">
+                            </div>
+                        </li>
+                        <li class="blockquotes-photo-list__item">
+                            <div class="blockquotes__photo">
+                                <img src="img/blockqoutes/photo.png" alt="JANE GALADRIEL">
+                            </div>
+                        </li>
+                        <li class="blockquotes-photo-list__item">
+                            <div class="blockquotes__photo">
+                                <img src="img/blockqoutes/photo.png" alt="JANE GALADRIEL">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="slider-controls">
+                        <div class="slider-controls__left"></div>
+                        <div class="slider-controls__rigth"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form-clients">
+            <div class="wrapper form-clients-wrapper">
+                <div class="form">
+                    <h2 class="section-title">GIVE US A GOOD NEWS</h2>
+                    <form action="#" id="form_feedback">
+                        <div class="input-wrapper">
+                            <input type="text" name="name" placeholder="Name">
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="input-wrapper textarea-wrapper">
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button class="main-btn submit-btn">SUBMIT</button>
+                    </form>
+                </div>
+                <div class="clients">
+                    <h2 class="section-title">OUR HAPPY CLIENT</h2>
+                    <ul class="clients-list">
+                        <li class="clients-list__item">
+                            <img src="img/clients/zara.png" alt="zara logo">
+                        </li>
+                        <li class="clients-list__item">
+                            <img src="img/clients/ny.png" alt="barneys logo">
+                        </li>
+                        <li class="clients-list__item">
+                            <img src="img/clients/calvin.png" alt="calvin klein logo">
+                        </li>
+                        <li class="clients-list__item">
+                            <img src="img/clients/converse.png" alt="converse logo">
+                        </li>
+                        <li class="clients-list__item">
+                            <img src="img/clients/levis.png" alt="levis logo">
+                        </li>
+                        <li class="clients-list__item">
+                            <img src="img/clients/mango.png" alt="mango logo">
+                        </li>
+                        <li class="clients-list__item">
+                            <img src="img/clients/gucci.png" alt="gucci logo">
+                        </li>
+                        <li class="clients-list__item">
+                            <img src="img/clients/nike.png" alt="nike logo">
+                        </li>
+                        <li class="clients-list__item">
+                            <img src="img/clients/puma.png" alt="puma logo">
+                        </li>
+                        <li class="clients-list__item">
+                            <img src="img/clients/bilabong.png" alt="billabong logo">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- MAIN FOOTER -->
+    <footer class="main-footer bg-overlay" id="contacts">
+        <div class="wrapper">
+            <div class="footer-top-row">
+                <div class="footer-left-col">
+                    <div class="main-footer__logo">
+                        <img src="img/logo.png" alt="tajam logo">
+                    </div>
+                    <p class="main-footer__text">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                        nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+                </div>
+                <div class="footer-middle-col">
+                    <h3 class="footer__title">OUR STUDIO</h3>
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                            <address class="contacts-list__value">
+                                Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+                                11480 - Indonesia
+                            </address>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a href="tel:+622122243333" class="contacts-list__value">(+62) 21-2224 3333</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right-col">
+                    <h3 class="footer__title">STAY IN TOUCH</h3>
+                    <form action="#" class="subscribe-form">
+                        <div class="subscribe-form__wrapper">
+                            <input class="subscribe-form__iput" type="email" placeholder="Subscribe our newsletter">
+                            <button class="subscribe-form__btn"></button>
+                        </div>
+                    </form>
+                    <ul class="social-links-list">
+                        <li class="social-links-list__item">
+                            <a href="https://facebook.com" class="social-links" target="_blank">
+                                <img src="img/elements/social/facebook.svg" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li class="social-links-list__item">
+                            <a href="https://twitter.com" class="social-links" target="_blank">
+                                <img src="img/elements/social/twitter.svg" alt="twitter icon">
+                            </a>
+                        </li>
+                        <li class="social-links-list__item">
+                            <a href="https://dribbble.com" class="social-links" target="_blank">
+                                <img src="img/elements/social/dribbble.svg" alt="dribbble icon">
+                            </a>
+                        </li>
+                        <li class="social-links-list__item">
+                            <a href="https://instagram.com" class="social-links" target="_blank">
+                                <img src="img/elements/social/instagram.svg" alt="instagram icon">
+                            </a>
+                        </li>
+                        <li class="social-links-list__item">
+                            <a href="https://youtube.com" class="social-links" target="_blank">
+                                <img src="img/elements/social/youtube.svg" alt="youtube icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-row">
+                <ul class="main-menu-list">
+                    <li class="main-menu-list__item">
+                        <a href="#" class="main-menu-list__item_link">HELP</a>
+                    </li>
+                    <li class="main-menu-list__item">
+                        <a href="#about" class="main-menu-list__item_link">TERMS & CONDITION</a>
+                    </li>
+                    <li class="main-menu-list__item">
+                        <a href="#expertise" class="main-menu-list__item_link">PRIVACY</a>
+                    </li>
+                </ul>
+                <p class="main-footer__copyright">Copyright © 2019 - Tajem Creative</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
