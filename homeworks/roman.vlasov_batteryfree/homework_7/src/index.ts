@@ -12,7 +12,7 @@ const sendAge = document.querySelector<HTMLFormElement>('.js-age');
 const sendText = document.querySelector<HTMLFormElement>('.js-text');
 
 function setStyleValid(element: HTMLFormElement, isDataValid: boolean, styleClasses: string[]): void {
-    styleClasses.map((styleClasse) => element.classList.toggle(styleClasse, !isDataValid));
+    styleClasses.map((styleClass) => element.classList.toggle(styleClass, !isDataValid));
 }
 
 function isTextLengthValid(text: string, min: number, max: number): boolean {
