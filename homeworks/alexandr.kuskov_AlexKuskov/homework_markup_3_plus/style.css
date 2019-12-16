@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Raleway:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap");
 
 * {
   box-sizing: border-box;
@@ -616,4 +616,46 @@ body {
   width: 100%;
   max-height: 225px;
   object-fit: none;
+}
+
+/* Footer */
+
+.footer {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  background-color: #262B2E;
+  color: #FFF;
+  padding: 4% 0;
+}
+
+.footer__follow-us {
+  opacity: .8;
+}
+
+.footer__social-media {
+  margin-bottom: 2%;
+}
+
+.footer__social-media-link {
+  text-decoration: none;
+}
+
+.footer__social-media-icon {
+  height: 40px;
+  width: 46px;
+  margin: 0 2px;
+  padding: 10px;
+  background-color: #424648;
+  fill: #BBB8B9;
+  cursor: pointer;
+}
+
+.footer__social-media-icon:hover {
+  background-color: #6EEEE4;
+  fill: #000;
+}
+
+.footer__copyright {
+  font-weight: 500;
+  opacity: .4;
 }
