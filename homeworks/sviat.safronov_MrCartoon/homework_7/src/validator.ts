@@ -1,4 +1,4 @@
-import { emailRegex, phoneRegex } from './regex';
+import { EMAIL_REGEX, PHONE_REGEX } from './regex';
 
 export const isValid = {
     minLength(text: string, length: number): boolean {
@@ -11,10 +11,10 @@ export const isValid = {
         return text.includes(pattern);
     },
     email(text: string): boolean {
-        return emailRegex.test(text);
+        return EMAIL_REGEX.test(text);
     },
     phone(text: string): boolean {
-        return text.length >= 6 && phoneRegex.test(text);
+        return text.length >= 6 && PHONE_REGEX.test(text);
     },
     numberRange(text: string | number, min: number, max: number): boolean {
         return Number(text) >= min && Number(text) <= max;

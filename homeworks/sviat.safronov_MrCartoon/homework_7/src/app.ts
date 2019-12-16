@@ -1,14 +1,14 @@
 import { isValid } from './validator';
-import * as types from './types'
+import {SubmitEvent} from './types'
 
-const callback = (event: types.SubmitEvent) => {
+const callback = (event: SubmitEvent) => {
     event.preventDefault();
 
-    const firstName = (event.target.querySelector('#first-name') as HTMLInputElement);
-    const lastName = (event.target.querySelector('#last-name') as HTMLInputElement);
-    const email = (event.target.querySelector('#email') as HTMLInputElement);
-    const phone = (event.target.querySelector('#phone') as HTMLInputElement);
-    const age = (event.target.querySelector('#age') as HTMLInputElement);
+    const firstName = event.target.querySelector<HTMLInputElement>('#first-name');
+    const lastName = event.target.querySelector<HTMLInputElement>('#last-name');
+    const email = event.target.querySelector<HTMLInputElement>('#email');
+    const phone = event.target.querySelector<HTMLInputElement>('#phone');
+    const age = event.target.querySelector<HTMLInputElement>('#age');
 
 
     const allFields = [firstName, lastName, email, phone, age];
