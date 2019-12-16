@@ -11,17 +11,17 @@ const sendPhone = document.querySelector<HTMLFormElement>('.js-phone');
 const sendAge = document.querySelector<HTMLFormElement>('.js-age');
 const sendText = document.querySelector<HTMLFormElement>('.js-text');
 
-function setStyleValid(element: HTMLFormElement, isDataValid: boolean, clss: string[]): void {
-    clss.map((cls) => element.classList.toggle(cls, !isDataValid));
+function setStyleValid(element: HTMLFormElement, isDataValid: boolean, styleClasses: string[]): void {
+    styleClasses.map((styleClasse) => element.classList.toggle(styleClasse, !isDataValid));
 }
 
-function nameValid(text: string, min: number, max: number): boolean {
+function isTextLengthValid(text: string, min: number, max: number): boolean {
     return isValid.minLength(text, min) && isValid.maxLength(text, max);
 }
 
-function isValidete(): boolean {
-    const isValidFirstName = nameValid(sendFirstName.value, 2, 20);
-    const isValidLastName = nameValid(sendLastName.value, 2, 20);
+function isFormValid(): boolean {
+    const isValidFirstName = isTextLengthValid(sendFirstName.value, 2, 20);
+    const isValidLastName = isTextLengthValid(sendLastName.value, 2, 20);
     const isValidMail = isValid.email(sendMail.value);
     const isValidPhone = isValid.phone(sendPhone.value);
     const isValidAge = isValid.numberRange(sendAge.value, 18, 120) || !sendAge.value;
@@ -37,7 +37,7 @@ function isValidete(): boolean {
 
 sendForm.addEventListener('submit', (element: Event) => {
     element.preventDefault();
-    if (isValidete()) {
+    if (isFormValid()) {
         sendText.innerHTML = 'Validation successful! <br>';
         setStyleValid(sendText, true, styleValidText);
     } else {
