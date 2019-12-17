@@ -47,6 +47,10 @@ body {
   justify-content: space-between;
 }
 
+.align-box--center {
+  align-items: center;
+}
+
 /* Main section ('Say hello to shopno!') */
 
 .main {
@@ -124,25 +128,37 @@ body {
 }
 
 .picture-slider {
-  width: 40%;
+  position: relative;
+  width: 42%;
   text-align: center;
   margin-left: 5%;
 }
 
-.picture-slider--small {
-  width: 33%;
+.picture-slider--big {
+  width: 46%;
 }
 
 .pictures__current-image {
   position: relative;
-  width: 100%;
+  width: 80%;
+}
+
+.pictures__current-image--small {
+  top: 6px;
 }
 
 .pictures__next-image {
-  width: 108%;
+  width: 100%;
   position: absolute;
-  top: 10%;
-  right: -4%;
+  top: 6%;
+  right: 0;
+}
+
+.slider {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -10%;
 }
 
 .slider-dot {
@@ -180,6 +196,7 @@ body {
 
 .about-us-text__title {
   font-size: 20px;
+  margin-top: 0;
 }
 
 .about-us-text__mini-title {
@@ -418,22 +435,6 @@ body {
   border-bottom: 20px solid #6FF6EB;
 }
 
-.member-info__name,
-.feedback__name {
-  font-family: "Merriweather", serif;
-  font-size: 20px;
-  margin-top: 0;
-  letter-spacing: 1px;
-}
-
-.member-info__job-position,
-.feedback__job-position {
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 400;
-  opacity: .6;
-}
-
 .member-info__description {
   color: #272727;
   margin-bottom: 15%;
@@ -456,19 +457,47 @@ body {
 
 .what-they-says {
   background-color: #F9FBFB;
+  padding-bottom: 12%;
+}
+
+.what-they-says__content {
+  display: flex;
+  align-items: center;
 }
 
 .feedback {
   display: inline-block;
+  position: relative;
   text-align: center;
-  width: 500px;
+  width: 65%;
   margin-left: 8%;
-  padding: 100px 85px 65px;
+  padding: 8% 8% 5%;
   background-color: #EAEBED;
+}
+
+.feedback__name {
+  margin-bottom: 6%;
+}
+
+.member-info__name,
+.feedback__name {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+.member-info__job-position,
+.feedback__job-position {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  opacity: .6;
 }
 
 .feedback__description {
   opacity: .5;
+  margin-bottom: 5%;
 }
 
 .feedback__rate {
@@ -479,26 +508,48 @@ body {
   background-repeat: space;
 }
 
+.feedback__buttons {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: -25%;
+  width: 25%;
+}
+
 .feedback__button {
-  width: 55px;
-  height: 55px;
+  padding: 10%;
   border-radius: 3px;
   filter: drop-shadow(3.126px 7.364px 5.5px #1414150D);
   background-color: #FFF;
-  background-image: url("./images/arrow.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: .5;
   border: none;
   cursor: pointer;
 }
 
-.feedback__button:hover {
-  background-color: #71F6EB;
+.feedback__button::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("./images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .5;
+}
+
+.feedback__button:hover::before {
   opacity: 1;
 }
 
+.feedback__button:hover {
+  background-color: #71F6EB;
+}
+
 .feedback__button--back {
+  margin-right: 25px;
+}
+
+.feedback__button--back::before {
   transform: rotate(180deg);
 }
 
