@@ -141,6 +141,7 @@ body {
 .pictures__current-image {
   position: relative;
   width: 80%;
+  filter: drop-shadow(0 0 15px #14141521);
 }
 
 .pictures__current-image--small {
@@ -420,6 +421,7 @@ body {
   left: 4%;
   background-color: #6FF6EB;
   padding: 40px;
+  filter: drop-shadow(3px 6px 8px #1414152E);
 }
 
 .member-info::before {
