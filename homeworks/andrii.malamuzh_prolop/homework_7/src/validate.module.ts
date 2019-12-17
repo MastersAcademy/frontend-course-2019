@@ -1,3 +1,5 @@
+import {EMAIL_REG, PHONE_REG} from './regex.module'
+
 export const isValid = {
     minLength(text: string, length: number): boolean {
         return text.length >= length;
@@ -9,12 +11,10 @@ export const isValid = {
         return pattern.test(text);
     },
     email(text: string): boolean {
-        const emailReg = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return emailReg.test(text);
+        return this.pattern(text, EMAIL_REG);
     },
     phone(text: string): boolean {
-        const phoneReg = /^\+[0-9]{2}\([0-9]{3}\)[0-9]{3}[-][0-9]{2}[-][0-9]{2}$/;
-        return phoneReg.test(text);
+        return this.pattern(text, PHONE_REG);
     },
     numberRange(text: string, min: number, max: number): boolean {
         return +text >= min && +text <= max;

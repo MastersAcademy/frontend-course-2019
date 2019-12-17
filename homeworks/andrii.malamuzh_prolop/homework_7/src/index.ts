@@ -1,7 +1,7 @@
 import { isValid } from './validate.module';
 
 const form = document.querySelector<HTMLFormElement>('#form');
-const formGroup = document.querySelectorAll<HTMLElement>('.form-group');
+const formGroups = document.querySelectorAll<HTMLElement>('.form-group');
 
 const firstName = document.querySelector<HTMLInputElement>('#first-name');
 const lastName = document.querySelector<HTMLInputElement>('#last-name');
@@ -11,7 +11,7 @@ const age = document.querySelector<HTMLInputElement>('#age');
 
 const success = document.querySelector<HTMLElement>('.success');
 
-function nameValidation(text: string, min: number, max: number):boolean {
+function nameValidation(text: string, min: number, max: number): boolean {
     return isValid.minLength(text, min) && isValid.maxLength(text, max);
 }
 
@@ -24,19 +24,19 @@ function phoneValidation(text: string): boolean {
 }
 
 function ageValidation(text: string, min: number, max: number): boolean {
-    return !!(text === '' || isValid.numberRange(text, min, max));
+    return text === '' || isValid.numberRange(text, min, max);
 }
 
-function errorField(isFieldValid: boolean, fieldName: HTMLInputElement) {
+function renderErrorField(isFieldValid: boolean, field: HTMLInputElement) {
     if (!isFieldValid) {
-        fieldName.closest('.form-group').classList.add('error');
+        field.closest('.form-group').classList.add('error');
     }
 }
 
 form.addEventListener('submit', (e: Event) => {
     e.preventDefault();
     success.classList.remove('open');
-    [].forEach.call(formGroup, (el: HTMLElement) => {
+    formGroups.forEach((el: HTMLElement) => {
         el.classList.remove('error');
     });
 
@@ -49,10 +49,10 @@ form.addEventListener('submit', (e: Event) => {
     if (firstNameValid && lastNameValid && emailValid && phoneValid && ageValid) {
         success.classList.add('open');
     } else {
-        errorField(firstNameValid, firstName);
-        errorField(lastNameValid, lastName);
-        errorField(emailValid, email);
-        errorField(phoneValid, phone);
-        errorField(ageValid, age);
+        renderErrorField(firstNameValid, firstName);
+        renderErrorField(lastNameValid, lastName);
+        renderErrorField(emailValid, email);
+        renderErrorField(phoneValid, phone);
+        renderErrorField(ageValid, age);
     }
 });
