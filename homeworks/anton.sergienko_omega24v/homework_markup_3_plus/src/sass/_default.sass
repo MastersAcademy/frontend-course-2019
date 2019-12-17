@@ -129,6 +129,10 @@ body
         color: #fff
         text-decoration: none
         text-transform: uppercase
+        transition: opacity .3s ease-out
+        opacity: 1
+        &:hover
+            opacity: .6
     .arrow-right_ico
         margin-left: 10px
 
@@ -200,9 +204,12 @@ body
     .link
         display: block
         opacity: 1
-        transition: .3s ease-out
+        transition: opacity .3s ease-out
         &:hover
             opacity: .5
+    .link-ico
+        width: 15px
+        height: 25px
 
 .contact-form
     padding: 40px
@@ -227,7 +234,7 @@ body
         &::placeholder
             color: #fff
             text-transform: capitalize
-            transition: .3s ease-out
+            transition: opacity .3s ease-out
             opacity: 1
         &:focus::placeholder
             opacity: 0
@@ -249,7 +256,7 @@ body
     .link
         font-size: 15px
         color: #fff
-        transition: .3s ease-out
+        transition: opacity .3s ease-out
         opacity: 1
         &:hover
             opacity: .6
