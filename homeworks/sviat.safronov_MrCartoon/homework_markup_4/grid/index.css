@@ -1,17 +1,17 @@
-.body {
+.page-content {
   display: grid;
   width: 100%;
   margin: 0;
   grid-template-columns: [first-line] 340px [main-start] auto [main-end] 340px [last-line];
   grid-template-rows: [first-line] 240px [main-start] auto [main-end] 80px [last-line];
+  color: #FFF;
+  font-size: 35px;
 }
 
-.body > * {
+.flex-center-c {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FFF;
-  font-size: 35px;
 }
 
 .header {
