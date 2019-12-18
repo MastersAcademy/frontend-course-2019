@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>JS Validation & Webpack</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <form class="form">
+            <label class="form__label"">
+                <input id="first-name" type="text" class="form-input" placeholder="First Name">
+                <span class="label__error">First name must contain 1-25 letters!</span>
+            </label>
+            <label class="form__label"">
+                <input id="last-name" type="text" class="form-input" placeholder="Last Name">
+                <span class="label__error">Last name must contain 1-25 letters!</span>
+            </label>
+            <label class="form__label">
+                <input id="email" type="email" class="form-input" placeholder="Email">
+                <span class="label__error">Wrong email format!</span>
+            </label>
+            <label class="form__label">
+                <input id="phone" type="text" class="form-input" placeholder="Phone">
+                <span class="label__error">Only in +38(___)___-__-__ format!</span>
+            </label>
+            <label class="form__label">
+                <input id="age" type="text" class="form-input" placeholder="Age">
+                <span class="label__error">Age should be from 16 to 80 years!</span>
+            </label>
+            <button type="submit" class="form__btn btn-send">Contact us</button>
+            <span class="form__status" hidden>Thanks! Your form is send</span>
+        </form>
+    </section>
+    <script src="./bundle.js" defer></script>
+</body>
+</html>

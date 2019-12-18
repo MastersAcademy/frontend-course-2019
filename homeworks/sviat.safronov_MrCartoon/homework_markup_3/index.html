@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="app.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const content = {
+                    header_links: ['About', 'Expertise', 'Teams', 'Works', 'People say', 'Contact'],
+                    expertise: [
+                        {img: 'computer', header: 'Web Design & Development'},
+                        {img: 'brush', header: 'Branding Identity'},
+                        {img: 'mobile', header: 'Mobile App'},
+                        {img: 'data', header: 'Search Engine Optimization'},
+                        {img: 'game-boy', header: 'Game Development'},
+                        {img: 'heart', header: 'Made With Love'},
+                    ],
+                    lorem_ipsum: 'This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.',
+                    big_lorem_ipsum: 'This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.',
+                    people: [
+                        {img: '', name: 'Semf Ucuk', position: 'CEO & Founder'},
+                        {img: '', name: 'Dik Adalin', position: 'Engineering'},
+                        {img: '', name: 'Jeng Kol', position: 'Designer'},
+                        {img: '', name: 'Pet Romak', position: 'Marketing'},
+                    ],
+                    avatars: ['1', '2', '3', '4', '5'],
+                    clients: ['zara', 'barnets', 'calvin', 'converse', 'levis', 'mango', 'gucci', 'nike', 'puma', 'billabong'],
+                    socials: [
+                        'fb',
+                        'tw',
+                        'globe',
+                        'inst',
+                        'g+',
+                        'youtube',
+                    ],
+                    footer_links: [
+                        'Help',
+                        'Terms & Condition',
+                        'Privacy'
+                    ]
+                };
+               document.querySelector('body').innerHTML =
+
+                Handlebars.compile(document.querySelector('body').innerHTML)(content);
+            }, false);
+        </script>
+    </head>
+    <body class="page">
+        <header class="header">
+            <a href="#/">
+                <img alt="Logo" src="public/logo.svg"/>
+            </a>
+            <nav class="header-nav">
+                <a class="link active" href="#Home">Home</a>
+                {{#each header_links}}
+                    <a class="link" href="#{{this}}">{{this}}</a>
+                {{/each}}
+            </nav>
+        </header>
+        <main>
+            <section id="Home" class="home-section">
+                <div class="home-section__content">
+                    <h1 class="title">We Are Awesome Creative Agency</h1>
+                    <img src="public/underline-cyan.svg" alt=""/>
+                    <p class="text">{{big_lorem_ipsum}}</p>
+                    <button class="btn btn-learn-more" type="button">Learn more</button>
+                </div>
+            </section>
+            <section id="About" class="about-section">
+                <img src="public/story-logo.svg" alt="Logo"/>
+                <div class="about-section__content">
+                    <h2>OUR STORY</h2>
+                    <p class="text">{{big_lorem_ipsum}}</p>
+                    <p class="text">{{lorem_ipsum}}</p>
+                    <button class="btn" type="button">Learn more</button>
+                </div>
+            </section>
+            <section class="story-section">
+                <button class="btn btn-watch-story" id="watch-story-btn" type="button">
+                    <img src="public/play.svg" alt="Play button"/>
+                </button>
+                <label class="watch-story__label" for="watch-story-btn">Watch our story</label>
+            </section>
+            <section class="expertise-section" id="Expertise">
+                <h2 class="title">Expertise</h2>
+                <p class="text">{{lorem_ipsum}}</p>
+                <img class="underline" src="public/underline.svg" alt=""/>
+                <div class="expertise-section__items">
+                    {{#each expertise}}
+                        <div class="expertise-item">
+                            <img class="expertise-item__img" src="public/expertise/{{img}}.svg" alt="Expertise description"/>
+                            <h3 class="expertise-item__title">{{header}}</h3>
+                            <p class="text expertise-item__text">{{../lorem_ipsum}}</p>
+                        </div>
+                    {{/each}}
+                </div>
+            </section>
+            <section id="Teams" class="team-section">
+                <h2 class="title">Meet our amazing team</h2>
+                <p class="text">{{lorem_ipsum}}</p>
+                <img class="underline" src="public/underline.svg" alt=""/>
+                <div class="teammates">
+                    {{#each people}}
+                        <section class="teammate" itemscope itemtype="http://schema.org/Person">
+                            <img class="teammate-avatar" src="public/not-found.png" itemprop="image" alt="{{name}}">
+                            <div class="teammate-name">
+                                <p class="text" itemprop="name">{{name}}</p>
+                            </div>
+                            <div class="teammate-position" itemprop="jobTitle">{{position}}</div>
+                        </section>
+                    {{/each}}
+                </div>
+                <p class="text lets-join-us">Become part of our dream team, let’s join us !</p>
+                <button class="btn btn-hiring" type="button">We are hiring</button>
+            </section>
+            <section id="Works" class="works-section">
+                <img class="quote-img" src="public/quote.svg" alt="Quote"/>
+                <blockquote class="works-quote">
+                    <p class="text">{{big_lorem_ipsum}}</p>
+                    <cite class="quote-person">
+                        <p class="text works-quote__author-name">Jane Galadriel</p>
+                        <p class="text works-quote__author-position">CEO Tengkurep</p>
+                    </cite>
+                </blockquote>
+                <div class="works-people">
+                    <button class="btn-navigation btn-prev" type="button"></button>
+                    <ul title="Team" class="works-people__list">
+                        {{#each avatars}}
+                            <li class="works-person">
+                                <a class="link" href="#{{this}}">
+                                    <img class="works-avatar" src="public/works-people/{{this}}.png" alt="Person name"/>
+                                </a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                    <button class="btn-navigation btn-next" type="button"></button>
+                </div>
+            </section>
+            <section class="people-say-section" id="People say">
+                <div class="contact-form">
+                    <h2 class="title">Give Us A Good News</h2>
+                    <form class="contact-form__form">
+                        <input class="contact-form__input" type="text" placeholder="Name">
+                        <input class="contact-form__input" type="email" placeholder="Email">
+                        <input class="contact-form__input" type="text" placeholder="Subject">
+                        <textarea class="contact-form__textarea" placeholder="Your Message"></textarea>
+                        <button class="btn btn-contact" type="submit" action="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="happy-clients">
+                    <h2 class="title">Our Happy Client</h2>
+                    <ul class="happy-clients__list" title="Clients">
+                        {{#each clients}}
+                            <li class="li-client"><a href="#{{this}}"><img alt="Client name" src="public/clients/{{this}}.png"/></a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </section>
+            <section class="contact-section" id="Contact">
+                <div class="contact-section__content">
+                    <div class="contact-section__desc">
+                        <img alt="Logo" src="public/logo.svg"/>
+                        <p class="text">{{big_lorem_ipsum}}</p>
+                    </div>
+                    <div class="contact-section__contacts">
+                        <h2 class="subsection-title">Our Studio</h2>
+                        <ul class="contact-section__list" title="Contacts">
+                            <li class="contact-section__location">
+                                <img class="contact-section__img-address" alt="Location" src="public/location.svg">
+                                <address class="contact-section__address">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</address>
+                            </li>
+                            <li class="contact-section__phone">
+                                <img class="contact-section__img-phone" alt="Phone" src="public/phone.svg">
+                                <a class="link" href="tel:(+62) 21-2224 3333">(+62) 21-2224 3333</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-section__stay-in-touch">
+                        <h2 class="subsection-title">Stay In Touch</h2>
+                        <div class="stay-in-touch__content">
+                            <form class="contact-section__form">
+                                <input class="contact-form__input" placeholder="Subscribe our newsletter">
+                                <button class="btn btn-contact" type="submit" action="submit">
+                                    <img alt="Send" src="public/send.svg">
+                                </button>
+                            </form>
+                            <ul class="socials-links">
+                                {{#each socials}}
+                                    <li>
+                                        <!--  -->
+                                        <a href="#{{this}}" class="link social" style='background-image: url("public/socials/{{this}}.svg") /* stylelint-disable-line */ '>{{this}}</a>
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <ul>
+                {{#each footer_links}}
+                    <li>
+                        <a class="footer-link" href="#{{this}}">{{this}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+            <p class="copyright text">Copyright © 2015 - Tajem Creative</p>
+        </footer>
+    </body>
+</html>
