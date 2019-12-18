@@ -42,6 +42,10 @@ body {
   padding-left: 15px;
 }
 
+.container--main {
+  position: relative;
+}
+
 .align-box {
   display: flex;
   justify-content: space-between;
@@ -49,6 +53,19 @@ body {
 
 .align-box--center {
   align-items: center;
+}
+
+.btn-skin {
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-font {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Main section ('Say hello to shopno!') */
@@ -74,16 +91,15 @@ body {
 }
 
 .contact-us-btn {
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
   padding: .8% 2.4%;
-  background-color: transparent;
-  border: 2px solid #777879;
   margin-top: 8%;
   margin-bottom: 10%;
+}
+
+.contact-us-btn--skin {
+  background-color: transparent;
+  border: 2px solid #777879;
   color: #505050;
-  cursor: pointer;
 }
 
 .contact-us-btn:hover {
@@ -92,8 +108,15 @@ body {
 
 .glass {
   position: absolute;
-  right: 24%;
+  right: 12%;
   bottom: 8%;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .glass {
+    width: 8%;
+  }
 }
 
 /* About Us section */
@@ -130,8 +153,8 @@ body {
 .picture-slider {
   position: relative;
   width: 42%;
-  text-align: center;
   margin-left: 5%;
+  text-align: center;
 }
 
 .picture-slider--big {
@@ -165,10 +188,13 @@ body {
 .slider-dot {
   width: 10px;
   height: 10px;
+  padding: 0;
+}
+
+.slider-dot--skin {
   background-color: #D0D0D0;
   border: none;
   border-radius: 3px;
-  padding: 0;
   cursor: pointer;
 }
 
@@ -186,7 +212,7 @@ body {
   width: 42%;
   margin-left: 10%;
   opacity: .6;
-  line-height: 28px;
+  line-height: 1.75em;
 }
 
 .about-us-text,
@@ -309,10 +335,13 @@ body {
 
 .know-more-btn {
   position: relative;
-  font-family: "Raleway", sans-serif;
-  background-color: transparent;
   padding-left: 0;
   padding-right: 35px;
+}
+
+.know-more-btn--skin {
+  font-family: "Raleway", sans-serif;
+  background-color: transparent;
   opacity: .8;
   font-size: 18px;
   border: none;
@@ -321,19 +350,7 @@ body {
   cursor: pointer;
 }
 
-.know-more-btn::before {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background-color: #FFF;
-  width: 20px;
-  height: 2px;
-}
-
+.know-more-btn::before,
 .know-more-btn::after {
   content: "";
   display: block;
@@ -342,6 +359,15 @@ body {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+
+.know-more-btn::before {
+  width: 20px;
+  height: 2px;
+  background-color: #FFF;
+}
+
+.know-more-btn::after {
   width: 7px;
   height: 7px;
   border-right: 2px solid #FFF;
@@ -419,8 +445,11 @@ body {
   bottom: 4%;
   right: 4%;
   left: 4%;
-  background-color: #6FF6EB;
   padding: 40px;
+}
+
+.member-info--skin {
+  background-color: #6FF6EB;
   filter: drop-shadow(3px 6px 8px #1414152E);
 }
 
@@ -470,10 +499,13 @@ body {
 .feedback {
   display: inline-block;
   position: relative;
-  text-align: center;
   width: 65%;
   margin-left: 8%;
   padding: 8% 8% 5%;
+}
+
+.feedback--skin {
+  text-align: center;
   background-color: #EAEBED;
 }
 
@@ -528,6 +560,10 @@ body {
   cursor: pointer;
 }
 
+.feedback__button:hover {
+  background-color: #71F6EB;
+}
+
 .feedback__button::before {
   content: "";
   display: inline-block;
@@ -541,10 +577,6 @@ body {
 
 .feedback__button:hover::before {
   opacity: 1;
-}
-
-.feedback__button:hover {
-  background-color: #71F6EB;
 }
 
 .feedback__button--back {
@@ -603,25 +635,27 @@ body {
   vertical-align: top;
 }
 
-.feedback-form__field {
+.feedback-form__input {
   height: 30px;
   margin-bottom: 5%;
   padding: 20px 0;
 }
 
-.feedback-form__messages {
+.feedback-form__textarea {
   height: 105px;
   margin-bottom: 8%;
   padding-top: 10px;
   resize: none;
 }
 
-.feedback-form__field,
-.feedback-form__messages {
-  font-family: "Raleway", sans-serif;
+.form-field {
   width: 100%;
-  font-size: 15px;
   padding-left: 4px;
+}
+
+.form-field--skin {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
   opacity: .6;
   color: #FFF;
   background-color: transparent;
@@ -630,24 +664,20 @@ body {
   outline-color: #FFF;
 }
 
-.feedback-form__field::placeholder,
-.feedback-form__messages::placeholder {
+.form-field::placeholder {
   color: #FFF;
 }
 
-.feedback-form__submit {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background-color: #6EEEE4;
-  font-size: 18px;
+.feedback-form__submit-btn {
   padding: 3% 6%;
-  border-radius: 2px;
-  border: none;
-  cursor: pointer;
 }
 
-.feedback-form__submit:hover {
+.feedback-form__submit-btn--skin {
+  background-color: #6EEEE4;
+  border: none;
+}
+
+.feedback-form__submit-btn:hover {
   background-color: #00D2C1;
 }
 
@@ -698,6 +728,9 @@ body {
   width: 46px;
   margin: 0 2px;
   padding: 10px;
+}
+
+.footer__social-media-icon--skin {
   background-color: #424648;
   fill: #BBB8B9;
   cursor: pointer;
