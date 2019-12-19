@@ -1,3 +1,27 @@
+body {
+  margin: 0;
+}
+
 .content {
   display: grid;
+  grid-template-columns: 250px auto 250px;
+  grid-template-rows: 20vh auto 10vh;
+  height: 100vh;
+  width: 100%;
+}
+
+.content__header,
+.content__footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #C14F4F;
+}
+
+.content__left,
+.content__right {
+  background-color: #C28282;
+}
+
+.content__middle {
+  background-color: #699EBD;
 }
