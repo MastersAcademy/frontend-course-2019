@@ -13,6 +13,10 @@ body {
   height: 20vh;
 }
 
+.content__right {
+  order: 2;
+}
+
 .content__left,
 .content__right {
   width: 250px;
@@ -20,12 +24,14 @@ body {
 }
 
 .content__middle {
+  order: 1;
   flex-grow: 1;
   min-height: 70vh;
   background-color: #699EBD;
 }
 
 .content__footer {
+  order: 3;
   height: 10vh;
 }
 
