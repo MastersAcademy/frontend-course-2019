@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+}
+
+.content__header {
+  width: 100%;
+  height: 20vh;
+  background-color: #C14F4F;
+}
+
+.content__left,
+.content__right {
+  width: 250px;
+  background-color: #C28282;
+}
+
+.content__middle {
+  flex-grow: 1;
+  min-height: 70vh;
+  background-color: #699EBD;
+}
+
+.content__footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #C14F4F;
+}
