@@ -6,15 +6,23 @@ body {
   display: grid;
   grid-template-columns: 250px auto 250px;
   grid-template-rows: 20vh auto 10vh;
+  grid-template-areas: "header header header"
+    "left-sidebar main right-sidebar"
+    "footer footer footer";
   height: 100vh;
   width: 100%;
 }
 
-.content__header,
-.content__footer {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  background-color: #C14F4F;
+.content__header {
+  grid-area: header;
+}
+
+.content__left {
+  grid-area: left-sidebar;
+}
+
+.content__right {
+  grid-area: right-sidebar;
 }
 
 .content__left,
@@ -23,5 +31,15 @@ body {
 }
 
 .content__middle {
+  grid-area: main;
   background-color: #699EBD;
+}
+
+.content__footer {
+  grid-area: footer;
+}
+
+.content__header,
+.content__footer {
+  background-color: #C14F4F;
 }
