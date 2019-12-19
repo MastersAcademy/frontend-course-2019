@@ -1,0 +1,269 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Merriweather-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Merriweather-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Merriweather-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/Merriweather-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Raleway-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Raleway-Medium.woff") format("woff");
+}
+
+/* BASE */
+
+body {
+  min-width: 320px;
+  font-size: 16px;
+  font-family: "Raleway";
+  font-weight: 400;
+  line-height: 1.7;
+  color: #000;
+}
+
+.title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.bg_grey {
+  background-color: #F9FBFB;
+}
+
+.container {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.img-responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.title-block {
+  text-align: center;
+  line-height: 1.4;
+}
+
+.title-block__title {
+  font-size: 38px;
+}
+
+.title-block__subtitle {
+  font-family: "Merriweather", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.08px;
+  opacity: .6;
+}
+
+/* FEATURED WORKS */
+
+.featured-works {
+  padding: 120px 0;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 120px;
+}
+
+.works__item {
+  width: 380px;
+  margin: auto;
+  opacity: 1;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.works__item:hover {
+  opacity: .6;
+}
+
+/* OUR SERVICES */
+
+.our-services {
+  padding: 120px 0;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-services .services {
+  margin-top: 120px;
+}
+
+.services__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  padding: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  color: #FFF;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.services__item.item-1,
+.services__item.item-3,
+.services__item.item-6 {
+  width: 550px;
+}
+
+.services__item.item-2,
+.services__item.item-4,
+.services__item.item-5 {
+  width: 350px;
+}
+
+.services__item:::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: -1;
+}
+
+.services__item_active {
+  background-color: #6DF6EB;
+  background-image: none;
+  color: #000;
+}
+
+.services__item_active::before {
+  display: none;
+}
+
+.services .item-title {
+  font-family: "Merriweather";
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.services .item-paragraph {
+  margin: 20px 0 0;
+  letter-spacing: .3px;
+  opacity: .9;
+}
+
+.services .item-link {
+  display: block;
+  margin-top: 50px;
+  font-size: 18px;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
+  opacity: 1;
+}
+
+.services .item-link:hover {
+  opacity: .6;
+}
+
+.services .arrow-right_ico {
+  margin-left: 10px;
+}
+
+/* MEDIA */
+
+@media (max-width: 1200px) {
+
+  .works__item {
+    width: 50%;
+  }
+
+  .services__item.item-1,
+  .services__item.item-2,
+  .services__item.item-3,
+  .services__item.item-4,
+  .services__item.item-5,
+  .services__item.item-6 {
+    width: 33.3%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .works__item {
+    width: 100%;
+  }
+
+  .services__item.item-1,
+  .services__item.item-2,
+  .services__item.item-3,
+  .services__item.item-4,
+  .services__item.item-5,
+  .services__item.item-6 {
+    width: 100%;
+  }
+}
