@@ -1,5 +1,5 @@
 .header {
-  background-color: purple;
+  background-color: #909;
   height: 100%;
   width: 100%;
   min-height: 20vh;
@@ -11,7 +11,6 @@
 .body {
   margin: 0;
   display: grid;
-
 }
 
 .main-content {
@@ -22,7 +21,7 @@
 }
 
 .sidebar-left {
-  background-color: pink;
+  background-color: #FFD8B4;
   height: 100%;
   width: 100%;
   display: grid;
@@ -31,7 +30,7 @@
 }
 
 .content {
-  background-color: hotpink;
+  background-color: #FFB4DC;
   height: 100%;
   width: 100%;
   display: grid;
@@ -40,7 +39,7 @@
 }
 
 .sidebar-right {
-  background-color: pink;
+  background-color: #FFD8B4;
   height: 100%;
   width: 100%;
   display: grid;
@@ -49,7 +48,7 @@
 }
 
 .footer {
-  background-color: purple;
+  background-color: #909;
   height: 100%;
   width: 100%;
   min-height: 20vh;

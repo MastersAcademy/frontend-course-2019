@@ -1,5 +1,5 @@
 .header {
-  background-color: purple;
+  background-color: #909;
   height: 100%;
   width: 100%;
   display: flex;
@@ -22,7 +22,7 @@
 }
 
 .sidebar-left {
-  background-color: pink;
+  background-color: #FFD8B4;
   height: 100%;
   width: 100%;
   flex: 30%;
@@ -32,7 +32,7 @@
 }
 
 .content {
-  background-color: hotpink;
+  background-color: #FFB4DC;
   height: 100%;
   width: 100%;
   display: flex;
@@ -41,7 +41,7 @@
 }
 
 .sidebar-right {
-  background-color: pink;
+  background-color: #FFD8B4;
   height: 100%;
   width: 100%;
   flex: 30%;
@@ -51,7 +51,7 @@
 }
 
 .footer {
-  background-color: purple;
+  background-color: #909;
   height: 100%;
   width: 100%;
   min-height: 20vh;
