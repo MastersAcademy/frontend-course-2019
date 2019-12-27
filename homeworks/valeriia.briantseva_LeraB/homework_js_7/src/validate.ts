@@ -1,23 +1,7 @@
-interface FieldTextLength {
-    text: string,
-    length: number
-}
-
-interface FieldText {
-    text: string
-}
-
-interface FieldValueRange {
-    text: string,
-    min: number,
-    max: number
-}
-
-interface FieldPattern {
-    text: string,
-    pattern: string
-}
-
+import {FieldPattern} from './models/FieldPattern';
+import {FieldText} from './models/FieldText';
+import {FieldTextLength} from './models/FieldTextLength';
+import {FieldValueRange} from './models/FieldValueRange';
 
 export function minLength(field: FieldTextLength): boolean {
     return field.text.length >= field.length;
@@ -28,18 +12,17 @@ export function maxLength(field: FieldTextLength): boolean {
 }
 
 export function isEmail(field: FieldText): boolean {
-    // eslint-disable-next-line no-useless-escape
-    return !((field.text === '') || (!field.text.replace(/\s/g, '').length));
+    return field.text !== '' && field.text.replace(/\s/g, '').length > 0;
 }
 
 export function isPhone(field: FieldText): boolean {
-    return !((field.text === '') || (!field.text.replace(/\s/g, '').length));
+    return field.text !== '' && field.text.replace(/\s/g, '').length > 0;
 }
 
 export function numberRange(field: FieldValueRange): boolean {
-    return (field.text.length >= field.min) && (field.text.length <= field.max);
+    return field.text >= field.min && field.text <= field.max;
 }
 
 export function pattern(field: FieldPattern): boolean {
-    return field.text.match(field.pattern) !== null;
+    return field.patterns.test(field.text);
 }
