@@ -1,0 +1,136 @@
+* {
+  font-weight: 400;
+  margin: 0;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.title__text {
+  font-size: 17px;
+  text-transform: uppercase;
+  opacity: .6;
+  color: #000;
+  margin-bottom: 4%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  margin-bottom: 90px;
+}
+
+.gallery__item {
+  margin: .5%;
+  width: 30%;
+  object-fit: cover;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  margin-bottom: 90px;
+}
+
+.design-pattern {
+  background: url("../images/design-pattern.png") center/cover;
+  background-size: cover;
+}
+
+.desktop {
+  background: url("../images/desktop.png") center/cover;
+  background-repeat: no-repeat;
+  background-position: 25% 10%;
+}
+
+.macbook {
+  background: url("../images/macbook.png") center;
+  background-repeat: no-repeat;
+}
+
+.bottle {
+  background: url("../images/bottle.png") center/cover;
+  background-repeat: no-repeat;
+}
+
+.dishes {
+  background: url("../images/dishes.png") center;
+  background-repeat: no-repeat;
+}
+
+.articles__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 60px;
+  color: #FFF;
+  width: 30%;
+  margin: .5%;
+  box-shadow: inset 0 0 0 450px #0000008C;
+}
+
+.articles__title {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+
+.articles__text {
+  font-size: 16px;
+  margin-bottom: 45px;
+  line-height: 150%;
+  width: 80%;
+}
+
+.articles__item_open {
+  background-color: #70F5EB;
+  justify-content: flex-start;
+  color: #000;
+  box-shadow: none;
+}
+
+.articles__item_m {
+  flex-grow: 1;
+}
+
+.articles__btn {
+  display: flex;
+  padding: 5px;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  align-items: center;
+}
+
+.articles__btn__text {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.articles__btn__text:hover {
+  text-decoration: underline;
+}
+
+.articles__btn__icon {
+  fill: #FFF;
+  margin-left: 25px;
+}
