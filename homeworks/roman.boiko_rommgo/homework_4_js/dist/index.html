@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Getting Started</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <form id="contact-form">
+        <label for="first-name">
+            <span>First Name <span class="required"> *</span></span>
+            <input id="first-name" class="inpt" type="text" placeholder="Your First Name........">
+        </label>
+        <label for="last-name">
+            <span>Last Name <span class="required"> *</span></span>
+            <input id="last-name" class="inpt" type="text" placeholder="Your Last Name........">
+        </label>
+        <label for="mail">
+            <span>Email <span class="required"> *</span></span>
+            <input id="mail" class="inpt" type="email" placeholder="Email Address.....">
+        </label>
+        <label for="phone">
+            <span>Phone <span class="required"> *</span></span>
+            <input id="phone" class="inpt" type="text" placeholder="Phone .....">
+        </label>
+        <label for="age">
+            <span>Age</span>
+            <input id="age" class="inpt" type="number" min="0" step="1" placeholder="Age .....">
+        </label>
+        <div id="success"></div>
+        <button id="submit-form" class="btn" type="submit">Send Message</button>
+    </form>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
