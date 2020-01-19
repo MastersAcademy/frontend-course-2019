@@ -1,0 +1,32 @@
+.body {
+  display: grid;
+  grid-template-columns: 300px auto 300px;
+  grid-template-rows: 200px auto 50px;
+  grid-template-areas: "header header header" "navigation main sidebar" "footer footer footer";
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background: #C14F4F;
+}
+
+.navigation {
+  grid-area: navigation;
+  background: #C28282;
+}
+
+.main {
+  grid-area: main;
+  background: #699EBD;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #C28282;
+}
+
+.footer {
+  grid-area: footer;
+  background: #C14F4F;
+}
