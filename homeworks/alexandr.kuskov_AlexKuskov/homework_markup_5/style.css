@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  --facebook-color-primary: #FFF;
+  --facebook-color-secondary: #3B5998;
+}
+
+.sidebar {
+  display: inline-block;
+  height: 100vh;
+  width: 100px;
+}
+
+.menu {
+  height: 100%;
+  background-color: rgb(154, 116, 179);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 30px;
+}
+
+.menu-icon:hover {
+  fill: rgb(154, 164, 255);
+}
+
+.menu-link:focus {
+  fill: rgb(255, 161, 74);
+}
+
+.fb-icon,
+.fb-second-icon {
+  width: 100px;
+  vertical-align: top;
+}
+
+.fb-icon {
+  color: var(--facebook-color-primary);
+  fill: var(--facebook-color-secondary);
+}
+
+.fb-icon:hover {
+  color: var(--facebook-color-secondary);
+  fill: var(--facebook-color-primary);
+}
+
+.fb-second-icon {
+  color: var(--facebook-color-secondary);
+  fill: var(--facebook-color-primary);
+}
+
+.fb-second-icon:hover {
+  color: var(--facebook-color-primary);
+  fill: var(--facebook-color-secondary);
+}
