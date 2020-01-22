@@ -1,0 +1,34 @@
+// ≥768px
+@media (max-width: 768px)
+
+    .say-hello
+        &__container::before
+            display: none
+        &__title
+            font-size: 36px
+
+    .about-us
+        &__bottom
+            grid-template-columns: 1fr
+
+    .contact-us
+        .container
+            grid-template-columns: 1fr
+
+    .works-grid
+        grid-template-columns: 1fr
+
+    .services-grid
+        grid-template-columns: 1fr
+        &__item
+            grid-column: 1
+            padding: 20px
+        .item-1,
+        .item-3,
+        .item-6
+            grid-column: 1
+
+    .team-grid
+        grid-template-columns: 1fr
+        &__item
+            padding: 20px
