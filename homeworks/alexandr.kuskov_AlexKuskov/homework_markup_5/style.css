@@ -4,6 +4,10 @@ body {
   --facebook-color-secondary: #3B5998;
 }
 
+.sprites {
+  display: none;
+}
+
 .sidebar {
   display: inline-block;
   height: 100vh;
@@ -20,6 +24,11 @@ body {
 
 .menu-item {
   padding: 30px;
+}
+
+.menu-icon {
+  width: 100%;
+  height: 50px;
 }
 
 .menu-icon:hover {
