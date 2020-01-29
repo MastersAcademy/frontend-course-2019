@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap");
+
+:root {
+  --global--color--primary: #6FF6EB;
+  --global--color--secondary: #F9FBFB;
+
+  --global--font-size--md: 18px;
+  --global--font-size--lg: 20px;
+
+  --global--font-family--primary: "Merriweather", serif;
+  --global--font-family--secondary: "Raleway", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+/* Helpers */
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.section-header {
+  text-align: center;
+  padding-top: 5%;
+  margin-bottom: 10%;
+}
+
+.section-header__title {
+  margin-bottom: 0;
+  font-size: 38px;
+  letter-spacing: 2px;
+  opacity: .9;
+}
+
+.section-header__title-description {
+  margin-top: 0;
+  font-family: var(--global--font-family--primary);
+  font-size: var(--global--font-size--md);
+  letter-spacing: 1px;
+  opacity: .6;
+}
+
+/* Featured Works section  */
+
+.works-grid {
+  display: grid;
+  width: 100%;
+  grid-template: repeat(2, 360px) / repeat(3, 1fr);
+  grid-gap: 2% 1%;
+  padding-bottom: 12%;
+}
+
+.works-grid__item {
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
+  object-fit: cover;
+}
+
+/* Our Services section */
+
+.our-services {
+  background-color: var(--global--color--secondary);
+  padding-bottom: 8%;
+}
+
+.service-grid {
+  display: grid;
+  width: 100%;
+  height: 1160px;
+  grid-template: 36% repeat(2, 1fr) / 42% auto 42%;
+  grid-template-areas: none;
+  grid-gap: 1%;
+}
+
+.service-grid__item {
+  position: relative;
+  background-color: #0009;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFF;
+}
+
+.service-grid__item-content {
+  position: absolute;
+  left: 60px;
+  right: 60px;
+  bottom: 60px;
+}
+
+.service-grid__item-title {
+  font-family: var(--global--font-family--primary);
+  text-transform: uppercase;
+  font-size: var(--global--font-size--lg);
+  letter-spacing: 1px;
+  opacity: .8;
+}
+
+.service-grid__item-description {
+  margin-bottom: 50px;
+  opacity: .9;
+}
+
+.close {
+  position: relative;
+  opacity: .4;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close::before, .close::after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 2px;
+  bottom: 0;
+  background-color: #000;
+}
+
+.close::before {
+  transform: rotate(45deg);
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+.know-more-btn {
+  position: relative;
+  padding-left: 0;
+  padding-right: 35px;
+}
+
+.know-more-btn--skin {
+  font-family: var(--global--font-family--secondary);
+  background-color: transparent;
+  opacity: .8;
+  font-size: var(--global--font-size--md);
+  border: none;
+  color: #FFF;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.know-more-btn::before,
+.know-more-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.know-more-btn::before {
+  width: 20px;
+  height: 2px;
+  background-color: #FFF;
+}
+
+.know-more-btn::after {
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #FFF;
+  border-top: 2px solid #FFF;
+  transform: rotate(45deg);
+}
+
+.service-grid__item--1 {
+  background-color: var(--global--color--primary);
+  color: #000;
+}
+
+.service-grid__item--2 {
+  background-image: url("../../images/our-services/design-pattern.png");
+}
+
+.service-grid__item--3 {
+  background-image: url("../../images/our-services/macbook.png");
+}
+
+.service-grid__item--4 {
+  background-image: url("../../images/our-services/desktop.png");
+  background-position: 20% 0;
+}
+
+.service-grid__item--5 {
+  background-image: url("../../images/our-services/bottle.png");
+}
+
+.service-grid__item--6 {
+  grid-column: 2 / 4;
+  background-image: url("../../images/our-services/dishes.png");
+}
+
+.service-grid__item--1,
+.service-grid__item--3 {
+  grid-column: 1 / 3;
+}
+
+.service-grid__item--1 .service-grid__item-title {
+  margin-bottom: 30px;
+}
+
+.service-grid__item--1 .service-grid__item-description {
+  margin-bottom: 15%;
+}
