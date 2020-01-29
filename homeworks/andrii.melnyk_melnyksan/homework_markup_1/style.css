@@ -1,0 +1,629 @@
+/* ------------------------------------------------- */
+/* VARIABLES */
+/* ------------------------------------------------- */
+
+/*
+synopsis - [ id-entity-context ]
+where ....
+.... id - identifier for variable
+.... entity - may also be a block, component, category
+.... context - destination or what it is used for
+in some cases, the entity and the context can mean the same thing
+
+I take abbrs for naming my variables from Emmet Documentation
+color - can be used in any properties
+c - color
+bgc - background-color
+bdc - border color
+olc - outline color
+*/
+
+:root {
+  --color-default: #555;
+  --color-important: #666;
+  --color-accent: #FE7E11;
+  --color-inverse: #FFF;
+  --color-transparent: transparent;
+
+  --bgc-light: #FAFAFA;
+  --bgc-grey: #F0F0F0;
+  --bgc-decor-address: #818181;
+}
+/*
+If I want change some colore I do not need seek for it below in code.
+I just can change it here in variables
+*/
+
+/* color set */
+/*
+color: var(--color-default);
+color: var(--color-important);
+color: var(--color-accent);
+color: var(--color-inverse);
+color: var(--color-transparent);
+*/
+
+/* background-color set */
+/*
+background-color: var(--bgc-light);
+background-color: var(--bgc-grey);
+background-color: var(--bgc-decor-address);
+*/
+
+/* ------------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button:active,
+button:focus {
+  box-shadow: 0 0 0 3px var(--color-inverse), 0 0 0 6px var(--color-accent);
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  box-shadow: 0 0 0 3px var(--color-inverse), 0 0 0 6px var(--color-accent);
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  overflow-y: scroll;
+  height: auto;
+  min-height: 100vh;
+  background-color: var(--bgc-body);
+  color: var(--color-default);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* ------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------------- */
+
+/* section */
+
+.section {
+  overflow: hidden;
+  padding: 110px 0;
+}
+
+.section_grey {
+  background-color: var(--bgc-grey);
+}
+
+/* inner-wrapper */
+
+.inner-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.inner-wrapper_clear-padding-left {
+  padding-left: 0;
+}
+
+/* Buttons */
+
+
+.button {
+  display: inline-block;
+  min-width: 150px;
+  height: 50px;
+  padding: 0 30px;
+  color: var(--color-important);
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: none;
+}
+
+.button:hover {
+  background-image: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, .4) 100%);
+}
+
+.button_accent {
+  background-color: var(--color-accent);
+  color: var(--color-inverse);
+}
+
+.button_accent:active {
+  background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, .2) 100%), linear-gradient(to top, transparent 30%, rgba(0, 0, 0, .2) 100%), var(--color-accent);
+}
+
+.button_transparent {
+  border: 2px solid var(--color-important);
+  background-color: var(--color-transparent);
+  color: var(--color-important);
+}
+
+.button_transparent:active {
+  background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, .2) 100%), linear-gradient(to top, transparent 30%, rgba(0, 0, 0, .2) 100%), var(--bgc-light);
+}
+
+.button_submit {
+  width: 220px;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+
+/* Service Classes */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect (0 0 0 0);
+}
+
+/* ------------------------------------------------- */
+/* HEADER */
+/* ------------------------------------------------- */
+
+.header {
+  padding-top: 30px;
+  background-color: var(--color-transparent);
+}
+
+.header-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  height: 50px;
+  line-height: 50px;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__item {
+  padding: 0 20px;
+}
+
+.nav__item:first-child {
+  padding-left: 0;
+}
+
+.nav__item:last-child {
+  padding-right: 0;
+}
+
+.nav__link {
+  border-bottom: 2px solid var(--color-transparent);
+  padding: 5px 0;
+  color: var(--color-important);
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav__link:hover {
+  border-bottom-color: var(--color-accent);
+}
+
+.nav__item_active .nav__link {
+  color: var(--color-accent);
+}
+
+/* ------------------------------------------------- */
+/* HOME */
+/* ------------------------------------------------- */
+
+.home-section {
+  overflow: hidden;
+  width: auto;
+  padding-top: 90px;
+  background-color: var(--color-transparent);
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__content-wrapper {
+  flex: 1 0 auto;
+  display: flex;
+}
+
+.intro__content {
+  margin: auto;
+  margin-top: 125px;
+}
+
+.intro__title {
+  color: var(--color-accent);
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.intro__title-fragment {
+  display: block;
+  color: var(--color-default);
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.intro__title-fragment:first-child {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.intro__image-wrapper {
+  flex: 0 1 auto;
+}
+
+.intro_image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.intro__button {
+  margin-top: 50px;
+}
+
+/* ------------------------------------------------- */
+/* ABOUT */
+/* ------------------------------------------------- */
+
+.heading {
+  position: relative;
+  margin-bottom: 100px;
+  color: var(--color-important);
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: capitalize;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.heading::after {
+  content: "";
+  width: 159px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  margin-left: -80px;
+  background-image: url("./images/decor-heading.svg");
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+}
+
+.entry__image-wrapper {
+  flex: 0 1 auto;
+  padding: 0 20px;
+}
+
+.entry__content-wrapper {
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.entry__description {
+  color: var(--color-important);
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.entry__text {
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.entry__address {
+  padding: 45px 0;
+}
+
+.address dt {
+  float: left;
+  padding: 5px 0;
+}
+
+.address dd {
+  margin-left: 200px;
+  padding: 5px 0;
+}
+
+.entry__buttons-wrapper > .button:first-child {
+  margin-right: 30px;
+}
+
+/* ------------------------------------------------- */
+/* CONTACT */
+/* ------------------------------------------------- */
+
+/* Work address */
+
+.entry__work-address-list-wrapper {
+  flex: 1 0 auto
+}
+
+.work-address-list__icon-wrapper {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 35px;
+  background-color: var(--color-accent);
+  vertical-align: middle;
+  text-align: center;
+}
+
+.work-address-list__item {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.work-address-list__item:first-child {
+  padding-top: 0;
+}
+
+.work-address-list__item:last-child {
+  padding-bottom: 0;
+}
+
+.work-address-list__icon {
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  padding: 18px;
+  vertical-align: middle;
+  background-color: var(--bgc-decor-address);
+  color: var(--color-inverse);
+}
+
+.work-address-list__content {
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+/* Message form */
+
+.entry__message-form-wrapper {
+  flex: 2 0 auto
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-form__input-block {
+  margin-bottom: 30px;
+}
+
+.message-form__button {
+  margin-top: 50px;
+}
+
+.input-block {
+  display: flex;
+}
+
+.form-element-style {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--color-important);
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  color: var(--color-default);
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.form-element-style:focus {
+  border-color: var(--color-accent);
+}
+
+.form-element-style_input {
+  width: 50%;
+}
+
+.form-element-style_input:nth-of-type(2n-1) {
+  margin-right: 15px;
+}
+
+.form-element-style_input:nth-of-type(2n) {
+  margin-left: 15px;
+}
+
+.form-element-style_textarea {
+  resize: none;
+}
+
+/* ------------------------------------------------- */
+/* Footer */
+/* ------------------------------------------------- */
+
+.footer-inner-wrapper {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-list__item {
+  display: inline-block;
+  padding: 5px;
+}
+
+.social-list__link {
+  width: 41px;
+  height: 41px;
+  display: block;
+  position: relative;
+  line-height: 38px;
+  text-align: center;
+}
+
+.social-list__icon {
+  width: 21px;
+  height: 21px;
+  vertical-align: middle;
+  color: var(--color-default);
+  transition: all .2s ease;
+}
+
+.social-list__link:hover .social-list__icon {
+  color: var(--color-accent);
+}
+
+/* ------------------------------------------------------- */
+/* MEIDA QUERIES */
+/* ------------------------------------------------------- */
+
+/* ====================================================== */
+/* Tablet landscape (less than 1200px) */
+
+@media (max-width: 1199.98px) {
+
+  .intro {
+    padding-left: 30px;
+  }
+
+  .intro__content {
+    margin-top: 100px;
+    padding-right: 30px;
+  }
+
+  /* About Me */
+
+  .entry__content-wrapper {
+    padding: 0 50px;
+  }
+
+  .entry__buttons-wrapper > .button_transparent {
+    margin-top: 30px;
+  }
+}
+
+/* ====================================================== */
+/* Tablet portrait (less than 900px) */
+
+@media (max-width: 899.98px) {
+
+  .section {
+    padding: 50px 0;
+  }
+
+  /* Home */
+
+  .home-section {
+    padding-top: 50px;
+  }
+
+  .intro__content {
+    margin: auto;
+    padding: 50px 0;
+  }
+
+  .intro__title {
+    font-size: 50px;
+  }
+
+  .intro__image-wrapper {
+    display: none;
+  }
+
+  /* About Me */
+
+  .entry {
+    flex-direction: column;
+  }
+
+  .entry__image-wrapper {
+    text-align: center;
+  }
+
+  .entry__content-wrapper {
+    margin-top: 50px;
+  }
+
+  /* Contact Me */
+
+  .entry__message-form-wrapper {
+    padding-top: 50px;
+  }
+
+  /* Footer */
+
+  .footer-inner-wrapper {
+    flex-direction: column;
+    height: auto;
+    padding-top: 30px;
+  }
+}
+
+/* in order ot make commit on master branch */

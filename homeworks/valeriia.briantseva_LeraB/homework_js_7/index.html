@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>Getting Started</title>
+    <script src="https://unpkg.com/lodash@4.16.6"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<form class="contact-form">
+    <div class="rov">
+        <input type="text" placeholder="First Name" id="first-name" class="input-field first-name col-6">
+        <input type="text" placeholder="last Name" id="last-name" class="input-field last-name col-6">
+    </div>
+    <input type="email" placeholder="Email" id="user-email" class="input-field user-email col-12">
+    <div class="rov">
+        <input type="tel" placeholder="Phone" id="user-phone" class="input-field user-phone col-6">
+        <input type="number" placeholder="age" id="user-age" class="input-field user-age col-6">
+    </div>
+    <p id="success-message" class="success-message hide">Validation successful!</p>
+    <button type="submit" id="btn-submit" class="btn-submit">Submit</button>
+</form>
+
+<script src="dist/index.js" defer></script>
+</body>
+</html>
