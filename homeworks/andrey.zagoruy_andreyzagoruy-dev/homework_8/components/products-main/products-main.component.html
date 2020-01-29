@@ -1,0 +1,25 @@
+<div class="products-main">
+  <div class="products-main__header">
+    <div class="products-main__search">
+      <label>
+        Search:
+        <input
+          class="products-main__search-field"
+          type="text"
+          (input)="search($event.target.value)"
+        />
+      </label>
+    </div>
+    <button
+      class="products-main__sort button"
+      (click)="toggleSort('Rating')"
+      [ngClass]="sortDirection > 0 ? 'products-main__sort--desc' : 'products-main__sort--asc'"
+    >
+      Sort
+    </button>
+  </div>
+  <app-product-list
+    [products] = filteredProducts
+    [productsAll] = products
+  ></app-product-list>
+</div>

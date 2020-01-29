@@ -1,0 +1,54 @@
+<div class="products">
+  <ul class="products__list products__list--favourites">
+    <ng-container
+      *ngFor="let product of productsAll"
+    >
+      <li
+        *ngIf="product.Favourite"
+        class="products__item product"
+      >
+        <ng-container
+          [ngTemplateOutlet]="productTemplate"
+          [ngTemplateOutletContext]="{product:product}"
+        ></ng-container>
+      </li>
+    </ng-container>
+  </ul>
+  <ul class="products__list">
+    <ng-container
+      *ngFor="let product of products"
+    >
+      <li
+        *ngIf="!product.Favourite"
+        class="products__item product"
+      >
+      <ng-container
+        [ngTemplateOutlet]="productTemplate"
+        [ngTemplateOutletContext]="{product:product}"
+      ></ng-container>
+      </li>
+    </ng-container>
+  </ul>
+</div>
+
+<ng-template #productTemplate let-product="product">
+  <div class="product__info">
+    <img
+      class="product__image"
+      src="{{product.img}}"
+      alt="product.Title"
+    >
+    <h2 class="product__title">{{product.Title}}</h2>
+    <p class="product__description">{{product.Description}}</p>
+    <a class="product__link" href="{{product.Url}}">Go to product page</a>
+  </div>
+  <div class="product__sidebar">
+    <button
+      class="product__favourite-button button"
+      (click)="toggleFavourite(product)"
+    >
+      {{product.Favourite ? 'Remove from' : 'Add to'}} favourites
+    </button>
+    <div class="product__rating">Rating: {{product.Rating}}</div>
+  </div>
+</ng-template>
