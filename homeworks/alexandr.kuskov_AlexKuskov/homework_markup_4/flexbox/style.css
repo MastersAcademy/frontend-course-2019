@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+}
+
+.content__header {
+  height: 20vh;
+}
+
+.content__right {
+  order: 2;
+}
+
+.content__left,
+.content__right {
+  width: 250px;
+  background-color: #C28282;
+}
+
+.content__middle {
+  order: 1;
+  flex-grow: 1;
+  min-height: 70vh;
+  background-color: #699EBD;
+}
+
+.content__footer {
+  order: 3;
+  height: 10vh;
+}
+
+.content__header,
+.content__footer {
+  width: 100%;
+  background-color: #C14F4F;
+}
