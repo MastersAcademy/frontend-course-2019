@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  --facebook-color-primary: #FFF;
-  --facebook-color-secondary: #3B5998;
+  --color-primary: #FFF;
+  --color-secondary: #3B5998;
 }
 
 .sprites {
@@ -46,21 +46,21 @@ body {
 }
 
 .fb-icon {
-  color: var(--facebook-color-primary);
-  fill: var(--facebook-color-secondary);
+  color: var(--color-primary);
+  fill: var(--color-secondary);
 }
 
 .fb-icon:hover {
-  color: var(--facebook-color-secondary);
-  fill: var(--facebook-color-primary);
+  color: var(--color-secondary);
+  fill: var(--color-primary);
 }
 
 .fb-second-icon {
-  color: var(--facebook-color-secondary);
-  fill: var(--facebook-color-primary);
+  --facebook-color-primary: var(--color-primary);
+  --facebook-color-secondary: var(--color-secondary);
 }
 
 .fb-second-icon:hover {
-  color: var(--facebook-color-primary);
-  fill: var(--facebook-color-secondary);
+  --facebook-color-primary: var(--color-secondary);
+  --facebook-color-secondary: var(--color-primary);
 }
