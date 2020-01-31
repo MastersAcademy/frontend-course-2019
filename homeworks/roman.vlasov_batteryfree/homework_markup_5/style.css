@@ -8,7 +8,7 @@ body {
   height: 100vh;
   grid-template-areas: "sidebar main";
   grid-template-columns: auto 1fr;
-  background-color: #12151b;
+  background-color: #12151B;
 }
 .sidebar {
   grid-area: sidebar;
@@ -16,7 +16,7 @@ body {
 
 .main {
   grid-area: main;
-  background-color: #353e4e;
+  background-color: #353E4E;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,52 +36,52 @@ body {
   height: 25px;
   width: 25px;
   padding: 10px;
-  background-color: #353e4e;
-  fill: #35bd6a;
+  background-color: #353E4E;
+  fill: #35BD6A;
 }
 
 .nav__link:focus {
-  background-color: #454e5e;
-  fill: #fb883c;
+  background-color: #454E5E;
+  fill: #FB883C;
   padding: 5px;
   height: 35px;
   width: 35px;
 }
 
 .nav__link:hover {
-  background-color: #454e5e;
-  fill: #fb883c;
+  background-color: #454E5E;
+  fill: #FB883C;
   padding: 5px;
   height: 35px;
   width: 35px;
 }
 
 .main__icon-facebook1 {
-  fill: #3b5998;
-  color: #fff;
+  fill: #3B5998;
+  color: #FFF;
 }
 
 .main__icon-facebook2 {
-  --primary-color: #3b5998;
-  --secondary-color: #fff;
+  --primary-color: #3B5998;
+  --secondary-color: #FFF;
 }
 
 .main__link-facebook:hover .main__icon-facebook1 {
-  fill: #fff;
-  color: #3b5998;
+  fill: #FFF;
+  color: #3B5998;
 }
 
 .main__link-facebook:focus .main__icon-facebook1 {
-  fill: #fff;
-  color: #3b5998;
+  fill: #FFF;
+  color: #3B5998;
 }
 
 .main__link-facebook:hover .main__icon-facebook2 {
-  --primary-color: #fff;
-  --secondary-color: #3b5998;
+  --primary-color: #FFF;
+  --secondary-color: #3B5998;
 }
 
 .main__link-facebook:focus .main__icon-facebook2 {
-  --primary-color: #fff;
-  --secondary-color: #3b5998;
+  --primary-color: #FFF;
+  --secondary-color: #3B5998;
 }
