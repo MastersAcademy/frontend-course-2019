@@ -10,6 +10,7 @@ body {
   grid-template-columns: auto 1fr;
   background-color: #12151B;
 }
+
 .sidebar {
   grid-area: sidebar;
 }
