@@ -23,6 +23,8 @@ function isNameValid(name: string, min: number, max: number): boolean {
 }
 
 formEl.addEventListener('submit', (event: Event) => {
+    event.preventDefault();
+
     const isFirstNameValid: boolean = isNameValid(firstNameInputEl.value, 2, 20);
     const isLastNameValid: boolean = isNameValid(lastNameInputEl.value, 2, 20);
     const isEmailValid: boolean = isValid.email(emailInputEl.value);
@@ -38,6 +40,4 @@ formEl.addEventListener('submit', (event: Event) => {
     if (isFirstNameValid && isLastNameValid && isEmailValid && isPhoneValid && isAgeValid) {
         showValidationText();
     }
-
-    event.preventDefault();
 });
