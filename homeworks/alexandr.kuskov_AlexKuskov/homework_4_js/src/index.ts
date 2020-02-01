@@ -8,20 +8,10 @@ const phoneInputEl: HTMLInputElement = document.querySelector('.js-registration-
 const ageInputEl: HTMLInputElement = document.querySelector('.js-registration-age');
 const validationTextSpanEl: HTMLSpanElement = document.querySelector('.js-registration-validation');
 
-function setInvalidInputStyle(element: HTMLInputElement) {
-    element.setAttribute('style', 'border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);');
-}
-
-function setValidInputStyle(element: HTMLInputElement) {
-    element.setAttribute('style', 'border-color: rgb(0, 0, 0); color: rgb(0, 0, 0);');
-}
-
 function setInputFieldStyle(isInputValid: boolean, element: HTMLInputElement) {
-    if (isInputValid) {
-        setValidInputStyle(element);
-    } else {
-        setInvalidInputStyle(element);
-    }
+    isInputValid ?
+    element.classList.remove('form__input--invalid') :
+    element.classList.add('form__input--invalid');
 }
 
 function showValidationText() {
