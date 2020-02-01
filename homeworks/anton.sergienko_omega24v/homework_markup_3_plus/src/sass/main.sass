@@ -1,0 +1,158 @@
+@import vars
+@import fonts
+@import default
+
+// SAY HELLO SECTION
+.say-hello
+    padding: 65px 0 200px
+    background-color: #eff0f2;
+    &__container::before
+        content: ''
+        position: absolute
+        right: 50px
+        bottom: -120px
+        display: block
+        width: 121px
+        height: 156px
+        background-image: url("../img/juice-glass.png")
+        background-repeat: no-repeat
+    &__title
+        margin-top: 200px
+        font-size: 45px
+        font-weight: 700
+        text-align: center
+        text-shadow: 4px 8px 10px rgba(0, 0, 0, .24)
+        line-height: 1.4
+        letter-spacing: 2.7px
+        color: #505050
+    &_btn
+        margin: 150px auto 0
+        max-width: 232px
+
+.accent-color
+    padding: 5px 10px
+    background-color: #76f4ea
+
+.header
+    grid-template-columns: 1fr auto
+    grid-column-gap: 15px
+    line-height: 0
+.toggler
+    width: 25px
+    height: 20px
+    background-color: transparent
+    background-size: contain
+    background-position: center
+    border: none
+
+// ABOUT US
+.about-us
+    background-color: #f8fafa
+    padding: 104px 0
+    &__bottom
+        grid-template-columns: repeat(auto-fit, minmax(320px, auto))
+        grid-column-gap: 110px
+    .title-block
+        margin-bottom: 130px
+    .text-block
+        padding-top: 15px
+    .text-title
+        font-family: "Merriweather", sans-serif
+        font-size: 20px
+        font-weight: 700
+        text-transform: uppercase
+    .text-paragraph
+        margin-bottom: 20px
+        color: #000
+        letter-spacing: .8px
+        opacity: .7
+
+// FEATURED WORKS
+.featured-works
+    padding: 120px 0
+    .works-grid
+        margin-top: 120px
+
+// OUR SERVICES
+.our-services
+    padding: 120px 0
+    .services-grid
+        margin-top: 120px
+
+// SMALL TEAM
+.small-team
+    padding: 120px 0
+    .team-grid
+        margin-top: 120px
+    .social-list
+        margin: 35px 0 0
+        padding: 0
+
+// WHAT SAYS
+.what-says
+    padding: 120px 0
+    &__carousel
+        margin-top: 130px
+
+// PARTNERS
+.partners
+    padding: 100px 0
+
+// CONTACTS US
+.contact-us
+    padding: 120px 0
+    background-image: url("../img/contact_bg.jpg")
+    background-size: cover
+    background-position: top center
+    .container
+        grid-template-columns: repeat(auto-fit, minmax(320px, auto))
+        grid-gap: 25px
+    .contact-adress
+        padding: 30px 30px 20px
+        box-shadow: 0 0 30px rgba(21, 21, 21, .12)
+        background-color: rgba(2, 22, 35, .7)
+    .adress-list
+        margin-bottom: 20px
+
+// FOOTER
+.footer
+    padding: 90px 0
+    background-color: #262b2e
+    color: #fff
+    text-align: center
+    &__text
+        margin-bottom: 10px
+        opacity: .8
+        text-transform: uppercase
+    &__copyright
+        font-weight: 500
+        letter-spacing: .16px
+        opacity: .4
+    .follow-us-list
+        grid-template-columns: repeat(4, 45px)
+        grid-column-gap: 5px
+        justify-content: center
+        margin: 0 0 40px
+        padding: 0
+        list-style: none
+    .list-item
+        width: 46px
+        height: 46px
+        background-color: #8a8a8a
+        opacity: .4
+        transition: opacity .3s ease-out
+        &:hover
+            opacity: 1
+            background-color: $accent
+            .item-ico
+                fill: #000
+    .item-ico
+        width: 20px
+        fill: #faf4f4
+    .item-link
+        height: 100%
+        justify-content: center
+        align-items: center
+        line-height: 0
+
+@import media
