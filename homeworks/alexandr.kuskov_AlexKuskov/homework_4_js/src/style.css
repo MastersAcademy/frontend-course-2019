@@ -1,3 +1,7 @@
+.hidden {
+  visibility: hidden;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -27,7 +31,6 @@
 }
 
 .form__validation-text {
-  visibility: hidden;
   font-size: 20px;
   margin: 4% auto;
   color: rgb(0, 128, 0);

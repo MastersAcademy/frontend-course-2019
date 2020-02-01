@@ -15,7 +15,7 @@ function setInputFieldStyle(isInputValid: boolean, element: HTMLInputElement) {
 }
 
 function showValidationText() {
-    validationTextSpanEl.setAttribute('style', 'visibility: visible;');
+    validationTextSpanEl.classList.remove('hidden');
 }
 
 function isNameValid(name: string, min: number, max: number): boolean {
