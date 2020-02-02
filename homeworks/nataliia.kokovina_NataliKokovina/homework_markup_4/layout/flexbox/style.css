@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-.section-wrapper {
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
