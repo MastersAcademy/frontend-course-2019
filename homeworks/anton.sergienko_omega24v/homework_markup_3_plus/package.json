@@ -1,0 +1,43 @@
+{
+    "name": "homework_markup_3",
+    "version": "1.0.0",
+    "description": "homework",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "webpack --mode development --watch"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 3 version"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Omega24v/frontend-course-2019.git"
+    },
+    "author": "Omega24v",
+    "license": "ISC",
+    "devDependencies": {
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^5.0.5",
+        "css-loader": "^3.2.0",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "file-loader": "^5.0.2",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.8.0",
+        "node-sass": "^4.13.0",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^8.0.0",
+        "style-loader": "^1.0.0",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.10"
+    },
+    "dependencies": {
+        "cssnano": "^4.1.10",
+        "autoprefixer": "^9.7.2"
+    },
+    "bugs": {
+        "url": "https://github.com/Omega24v/frontend-course-2019/issues"
+    },
+    "homepage": "https://github.com/Omega24v/frontend-course-2019#readme"
+}
