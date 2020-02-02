@@ -10,7 +10,7 @@ html {
 
 .sidebar {
   max-width: 80px;
-  background-color: green;
+  background-color: #008000;
   padding-top: 20px;
   padding-bottom: 20px;
   height: 100%;
@@ -23,12 +23,12 @@ html {
 }
 
 .navigation__item:hover {
-  fill: green;
-  background-color: black;
+  fill: #008000;
+  background-color: #000;
 }
 
 .navigation__item:focus {
-  outline-color: black;
+  outline-color: #000;
   outline-style: solid;
 }
 
@@ -43,23 +43,23 @@ html {
 }
 
 .navigation__icon--first {
-  --primary-color: white;
-  --secondary-color: blue;
+  --primary-color: #FFF;
+  --secondary-color: #00F;
 }
 
 .navigation__icon--first:hover,
 .navigation__icon--first:focus {
-  --primary-color: blue;
-  --secondary-color: white;
+  --primary-color: #00F;
+  --secondary-color: #FFF;
 }
 
 .navigation__icon--secondary {
-  fill: blue;
-  color: white;
+  fill: #00F;
+  color: #FFF;
 }
 
 .navigation__icon--secondary:hover,
 .navigation__icon--secondary:focus {
-  fill: white;
-  color: blue;
+  fill: #FFF;
+  color: #00F;
 }
