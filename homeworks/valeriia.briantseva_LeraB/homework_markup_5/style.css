@@ -1,0 +1,65 @@
+html {
+  height: 100%;
+}
+
+.body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+}
+
+.sidebar {
+  max-width: 80px;
+  background-color: green;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+  display: block;
+}
+
+.navigation__item {
+  padding: 20px;
+  display: block;
+}
+
+.navigation__item:hover {
+  fill: green;
+  background-color: black;
+}
+
+.navigation__item:focus {
+  outline-color: black;
+  outline-style: solid;
+}
+
+.navigation__icon {
+  display: block;
+  max-width: 45px;
+  max-height: 40px;
+}
+
+.content__item {
+  margin: 20px;
+}
+
+.navigation__icon--first {
+  --primary-color: white;
+  --secondary-color: blue;
+}
+
+.navigation__icon--first:hover,
+.navigation__icon--first:focus {
+  --primary-color: blue;
+  --secondary-color: white;
+}
+
+.navigation__icon--secondary {
+  fill: blue;
+  color: white;
+}
+
+.navigation__icon--secondary:hover,
+.navigation__icon--secondary:focus {
+  fill: white;
+  color: blue;
+}
