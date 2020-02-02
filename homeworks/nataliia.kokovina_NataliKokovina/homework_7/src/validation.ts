@@ -1,78 +1,39 @@
-import {
-    addInvalid, cleared, addSubmitFormMes, clearedSubmitMes,
-} from './helper';
-import {
-    reName, reEmail, rePhone, reAge,
-} from './regex';
+import { toggleFieldError, toggleSubmitMes } from './helper';
+import { reName, reEmail, rePhone, reAge } from './regex';
+import { Form } from './interface';
 
-interface InputString {
-    value?: string;
+function isValidName(name: string, min: number, max: number): boolean {
+    return reName.test(name) && name.length >= min && name.length <= max;
 }
 
-interface Form {
-    firstName: HTMLInputElement;
-    lastName: HTMLInputElement;
-    email: HTMLInputElement;
-    phone: HTMLInputElement;
-    age: HTMLInputElement;
-}
-
-function isValidName(name: InputString, min: number, max: number): boolean {
-    return reName.test(name.value) && name.value.length >= min && name.value.length <= max;
-}
-
-function isValidAge(numberRange: InputString, min: number, max: number): boolean {
-    if (numberRange.value.length !== 0) {
-        return reAge.test(numberRange.value)
-        && Number(numberRange.value) >= min
-        && Number(numberRange.value) <= max;
+function isValidAge(numberRange: string, min: number, max: number): boolean {
+    if (numberRange.length) {
+        return reAge.test(numberRange)
+        && Number(numberRange) >= min
+        && Number(numberRange) <= max;
     }
 
     return true;
 }
 
 export function isValid(form: Form): boolean {
-    if (!isValidName(form.firstName, 2, 20)) {
-        addInvalid(form.firstName);
-    } else {
-        cleared(form.firstName);
-    }
+    const isFirstNameValid = isValidName(form.firstName.value, 2, 20);
+    const islastNameValid = isValidName(form.lastName.value, 2, 20);
+    const isEmailValid = reEmail.test(form.email.value);
+    const isPhoneValid = rePhone.test(form.phone.value);
+    const isAgeValid = isValidAge(form.age.value, 18, 120);
 
-    if (!isValidName(form.lastName, 2, 20)) {
-        addInvalid(form.lastName);
-    } else {
-        cleared(form.lastName);
-    }
+    toggleFieldError(form.firstName, isFirstNameValid);
+    toggleFieldError(form.lastName, islastNameValid);
+    toggleFieldError(form.email, isEmailValid);
+    toggleFieldError(form.phone, isPhoneValid);
+    toggleFieldError(form.age, isAgeValid);
 
-    if (!reEmail.test(form.email.value)) {
-        addInvalid(form.email);
-    } else {
-        cleared(form.email);
-    }
-
-    if (!rePhone.test(form.phone.value)) {
-        addInvalid(form.phone);
-    } else {
-        cleared(form.phone);
-    }
-
-    if (!isValidAge(form.age, 18, 120)) {
-        addInvalid(form.age);
-    } else {
-        cleared(form.age);
-    }
-
-    if (isValidName(form.firstName, 2, 20)
-    && isValidName(form.lastName, 2, 20)
-    && reEmail.test(form.email.value)
-    && rePhone.test(form.phone.value)
-    && isValidAge(form.age, 18, 120)) {
-        clearedSubmitMes(document.querySelector('.invalidFormMessages'));
-        addSubmitFormMes(document.querySelector('.successfullFormMessages'));
+    if (isFirstNameValid && islastNameValid && isEmailValid && isPhoneValid && isAgeValid) {
+        toggleSubmitMes(document.querySelector('.successfullFormMessages'), document.querySelector('.invalidFormMessages'));
         return true;
     }
 
-    clearedSubmitMes(document.querySelector('.successfullFormMessages'));
-    addSubmitFormMes(document.querySelector('.invalidFormMessages'));
+    toggleSubmitMes(document.querySelector('.invalidFormMessages'), document.querySelector('.successfullFormMessages'));
     return false;
 }

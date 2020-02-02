@@ -1,17 +1,5 @@
 import { isValid } from './validation';
-
-interface FormValue {
-    [key: string]: string;
-}
-
-interface Form {
-    firstName: HTMLInputElement;
-    lastName: HTMLInputElement;
-    email: HTMLInputElement;
-    phone: HTMLInputElement;
-    age: HTMLInputElement;
-    [key: string]: HTMLInputElement;
-}
+import { Form, FormValue } from './interface';
 
 function submitForm(event: Event): void {
     event.preventDefault();
