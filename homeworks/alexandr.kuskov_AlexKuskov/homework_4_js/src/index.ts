@@ -9,9 +9,7 @@ const ageInputEl: HTMLInputElement = document.querySelector('.js-registration-ag
 const validationTextSpanEl: HTMLSpanElement = document.querySelector('.js-registration-validation');
 
 function setInputFieldStyle(isInputValid: boolean, element: HTMLInputElement) {
-    isInputValid ?
-    element.classList.remove('form__input--invalid') :
-    element.classList.add('form__input--invalid');
+    element.classList.toggle('form__input--invalid', !isInputValid);
 }
 
 function showValidationText() {

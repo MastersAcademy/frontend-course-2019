@@ -1,8 +1,8 @@
 export interface Validation {
-    minLength: Function;
-    maxLength: Function;
-    pattern: Function;
-    email: Function;
-    phone: Function;
-    numberRange: Function;
+    minLength(text: string, length: number): boolean;
+    maxLength(text: string, length: number): boolean;
+    pattern(text: string, pattern: RegExp): RegExpMatchArray;
+    email(text: string): boolean;
+    phone(text: string): boolean;
+    numberRange(text: string, min: number, max: number): boolean;
 }
