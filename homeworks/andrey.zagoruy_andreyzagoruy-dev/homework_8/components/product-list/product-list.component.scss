@@ -4,25 +4,3 @@
   padding: 0;
 }
 
-.product {
-  border-bottom: 1px solid #DEDEDE;
-  padding: 1rem 0;
-  display: flex;
-}
-
-.product__sidebar {
-  margin-left: auto;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.product__image {
-  max-width: 200px;
-  max-height: 200px;
-}
-
-.product__description {
-  margin: 1rem 0;
-}

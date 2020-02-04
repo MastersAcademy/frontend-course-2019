@@ -6,4 +6,5 @@ export interface Product {
   Title: string;
   Description: string;
   Rating: number;
+  Favourite?: boolean;
 }

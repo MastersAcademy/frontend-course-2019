@@ -6,7 +6,8 @@
         <input
           class="products-main__search-field"
           type="text"
-          (input)="search($event.target.value)"
+          #searchInput
+          (input)="search(searchInput)"
         />
       </label>
     </div>
@@ -19,7 +20,7 @@
     </button>
   </div>
   <app-product-list
-    [products] = filteredProducts
-    [productsAll] = products
+    [products] = "filteredProducts"
+    [productsAll] = "products"
   ></app-product-list>
 </div>

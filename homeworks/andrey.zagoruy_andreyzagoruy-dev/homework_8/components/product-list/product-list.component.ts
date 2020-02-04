@@ -12,8 +12,4 @@ export class ProductListComponent{
   @Input() products: Product[];
   @Input() productsAll: Product[];
 
-  toggleFavourite(product) {
-    product.Favourite = !product.Favourite;
-  }
-
 }
