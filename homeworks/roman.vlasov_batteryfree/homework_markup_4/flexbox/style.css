@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  height: 100vh;
+  font-size: 50px;
+  color: #F4FDFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  background-color: #C14F4F;
+  min-height: 15vh;
+}
+
+.weaper {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.main {
+  background-color: #699EBD;
+  flex-grow: 1;
+}
+
+.sidebar {
+  width: 150px;
+  background-color: #C28282;
+}
+
+.sidebar--left {
+  order: -1;
+}
+
+.footer {
+  background-color: #C14F4F;
+  min-height: 10vh;
+}
