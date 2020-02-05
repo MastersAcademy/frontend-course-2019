@@ -20,7 +20,7 @@ body {
 .navbar {
   height: 100%;
   padding: 20px 40px;
-  border-right: 1px solid #000;
+  background-color: #BF9EFF;
 }
 
 .navbar__nav {
@@ -34,7 +34,6 @@ body {
 .item__link {
   display: flex;
   align-items: center;
-  margin-left: 10px;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
