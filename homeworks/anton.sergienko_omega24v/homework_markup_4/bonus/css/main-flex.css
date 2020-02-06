@@ -176,7 +176,7 @@ body {
   width: 350px;
 }
 
-.services__item:::before {
+.services__item::before {
   content: "";
   position: absolute;
   display: block;
