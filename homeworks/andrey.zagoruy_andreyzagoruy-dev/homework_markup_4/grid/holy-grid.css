@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #FFF;
+  font-weight: 100;
+  background-image: linear-gradient(to right top, #051937, #004D7A, #008793, #00BF72, #A8EB12);
+}
+
+.layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 16rem auto 16rem;
+  grid-template-rows: 4rem auto 4rem;
+  grid-template-areas: "header header header"
+    "sidebar-left main-content sidebar-right"
+    "footer footer footer";
+}
+
+.layout__header {
+  grid-area: header;
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.layout__sidebar {
+  background-color: rgba(255, 255, 255, .05);
+}
+
+.layout__sidebar--left {
+  grid-area: sidebar-left;
+}
+
+.layout__content {
+  grid-area: main-content;
+}
+
+.layout__sidebar--right {
+  grid-area: sidebar-right;
+}
+
+.layout__footer {
+  grid-area: footer;
+  background-color: rgba(255, 255, 255, .15);
+}
