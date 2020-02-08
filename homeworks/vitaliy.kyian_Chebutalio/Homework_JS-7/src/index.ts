@@ -1,80 +1,78 @@
 import { isValid } from './module';
 
-const name = <HTMLInputElement>document.querySelector('.name');
+const firstName = <HTMLInputElement>document.querySelector('.firstName');
 const lastName = <HTMLInputElement>document.querySelector('.lastName');
 const email = <HTMLInputElement>document.querySelector('.email');
 const phone = <HTMLInputElement>document.querySelector('.phone');
 const age = <HTMLInputElement>document.querySelector('.age');
 const form = <HTMLInputElement>document.querySelector('.form');
-const errorElement = <HTMLInputElement>document.querySelector('.error-msg');
-const succesElement = <HTMLInputElement>document.querySelector('.succes');
+const validationMessageElement = <HTMLInputElement>document.querySelector('.validation-msg');
 
 type SubmitEvent = Event & { target: HTMLElement}
+
+function validateNameField(): string | false {
+    if (!firstName.value) return 'Name is required';
+    if (!isValid.minLength({ text: firstName.value, length: 2 })) return 'To short name';
+    if (!isValid.maxLength({ text: firstName.value, length: 20 })) return 'To long name';
+    return false;
+}
+
+function validatelastNameField(): string | false {
+    if (!lastName.value) return 'Last name is required';
+    if (!isValid.minLength({ text: lastName.value, length: 2 })) return 'To short Last name';
+    if (!isValid.maxLength({ text: lastName.value, length: 20 })) return 'To long Last name';
+    return false;
+}
+
+function validateEmailField(): string | false {
+    if(!email.value) return 'Email is required';
+    if (!isValid.email({ text: email.value })) return 'Email is not valid';
+    return false;
+}
+
+function validatePhoneField(): string | false {
+    if (!phone.value) return 'Phone number is required';
+    if (!isValid.phone({ text: phone.value })) return 'Phone number is not valid';
+    return false;
+}
+
+function validateAgeField(): string | false {
+    if (age.value && !isValid.numberRange({ text: age.value, min: 18, max: 120 })) return 'Age is not valid';
+    return false;
+}
 
 form.addEventListener('submit', (e: SubmitEvent) => {
     e.preventDefault();
 
     const messages: string[] = [];
-    if (name.value === '' || name.value == null) {
-        messages.push('Name is required');
-        name.classList.add('error');
-    } else if (!isValid.minLength({ text: name.value, length: 2 })) {
-        messages.push('To short name');
-        name.classList.add('error');
-    } else if (!isValid.maxLength({ text: name.value, length: 20 })) {
-        messages.push('To long name');
-        name.classList.add('error');
-    } else {
-        name.classList.remove('error');
-    }
 
-    if (lastName.value === '' || lastName.value == null) {
-        messages.push('Last name is required');
-        lastName.classList.add('error');
-    } else if (!isValid.minLength({ text: lastName.value, length: 2 })) {
-        messages.push('To short Last name');
-        lastName.classList.add('error');
-    } else if (!isValid.maxLength({ text: lastName.value, length: 20 })) {
-        messages.push('To long Last name');
-        lastName.classList.add('error');
-    } else {
-        lastName.classList.remove('error');
-    }
+    const firstNameMessage = validateNameField();
+    firstName.classList.toggle('error', !!firstNameMessage);
+    if (firstNameMessage) messages.push(firstNameMessage);
 
-    if (email.value === '' || email.value == null) {
-        messages.push('Email is required');
-        email.classList.add('error');
-    } else if (!isValid.email({ text: email.value })) {
-        messages.push('Email is not valid');
-        email.classList.add('error');
-    } else {
-        email.classList.remove('error');
-    }
+    const lastNameMessage = validatelastNameField();
+    lastName.classList.toggle('error', !!lastNameMessage);
+    if (lastNameMessage) messages.push(lastNameMessage);
 
-    if (phone.value === '' || phone.value == null) {
-        messages.push('Phone number is required');
-        phone.classList.add('error');
-    } else if (!isValid.phone({ text: phone.value })) {
-        messages.push('Phone number is not valid');
-        phone.classList.add('error');
-    } else {
-        phone.classList.remove('error');
-    }
+    const emailMessage = validateEmailField();
+    email.classList.toggle('error', !!emailMessage);
+    if (emailMessage) messages.push(emailMessage);
 
-    if ((age.value)) {
-        if (!isValid.numberRange({ text: age.value, min: 18, max: 120 })) {
-            messages.push('Age is not valid');
-            age.classList.add('error');
-        } else {
-            age.classList.remove('error');
-        }
-    }
+    const phoneMessage = validatePhoneField();
+    phone.classList.toggle('error', !!phoneMessage);
+    if (phoneMessage) messages.push(phoneMessage);
+
+    const ageMessage = validateAgeField();
+    age.classList.toggle('error', !!ageMessage);
+    if (ageMessage) messages.push(ageMessage);
 
     if (messages.length > 0) {
-        errorElement.innerText = messages.join(', ');
-        succesElement.innerText = '';
+        validationMessageElement.innerText = messages.join(', ');
+        validationMessageElement.classList.add('error-msg');
     } else {
-        succesElement.innerText = 'Validation successful!';
-        errorElement.innerText = '';
+        validationMessageElement.innerText = 'Validation successful!';
+        validationMessageElement.classList.add('success');
+        validationMessageElement.classList.remove('error-msg');
+
     }
 });

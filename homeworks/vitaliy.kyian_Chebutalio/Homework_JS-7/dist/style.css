@@ -33,6 +33,10 @@ input:focus {
   border: 2px solid #18995D;
 }
 
+.input-margin {
+  margin: .4rem 0 1rem;
+}
+
 .btn {
   border: 2px solid #18995D;
   border-radius: 25px;
@@ -44,6 +48,7 @@ input:focus {
   background: #18995D;
   color: #FFF;
   outline: none;
+  cursor: pointer;
 }
 
 .error-msg {
@@ -53,11 +58,12 @@ input:focus {
   width: 400px;
 }
 
-.succes {
+.success {
   color: #18995D;
   font-size: 1.2rem;
   font-weight: 900;
-  padding-top: 2rem;
+  padding-bottom: 20px;
+  width: 400px;
 }
 
 .error {
