@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+        <script defer>
+            const click$ = rxjs.fromEvent(document, 'keydown');
+            const o = rxjs.operators;
+            click$.pipe(
+                o.map(e => e.key),
+                o.filter(key => key.length === 1),
+                o.buffer(click$.pipe(o.filter(e => e.key === ' '))),
+            ).subscribe(keys => document.body.innerText += keys.join(''));
+        </script>
+    </head>
+    <body></body>
+</html>
