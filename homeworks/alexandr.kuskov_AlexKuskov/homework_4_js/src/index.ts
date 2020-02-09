@@ -8,24 +8,12 @@ const phoneInputEl: HTMLInputElement = document.querySelector('.js-registration-
 const ageInputEl: HTMLInputElement = document.querySelector('.js-registration-age');
 const validationTextSpanEl: HTMLSpanElement = document.querySelector('.js-registration-validation');
 
-function setInvalidInputStyle(element: HTMLInputElement) {
-    element.setAttribute('style', 'border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);');
-}
-
-function setValidInputStyle(element: HTMLInputElement) {
-    element.setAttribute('style', 'border-color: rgb(0, 0, 0); color: rgb(0, 0, 0);');
-}
-
 function setInputFieldStyle(isInputValid: boolean, element: HTMLInputElement) {
-    if (isInputValid) {
-        setValidInputStyle(element);
-    } else {
-        setInvalidInputStyle(element);
-    }
+    element.classList.toggle('form__input--invalid', !isInputValid);
 }
 
 function showValidationText() {
-    validationTextSpanEl.setAttribute('style', 'visibility: visible;');
+    validationTextSpanEl.classList.remove('hidden');
 }
 
 function isNameValid(name: string, min: number, max: number): boolean {
@@ -33,6 +21,8 @@ function isNameValid(name: string, min: number, max: number): boolean {
 }
 
 formEl.addEventListener('submit', (event: Event) => {
+    event.preventDefault();
+
     const isFirstNameValid: boolean = isNameValid(firstNameInputEl.value, 2, 20);
     const isLastNameValid: boolean = isNameValid(lastNameInputEl.value, 2, 20);
     const isEmailValid: boolean = isValid.email(emailInputEl.value);
@@ -48,6 +38,4 @@ formEl.addEventListener('submit', (event: Event) => {
     if (isFirstNameValid && isLastNameValid && isEmailValid && isPhoneValid && isAgeValid) {
         showValidationText();
     }
-
-    event.preventDefault();
 });
