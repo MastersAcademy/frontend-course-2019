@@ -1,15 +1,8 @@
 export function toggleFieldError(item: HTMLInputElement, isValid: boolean): void {
-    if (item.classList.contains('invalid') && isValid || !isValid && !item.classList.contains('invalid')) {
-        item.classList.toggle('invalid');
-    }
+    item.classList.toggle('invalid', !isValid);
 }
 
-export function toggleSubmitMes(itemAdd: HTMLInputElement, itemClean: HTMLInputElement): void {
-    if (!itemAdd.classList.contains('submitForm')) {
-        itemAdd.classList.toggle('submitForm');
-
-        if (itemClean.classList.contains('submitForm')) {
-            itemClean.classList.toggle('submitForm');
-        }
-    }
+export function toggleSubmitMessage(successfullFormMessages: HTMLInputElement, invalidFormMessages: HTMLInputElement, isFormValid: boolean): void {
+    successfullFormMessages.classList.toggle('submitForm', isFormValid);
+    invalidFormMessages.classList.toggle('submitForm', !isFormValid);
 }

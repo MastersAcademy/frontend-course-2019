@@ -23,4 +23,4 @@ function submitForm(event: Event): void {
     }
 }
 
-document.querySelector('.form_button').addEventListener('click', submitForm);
+document.getElementById('form').addEventListener('submit', submitForm);
