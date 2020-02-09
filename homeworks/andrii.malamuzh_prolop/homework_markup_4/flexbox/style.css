@@ -3,7 +3,7 @@
   height: 200px;
 }
 
-.wrapper {
+.main {
   display: flex;
   min-height: calc(100vh - 250px);
 }
@@ -14,7 +14,7 @@
   background: #C28282;
 }
 
-.main {
+.content {
   width: calc(100% - 600px);
   background: #699EBD;
 }

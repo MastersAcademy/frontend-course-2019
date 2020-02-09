@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 300px auto 300px;
   grid-template-rows: 200px auto 50px;
-  grid-template-areas: "header header header" "navigation main sidebar" "footer footer footer";
+  grid-template-areas: "header header header" "sidebar--left main sidebar--right" "footer footer footer";
   min-height: 100vh;
 }
 
@@ -22,8 +22,15 @@
 }
 
 .sidebar {
-  grid-area: sidebar;
   background: #C28282;
+}
+
+.sidebar--left {
+  grid-area: sidebar--left;
+}
+
+.sidebar--right {
+  grid-area: sidebar--right;
 }
 
 .footer {
