@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <title>Submit</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="header">Fill the form</h1>
+        <div class="validation-msg"></div>
+        <form class="form">
+            <label for="name">First Name *</label>
+            <input class="firstName input-margin" name="name" type="text" placeholder="John">
+
+            <label for="lastName">Last Name *</label>
+            <input class="lastName input-margin" name="lastName" type="text" placeholder="Doe">
+
+            <label for="email">Email *</label>
+            <input class="email input-margin" name="email" type="email" placeholder="email@gmail.com">
+
+            <label for="phone">Phone *</label>
+            <input class="phone input-margin" name="phone" type="tel" placeholder="+38(000)000-00-00">
+
+            <label for="age">Age</label>
+            <input class="age input-margin" name="age" type="number" placeholder="18+">
+
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
