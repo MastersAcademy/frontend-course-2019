@@ -83,7 +83,6 @@ body {
 /* CSS Vaiables */
 
 .css-variables {
-  transition: .3s ease-out;
   --primary-color: #44CEE2;
   --secondary-color: #22123D;
 }
