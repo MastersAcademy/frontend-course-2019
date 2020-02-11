@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW Markup 6</title>
+</head>
+<body>
+    <h1>Responsive images</h1>
+    <hr>
+
+    <h2>Retina</h2>
+    <img
+        src="./images/dog_320w.jpg"
+        srcset="./images/dog_678w.jpg 2x, ./images/dog_992w.jpg 3x"
+        alt="Dog is running with red ball in its mouth"
+    >
+    <hr>
+
+    <h2>Adaptiveness</h2>
+    <img
+        src="./images/dog_320w.jpg"
+        srcset="./images/dog_320w.jpg 320w,
+                ./images/dog_678w.jpg 678w,
+                ./images/dog_992w.jpg 992w,
+                ./images/dog_1024w.jpg 1024w,
+                ./images/dog_1200w.jpg 1200w"
+        sizes="(max-width: 678px) 100vw,
+               (max-width: 1024px) 75vw,
+               50vw"
+        alt="Dog is running with red ball in its mouth"
+    >
+    <hr>
+
+    <h2>Format</h2>
+    <picture>
+        <source srcset="./images/dog_320w.webp" type="image/webp">
+        <source srcset="./images/dog_320w.png" type="image/png">
+        <img src="./images/dog_320w.jpg" alt="Dog is running with red ball in its mouth">
+    </picture>
+    <hr>
+
+    <h2>Cropping</h2>
+    <picture>
+        <source media="(max-width: 678px)" srcset="./images/dog_400crop.jpg">
+        <source media="(max-width: 992px)" srcset="./images/dog_600crop.jpg">
+        <img src="./images/dog_992w.jpg" alt="Dog is running with red ball in its mouth">
+    </picture>
+    <hr>
+
+    <h2>Format + Cropping</h2>
+    <picture>
+        <source media="(max-width: 678px)" srcset="./images/dog_400crop.webp 400w" type="image/webp">
+        <source media="(max-width: 678px)" srcset="./images/dog_400crop.png 400w" type="image/png">
+        <source media="(max-width: 678px)" srcset="./images/dog_400crop.jpg 400w">
+
+        <source media="(max-width: 992px)" srcset="./images/dog_600crop.webp 600w" type="image/webp">
+        <source media="(max-width: 992px)" srcset="./images/dog_600crop.png 600w" type="image/png">
+        <source media="(max-width: 992px)" srcset="./images/dog_600crop.jpg 600w">
+
+        <source srcset="./images/dog_1200w.webp 1200w" type="image/webp">
+        <source srcset="./images/dog_1200w.png 1200w" type="image/png">
+        <img src="./images/dog_1200w.jpg" alt="Dog is running with red ball in its mouth">
+    </picture>
+    <hr>
+
+    <h2>Retina + Format</h2>
+    <picture>
+        <source
+            srcset="./images/dog_320w.webp, ./images/dog_678w.webp 2x, ./images/dog_992w.webp 3x"
+            type="image/webp"
+        >
+        <source
+            srcset="./images/dog_320w.png, ./images/dog_678w.png 2x, ./images/dog_992w.png 3x"
+            type="image/png"
+        >
+        <img
+            src="./images/dog_320w.jpg"
+            srcset="./images/dog_678w.jpg 2x, ./images/dog_992w.jpg 3x"
+            alt="Dog is running with red ball in its mouth"
+        >
+    </picture>
+    <hr>
+
+    <h2>Adaptiveness + Format + Cropping</h2>
+    <picture>
+        <source media="(max-width: 678px)" srcset="./images/dog_400crop.webp" type="image/webp">
+        <source media="(max-width: 678px)" srcset="./images/dog_400crop.png" type="image/png">
+        <source media="(max-width: 678px)" srcset="./images/dog_400crop.jpg">
+
+        <source media="(max-width: 992px)" srcset="./images/dog_600crop.webp" type="image/webp">
+        <source media="(max-width: 992px)" srcset="./images/dog_600crop.png" type="image/png">
+        <source media="(max-width: 992px)" srcset="./images/dog_600crop.jpg">
+
+        <source media="(max-width: 1024px)" srcset="./images/dog_992w.webp 992w" type="image/webp">
+        <source media="(max-width: 1200px)" srcset="./images/dog_1024w.webp 1024w" type="image/webp">
+        <source srcset="./images/dog_1200w.webp 1200w" type="image/webp">
+
+        <source media="(max-width: 1024px)" srcset="./images/dog_992w.png 992w" type="image/png">
+        <source media="(max-width: 1200px)" srcset="./images/dog_1024w.png 1024w" type="image/png">
+        <source srcset="./images/dog_1200w.png 1200w" type="image/png">
+
+        <img
+            src="./images/dog_992w.jpg"
+            srcset="./images/dog_1024w.jpg 1024w,
+                    ./images/dog_1200w.jpg 1200w"
+            sizes="100vw"
+            alt="Dog is running with red ball in its mouth"
+        >
+    </picture>
+    <hr>
+</body>
+</html>
