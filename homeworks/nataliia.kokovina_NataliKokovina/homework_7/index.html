@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework7</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <form id="form" class="form" action="" method="POST" name="contact">
+        <label class="label_item" for="firstName">First Name*</label>
+        <input class="form_item" name="firstName" id="firstName" type="text" placeholder="Your First Name" required>
+        <label class="label_item" for="lastName">Last Name*</label>
+        <input class="form_item" name="lastName" id="lastName" type="text" placeholder="Your Last Name" required>
+        <label class="label_item" for="email">Email Address*</label>
+        <input class="form_item" name="email" id="email" type="email" placeholder="Your Email Address" required>
+        <label class="label_item" for="phone">Phone Number*</label>
+        <input class="form_item" name="phone" id="phone" type="text" placeholder="+38(000)000-00-00" required>
+        <label class="label_item" for="age">Age</label>
+        <input class="form_item" name="age" id="age" type="text" placeholder="Your Age">
+        <div class="invalidFormMessages"><p>Invalid Form</p></div>
+        <div class="successfullFormMessages"><p>Validation successful!</p></div>
+        <button class="form_button" type="submit">Submit</button>
+    </form>
+    <script defer src="./dist/main.js"></script>
+</body>
+</html>
