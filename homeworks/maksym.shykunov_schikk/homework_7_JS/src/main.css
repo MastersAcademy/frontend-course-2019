@@ -14,12 +14,12 @@ body {
   margin: auto;
 }
 
-.input-wrapper {
+.field {
   position: relative;
   margin-bottom: 20px;
 }
 
-.input-wrapper label {
+.field__label {
   display: block;
   width: 100%;
   font-size: 14px;
@@ -27,7 +27,7 @@ body {
   margin-bottom: 10px;
 }
 
-.input-wrapper input {
+.field__input {
   display: block;
   width: 100%;
   padding: 8px 5px;
@@ -38,11 +38,16 @@ body {
   box-sizing: border-box;
 }
 
-input:focus {
+.field__input.invalid {
+  color: #CA2936;
+  border: 2px solid #CA2936;
+}
+
+.field__input:focus {
   box-shadow: 0 0 0 1px #C8E9AE;
 }
 
-.btn-submit {
+.submit-btn {
   width: 300px;
   padding: 8px 5px;
   font-size: 16px;
@@ -62,9 +67,4 @@ input:focus {
   font-weight: 600;
   color: #11A113;
   margin-bottom: 10px;
-}
-
-.input-wrapper input.invalid {
-  color: #CA2936;
-  border: 2px solid #CA2936;
 }

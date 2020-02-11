@@ -2,7 +2,6 @@ import { isValid } from './validation-module';
 
 (function () {
     const form: HTMLFormElement = document.querySelector('#main_form');
-    const inputs: NodeListOf<Element> = document.querySelectorAll('.validate');
     const firstNameInput: HTMLInputElement = document.querySelector('#first_name');
     const lastNameInput: HTMLInputElement = document.querySelector('#last_name');
     const emailInput: HTMLInputElement = document.querySelector('#email');
@@ -17,33 +16,26 @@ import { isValid } from './validation-module';
     form.addEventListener('submit', (e: Event) => {
         e.preventDefault();
 
-        const firstNameValid = nameValidation(firstNameInput.value, 2, 20);
-        const lastNameValid = nameValidation(lastNameInput.value, 2, 20);
-        const emailValid = isValid.email(emailInput.value);
-        const phoneValid = isValid.phone(phoneInput.value);
-        const ageValid = isValid.numberRange(ageInput.value, 18, 120);
+        const firstNameIsValid = nameValidation(firstNameInput.value, 2, 20);
+        const lastNameIsValid = nameValidation(lastNameInput.value, 2, 20);
+        const emailIsValid = isValid.email(emailInput.value);
+        const phoneIsValid = isValid.phone(phoneInput.value);
+        const ageIsValid = isValid.numberRange(ageInput.value, 18, 120);
 
-        function validInput(validate: boolean, inputName: HTMLInputElement) {
-            if (!validate) {
-                inputName.classList.add('invalid');
-            } else {
-                inputName.classList.remove('invalid');
-            }
+        function validateInput(validate: boolean, inputName: HTMLInputElement) {
+            inputName.classList.toggle('invalid', !validate);
         }
 
-        validInput(firstNameValid, firstNameInput);
-        validInput(lastNameValid, lastNameInput);
-        validInput(emailValid, emailInput);
-        validInput(phoneValid, phoneInput);
-        validInput(ageValid, ageInput);
+        validateInput(firstNameIsValid, firstNameInput);
+        validateInput(lastNameIsValid, lastNameInput);
+        validateInput(emailIsValid, emailInput);
+        validateInput(phoneIsValid, phoneInput);
+        validateInput(ageIsValid, ageInput);
 
-        const valid = firstNameValid && lastNameValid && emailValid && phoneValid && ageValid;
+        const validate = firstNameIsValid && lastNameIsValid && emailIsValid && phoneIsValid && ageIsValid;
 
-        for (let i = 0; i < inputs.length; i++) {
-            if (valid) {
-                success.style.display = 'block';
-                inputs[i].classList.remove('invalid');
-            }
+        if (validate) {
+            success.style.display = 'block';
         }
     });
 }());
