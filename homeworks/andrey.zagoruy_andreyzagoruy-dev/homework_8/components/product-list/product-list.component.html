@@ -1,0 +1,26 @@
+<div class="products">
+  <ul class="products__list products__list--favourites">
+    <ng-container
+      *ngFor="let product of productsAll"
+    >
+      <li
+        *ngIf="product.Favourite"
+        class="products__item"
+      >
+        <app-product [product] = "product" ></app-product>
+      </li>
+    </ng-container>
+  </ul>
+  <ul class="products__list">
+    <ng-container
+      *ngFor="let product of products"
+    >
+      <li
+        *ngIf="!product.Favourite"
+        class="products__item"
+      >
+        <app-product [product] = "product" ></app-product>
+      </li>
+    </ng-container>
+  </ul>
+</div>
