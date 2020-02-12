@@ -1,0 +1,21 @@
+<div class="product">
+  <div class="product__info">
+    <img
+      class="product__image"
+      src="{{product.img}}"
+      alt="product.Title"
+    >
+    <h2 class="product__title">{{product.Title}}</h2>
+    <p class="product__description">{{product.Description}}</p>
+    <a class="product__link" href="{{product.Url}}">Go to product page</a>
+  </div>
+  <div class="product__sidebar">
+    <button
+      class="product__favourite-button button"
+      (click)="toggleFavourite(product)"
+    >
+      {{product.Favourite ? 'Remove from' : 'Add to'}} favourites
+    </button>
+    <div class="product__rating">Rating: {{product.Rating}}</div>
+  </div>
+</div>

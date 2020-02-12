@@ -1,0 +1,150 @@
+* {
+  font-weight: 400;
+  margin: 0;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: auto;
+}
+
+.section {
+  grid-column-start: 2;
+  margin-top: 3%;
+}
+
+/* gallery */
+
+.title {
+  font-size: 38px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  align-self: center;
+  text-align: center;
+}
+
+.title__text {
+  font-size: 17px;
+  text-transform: uppercase;
+  opacity: .6;
+  color: #000;
+  margin-bottom: 4%;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 20vw);
+  grid-gap: 10px;
+  margin-bottom: 90px;
+}
+
+.gallery__item {
+  align-self: stretch;
+  justify-self: stretch;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* articles pictures */
+
+.design-pattern {
+  background: url("../images/design-pattern.png") center/cover;
+  background-size: cover;
+  grid-area: pattern;
+}
+
+.desktop {
+  background: url("../images/desktop.png") center/cover;
+  background-repeat: no-repeat;
+  background-position: 25% 10%;
+  grid-area: desktop;
+}
+
+.macbook {
+  background: url("../images/macbook.png") center;
+  background-repeat: no-repeat;
+  grid-area: macbook;
+}
+
+.bottle {
+  background: url("../images/bottle.png") center/cover;
+  background-repeat: no-repeat;
+  grid-area: bottle;
+}
+
+.dishes {
+  background: url("../images/dishes.png") center;
+  background-repeat: no-repeat;
+  grid-area: dishes;
+}
+
+/* articles */
+
+.articles__item {
+  justify-self: stretch;
+  padding: 60px;
+  color: #FFF;
+  box-shadow: inset 0 0 0 450px #0000008C;
+}
+
+.articles__item_open {
+  background-color: #70F5EB;
+  color: #000;
+  box-shadow: none;
+  grid-area: open;
+}
+
+.articles {
+  margin-bottom: 90px;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  grid-template-areas: "open open pattern"
+    "macbook macbook desktop"
+    "bottle dishes dishes";
+}
+
+.articles__title {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+
+.articles__text {
+  font-size: 16px;
+  margin-bottom: 45px;
+  line-height: 150%;
+  width: 80%;
+}
+
+.articles__btn {
+  padding: 5px;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.articles__btn__text {
+  font-size: 18px;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+.articles__btn__text:hover {
+  text-decoration: underline;
+}
+
+.articles__btn__icon {
+  fill: #FFF;
+  margin-top: 10px;
+  margin-left: 25px;
+}

@@ -1,0 +1,37 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  text-align: center;
+}
+
+.main-header {
+  height: 100px;
+  background: #C14F4F;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 200px);
+}
+
+.content__sidebar {
+  width: 20%;
+  height: 100%;
+  background: #C28282;
+}
+
+.content__section {
+  width: 60%;
+  height: 100%;
+  background-color: #699EBD;
+}
+
+.main-footer {
+  height: 100px;
+  background-color: #C14F4F;
+}
