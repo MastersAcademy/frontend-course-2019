@@ -1,0 +1,29 @@
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format("woff")
+
+// MERRIWEATHER
+@include font("Merriweather", normal, 400, "../fonts/Merriweather-Regular.woff")
+@include font("Merriweather", italic, 400, "../fonts/Merriweather-Italic.woff")
+@include font("Merriweather", normal, 700, "../fonts/Merriweather-Bold.woff")
+@include font("Merriweather", italic, 700, "../fonts/Merriweather-BoldItalic.woff")
+
+// MONTSERRAT
+@include font("Montserrat", normal, 400, "../fonts/Montserrat-Regular.woff")
+@include font("Montserrat", normal, 700, "../fonts/Montserrat-Bold.woff")
+
+// RALEWAY
+@include font("Raleway", normal, 400, "../fonts/Raleway-Regular.woff")
+@include font("Raleway", normal, 500, "../fonts/Raleway-Medium.woff")
