@@ -32,6 +32,27 @@
   margin: 0;
 }
 
+.app-theme--default {
+  --global--color--primary: #666;
+  --global--color--secondary: #FE7E11;
+  --global--color--theme-primary: #FFF;
+  --global--color--theme-secondary: #F0F0F0;
+}
+
+.app-theme--dark {
+  --global--color--primary: #FFF;
+  --global--color--secondary: #00F;
+  --global--color--theme-primary: #000;
+  --global--color--theme-secondary: #545454;
+}
+
+.app-theme--turquoise {
+  --global--color--primary: #000;
+  --global--color--secondary: #3BAF00;
+  --global--color--theme-primary: #C9EAE9;
+  --global--color--theme-secondary: #98DED7;
+}
+
 /* Utility classes. */
 /* Sets paddings to make content width equals 1200px */
 
