@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  font-family: "Roboto";
+}
+
+.main {
+  padding: 20px;
+  width: 100%;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 100%;
+  padding: 20px 40px;
+  background-color: #BF9EFF;
+}
+
+.navbar__nav {
+  list-style: none;
+}
+
+.navbar__nav__item {
+  margin: 10px 0;
+}
+
+.item__link {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  transition: color .3s ease-out;
+}
+
+.item__icon {
+  margin-right: 10px;
+  fill: var(--icon-color);
+  transition: fill .3s ease-out;
+
+  --icon-color: #000;
+  --icon-hover: #999;
+  --icon-focus: #600;
+}
+
+.item__link:hover {
+  color: #999;
+}
+
+.item__link:hover .item__icon {
+  fill: var(--icon-hover);
+}
+
+.item__link:focus {
+  outline: auto;
+  color: #600;
+}
+
+.item__link:focus .item__icon {
+  fill: var(--icon-focus);
+}
+/* CURRENT COLOR */
+
+.current-color {
+  fill: #4073FF;
+  color: #FFF;
+  transition: .3s ease-out;
+}
+
+.current-color:hover {
+  fill: #FFF;
+  color: #4073FF;
+}
+
+/* CSS Vaiables */
+
+.css-variables {
+  --primary-color: #44CEE2;
+  --secondary-color: #22123D;
+}
+
+.css-variables:hover {
+  --primary-color: #22123D;
+  --secondary-color: #44CEE2;
+}
