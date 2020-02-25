@@ -1,0 +1,33 @@
+.products-main {
+  padding: 0 2rem;
+}
+
+.products-main__header {
+  background-color: #F1F1F1;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding: 0 2rem;
+}
+
+.products-main__search {
+  display: inline-block;
+}
+
+.products-main__search-field {
+  height: 1.5rem;
+}
+
+.products-main__sort {
+  margin-left: 1rem;
+}
+
+.products-main__sort--desc::after {
+  content: "\2191";
+}
+
+.products-main__sort--asc::after {
+  content: "\2193";
+}

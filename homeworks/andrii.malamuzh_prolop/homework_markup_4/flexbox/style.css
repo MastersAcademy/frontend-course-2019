@@ -1,0 +1,25 @@
+.header {
+  background: #C14F4F;
+  height: 200px;
+}
+
+.main {
+  display: flex;
+  min-height: calc(100vh - 250px);
+}
+
+.sidebar,
+.navigation {
+  width: 300px;
+  background: #C28282;
+}
+
+.content {
+  width: calc(100% - 600px);
+  background: #699EBD;
+}
+
+.footer {
+  height: 50px;
+  background: #C14F4F;
+}
