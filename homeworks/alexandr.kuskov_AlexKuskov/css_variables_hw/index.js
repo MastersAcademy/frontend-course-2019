@@ -3,10 +3,8 @@ const themeSelector = document.querySelector('.js-themes');
 
 function handleThemeUpdate(e) {
     const selectEl = e.target;
-    const selectedOptionIndex = selectEl.selectedIndex;
-    const selectedOption = selectEl.options[selectedOptionIndex];
 
-    switch (selectedOption.value) {
+    switch (selectEl.value) {
         case 'original':
             root.style.setProperty('--global--color--primary', '#666');
             root.style.setProperty('--global--color--secondary', '#FE7E11');
