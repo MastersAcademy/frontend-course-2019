@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+}
+
+.sprite {
+  display: none;
+}
+
+/* sidebar */
+
+.sidebar {
+  background-color: #3B5998;
+  width: 7%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebar__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar__item {
+  fill: #C2D2F3;
+  width: 40%;
+  height: 15%;
+  margin-top: 1%;
+}
+
+.sidebar__item:hover {
+  fill: #FFF;
+}
+
+.sidebar__item:focus {
+  fill: #4F78CF;
+}
+
+/* facebook icon */
+
+.icon-wraper {
+  margin: auto;
+}
+
+.icon {
+  width: 200px;
+  height: 200px;
+  margin: 25px 125px;
+}
+
+.icon__variables {
+  --color-1: #FFF;
+  --color-2: #3B5998;
+}
+
+.icon__variables:hover {
+  --color-1: #3B5998;
+  --color-2: #FFF;
+}
+
+.icon__corrent-collor {
+  fill: #FFF;
+  color: #3B5998;
+}
+
+.icon__corrent-collor:hover {
+  fill: #3B5998;
+  color: #FFF;
+}
