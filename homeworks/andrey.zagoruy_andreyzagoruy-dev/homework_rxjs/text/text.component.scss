@@ -1,0 +1,18 @@
+@keyframes blink {
+
+  from, to {
+    color: transparent;
+  }
+
+  50% {
+    color: #00D99D;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  transform: translateY(-2px);
+  margin-left: -2px;
+  font-weight: 400;
+  animation: 1s blink step-end infinite;
+}
