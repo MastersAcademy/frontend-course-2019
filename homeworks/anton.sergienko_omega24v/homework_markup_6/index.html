@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Ретина + Формат -->
+    <h2>Формат + Ретина</h2>
+    <picture>
+    <source srcset="./img/cyberpunk4@320.png,
+            ./img/cyberpunk4@632.png 1.5x,
+            ./img/cyberpunk4@878.png 2x,
+            ./img/cyberpunk4@1200.png 3x"
+            type="image/png">
+        <img src="img/cyberpunk4@320.jpg"
+            srcset="./img/cyberpunk4@710.jpg 1.5x,
+                    ./img/cyberpunk4@988.jpg 2x,
+                    ./img/cyberpunk4@1200.jpg 3x">
+    </picture>
+
+    <!-- Retina  -->
+    <h2>Ретина</h2>
+    <img
+      class="reaponsive-image"
+      src="./img/cyberpunk3@1200.jpg",
+      srcset="./img/cyberpunk3@1920.jpg 1.5x,
+              ./img/cyberpunk3@2673.jpg 2x,
+              ./img/cyberpunk3@3380.jpg 3x"
+      alt="cyberpunk3"
+    />
+
+    <!-- Адаптивність -->
+    <h2>Адаптивність</h2>
+    <img
+      src="images/cyberpunk2.jpg"
+      srcset="
+        ./img/cyberpunk2_320.jpg   320w,
+        ./img/cyberpunk2_639.jpg   480w,
+        ./img/cyberpunk2_887.jpg   768w,
+        ./img/cyberpunk2_1060.jpg  992w,
+        ./img/cyberpunk2_1190.jpg  1024w,
+        ./img/cyberpunk2_1200.jpg  1200w
+      "
+    />
+
+    <!-- Формат -->
+    <h2>Формат</h2>
+    <picture>
+      <source media="(max-width: 768px)" srcset="./img/cyberpunk4.gif" type="image/gif" />
+      <source media="(max-width: 992px)" srcset="./img/cyberpunk4.svg" type="image/svg" />
+      <source media="(max-width: 1024px)" srcset="./img/cyberpunk4.bmp" type="image/bmp" />
+      <source media="(max-width: 1200px)" srcset="./img/cyberpunk4.png" type="image/png" />
+      <img class="responsive-image" src="./img/cyberpunk4.jpg" alt="cyberpunk4"/>
+    </picture>
+
+    <!-- Кадрування -->
+    <h2>Кадрування</h2>
+    <picture>
+        <source media="(max-width: 320px)" srcset="./img/cyberpunk1_320.jpg" />
+        <source media="(max-width: 768px)" srcset="./img/cyberpunk1_671.jpg" />
+        <source media="(max-width: 992px)" srcset="./img/cyberpunk1_932.jpg" />
+        <source media="(max-width: 1024px)" srcset="./img/cyberpunk1_1186.jpg" />
+        <source media="(max-width: 1200px)" srcset="./img/cyberpunk1_1200.jpg" />
+        <img class="responsive-image" src="./img/cyberpunk1.jpg" alt="cyberpunk1" />
+    </picture>
+</body>
+
+</html>
